@@ -80,7 +80,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setSpacing(0)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.pushButton = QtWidgets.QPushButton(parent=self.verticalLayoutWidget)
-        self.pushButton.setMaximumSize(QtCore.QSize(248, 68))
+        self.pushButton.setMaximumSize(QtCore.QSize(160, 40))
         font = QtGui.QFont()
         font.setPointSize(16)
         self.pushButton.setFont(font)
