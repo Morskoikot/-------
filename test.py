@@ -1,8 +1,11 @@
 import sys
 from PyQt6.QtWidgets import (
     QApplication,
-    QMainWindow,
+    QMainWindow, 
+    QApplication
 )
+from PyQt6.QtGui     import QFontDatabase, QFont
+from PyQt6.QtCore    import Qt
 from test_form import Ui_MainWindow as Register
 from Main_s import Ui_MainWindow as Main
 import Haha
@@ -10,8 +13,14 @@ import Haha
 class AppWindow(QMainWindow):
     def __init__(self):
         super(AppWindow, self).__init__()
+        id = QFontDatabase.addApplicationFont('./Fonts/Gagarin Star Mix Cyrillic.ttf')
+        # Если id равен -1, то шрифт не установлен
+        if id == -1:
+            print('Шрифт somefont не установлен')
+        font = QFont('Gagarin Star Mix Cyrillic', 86)
         self.ui = Register()
         self.ui.setupUi(self)
+        self.ui.label.setFont(font)
         self.ui.pushButton.clicked.connect(self.transfer)
     def transfer(self):
         AppWindow_main.show()
