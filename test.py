@@ -3,7 +3,7 @@ from PyQt6.QtWidgets import (
     QApplication,
     QMainWindow,
 )
-from test_form import Ui_MainWindow as Register
+from Authorization import Ui_MainWindow as Register
 from Main_s import Ui_MainWindow as Form
 import Haha
 
@@ -23,7 +23,7 @@ class AppWindow_main(QMainWindow):
         self.ui = Form()
         self.ui.setupUi(self)
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
-        self.ui.Button_Dobavit.clicked.connect(self.transfer_page_add)
+        self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
     def transfer_page_add(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Add_Page)
 

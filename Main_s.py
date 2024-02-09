@@ -24,13 +24,13 @@ class Ui_MainWindow(object):
         self.Main_page.setMaximumSize(QtCore.QSize(790, 557))
         self.Main_page.setObjectName("Main_page")
         self.horizontalLayoutWidget = QtWidgets.QWidget(parent=self.Main_page)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(-10, 230, 791, 271))
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(1, 158, 771, 331))
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.Button_Zapolnit = QtWidgets.QPushButton(parent=self.horizontalLayoutWidget)
-        self.Button_Zapolnit.setMaximumSize(QtCore.QSize(266, 172))
+        self.Button_Zapolnit.setMaximumSize(QtCore.QSize(270, 180))
         font = QtGui.QFont()
         font.setPointSize(24)
         self.Button_Zapolnit.setFont(font)
@@ -38,60 +38,65 @@ class Ui_MainWindow(object):
 "background-color: rgb(133, 114, 85);\n"
 "border-top-left-radius: 30px;\n"
 "border-bottom-right-radius: 30px;\n"
-"border: 3px solid;\n"
+"border: 2px solid;\n"
 "}\n"
 "#Button_Zapolnit:hover {\n"
 "background:#dabb8b;\n"
 "}\n"
 "#Button_Zapolnit:pressed {\n"
-"color: #FFFFFF;\n"
+"background-color: rgb(133, 114, 85);\n"
 "}")
         self.Button_Zapolnit.setObjectName("Button_Zapolnit")
         self.horizontalLayout.addWidget(self.Button_Zapolnit)
-        self.Button_Dobavit = QtWidgets.QPushButton(parent=self.horizontalLayoutWidget)
-        self.Button_Dobavit.setMaximumSize(QtCore.QSize(266, 172))
+        self.Button_Spisok = QtWidgets.QPushButton(parent=self.horizontalLayoutWidget)
+        self.Button_Spisok.setMaximumSize(QtCore.QSize(270, 180))
         font = QtGui.QFont()
         font.setPointSize(24)
-        self.Button_Dobavit.setFont(font)
-        self.Button_Dobavit.setStyleSheet("#Button_Dobavit{\n"
+        self.Button_Spisok.setFont(font)
+        self.Button_Spisok.setStyleSheet("#Button_Spisok{\n"
 "background-color: rgb(133, 114, 85);\n"
 "border-top-right-radius: 30px;\n"
 "border-bottom-left-radius: 30px;\n"
-"border: 3px solid;\n"
+"border: 2px solid;\n"
 "}\n"
-"#Button_Dobavit:hover {\n"
+"#Button_Spisok:hover {\n"
 "background:#dabb8b;\n"
 "}\n"
-"#Button_Dobavit:pressed {\n"
-"color: #FFFFFF;\n"
+"#Button_Spisok:pressed {\n"
+"background-color: rgb(133, 114, 85);\n"
 "}")
-        self.Button_Dobavit.setObjectName("Button_Dobavit")
-        self.horizontalLayout.addWidget(self.Button_Dobavit)
+        self.Button_Spisok.setObjectName("Button_Spisok")
+        self.horizontalLayout.addWidget(self.Button_Spisok)
         self.verticalLayoutWidget = QtWidgets.QWidget(parent=self.Main_page)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(0, 10, 771, 221))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(1, 1, 771, 161))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
         self.Glavnaya = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
+        self.Glavnaya.setMaximumSize(QtCore.QSize(760, 142))
         font = QtGui.QFont()
         font.setPointSize(72)
         self.Glavnaya.setFont(font)
         self.Glavnaya.setContextMenuPolicy(QtCore.Qt.ContextMenuPolicy.DefaultContextMenu)
-        self.Glavnaya.setStyleSheet("border-top-left-radius: 55px;\n"
+        self.Glavnaya.setStyleSheet("border: 2px solid;\n"
+"border-top-left-radius: 55px;\n"
 "border-top-right-radius: 55px;\n"
 "border-bottom-right-radius: 20px;\n"
 "border-bottom-left-radius: 20px;\n"
 "background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));")
         self.Glavnaya.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.Glavnaya.setObjectName("Glavnaya")
-        self.verticalLayout.addWidget(self.Glavnaya)
+        self.horizontalLayout_5.addWidget(self.Glavnaya)
+        self.verticalLayout.addLayout(self.horizontalLayout_5)
         self.stackedWidget.addWidget(self.Main_page)
         self.Add_Page = QtWidgets.QWidget()
         self.Add_Page.setMaximumSize(QtCore.QSize(790, 557))
         self.Add_Page.setObjectName("Add_Page")
         self.verticalLayoutWidget_2 = QtWidgets.QWidget(parent=self.Add_Page)
-        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(-10, 10, 781, 481))
+        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(0, 10, 771, 481))
         self.verticalLayoutWidget_2.setObjectName("verticalLayoutWidget_2")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_2)
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
@@ -103,7 +108,8 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(48)
         self.Dobavochnoe_pole.setFont(font)
-        self.Dobavochnoe_pole.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));\n"
+        self.Dobavochnoe_pole.setStyleSheet("border: 2px solid;\n"
+"background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));\n"
 "border-top-left-radius: 55px;\n"
 "border-top-right-radius: 55px;\n"
 "border-bottom-left-radius: 22px;\n"
@@ -409,8 +415,8 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.Button_Zapolnit.setText(_translate("MainWindow", " ЗАПОЛНИТЬ\n"
 "ДОКУМЕНТ"))
-        self.Button_Dobavit.setText(_translate("MainWindow", "ДОБАВИТЬ\n"
-"ДОКУМЕНТ"))
+        self.Button_Spisok.setText(_translate("MainWindow", "СПИСОК\n"
+"ФОРМ"))
         self.Glavnaya.setText(_translate("MainWindow", "ГЛАВНАЯ"))
         self.Dobavochnoe_pole.setText(_translate("MainWindow", "ДОБАВОЧНОЕ ПОЛЕ"))
         self.Dobavit_dokument_label.setText(_translate("MainWindow", "ДОБАВИТЬ ДОКУМЕНТ"))
