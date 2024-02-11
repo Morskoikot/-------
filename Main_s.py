@@ -12,9 +12,10 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(790, 538)
-        MainWindow.setMaximumSize(QtCore.QSize(790, 538))
+        MainWindow.resize(790, 557)
+        MainWindow.setMaximumSize(QtCore.QSize(790, 557))
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
+        self.centralwidget.setMaximumSize(QtCore.QSize(790, 557))
         self.centralwidget.setObjectName("centralwidget")
         self.stackedWidget = QtWidgets.QStackedWidget(parent=self.centralwidget)
         self.stackedWidget.setGeometry(QtCore.QRect(10, -1, 771, 491))
@@ -32,14 +33,14 @@ class Ui_MainWindow(object):
         self.Button_Zapolnit.setMaximumSize(QtCore.QSize(270, 180))
         font = QtGui.QFont()
         font.setPointSize(24)
-        self.pushButton.setFont(font)
-        self.pushButton.setStyleSheet("#pushButton{\n"
+        self.Button_Zapolnit.setFont(font)
+        self.Button_Zapolnit.setStyleSheet("#Button_Zapolnit{\n"
 "background-color: rgb(133, 114, 85);\n"
 "border-top-left-radius: 30px;\n"
 "border-bottom-right-radius: 30px;\n"
 "border: 2px solid;\n"
 "}\n"
-"#pushButton:hover {\n"
+"#Button_Zapolnit:hover {\n"
 "background:#dabb8b;\n"
 "}\n"
 "#Button_Zapolnit:pressed {\n"
@@ -100,8 +101,10 @@ class Ui_MainWindow(object):
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_2)
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.label_2 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_2)
-        self.label_2.setMaximumSize(QtCore.QSize(760, 145))
+        self.horizontalLayout_14 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_14.setObjectName("horizontalLayout_14")
+        self.Dobavochnoe_pole = QtWidgets.QLabel(parent=self.verticalLayoutWidget_2)
+        self.Dobavochnoe_pole.setMaximumSize(QtCore.QSize(777, 112))
         font = QtGui.QFont()
         font.setPointSize(48)
         self.Dobavochnoe_pole.setFont(font)
@@ -109,323 +112,199 @@ class Ui_MainWindow(object):
 "background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));\n"
 "border-top-left-radius: 55px;\n"
 "border-top-right-radius: 55px;\n"
-"border-bottom-right-radius: 20px;\n"
-"border-bottom-left-radius: 20px;\n"
-"background-color: rgba(211, 76, 3, 155);")
-        self.label_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_2.setObjectName("label_2")
-        self.verticalLayout_2.addWidget(self.label_2)
-        self.horizontalLayoutWidget_2 = QtWidgets.QWidget(parent=self.page_4)
-        self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(-10, 299, 791, 201))
-        self.horizontalLayoutWidget_2.setObjectName("horizontalLayoutWidget_2")
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_2)
-        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
+"border-bottom-left-radius: 22px;\n"
+"border-bottom-right-radius: 22px;\n"
+"\n"
+"")
+        self.Dobavochnoe_pole.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.Dobavochnoe_pole.setObjectName("Dobavochnoe_pole")
+        self.horizontalLayout_14.addWidget(self.Dobavochnoe_pole)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_14)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.frame = QtWidgets.QFrame(parent=self.horizontalLayoutWidget_2)
-        self.frame.setMaximumSize(QtCore.QSize(696, 227))
-        self.frame.setStyleSheet("border-top-left-radius: 40px;\n"
-"border-top-right-radius: 40px;\n"
-"border-bottom-right-radius: 40px;\n"
-"border-bottom-left-radius: 40px;\n"
-"background-color:#BBB4B4;")
+        self.Dobavit_dokument_label = QtWidgets.QLabel(parent=self.verticalLayoutWidget_2)
+        self.Dobavit_dokument_label.setMaximumSize(QtCore.QSize(300, 35))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Dobavit_dokument_label.setFont(font)
+        self.Dobavit_dokument_label.setObjectName("Dobavit_dokument_label")
+        self.horizontalLayout_2.addWidget(self.Dobavit_dokument_label)
+        self.Button_Dok = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_2)
+        self.Button_Dok.setMaximumSize(QtCore.QSize(120, 44))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Dok.setFont(font)
+        self.Button_Dok.setStyleSheet("#Button_Dok {\n"
+"border: 3px solid;\n"
+"border-radius: 9px;\n"
+"border-color: #7A6D6D;\n"
+"background-color: #BBB4B4\n"
+"}\n"
+"#Button_Dok:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Dok:pressed { \n"
+"background-color: #BBB4B4;\n"
+"}")
+        self.Button_Dok.setObjectName("Button_Dok")
+        self.horizontalLayout_2.addWidget(self.Button_Dok)
+        self.Button_Forma_plus = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_2)
+        self.Button_Forma_plus.setMaximumSize(QtCore.QSize(157, 44))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Forma_plus.setFont(font)
+        self.Button_Forma_plus.setStyleSheet("#Button_Forma_plus {\n"
+"border: 3px solid;\n"
+"border-radius: 9px;\n"
+"border-color: #7A6D6D;\n"
+"background-color: #BBB4B4\n"
+"}\n"
+"#Button_Forma_plus:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Forma_plus:pressed { \n"
+"background-color: #BBB4B4;\n"
+"}")
+        self.Button_Forma_plus.setObjectName("Button_Forma_plus")
+        self.horizontalLayout_2.addWidget(self.Button_Forma_plus)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_2)
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
+        self.horizontalLayout_3.setSpacing(6)
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.frame = QtWidgets.QFrame(parent=self.verticalLayoutWidget_2)
+        self.frame.setMaximumSize(QtCore.QSize(729, 284))
+        self.frame.setStyleSheet("#frame {\n"
+"border: 4px solid;\n"
+"border-radius: 10px;\n"
+"border-color: #8E8080;\n"
+"}")
         self.frame.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.frame.setObjectName("frame")
         self.verticalLayoutWidget_3 = QtWidgets.QWidget(parent=self.frame)
-        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(0, 0, 701, 192))
+        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(-1, -1, 731, 281))
         self.verticalLayoutWidget_3.setObjectName("verticalLayoutWidget_3")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_3)
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        self.horizontalLayout_10 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_10.setObjectName("horizontalLayout_10")
-        self.verticalLayout_10 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_10.setObjectName("verticalLayout_10")
-        self.horizontalLayout_32 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_32.setObjectName("horizontalLayout_32")
-        self.pushButton_4 = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
-        self.pushButton_4.setMinimumSize(QtCore.QSize(45, 45))
-        self.pushButton_4.setMaximumSize(QtCore.QSize(45, 45))
-        self.pushButton_4.setStyleSheet("border-image: url(:/krest_v_krugle/checkmarkcircle_111048.png);")
-        self.pushButton_4.setText("")
-        self.pushButton_4.setObjectName("pushButton_4")
-        self.horizontalLayout_32.addWidget(self.pushButton_4)
-        self.verticalLayout_10.addLayout(self.horizontalLayout_32)
-        self.horizontalLayout_31 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_31.setObjectName("horizontalLayout_31")
-        self.label_3 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_3)
-        self.label_3.setMaximumSize(QtCore.QSize(90, 30))
-        self.label_3.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_3.setObjectName("label_3")
-        self.horizontalLayout_31.addWidget(self.label_3)
-        self.verticalLayout_10.addLayout(self.horizontalLayout_31)
-        self.horizontalLayout_10.addLayout(self.verticalLayout_10)
-        self.horizontalLayout_4.addLayout(self.horizontalLayout_10)
-        self.horizontalLayout_9 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_9.setObjectName("horizontalLayout_9")
-        self.verticalLayout_9 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_9.setObjectName("verticalLayout_9")
-        self.horizontalLayout_30 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_30.setObjectName("horizontalLayout_30")
-        self.pushButton_3 = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
-        self.pushButton_3.setMinimumSize(QtCore.QSize(45, 45))
-        self.pushButton_3.setMaximumSize(QtCore.QSize(45, 45))
-        self.pushButton_3.setStyleSheet("border-image: url(:/Krest_v_kvadre/pngwing.com.png);")
-        self.pushButton_3.setText("")
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.horizontalLayout_30.addWidget(self.pushButton_3)
-        self.verticalLayout_9.addLayout(self.horizontalLayout_30)
-        self.horizontalLayout_29 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_29.setObjectName("horizontalLayout_29")
-        self.label_4 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_3)
-        self.label_4.setMaximumSize(QtCore.QSize(90, 30))
-        self.label_4.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_4.setObjectName("label_4")
-        self.horizontalLayout_29.addWidget(self.label_4)
-        self.verticalLayout_9.addLayout(self.horizontalLayout_29)
-        self.horizontalLayout_9.addLayout(self.verticalLayout_9)
-        self.horizontalLayout_4.addLayout(self.horizontalLayout_9)
-        self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
-        self.verticalLayout_8 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_8.setObjectName("verticalLayout_8")
-        self.horizontalLayout_28 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_28.setObjectName("horizontalLayout_28")
-        self.pushButton_7 = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
-        self.pushButton_7.setMinimumSize(QtCore.QSize(45, 45))
-        self.pushButton_7.setMaximumSize(QtCore.QSize(45, 45))
-        self.pushButton_7.setStyleSheet("border-image: url(:/Oblako/download-from-cloud_icon-icons.com_54289.png);")
-        self.pushButton_7.setText("")
-        self.pushButton_7.setObjectName("pushButton_7")
-        self.horizontalLayout_28.addWidget(self.pushButton_7)
-        self.verticalLayout_8.addLayout(self.horizontalLayout_28)
-        self.horizontalLayout_27 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_27.setObjectName("horizontalLayout_27")
-        self.label_5 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_3)
-        self.label_5.setMaximumSize(QtCore.QSize(90, 30))
-        self.label_5.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_5.setObjectName("label_5")
-        self.horizontalLayout_27.addWidget(self.label_5)
-        self.verticalLayout_8.addLayout(self.horizontalLayout_27)
-        self.horizontalLayout_8.addLayout(self.verticalLayout_8)
-        self.horizontalLayout_4.addLayout(self.horizontalLayout_8)
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
-        self.verticalLayout_7 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_7.setObjectName("verticalLayout_7")
-        self.horizontalLayout_26 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_26.setObjectName("horizontalLayout_26")
-        self.pushButton_11 = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
-        self.pushButton_11.setMinimumSize(QtCore.QSize(45, 45))
-        self.pushButton_11.setMaximumSize(QtCore.QSize(45, 45))
-        self.pushButton_11.setStyleSheet("border-image: url(:/Tochka_v_kruge/target-black-sportive-circular-symbol_icon-icons.com_57904.png);")
-        self.pushButton_11.setText("")
-        self.pushButton_11.setObjectName("pushButton_11")
-        self.horizontalLayout_26.addWidget(self.pushButton_11)
-        self.verticalLayout_7.addLayout(self.horizontalLayout_26)
-        self.horizontalLayout_25 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_25.setObjectName("horizontalLayout_25")
-        self.label_6 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_3)
-        self.label_6.setMaximumSize(QtCore.QSize(90, 30))
-        self.label_6.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_6.setObjectName("label_6")
-        self.horizontalLayout_25.addWidget(self.label_6)
-        self.verticalLayout_7.addLayout(self.horizontalLayout_25)
-        self.horizontalLayout_7.addLayout(self.verticalLayout_7)
-        self.horizontalLayout_4.addLayout(self.horizontalLayout_7)
-        self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
-        self.verticalLayout_6 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_6.setObjectName("verticalLayout_6")
-        self.horizontalLayout_24 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_24.setObjectName("horizontalLayout_24")
-        self.pushButton_12 = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
-        self.pushButton_12.setMinimumSize(QtCore.QSize(45, 45))
-        self.pushButton_12.setMaximumSize(QtCore.QSize(45, 45))
-        self.pushButton_12.setStyleSheet("border-image: url(:/stroka/free-icon-menu-bar-7787481.png);")
-        self.pushButton_12.setText("")
-        self.pushButton_12.setObjectName("pushButton_12")
-        self.horizontalLayout_24.addWidget(self.pushButton_12)
-        self.verticalLayout_6.addLayout(self.horizontalLayout_24)
-        self.horizontalLayout_23 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_23.setObjectName("horizontalLayout_23")
-        self.label_7 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_3)
-        self.label_7.setMaximumSize(QtCore.QSize(90, 30))
-        self.label_7.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_7.setObjectName("label_7")
-        self.horizontalLayout_23.addWidget(self.label_7)
-        self.verticalLayout_6.addLayout(self.horizontalLayout_23)
-        self.horizontalLayout_6.addLayout(self.verticalLayout_6)
-        self.horizontalLayout_4.addLayout(self.horizontalLayout_6)
-        self.verticalLayout_4 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_4.setObjectName("verticalLayout_4")
-        self.horizontalLayout_21 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_21.setObjectName("horizontalLayout_21")
-        self.pushButton_13 = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
-        self.pushButton_13.setMinimumSize(QtCore.QSize(45, 45))
-        self.pushButton_13.setMaximumSize(QtCore.QSize(45, 45))
-        self.pushButton_13.setStyleSheet("border-image: url(:/Tekst/lines_icon_178720.png);")
-        self.pushButton_13.setText("")
-        self.pushButton_13.setObjectName("pushButton_13")
-        self.horizontalLayout_21.addWidget(self.pushButton_13)
-        self.verticalLayout_4.addLayout(self.horizontalLayout_21)
-        self.horizontalLayout_22 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_22.setObjectName("horizontalLayout_22")
-        self.label_8 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_3)
-        self.label_8.setMaximumSize(QtCore.QSize(90, 30))
-        self.label_8.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_8.setObjectName("label_8")
-        self.horizontalLayout_22.addWidget(self.label_8)
-        self.verticalLayout_4.addLayout(self.horizontalLayout_22)
-        self.horizontalLayout_4.addLayout(self.verticalLayout_4)
-        self.verticalLayout_3.addLayout(self.horizontalLayout_4)
-        self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
-        self.verticalLayout_11 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_11.setObjectName("verticalLayout_11")
-        self.horizontalLayout_14 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_14.setObjectName("horizontalLayout_14")
-        self.pushButton_5 = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
-        self.pushButton_5.setMinimumSize(QtCore.QSize(45, 45))
-        self.pushButton_5.setMaximumSize(QtCore.QSize(45, 45))
-        self.pushButton_5.setStyleSheet("border-image: url(:/Data/3507764-appointment-calendar-date-iconoteka-month-range-schedule_107688.png);")
-        self.pushButton_5.setText("")
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.horizontalLayout_14.addWidget(self.pushButton_5)
-        self.verticalLayout_11.addLayout(self.horizontalLayout_14)
-        self.horizontalLayout_13 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_13.setObjectName("horizontalLayout_13")
-        self.label_9 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_3)
-        self.label_9.setMaximumSize(QtCore.QSize(90, 30))
-        self.label_9.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_9.setObjectName("label_9")
-        self.horizontalLayout_13.addWidget(self.label_9)
-        self.verticalLayout_11.addLayout(self.horizontalLayout_13)
-        self.horizontalLayout_5.addLayout(self.verticalLayout_11)
-        self.verticalLayout_12 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_12.setObjectName("verticalLayout_12")
-        self.horizontalLayout_12 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_12.setObjectName("horizontalLayout_12")
-        self.pushButton_6 = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
-        self.pushButton_6.setMinimumSize(QtCore.QSize(45, 45))
-        self.pushButton_6.setMaximumSize(QtCore.QSize(45, 45))
-        self.pushButton_6.setStyleSheet("border-image: url(:/Vremya/1492790841-18time_84210.png);")
-        self.pushButton_6.setText("")
-        self.pushButton_6.setObjectName("pushButton_6")
-        self.horizontalLayout_12.addWidget(self.pushButton_6)
-        self.verticalLayout_12.addLayout(self.horizontalLayout_12)
-        self.horizontalLayout_11 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_11.setObjectName("horizontalLayout_11")
-        self.label_10 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_3)
-        self.label_10.setMaximumSize(QtCore.QSize(90, 30))
-        self.label_10.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_10.setObjectName("label_10")
-        self.horizontalLayout_11.addWidget(self.label_10)
-        self.verticalLayout_12.addLayout(self.horizontalLayout_11)
-        self.horizontalLayout_5.addLayout(self.verticalLayout_12)
-        self.verticalLayout_14 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_14.setObjectName("verticalLayout_14")
-        self.horizontalLayout_16 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_16.setObjectName("horizontalLayout_16")
-        self.pushButton_8 = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
-        self.pushButton_8.setMinimumSize(QtCore.QSize(45, 45))
-        self.pushButton_8.setMaximumSize(QtCore.QSize(45, 45))
-        self.pushButton_8.setStyleSheet("border-image: url(:/Shkala/three_dots_icon_159804.png);")
-        self.pushButton_8.setText("")
-        self.pushButton_8.setObjectName("pushButton_8")
-        self.horizontalLayout_16.addWidget(self.pushButton_8)
-        self.verticalLayout_14.addLayout(self.horizontalLayout_16)
-        self.horizontalLayout_15 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_15.setObjectName("horizontalLayout_15")
-        self.label_11 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_3)
-        self.label_11.setMaximumSize(QtCore.QSize(90, 30))
-        self.label_11.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_11.setObjectName("label_11")
-        self.horizontalLayout_15.addWidget(self.label_11)
-        self.verticalLayout_14.addLayout(self.horizontalLayout_15)
-        self.horizontalLayout_5.addLayout(self.verticalLayout_14)
-        self.verticalLayout_13 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_13.setObjectName("verticalLayout_13")
-        self.horizontalLayout_18 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_18.setObjectName("horizontalLayout_18")
-        self.pushButton_10 = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
-        self.pushButton_10.setMinimumSize(QtCore.QSize(45, 45))
-        self.pushButton_10.setMaximumSize(QtCore.QSize(45, 45))
-        self.pushButton_10.setStyleSheet("border-image: url(:/Setka_mnogo/free-icon-circle-grid-11809163.png);")
-        self.pushButton_10.setText("")
-        self.pushButton_10.setObjectName("pushButton_10")
-        self.horizontalLayout_18.addWidget(self.pushButton_10)
-        self.verticalLayout_13.addLayout(self.horizontalLayout_18)
-        self.horizontalLayout_17 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_17.setObjectName("horizontalLayout_17")
-        self.label_13 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_3)
-        self.label_13.setMaximumSize(QtCore.QSize(90, 16777215))
-        self.label_13.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_13.setObjectName("label_13")
-        self.horizontalLayout_17.addWidget(self.label_13)
-        self.verticalLayout_13.addLayout(self.horizontalLayout_17)
-        self.horizontalLayout_5.addLayout(self.verticalLayout_13)
-        self.verticalLayout_5 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_5.setObjectName("verticalLayout_5")
-        self.horizontalLayout_20 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_20.setObjectName("horizontalLayout_20")
-        self.pushButton_9 = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
-        self.pushButton_9.setMinimumSize(QtCore.QSize(45, 45))
-        self.pushButton_9.setMaximumSize(QtCore.QSize(45, 45))
-        self.pushButton_9.setStyleSheet("border-image: url(:/Setka_odin/thumbnail_web_layout_grid_view_icon_260023.png);")
-        self.pushButton_9.setText("")
-        self.pushButton_9.setObjectName("pushButton_9")
-        self.horizontalLayout_20.addWidget(self.pushButton_9)
-        self.verticalLayout_5.addLayout(self.horizontalLayout_20)
-        self.horizontalLayout_19 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_19.setObjectName("horizontalLayout_19")
-        self.label_12 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_3)
-        self.label_12.setMaximumSize(QtCore.QSize(90, 30))
-        self.label_12.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_12.setObjectName("label_12")
-        self.horizontalLayout_19.addWidget(self.label_12)
-        self.verticalLayout_5.addLayout(self.horizontalLayout_19)
-        self.horizontalLayout_5.addLayout(self.verticalLayout_5)
-        self.verticalLayout_3.addLayout(self.horizontalLayout_5)
-        self.horizontalLayout_2.addWidget(self.frame)
-        self.horizontalLayoutWidget_3 = QtWidgets.QWidget(parent=self.page_4)
-        self.horizontalLayoutWidget_3.setGeometry(QtCore.QRect(-1, 169, 771, 131))
-        self.horizontalLayoutWidget_3.setObjectName("horizontalLayoutWidget_3")
-        self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_3)
-        self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.horizontalLayout_33 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_33.setSpacing(30)
-        self.horizontalLayout_33.setObjectName("horizontalLayout_33")
-        self.textEdit = QtWidgets.QTextEdit(parent=self.horizontalLayoutWidget_3)
-        self.textEdit.setMaximumSize(QtCore.QSize(425, 60))
-        font = QtGui.QFont()
-        font.setPointSize(30)
-        self.textEdit.setFont(font)
-        self.textEdit.setObjectName("textEdit")
-        self.horizontalLayout_33.addWidget(self.textEdit)
-        self.pushButton_14 = QtWidgets.QPushButton(parent=self.horizontalLayoutWidget_3)
-        self.pushButton_14.setMaximumSize(QtCore.QSize(65, 63))
-        self.pushButton_14.setStyleSheet("border-image: url(:/Kartinoka/Group 9.png);")
-        self.pushButton_14.setText("")
-        self.pushButton_14.setObjectName("pushButton_14")
-        self.horizontalLayout_33.addWidget(self.pushButton_14)
-        self.pushButton_15 = QtWidgets.QPushButton(parent=self.horizontalLayoutWidget_3)
-        self.pushButton_15.setMaximumSize(QtCore.QSize(141, 80))
+        self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
+        self.Vopros = QtWidgets.QTextEdit(parent=self.verticalLayoutWidget_3)
+        self.Vopros.setMaximumSize(QtCore.QSize(425, 60))
         font = QtGui.QFont()
         font.setPointSize(20)
-        self.pushButton_15.setFont(font)
-        self.pushButton_15.setStyleSheet("#pushButton_15{\n"
-"background-color: rgb(187, 180, 180);\n"
-"border-radius: 12px\n"
+        self.Vopros.setFont(font)
+        self.Vopros.setStyleSheet("#Vopros {\n"
+"background-color: rgb(181, 173, 173);\n"
 "}\n"
-"#pushButton_15:hover {\n"
-"background:#8d8888;\n"
+"#Vopros:Focus {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}")
+        self.Vopros.setObjectName("Vopros")
+        self.horizontalLayout_8.addWidget(self.Vopros)
+        self.horizontalLayout_7.addLayout(self.horizontalLayout_8)
+        self.horizontalLayout_9 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_9.setObjectName("horizontalLayout_9")
+        self.Odin_iz_spiska = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
+        self.Odin_iz_spiska.setMaximumSize(QtCore.QSize(141, 80))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Odin_iz_spiska.setFont(font)
+        self.Odin_iz_spiska.setStyleSheet("#Odin_iz_spiska {\n"
+"border: 3px solid;\n"
+"border-radius: 9px;\n"
+"border-color: #7A6D6D;\n"
+"background-color: #BBB4B4\n"
 "}\n"
-"#pushButton_15:pressed {\n"
-"color: #FFFFFF;\n"
+"#Odin_iz_spiska:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#Odin_iz_spiska:pressed { \n"
+"background-color: #BBB4B4;\n"
+"}")
+        self.Odin_iz_spiska.setObjectName("Odin_iz_spiska")
+        self.horizontalLayout_9.addWidget(self.Odin_iz_spiska)
+        self.horizontalLayout_7.addLayout(self.horizontalLayout_9)
+        self.verticalLayout_3.addLayout(self.horizontalLayout_7)
+        self.horizontalLayout_10 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_10.setObjectName("horizontalLayout_10")
+        self.horizontalLayout_12 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_12.setObjectName("horizontalLayout_12")
+        self.Kratki_otvet = QtWidgets.QTextEdit(parent=self.verticalLayoutWidget_3)
+        self.Kratki_otvet.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Kratki_otvet.setFont(font)
+        self.Kratki_otvet.setStyleSheet("#Kratki_otvet {\n"
+"background-color: rgb(181, 173, 173);\n"
+"}\n"
+"#Kratki_otvet:Focus {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}")
+        self.Kratki_otvet.setObjectName("Kratki_otvet")
+        self.horizontalLayout_12.addWidget(self.Kratki_otvet)
+        self.horizontalLayout_10.addLayout(self.horizontalLayout_12)
+        self.horizontalLayout_11 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_11.setObjectName("horizontalLayout_11")
+        self.Button_Teg = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
+        self.Button_Teg.setMaximumSize(QtCore.QSize(100, 48))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Teg.setFont(font)
+        self.Button_Teg.setStyleSheet("#Button_Teg {\n"
+"border: 3px solid;\n"
+"border-radius: 9px;\n"
+"border-color: #7A6D6D;\n"
+"background-color: #BBB4B4\n"
+"}\n"
+"#Button_Teg:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Teg:pressed { \n"
+"background-color: #BBB4B4;\n"
+"}")
+        self.Button_Teg.setObjectName("Button_Teg")
+        self.horizontalLayout_11.addWidget(self.Button_Teg)
+        self.Button_Question = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
+        self.Button_Question.setMaximumSize(QtCore.QSize(37, 33))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Question.setFont(font)
+        self.Button_Question.setStyleSheet("#Button_Question {\n"
+"border: 3px solid;\n"
+"border-radius: 9px;\n"
+"border-color: #7A6D6D;\n"
+"background-color: #BBB4B4\n"
+"}\n"
+"#Button_Question:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Question:pressed { \n"
+"background-color: #BBB4B4;\n"
+"}")
+        self.Button_Question.setObjectName("Button_Question")
+        self.horizontalLayout_11.addWidget(self.Button_Question)
+        self.horizontalLayout_10.addLayout(self.horizontalLayout_11)
+        self.verticalLayout_3.addLayout(self.horizontalLayout_10)
+        self.horizontalLayout_13 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_13.setObjectName("horizontalLayout_13")
+        self.Button_Copy = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_3)
+        self.Button_Copy.setMaximumSize(QtCore.QSize(43, 41))
+        self.Button_Copy.setStyleSheet("#Button_Copy {\n"
+"border: 3px solid;\n"
+"border-radius: 9px;\n"
+"border-color: #7A6D6D;\n"
+"background-color: #BBB4B4;\n"
+"image: url(:/Copycopycopy/Copycopycopy.png);\n"
+"}\n"
+"#Button_Copy:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Copy:pressed { \n"
+"background-color: #BBB4B4;\n"
 "}")
         self.Button_Copy.setText("")
         self.Button_Copy.setObjectName("Button_Copy")
@@ -528,13 +407,13 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.pushButton.setText(_translate("MainWindow", " ЗАПОЛНИТЬ\n"
+        self.Button_Zapolnit.setText(_translate("MainWindow", " ЗАПОЛНИТЬ\n"
 "ДОКУМЕНТ"))
         self.Button_Spisok.setText(_translate("MainWindow", "СПИСОК\n"
 "ФОРМ"))
@@ -546,7 +425,14 @@ class Ui_MainWindow(object):
         self.Vopros.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:30pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Вопрос</p></body></html>"))
-        self.pushButton_15.setText(_translate("MainWindow", "ОДИН ИЗ\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:20pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.Vopros.setPlaceholderText(_translate("MainWindow", "ВОПРОС"))
+        self.Odin_iz_spiska.setText(_translate("MainWindow", "ОДИН ИЗ\n"
 "СПИСКА"))
+        self.Kratki_otvet.setPlaceholderText(_translate("MainWindow", "КРАТКИЙ ОТВЕТ"))
+        self.Button_Teg.setText(_translate("MainWindow", "ТЭГ"))
+        self.Button_Question.setText(_translate("MainWindow", "?"))
+        self.Obyazatelny_vopros.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
+        self.Button_Save.setText(_translate("MainWindow", "Сохранить"))
+        self.Button_Back.setText(_translate("MainWindow", "Назад"))

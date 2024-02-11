@@ -7,6 +7,8 @@ from PyQt6.QtWidgets import (
 from Authorization import Ui_MainWindow as Register
 from Main_s import Ui_MainWindow as Form
 import Pictures
+from PyQt6.QtGui     import QFontDatabase, QFont
+from PyQt6.QtCore    import Qt
 
 class AppWindow(QMainWindow):
     def __init__(self):
@@ -18,7 +20,7 @@ class AppWindow(QMainWindow):
             print('Ошибка подключения шрифтов')
         font = QFont('Gagarin Star Mix Cyrillic', 86)
         font2 = QFont('NokiaKokia(RYS BY LYAJKA)', 32)
-        font3 = QFont('Gagarin Star Mix Cyrillic', 16)
+        font3 = QFont('Gagarin Star Mix Cyrillic', 12)
     
         self.ui = Register()
         self.ui.setupUi(self)
@@ -41,12 +43,12 @@ class AppWindow_main(QMainWindow):
             print('Ошибка подключения шрифтов')
         font = QFont('Gagarin Star Mix Cyrillic', 86)
         font2 = QFont('NokiaKokia(RYS BY LYAJKA)', 25)
-        self.ui = Main()
+        self.ui = Form()
         self.ui.setupUi(self)
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
         self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
     def transfer_page_add(self):
-        self.ui.stackedWidget.setCurrentWidget(self.ui.page_4)
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Add_Page)
 
 app = QApplication([])
 AppWindow_main = AppWindow_main()
