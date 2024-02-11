@@ -36,7 +36,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Main_page">
      <property name="maximumSize">
@@ -616,7 +616,7 @@ background-color: #BBB4B4;
                  <property name="styleSheet">
                   <string notr="true">#Button_Galka {
 border: 3px solid;
-image: url(:/Galka_pustaya/galka.png);
+image: url(:/Galka/galka.png);
 border-radius: 9px;
 border-color: #7A6D6D;
 background-color: #BBB4B4

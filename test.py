@@ -5,7 +5,7 @@ from PyQt6.QtWidgets import (
 )
 from Authorization import Ui_MainWindow as Register
 from Main_s import Ui_MainWindow as Form
-import Haha
+import Pictures
 
 class AppWindow(QMainWindow):
     def __init__(self):
