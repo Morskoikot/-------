@@ -338,7 +338,7 @@ class Ui_MainWindow(object):
         self.Button_Galka.setMaximumSize(QtCore.QSize(43, 41))
         self.Button_Galka.setStyleSheet("#Button_Galka {\n"
 "border: 3px solid;\n"
-"image: url(:/Galka_pustaya/galka.png);\n"
+"image: url(:/Galka/galka.png);\n"
 "border-radius: 9px;\n"
 "border-color: #7A6D6D;\n"
 "background-color: #BBB4B4\n"
@@ -407,7 +407,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
