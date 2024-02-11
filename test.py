@@ -4,12 +4,10 @@ from PyQt6.QtWidgets import (
     QMainWindow, 
     QApplication
 )
-from PyQt6.QtGui     import QFontDatabase, QFont
-from PyQt6.QtCore    import Qt
-from test_form import Ui_MainWindow as Register
-from Main_s import Ui_MainWindow as Main
-import Haha
-#окно авторизации
+from Authorization import Ui_MainWindow as Register
+from Main_s import Ui_MainWindow as Form
+import Pictures
+
 class AppWindow(QMainWindow):
     def __init__(self):
         super(AppWindow, self).__init__()
@@ -45,10 +43,8 @@ class AppWindow_main(QMainWindow):
         font2 = QFont('NokiaKokia(RYS BY LYAJKA)', 25)
         self.ui = Main()
         self.ui.setupUi(self)
-        
-       #переход на добвачное поле
-        self.ui.stackedWidget.setCurrentWidget(self.ui.page_3)
-        self.ui.pushButton_2.clicked.connect(self.transfer_page_add)
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
+        self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
     def transfer_page_add(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.page_4)
 

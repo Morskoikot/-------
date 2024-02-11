@@ -36,10 +36,10 @@
      <widget class="QWidget" name="horizontalLayoutWidget">
       <property name="geometry">
        <rect>
-        <x>-10</x>
-        <y>230</y>
-        <width>791</width>
-        <height>271</height>
+        <x>1</x>
+        <y>158</y>
+        <width>771</width>
+        <height>331</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
@@ -47,8 +47,8 @@
         <widget class="QPushButton" name="pushButton">
          <property name="maximumSize">
           <size>
-           <width>266</width>
-           <height>172</height>
+           <width>270</width>
+           <height>180</height>
           </size>
          </property>
          <property name="font">
@@ -61,12 +61,13 @@
 background-color: rgb(133, 114, 85);
 border-top-left-radius: 30px;
 border-bottom-right-radius: 30px;
+border: 2px solid;
 }
 #pushButton:hover {
 background:#dabb8b;
 }
-#pushButton:pressed {
-color: #FFFFFF;
+#Button_Zapolnit:pressed {
+background-color: rgb(133, 114, 85);
 }</string>
          </property>
          <property name="text">
@@ -76,11 +77,11 @@ color: #FFFFFF;
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="Button_Spisok">
          <property name="maximumSize">
           <size>
-           <width>266</width>
-           <height>172</height>
+           <width>270</width>
+           <height>180</height>
           </size>
          </property>
          <property name="font">
@@ -89,21 +90,22 @@ color: #FFFFFF;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">#pushButton_2{
+          <string notr="true">#Button_Spisok{
 background-color: rgb(133, 114, 85);
 border-top-right-radius: 30px;
 border-bottom-left-radius: 30px;
+border: 2px solid;
 }
-#pushButton_2:hover {
+#Button_Spisok:hover {
 background:#dabb8b;
 }
-#pushButton_2:pressed {
-color: #FFFFFF;
+#Button_Spisok:pressed {
+background-color: rgb(133, 114, 85);
 }</string>
          </property>
          <property name="text">
-          <string>ДОБАВИТЬ
-ДОКУМЕНТ</string>
+          <string>СПИСОК
+ФОРМ</string>
          </property>
         </widget>
        </item>
@@ -112,37 +114,48 @@ color: #FFFFFF;
      <widget class="QWidget" name="verticalLayoutWidget">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>10</y>
+        <x>1</x>
+        <y>1</y>
         <width>771</width>
-        <height>221</height>
+        <height>161</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QLabel" name="label">
-         <property name="font">
-          <font>
-           <pointsize>72</pointsize>
-          </font>
-         </property>
-         <property name="contextMenuPolicy">
-          <enum>Qt::DefaultContextMenu</enum>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-top-left-radius: 55px;
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="Glavnaya">
+           <property name="maximumSize">
+            <size>
+             <width>760</width>
+             <height>142</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>72</pointsize>
+            </font>
+           </property>
+           <property name="contextMenuPolicy">
+            <enum>Qt::DefaultContextMenu</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 2px solid;
+border-top-left-radius: 55px;
 border-top-right-radius: 55px;
 border-bottom-right-radius: 20px;
 border-bottom-left-radius: 20px;
-background-color: rgba(211, 76, 3, 155);</string>
-         </property>
-         <property name="text">
-          <string>ГЛАВНАЯ</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
+background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));</string>
+           </property>
+           <property name="text">
+            <string>ГЛАВНАЯ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </widget>
@@ -151,28 +164,32 @@ background-color: rgba(211, 76, 3, 155);</string>
      <widget class="QWidget" name="verticalLayoutWidget_2">
       <property name="geometry">
        <rect>
-        <x>-10</x>
+        <x>0</x>
         <y>10</y>
-        <width>791</width>
-        <height>161</height>
+        <width>771</width>
+        <height>481</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <widget class="QLabel" name="label_2">
-         <property name="maximumSize">
-          <size>
-           <width>760</width>
-           <height>145</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>36</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-top-left-radius: 55px;
+        <layout class="QHBoxLayout" name="horizontalLayout_14">
+         <item>
+          <widget class="QLabel" name="Dobavochnoe_pole">
+           <property name="maximumSize">
+            <size>
+             <width>777</width>
+             <height>112</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>48</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 2px solid;
+background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));
+border-top-left-radius: 55px;
 border-top-right-radius: 55px;
 border-bottom-right-radius: 20px;
 border-bottom-left-radius: 20px;
@@ -758,71 +775,41 @@ background-color:#BBB4B4;</string>
              <item>
               <layout class="QVBoxLayout" name="verticalLayout_5">
                <item>
-                <layout class="QHBoxLayout" name="horizontalLayout_20">
-                 <item>
-                  <widget class="QPushButton" name="pushButton_9">
-                   <property name="minimumSize">
-                    <size>
-                     <width>45</width>
-                     <height>45</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>45</width>
-                     <height>45</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border-image: url(:/Setka_odin/thumbnail_web_layout_grid_view_icon_260023.png);</string>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </item>
-               <item>
-                <layout class="QHBoxLayout" name="horizontalLayout_19">
-                 <item>
-                  <widget class="QLabel" name="label_12">
-                   <property name="maximumSize">
-                    <size>
-                     <width>90</width>
-                     <height>30</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Сетка&lt;br/&gt;флажков&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
+                <widget class="QPushButton" name="Button_Galka">
+                 <property name="maximumSize">
+                  <size>
+                   <width>43</width>
+                   <height>41</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#Button_Galka {
+border: 3px solid;
+image: url(:/Galka/galka.png);
+border-radius: 9px;
+border-color: #7A6D6D;
+background-color: #BBB4B4
+}
+#Button_Galka:hover {
+background-color: rgb(219, 219, 219);
+}
+#Button_Galka:pressed { 
+background-color: #BBB4B4;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
                </item>
               </layout>
              </item>
             </layout>
-           </item>
-          </layout>
-         </widget>
-        </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
        </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_3">
-      <property name="geometry">
-       <rect>
-        <x>-1</x>
-        <y>169</y>
-        <width>771</width>
-        <height>131</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_33" stretch="0,0,0">
          <property name="spacing">

@@ -38,7 +38,7 @@
       <x>0</x>
       <y>-1</y>
       <width>721</width>
-      <height>421</height>
+      <height>411</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -53,6 +53,9 @@
           <font>
            <pointsize>48</pointsize>
           </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
          </property>
          <property name="text">
           <string>Авторизация</string>
@@ -94,7 +97,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QTextEdit" name="textEdit">
+        <widget class="QTextEdit" name="Login">
          <property name="maximumSize">
           <size>
            <width>331</width>
@@ -105,6 +108,14 @@
           <font>
            <pointsize>16</pointsize>
           </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#Login {
+background-color: rgb(181, 173, 173);
+}
+#Login:Focus {
+background-color: rgb(219, 219, 219);
+}</string>
          </property>
         </widget>
        </item>
@@ -140,7 +151,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QTextEdit" name="textEdit_2">
+        <widget class="QTextEdit" name="Password">
          <property name="maximumSize">
           <size>
            <width>331</width>
@@ -151,6 +162,14 @@
           <font>
            <pointsize>16</pointsize>
           </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#Password {
+background-color: rgb(181, 173, 173);
+}
+#Password:Focus {
+background-color: rgb(219, 219, 219);
+}</string>
          </property>
         </widget>
        </item>
@@ -171,11 +190,21 @@
          </property>
          <property name="font">
           <font>
-           <pointsize>16</pointsize>
+           <pointsize>20</pointsize>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));</string>
+          <string notr="true">#pushButton {
+background-color: rgb(133, 114, 85);
+border-radius: 20px;
+border: 2px solid;
+}
+#pushButton:hover {
+background:#dabb8b;
+}
+#pushButton:pressed {
+background-color: rgb(133, 114, 85);
+}</string>
          </property>
          <property name="text">
           <string>Далее</string>
