@@ -45,7 +45,7 @@ class AppWindow_main(QMainWindow):
         font2 = QFont('NokiaKokia(RYS BY LYAJKA)', 25)
         self.ui = Main()
         self.ui.setupUi(self)
-        self.ui.
+        
        #переход на добвачное поле
         self.ui.stackedWidget.setCurrentWidget(self.ui.page_3)
         self.ui.pushButton_2.clicked.connect(self.transfer_page_add)
