@@ -1,47 +1,14 @@
 <RCC>
-  <qresource prefix="Haha">
-    <file>Rectangle 10.png</file>
+  <qresource prefix="Copycopycopy">
+    <file>Copycopycopy.png</file>
   </qresource>
-  <qresource prefix="Kartinoka">
-    <file>Group 9.png</file>
+  <qresource prefix="Lupa">
+    <file>Lupa.png</file>
   </qresource>
-  <qresource prefix="Shkala">
-    <file>three_dots_icon_159804.png</file>
+  <qresource prefix="Trashcan">
+    <file>trashcan.png</file>
   </qresource>
-  <qresource prefix="Setka_odin">
-    <file>thumbnail_web_layout_grid_view_icon_260023.png</file>
-  </qresource>
-  <qresource prefix="Setka_mnogo">
-    <file>free-icon-circle-grid-11809163.png</file>
-  </qresource>
-  <qresource prefix="Tekst">
-    <file>lines_icon_178720.png</file>
-  </qresource>
-  <qresource prefix="stroka">
-    <file>free-icon-menu-bar-7787481.png</file>
-  </qresource>
-  <qresource prefix="Tochka_v_kruge">
-    <file>target-black-sportive-circular-symbol_icon-icons.com_57904.png</file>
-  </qresource>
-  <qresource prefix="Oblako">
-    <file>download-from-cloud_icon-icons.com_54289.png</file>
-  </qresource>
-  <qresource prefix="Vremya">
-    <file>1492790841-18time_84210.png</file>
-  </qresource>
-  <qresource prefix="Data">
-    <file>3507764-appointment-calendar-date-iconoteka-month-range-schedule_107688.png</file>
-  </qresource>
-  <qresource prefix="Krest_v_kvadre">
-    <file>pngwing.com.png</file>
-  </qresource>
-  <qresource prefix="krest_v_krugle">
-    <file>checkmarkcircle_111048.png</file>
-  </qresource>
-  <qresource prefix="GLAVNOE">
-    <file>Rectangle 6.png</file>
-  </qresource>
-  <qresource prefix="Hihi">
-    <file>Rectangle 9.png</file>
+  <qresource prefix="Galka">
+    <file>galka.png</file>
   </qresource>
 </RCC>

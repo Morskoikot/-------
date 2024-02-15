@@ -4,12 +4,10 @@ from PyQt6.QtWidgets import (
     QMainWindow, 
     QApplication
 )
-from PyQt6.QtGui     import QFontDatabase, QFont
-from PyQt6.QtCore    import Qt
-from test_form import Ui_MainWindow as Register
-from Main_s import Ui_MainWindow as Main
-import Haha
-#окно авторизации
+from Authorization import Ui_MainWindow as Register
+from Main_s import Ui_MainWindow as Form
+import Pictures
+
 class AppWindow(QMainWindow):
     def __init__(self):
         super(AppWindow, self).__init__()
@@ -36,20 +34,22 @@ class AppWindow(QMainWindow):
 class AppWindow_main(QMainWindow):
     def __init__(self):
         super(AppWindow_main, self).__init__()
-        id = QFontDatabase.addApplicationFont('./Fonts/Gagarin Star Mix Cyrillic.ttf')
-        id2 = QFontDatabase.addApplicationFont('./Fonts/NokiaKokia(RYS BY LYAJKA).ttf')
-        # Если id равен -1, то шрифт не установлен
-        if id == -1 or id2 == -1: 
-            print('Ошибка подключения шрифтов')
-        font = QFont('Gagarin Star Mix Cyrillic', 86)
-        font2 = QFont('NokiaKokia(RYS BY LYAJKA)', 25)
-        self.ui = Main()
+        self.ui = Form()
         self.ui.setupUi(self)
-       #переход на добвачное поле
-        self.ui.stackedWidget.setCurrentWidget(self.ui.page_3)
-        self.ui.pushButton_2.clicked.connect(self.transfer_page_add)
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
+        self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
+        self.ui.Button_Zapolnit.clicked.connect(self.transfer_page_fill)
     def transfer_page_add(self):
-        self.ui.stackedWidget.setCurrentWidget(self.ui.page_4)
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
+        self.ui.Button_Back.clicked.connect(self.transfer_page_back)
+    def transfer_page_back(self):
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
+    def transfer_page_fill(self):
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Fill_page)
+        self.ui.Button_Back_Fill.clicked.connect(self.transfer_page_back)
+
+
+
 
 app = QApplication([])
 AppWindow_main = AppWindow_main()

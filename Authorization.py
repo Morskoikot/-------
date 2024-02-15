@@ -20,7 +20,7 @@ class Ui_MainWindow(object):
         self.centralwidget.setStyleSheet("background-color: rgb(246, 242, 238);")
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayoutWidget = QtWidgets.QWidget(parent=self.centralwidget)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(0, -1, 721, 421))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(0, -1, 721, 411))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
@@ -32,6 +32,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(48)
         self.label.setFont(font)
+        self.label.setStyleSheet("")
         self.label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label.setObjectName("label")
         self.horizontalLayout_4.addWidget(self.label)
@@ -48,13 +49,19 @@ class Ui_MainWindow(object):
         self.label_3.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight|QtCore.Qt.AlignmentFlag.AlignTrailing|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.label_3.setObjectName("label_3")
         self.horizontalLayout_2.addWidget(self.label_3)
-        self.textEdit = QtWidgets.QTextEdit(parent=self.verticalLayoutWidget)
-        self.textEdit.setMaximumSize(QtCore.QSize(331, 39))
+        self.Login = QtWidgets.QTextEdit(parent=self.verticalLayoutWidget)
+        self.Login.setMaximumSize(QtCore.QSize(331, 39))
         font = QtGui.QFont()
         font.setPointSize(16)
-        self.textEdit.setFont(font)
-        self.textEdit.setObjectName("textEdit")
-        self.horizontalLayout_2.addWidget(self.textEdit)
+        self.Login.setFont(font)
+        self.Login.setStyleSheet("#Login {\n"
+"background-color: rgb(181, 173, 173);\n"
+"}\n"
+"#Login:Focus {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}")
+        self.Login.setObjectName("Login")
+        self.horizontalLayout_2.addWidget(self.Login)
         self.verticalLayout.addLayout(self.horizontalLayout_2)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setContentsMargins(-1, -1, -1, 30)
@@ -68,13 +75,19 @@ class Ui_MainWindow(object):
         self.label_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight|QtCore.Qt.AlignmentFlag.AlignTrailing|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.label_2.setObjectName("label_2")
         self.horizontalLayout.addWidget(self.label_2)
-        self.textEdit_2 = QtWidgets.QTextEdit(parent=self.verticalLayoutWidget)
-        self.textEdit_2.setMaximumSize(QtCore.QSize(331, 39))
+        self.Password = QtWidgets.QTextEdit(parent=self.verticalLayoutWidget)
+        self.Password.setMaximumSize(QtCore.QSize(331, 39))
         font = QtGui.QFont()
         font.setPointSize(16)
-        self.textEdit_2.setFont(font)
-        self.textEdit_2.setObjectName("textEdit_2")
-        self.horizontalLayout.addWidget(self.textEdit_2)
+        self.Password.setFont(font)
+        self.Password.setStyleSheet("#Password {\n"
+"background-color: rgb(181, 173, 173);\n"
+"}\n"
+"#Password:Focus {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}")
+        self.Password.setObjectName("Password")
+        self.horizontalLayout.addWidget(self.Password)
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_3.setSpacing(0)
@@ -82,9 +95,19 @@ class Ui_MainWindow(object):
         self.pushButton = QtWidgets.QPushButton(parent=self.verticalLayoutWidget)
         self.pushButton.setMaximumSize(QtCore.QSize(160, 40))
         font = QtGui.QFont()
-        font.setPointSize(16)
+        font.setPointSize(20)
         self.pushButton.setFont(font)
-        self.pushButton.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));")
+        self.pushButton.setStyleSheet("#pushButton {\n"
+"background-color: rgb(133, 114, 85);\n"
+"border-radius: 20px;\n"
+"border: 2px solid;\n"
+"}\n"
+"#pushButton:hover {\n"
+"background:#dabb8b;\n"
+"}\n"
+"#pushButton:pressed {\n"
+"background-color: rgb(133, 114, 85);\n"
+"}")
         self.pushButton.setObjectName("pushButton")
         self.horizontalLayout_3.addWidget(self.pushButton)
         self.verticalLayout.addLayout(self.horizontalLayout_3)
