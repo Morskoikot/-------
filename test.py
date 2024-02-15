@@ -76,15 +76,40 @@ class AppWindow_main(QMainWindow):
     def transfer_page_add(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
         self.ui.Button_Back.clicked.connect(self.transfer_back)
+        self.ui.Button_Forma_plus.clicked.connect(self.add_field)
+    def add_field(self):
+        _translate = QtCore.QCoreApplication.translate
+        self.verticalLayout_t = QtWidgets.QPushButton(parent=self.ui.scrollArea)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.verticalLayout_t.setObjectName("verticalLayout_t")
+        self.ui.scrollArea.addWidget(self.verticalLayout_t)
+        self.ui.horizontalLayout_3.addLayout(self.ui.scrollArea)
+        self.ui.verticalLayout_2.addLayout(self.ui.horizontalLayout_3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # self..setText(_translate("MainWindow", "ру"))
     def transfer_back(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
     def transfer_Fill(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Fill_page)
         self.ui.Button_Back_Fill.clicked.connect(self.transfer_back)
 
-
-
-  
 app = QApplication([])
 AppWindow_main = AppWindow_main()
 AppWindow = AppWindow()
