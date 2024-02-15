@@ -11,21 +11,21 @@ import Pictures
 class AppWindow(QMainWindow):
     def __init__(self):
         super(AppWindow, self).__init__()
-        id = QFontDatabase.addApplicationFont('./Fonts/Gagarin Star Mix Cyrillic.ttf')
-        id2 = QFontDatabase.addApplicationFont('./Fonts/NokiaKokia(RYS BY LYAJKA).ttf')
+        # id = QFontDatabase.addApplicationFont('./Fonts/Gagarin Star Mix Cyrillic.ttf')
+        # id2 = QFontDatabase.addApplicationFont('./Fonts/NokiaKokia(RYS BY LYAJKA).ttf')
         # Если id равен -1, то шрифт не установлен
-        if id == -1 or id2 == -1: 
-            print('Ошибка подключения шрифтов')
-        font = QFont('Gagarin Star Mix Cyrillic', 86)
-        font2 = QFont('NokiaKokia(RYS BY LYAJKA)', 32)
-        font3 = QFont('Gagarin Star Mix Cyrillic', 16)
+        # if id == -1 or id2 == -1: 
+        #     print('Ошибка подключения шрифтов')
+        # font = QFont('Gagarin Star Mix Cyrillic', 86)
+        # font2 = QFont('NokiaKokia(RYS BY LYAJKA)', 32)
+        # font3 = QFont('Gagarin Star Mix Cyrillic', 16)
     
         self.ui = Register()
         self.ui.setupUi(self)
-        self.ui.label.setFont(font)
-        self.ui.label_3.setFont(font2)
-        self.ui.label_2.setFont(font2)
-        self.ui.pushButton.setFont(font3)
+        # self.ui.label.setFont(font)
+        # self.ui.label_3.setFont(font2)
+        # self.ui.label_2.setFont(font2)
+        # self.ui.pushButton.setFont(font3)
         self.ui.pushButton.clicked.connect(self.transfer)
     def transfer(self):
         AppWindow_main.show()
