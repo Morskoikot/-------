@@ -95,7 +95,7 @@ class Ui_MainWindow(object):
         self.pushButton = QtWidgets.QPushButton(parent=self.verticalLayoutWidget)
         self.pushButton.setMaximumSize(QtCore.QSize(160, 40))
         font = QtGui.QFont()
-        font.setPointSize(20)
+        font.setPointSize(14)
         self.pushButton.setFont(font)
         self.pushButton.setStyleSheet("#pushButton {\n"
 "background-color: rgb(133, 114, 85);\n"
