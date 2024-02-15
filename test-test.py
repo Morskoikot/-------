@@ -54,6 +54,7 @@ class AppWindow_main(QMainWindow):
         doc.save("Test_final.docx")
         # except:
         #     print("Закройте документ - Test_final.docx")
+        
 
 app = QApplication([])
 AppWindow_main = AppWindow_main()

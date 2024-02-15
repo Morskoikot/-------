@@ -2,6 +2,9 @@
   <qresource prefix="Copycopycopy">
     <file>Copycopycopy.png</file>
   </qresource>
+  <qresource prefix="Lupa">
+    <file>Lupa.png</file>
+  </qresource>
   <qresource prefix="Trashcan">
     <file>trashcan.png</file>
   </qresource>

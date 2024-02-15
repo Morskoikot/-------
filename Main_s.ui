@@ -32,11 +32,11 @@
       <x>10</x>
       <y>-1</y>
       <width>771</width>
-      <height>491</height>
+      <height>511</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="Main_page">
      <property name="maximumSize">
@@ -172,7 +172,7 @@ background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.
       </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="Add_Page">
+    <widget class="QWidget" name="Add_page">
      <property name="maximumSize">
       <size>
        <width>790</width>
@@ -705,6 +705,302 @@ background-color: #BBB4B4;
            <property name="text">
             <string>Назад</string>
            </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Fill_page">
+     <property name="maximumSize">
+      <size>
+       <width>790</width>
+       <height>557</height>
+      </size>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>771</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="maximumSize">
+            <size>
+             <width>777</width>
+             <height>112</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 2px solid;
+background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));
+border-top-left-radius: 55px;
+border-top-right-radius: 55px;
+border-bottom-left-radius: 22px;
+border-bottom-right-radius: 22px;
+</string>
+           </property>
+           <property name="text">
+            <string>ЗАПОЛНИТЬ ДОКУМЕНТ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <item>
+          <widget class="QTextEdit" name="Poisk">
+           <property name="maximumSize">
+            <size>
+             <width>430</width>
+             <height>64</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#Poisk {
+background-color: rgb(181, 173, 173);
+}
+#Poisk:Focus {
+background-color: rgb(219, 219, 219);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Button_Find_Fill">
+           <property name="maximumSize">
+            <size>
+             <width>70</width>
+             <height>67</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#Button_Find_Fill {
+image: url(:/Lupa/Lupa.png);
+border: 3px solid;
+border-radius: 9px;
+border-color: #7A6D6D;
+background-color: #BBB4B4
+}
+#Button_Find_Fill:hover {
+background-color: rgb(219, 219, 219);
+}
+#Button_Find_Fill:pressed { 
+background-color: #BBB4B4;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Button_Back_Fill">
+           <property name="maximumSize">
+            <size>
+             <width>157</width>
+             <height>44</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#Button_Back_Fill {
+border: 3px solid;
+border-radius: 9px;
+border-color: #7A6D6D;
+background-color: #BBB4B4
+}
+#Button_Back_Fill:hover {
+background-color: rgb(219, 219, 219);
+}
+#Button_Back_Fill:pressed { 
+background-color: #BBB4B4;
+}</string>
+           </property>
+           <property name="text">
+            <string>НАЗАД</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_20">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="maximumSize">
+              <size>
+               <width>362</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 3px solid;
+border-top-left-radius: 6px;
+background-color: rgb(210, 163, 116);</string>
+             </property>
+             <property name="text">
+              <string>НАЗВАНИЕ</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_19">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="maximumSize">
+              <size>
+               <width>362</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 3px solid;
+border-top-left-radius: 6px;
+background-color: rgb(210, 163, 116);</string>
+             </property>
+             <property name="text">
+              <string>ДЕЙСТВИЕ</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <item>
+          <widget class="QScrollArea" name="Name">
+           <property name="maximumSize">
+            <size>
+             <width>365</width>
+             <height>211</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 2px solid</string>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOn</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAsNeeded</enum>
+           </property>
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>344</width>
+              <height>193</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5"/>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QScrollArea" name="Action">
+           <property name="maximumSize">
+            <size>
+             <width>365</width>
+             <height>211</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 2px solid</string>
+           </property>
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>361</width>
+              <height>193</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QPushButton" name="Button_Fill_Fill">
+               <property name="font">
+                <font>
+                 <pointsize>20</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#Button_Fill_Fill {
+border: 3px solid;
+border-radius: 9px;
+border-color: #7A6D6D;
+background-color: #BBB4B4
+}
+#Button_Fill_Fill:hover {
+background-color: rgb(219, 219, 219);
+}
+#Button_Fill_Fill:pressed { 
+background-color: #BBB4B4;
+}</string>
+               </property>
+               <property name="text">
+                <string>ЗАПОЛНИТЬ</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </widget>
          </item>
         </layout>
