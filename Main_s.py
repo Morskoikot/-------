@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
         self.Main_page.setMaximumSize(QtCore.QSize(790, 557))
         self.Main_page.setObjectName("Main_page")
         self.horizontalLayoutWidget = QtWidgets.QWidget(parent=self.Main_page)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(1, 158, 771, 331))
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(1, 158, 771, 351))
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
@@ -96,7 +96,7 @@ class Ui_MainWindow(object):
         self.Add_page.setMaximumSize(QtCore.QSize(790, 557))
         self.Add_page.setObjectName("Add_page")
         self.verticalLayoutWidget_2 = QtWidgets.QWidget(parent=self.Add_page)
-        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(0, 10, 771, 481))
+        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(0, 10, 771, 501))
         self.verticalLayoutWidget_2.setObjectName("verticalLayoutWidget_2")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_2)
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
@@ -566,7 +566,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
