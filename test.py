@@ -14,8 +14,8 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class AppWindow(QMainWindow):
     def __init__(self):
         super(AppWindow, self).__init__()
-        # id = QFontDatabase.addApplicationFont('./Fonts/Gagarin Star Mix Cyrillic.ttf')
-        # id2 = QFontDatabase.addApplicationFont('./Fonts/NokiaKokia(RYS BY LYAJKA).ttf')
+        id = QFontDatabase.addApplicationFont('./Fonts/Gagarin Star Mix Cyrillic.ttf')
+        id2 = QFontDatabase.addApplicationFont('./Fonts/NokiaKokia(RYS BY LYAJKA).ttf')
         # Если id равен -1, то шрифт не установлен
         if id == -1 or id2 == -1: 
             print('Ошибка подключения шрифтов')
@@ -49,11 +49,15 @@ class AppWindow_main(QMainWindow):
         font3 = QFont('No Limits(FONT BY LYAJKA)', 20)
         font4 = QFont('NokiaKokia(RYS BY LYAJKA)', 30)
         font5 = QFont('No Limits(FONT BY LYAJKA)', 16)
-        font6 = QFont('NokiaKokia(RYS BY LYAJKA)', 32)
+        font6 = QFont('NokiaKokia(RYS BY LYAJKA)', 24)
         
 
         self.ui = Form()
         self.ui.setupUi(self)
+
+        self.ui.Kratki_otvet.setFont(font6)
+        self.ui.Vopros.setFont(font6)
+
         self.ui.Glavnaya.setFont(font)
         self.ui.Button_Zapolnit.setFont(font2)
         self.ui.Button_Spisok.setFont(font2)
@@ -62,16 +66,14 @@ class AppWindow_main(QMainWindow):
         self.ui.Obyazatelny_vopros.setFont(font3)
         self.ui.Button_Dok.setFont(font3)
         self.ui.Button_Forma_plus.setFont(font3)
-        self.ui.Kratki_otvet.setFont(font6)
         self.ui.Dobavit_dokument_label.setFont(font5)
         self.ui.Button_Teg.setFont(font3)
         self.ui.Odin_iz_spiska.setFont(font5)
-        self.ui.Vopros.setFont(font6)
         self.ui.Dobavochnoe_pole.setFont(font)
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
         self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
     def transfer_page_add(self):
-        self.ui.stackedWidget.setCurrentWidget(self.ui.Add_Page)
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
         self.ui.Button_Back.clicked.connect(self.back)
     def back(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)

@@ -7,19 +7,25 @@
     <x>0</x>
     <y>0</y>
     <width>790</width>
-    <height>538</height>
+    <height>557</height>
    </rect>
   </property>
   <property name="maximumSize">
    <size>
     <width>790</width>
-    <height>538</height>
+    <height>557</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>790</width>
+     <height>557</height>
+    </size>
+   </property>
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
@@ -32,7 +38,13 @@
     <property name="currentIndex">
      <number>1</number>
     </property>
-    <widget class="QWidget" name="page_3">
+    <widget class="QWidget" name="Main_page">
+     <property name="maximumSize">
+      <size>
+       <width>790</width>
+       <height>557</height>
+      </size>
+     </property>
      <widget class="QWidget" name="horizontalLayoutWidget">
       <property name="geometry">
        <rect>
@@ -44,7 +56,7 @@
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="Button_Zapolnit">
          <property name="maximumSize">
           <size>
            <width>270</width>
@@ -57,13 +69,13 @@
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">#pushButton{
+          <string notr="true">#Button_Zapolnit{
 background-color: rgb(133, 114, 85);
 border-top-left-radius: 30px;
 border-bottom-right-radius: 30px;
 border: 2px solid;
 }
-#pushButton:hover {
+#Button_Zapolnit:hover {
 background:#dabb8b;
 }
 #Button_Zapolnit:pressed {
@@ -338,21 +350,15 @@ border-color: #8E8080;
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_3">
              <item>
-              <layout class="QVBoxLayout" name="verticalLayout_4">
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
                <item>
                 <layout class="QHBoxLayout" name="horizontalLayout_8">
                  <item>
-                  <widget class="QPushButton" name="pushButton_13">
-                   <property name="minimumSize">
-                    <size>
-                     <width>45</width>
-                     <height>45</height>
-                    </size>
-                   </property>
+                  <widget class="QTextEdit" name="Vopros">
                    <property name="maximumSize">
                     <size>
-                     <width>45</width>
-                     <height>45</height>
+                     <width>425</width>
+                     <height>60</height>
                     </size>
                    </property>
                    <property name="font">
@@ -367,13 +373,6 @@ background-color: rgb(181, 173, 173);
 #Vopros:Focus {
 background-color: rgb(219, 219, 219);
 }</string>
-                   </property>
-                   <property name="html">
-                    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                    </property>
                    <property name="placeholderText">
                     <string>ВОПРОС</string>
@@ -610,14 +609,15 @@ background-color: #BBB4B4;
                  <property name="styleSheet">
                   <string notr="true">#Button_Galka {
 border: 3px solid;
+image: url(:/Galka/galka.png);
 border-radius: 9px;
 border-color: #7A6D6D;
 background-color: #BBB4B4
 }
-#Button_Back_Fill:hover {
+#Button_Galka:hover {
 background-color: rgb(219, 219, 219);
 }
-#Button_Back_Fill:pressed { 
+#Button_Galka:pressed { 
 background-color: #BBB4B4;
 }</string>
                  </property>
