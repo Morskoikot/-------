@@ -34,6 +34,7 @@ class AppWindow(QMainWindow):
     def transfer(self):
         AppWindow_main.show()
         AppWindow.close()
+       
 #основное окно программы        
 class AppWindow_main(QMainWindow):
     def __init__(self):
@@ -47,7 +48,6 @@ class AppWindow_main(QMainWindow):
         font = QFont('Gagarin Star Mix Cyrillic', 50)
         font2 = QFont('NokiaKokia(RYS BY LYAJKA)', 25)
         font3 = QFont('No Limits(FONT BY LYAJKA)', 20)
-        font4 = QFont('NokiaKokia(RYS BY LYAJKA)', 30)
         font5 = QFont('No Limits(FONT BY LYAJKA)', 16)
         font6 = QFont('NokiaKokia(RYS BY LYAJKA)', 24)
         
@@ -72,12 +72,17 @@ class AppWindow_main(QMainWindow):
         self.ui.Dobavochnoe_pole.setFont(font)
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
         self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
+        self.ui.Button_Zapolnit.clicked.connect(self.transfer_Fill)
+        
     def transfer_page_add(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
-        self.ui.Button_Back.clicked.connect(self.back)
-    def back(self):
+        self.ui.Button_Back.clicked.connect(self.transfer_back)
+    def transfer_back(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
-
+    def transfer_Fill(self):
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Fill_page)
+        self.ui.Button_Back_Fill.clicked.connect(self.transfer_back)
+        
   
 app = QApplication([])
 AppWindow_main = AppWindow_main()
