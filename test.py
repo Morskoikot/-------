@@ -1,4 +1,12 @@
+import os
 import sys
+from tkinter import filedialog
+from PyQt6.QtWidgets import (
+    QApplication,
+    QMainWindow, 
+    QApplication,
+    QFileDialog
+)
 from PyQt6.QtWidgets import (
     QApplication,
     QMainWindow, 
@@ -70,20 +78,42 @@ class AppWindow_main(QMainWindow):
         self.ui.Button_Teg.setFont(font3)
         self.ui.Odin_iz_spiska.setFont(font5)
         self.ui.Dobavochnoe_pole.setFont(font)
+        
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
+        self.ui.label.setFont(font)
+        self.ui.label_2.setFont(font3)
+        self.ui.label_3.setFont(font3)
+        self.ui.Button_Back_Fill.setFont(font3)
         self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
         self.ui.Button_Zapolnit.clicked.connect(self.transfer_Fill)
-        
+        self.ui.Button_Dok.clicked.connect(self.Open_main_file_btn)
+    
+    def Open_main_file_btn(self):
+        res =QFileDialog.getOpenFileName(self, 'Open File', ".",'DOC file (*.doc*)')
+        res = os.path.basename(res[0])
+        self.ui.Dobavit_dokument_label.setText(res)
+
     def transfer_page_add(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
         self.ui.Button_Back.clicked.connect(self.transfer_back)
+        self.ui.Button_Forma_plus.clicked.connect(self.add_field)
+    def add_field(self):
+        _translate = QtCore.QCoreApplication.translate
+        self.verticalLayout_t = QtWidgets.QPushButton(parent=self.ui.scrollArea)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.verticalLayout_t.setObjectName("verticalLayout_t")
+        self.ui.scrollArea.addWidget(self.verticalLayout_t)
+        self.ui.horizontalLayout_3.addLayout(self.ui.scrollArea)
+        self.ui.verticalLayout_2.addLayout(self.ui.horizontalLayout_3)
+
+        # self..setText(_translate("MainWindow", "ру"))
     def transfer_back(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
     def transfer_Fill(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Fill_page)
         self.ui.Button_Back_Fill.clicked.connect(self.transfer_back)
-        
-  
+
 app = QApplication([])
 AppWindow_main = AppWindow_main()
 AppWindow = AppWindow()
