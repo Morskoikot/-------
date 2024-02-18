@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>790</width>
-    <height>557</height>
+    <width>802</width>
+    <height>549</height>
    </rect>
   </property>
   <property name="maximumSize">
    <size>
-    <width>790</width>
-    <height>557</height>
+    <width>9999999</width>
+    <height>9999999</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -22,54 +22,81 @@
   <widget class="QWidget" name="centralwidget">
    <property name="maximumSize">
     <size>
-     <width>790</width>
-     <height>557</height>
+     <width>16777215</width>
+     <height>16777215</height>
     </size>
    </property>
-   <widget class="QStackedWidget" name="stackedWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>-1</y>
-      <width>771</width>
-      <height>511</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>1</number>
-    </property>
-    <widget class="QWidget" name="Main_page">
-     <property name="maximumSize">
-      <size>
-       <width>790</width>
-       <height>557</height>
-      </size>
-     </property>
-     <widget class="QWidget" name="horizontalLayoutWidget">
-      <property name="geometry">
-       <rect>
-        <x>1</x>
-        <y>158</y>
-        <width>771</width>
-        <height>351</height>
-       </rect>
+   <layout class="QVBoxLayout" name="verticalLayout_8">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QPushButton" name="Button_Zapolnit">
-         <property name="maximumSize">
-          <size>
-           <width>270</width>
-           <height>180</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>24</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">#Button_Zapolnit{
+      <widget class="QWidget" name="Main_page">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="Glavnaya">
+              <property name="maximumSize">
+               <size>
+                <width>760</width>
+                <height>142</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>72</pointsize>
+               </font>
+              </property>
+              <property name="contextMenuPolicy">
+               <enum>Qt::DefaultContextMenu</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: 2px solid;
+border-top-left-radius: 55px;
+border-top-right-radius: 55px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));</string>
+              </property>
+              <property name="text">
+               <string>ГЛАВНАЯ</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="Button_Zapolnit">
+            <property name="maximumSize">
+             <size>
+              <width>270</width>
+              <height>180</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>24</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#Button_Zapolnit{
 background-color: rgb(133, 114, 85);
 border-top-left-radius: 30px;
 border-bottom-right-radius: 30px;
@@ -81,28 +108,28 @@ background:#dabb8b;
 #Button_Zapolnit:pressed {
 background-color: rgb(133, 114, 85);
 }</string>
-         </property>
-         <property name="text">
-          <string> ЗАПОЛНИТЬ
+            </property>
+            <property name="text">
+             <string> ЗАПОЛНИТЬ
 ДОКУМЕНТ</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="Button_Spisok">
-         <property name="maximumSize">
-          <size>
-           <width>270</width>
-           <height>180</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>24</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">#Button_Spisok{
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Button_Spisok">
+            <property name="maximumSize">
+             <size>
+              <width>270</width>
+              <height>180</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>24</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#Button_Spisok{
 background-color: rgb(133, 114, 85);
 border-top-right-radius: 30px;
 border-bottom-left-radius: 30px;
@@ -114,98 +141,44 @@ background:#dabb8b;
 #Button_Spisok:pressed {
 background-color: rgb(133, 114, 85);
 }</string>
-         </property>
-         <property name="text">
-          <string>СПИСОК
+            </property>
+            <property name="text">
+             <string>СПИСОК
 ФОРМ</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget">
-      <property name="geometry">
-       <rect>
-        <x>1</x>
-        <y>1</y>
-        <width>771</width>
-        <height>161</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_5">
-         <item>
-          <widget class="QLabel" name="Glavnaya">
-           <property name="maximumSize">
-            <size>
-             <width>760</width>
-             <height>142</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>72</pointsize>
-            </font>
-           </property>
-           <property name="contextMenuPolicy">
-            <enum>Qt::DefaultContextMenu</enum>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border: 2px solid;
-border-top-left-radius: 55px;
-border-top-right-radius: 55px;
-border-bottom-right-radius: 20px;
-border-bottom-left-radius: 20px;
-background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));</string>
-           </property>
-           <property name="text">
-            <string>ГЛАВНАЯ</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="Add_page">
-     <property name="maximumSize">
-      <size>
-       <width>790</width>
-       <height>557</height>
-      </size>
-     </property>
-     <widget class="QWidget" name="verticalLayoutWidget_2">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>10</y>
-        <width>771</width>
-        <height>501</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_14">
-         <item>
-          <widget class="QLabel" name="Dobavochnoe_pole">
-           <property name="maximumSize">
-            <size>
-             <width>777</width>
-             <height>112</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>48</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border: 2px solid;
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Add_page">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_14">
+            <item>
+             <widget class="QLabel" name="Dobavochnoe_pole">
+              <property name="maximumSize">
+               <size>
+                <width>777</width>
+                <height>112</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>48</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: 2px solid;
 background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));
 border-top-left-radius: 55px;
 border-top-right-radius: 55px;
@@ -213,52 +186,52 @@ border-bottom-left-radius: 22px;
 border-bottom-right-radius: 22px;
 
 </string>
-           </property>
-           <property name="text">
-            <string>ДОБАВОЧНОЕ ПОЛЕ</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item>
-          <widget class="QLabel" name="Dobavit_dokument_label">
-           <property name="maximumSize">
-            <size>
-             <width>300</width>
-             <height>35</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>20</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>ДОБАВИТЬ ДОКУМЕНТ</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="Button_Dok">
-           <property name="maximumSize">
-            <size>
-             <width>120</width>
-             <height>44</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>20</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#Button_Dok {
+              </property>
+              <property name="text">
+               <string>ДОБАВОЧНОЕ ПОЛЕ</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="Dobavit_dokument_label">
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>35</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>ДОБАВИТЬ ДОКУМЕНТ</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Button_Dok">
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>44</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#Button_Dok {
 border: 3px solid;
 border-radius: 9px;
 border-color: #7A6D6D;
@@ -270,27 +243,27 @@ background-color: rgb(219, 219, 219);
 #Button_Dok:pressed { 
 background-color: #BBB4B4;
 }</string>
-           </property>
-           <property name="text">
-            <string>ДОК.</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="Button_Forma_plus">
-           <property name="maximumSize">
-            <size>
-             <width>157</width>
-             <height>44</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>20</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#Button_Forma_plus {
+              </property>
+              <property name="text">
+               <string>ДОК.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Button_Forma_plus">
+              <property name="maximumSize">
+               <size>
+                <width>157</width>
+                <height>44</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#Button_Forma_plus {
 border: 3px solid;
 border-radius: 9px;
 border-color: #7A6D6D;
@@ -302,108 +275,119 @@ background-color: rgb(219, 219, 219);
 #Button_Forma_plus:pressed { 
 background-color: #BBB4B4;
 }</string>
-           </property>
-           <property name="text">
-            <string>+ ФОРМА</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_3">
-         <property name="spacing">
-          <number>6</number>
-         </property>
-         <property name="sizeConstraint">
-          <enum>QLayout::SetDefaultConstraint</enum>
-         </property>
-         <item>
-          <widget class="QScrollArea" name="scrollArea">
-           <property name="maximumSize">
-            <size>
-             <width>729</width>
-             <height>284</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border: 4px solid;
-border-color: #8E8080;</string>
-           </property>
-           <property name="verticalScrollBarPolicy">
-            <enum>Qt::ScrollBarAlwaysOn</enum>
-           </property>
-           <property name="widgetResizable">
-            <bool>true</bool>
-           </property>
-           <widget class="QWidget" name="scrollAreaWidgetContents_3">
-            <property name="geometry">
-             <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>704</width>
-              <height>276</height>
-             </rect>
+              </property>
+              <property name="text">
+               <string>+ ФОРМА</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <property name="spacing">
+             <number>6</number>
             </property>
-            <layout class="QVBoxLayout" name="verticalLayout_7">
-             <item>
-              <layout class="QVBoxLayout" name="verticalLayout_3">
-               <item>
-                <layout class="QHBoxLayout" name="horizontalLayout_7">
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetDefaultConstraint</enum>
+            </property>
+            <item>
+             <widget class="QScrollArea" name="scrollArea">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOn</enum>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_3">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>743</width>
+                 <height>283</height>
+                </rect>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QWidget" name="widget" native="true">
+                  <property name="styleSheet">
+                   <string notr="true">#widget {
+border: 3px solid;
+}</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
                    <item>
-                    <widget class="QTextEdit" name="Vopros">
-                     <property name="maximumSize">
-                      <size>
-                       <width>425</width>
-                       <height>60</height>
-                      </size>
-                     </property>
-                     <property name="font">
-                      <font>
-                       <pointsize>20</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">#Vopros {
+                    <layout class="QHBoxLayout" name="horizontalLayout_7">
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_8">
+                       <item>
+                        <widget class="QTextEdit" name="Vopros">
+                         <property name="maximumSize">
+                          <size>
+                           <width>425</width>
+                           <height>60</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <pointsize>20</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">#Vopros {
 background-color: rgb(181, 173, 173);
 }
 #Vopros:Focus {
 background-color: rgb(219, 219, 219);
 }</string>
-                     </property>
-                     <property name="html">
-                      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                         </property>
+                         <property name="html">
+                          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                     </property>
-                     <property name="placeholderText">
-                      <string>ВОПРОС</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_9">
-                   <item>
-                    <widget class="QPushButton" name="Odin_iz_spiska">
-                     <property name="maximumSize">
-                      <size>
-                       <width>141</width>
-                       <height>80</height>
-                      </size>
-                     </property>
-                     <property name="font">
-                      <font>
-                       <pointsize>20</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">#Odin_iz_spiska {
+                         </property>
+                         <property name="placeholderText">
+                          <string>ВОПРОС</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_9">
+                       <item>
+                        <widget class="QPushButton" name="Odin_iz_spiska">
+                         <property name="maximumSize">
+                          <size>
+                           <width>141</width>
+                           <height>80</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <pointsize>20</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">#Odin_iz_spiska {
 border: 3px solid;
 border-radius: 9px;
 border-color: #7A6D6D;
@@ -415,66 +399,66 @@ background-color: rgb(219, 219, 219);
 #Odin_iz_spiska:pressed { 
 background-color: #BBB4B4;
 }</string>
-                     </property>
-                     <property name="text">
-                      <string>ОДИН ИЗ
+                         </property>
+                         <property name="text">
+                          <string>ОДИН ИЗ
 СПИСКА</string>
-                     </property>
-                    </widget>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
                    </item>
-                  </layout>
-                 </item>
-                </layout>
-               </item>
-               <item>
-                <layout class="QHBoxLayout" name="horizontalLayout_10">
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_12">
                    <item>
-                    <widget class="QTextEdit" name="Kratki_otvet">
-                     <property name="maximumSize">
-                      <size>
-                       <width>425</width>
-                       <height>60</height>
-                      </size>
-                     </property>
-                     <property name="font">
-                      <font>
-                       <pointsize>20</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">#Kratki_otvet {
+                    <layout class="QHBoxLayout" name="horizontalLayout_10">
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_12">
+                       <item>
+                        <widget class="QTextEdit" name="Kratki_otvet">
+                         <property name="maximumSize">
+                          <size>
+                           <width>425</width>
+                           <height>60</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <pointsize>20</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">#Kratki_otvet {
 background-color: rgb(181, 173, 173);
 }
 #Kratki_otvet:Focus {
 background-color: rgb(219, 219, 219);
 }</string>
-                     </property>
-                     <property name="placeholderText">
-                      <string>КРАТКИЙ ОТВЕТ</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_11">
-                   <item>
-                    <widget class="QPushButton" name="Button_Teg">
-                     <property name="maximumSize">
-                      <size>
-                       <width>100</width>
-                       <height>48</height>
-                      </size>
-                     </property>
-                     <property name="font">
-                      <font>
-                       <pointsize>20</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">#Button_Teg {
+                         </property>
+                         <property name="placeholderText">
+                          <string>КРАТКИЙ ОТВЕТ</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_11">
+                       <item>
+                        <widget class="QPushButton" name="Button_Teg">
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>48</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <pointsize>20</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">#Button_Teg {
 border: 3px solid;
 border-radius: 9px;
 border-color: #7A6D6D;
@@ -486,27 +470,27 @@ background-color: rgb(219, 219, 219);
 #Button_Teg:pressed { 
 background-color: #BBB4B4;
 }</string>
-                     </property>
-                     <property name="text">
-                      <string>ТЭГ</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QPushButton" name="Button_Question">
-                     <property name="maximumSize">
-                      <size>
-                       <width>37</width>
-                       <height>33</height>
-                      </size>
-                     </property>
-                     <property name="font">
-                      <font>
-                       <pointsize>20</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">#Button_Question {
+                         </property>
+                         <property name="text">
+                          <string>ТЭГ</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="Button_Question">
+                         <property name="maximumSize">
+                          <size>
+                           <width>37</width>
+                           <height>33</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <pointsize>20</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">#Button_Question {
 border: 3px solid;
 border-radius: 9px;
 border-color: #7A6D6D;
@@ -518,28 +502,28 @@ background-color: rgb(219, 219, 219);
 #Button_Question:pressed { 
 background-color: #BBB4B4;
 }</string>
-                     </property>
-                     <property name="text">
-                      <string>?</string>
-                     </property>
-                    </widget>
+                         </property>
+                         <property name="text">
+                          <string>?</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
                    </item>
-                  </layout>
-                 </item>
-                </layout>
-               </item>
-               <item>
-                <layout class="QHBoxLayout" name="horizontalLayout_13">
-                 <item>
-                  <widget class="QPushButton" name="Button_Copy">
-                   <property name="maximumSize">
-                    <size>
-                     <width>43</width>
-                     <height>41</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">#Button_Copy {
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_13">
+                     <item>
+                      <widget class="QPushButton" name="Button_Copy">
+                       <property name="maximumSize">
+                        <size>
+                         <width>43</width>
+                         <height>41</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">#Button_Copy {
 border: 3px solid;
 border-radius: 9px;
 border-color: #7A6D6D;
@@ -552,22 +536,22 @@ background-color: rgb(219, 219, 219);
 #Button_Copy:pressed { 
 background-color: #BBB4B4;
 }</string>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QPushButton" name="Button_Trash">
-                   <property name="maximumSize">
-                    <size>
-                     <width>43</width>
-                     <height>41</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">#Button_Trash {
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Button_Trash">
+                       <property name="maximumSize">
+                        <size>
+                         <width>43</width>
+                         <height>41</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">#Button_Trash {
 image: url(:/Trashcan/trashcan.png);
 border: 3px solid;
 border-radius: 9px;
@@ -580,40 +564,40 @@ background-color: rgb(219, 219, 219);
 #Button_Trash:pressed { 
 background-color: #BBB4B4;
 }</string>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QLabel" name="Obyazatelny_vopros">
-                   <property name="maximumSize">
-                    <size>
-                     <width>400</width>
-                     <height>34</height>
-                    </size>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <pointsize>20</pointsize>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>ОБЯЗАТЕЛЬНЫЙ ВОПРОС</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QPushButton" name="Button_Galka">
-                   <property name="maximumSize">
-                    <size>
-                     <width>43</width>
-                     <height>41</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">#Button_Galka {
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="Obyazatelny_vopros">
+                       <property name="maximumSize">
+                        <size>
+                         <width>400</width>
+                         <height>34</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>20</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>ОБЯЗАТЕЛЬНЫЙ ВОПРОС</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Button_Galka">
+                       <property name="maximumSize">
+                        <size>
+                         <width>43</width>
+                         <height>41</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">#Button_Galka {
 border: 3px solid;
 image: url(:/Galka/galka.png);
 border-radius: 9px;
@@ -626,39 +610,40 @@ background-color: rgb(219, 219, 219);
 #Button_Galka:pressed { 
 background-color: #BBB4B4;
 }</string>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </item>
-              </layout>
-             </item>
-            </layout>
-           </widget>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_4">
-         <item>
-          <widget class="QPushButton" name="Button_Save">
-           <property name="maximumSize">
-            <size>
-             <width>157</width>
-             <height>44</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>20</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#Button_Save {
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QPushButton" name="Button_Save">
+              <property name="maximumSize">
+               <size>
+                <width>157</width>
+                <height>44</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#Button_Save {
 border: 3px solid;
 border-radius: 9px;
 border-color: #7A6D6D;
@@ -670,27 +655,27 @@ background-color: rgb(219, 219, 219);
 #Button_Save:pressed { 
 background-color: #BBB4B4;
 }</string>
-           </property>
-           <property name="text">
-            <string>Сохранить</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="Button_Back">
-           <property name="maximumSize">
-            <size>
-             <width>157</width>
-             <height>44</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>20</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#Button_Back {
+              </property>
+              <property name="text">
+               <string>Сохранить</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Button_Back">
+              <property name="maximumSize">
+               <size>
+                <width>157</width>
+                <height>44</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#Button_Back {
 border: 3px solid;
 border-radius: 9px;
 border-color: #7A6D6D;
@@ -702,103 +687,97 @@ background-color: rgb(219, 219, 219);
 #Button_Back:pressed { 
 background-color: #BBB4B4;
 }</string>
-           </property>
-           <property name="text">
-            <string>Назад</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="Fill_page">
-     <property name="maximumSize">
-      <size>
-       <width>790</width>
-       <height>557</height>
-      </size>
-     </property>
-     <widget class="QWidget" name="verticalLayoutWidget_4">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>10</y>
-        <width>771</width>
-        <height>501</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_4">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_6">
-         <item>
-          <widget class="QLabel" name="label">
-           <property name="maximumSize">
-            <size>
-             <width>777</width>
-             <height>112</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>20</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border: 2px solid;
+              </property>
+              <property name="text">
+               <string>Назад</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Fill_page">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="maximumSize">
+               <size>
+                <width>777</width>
+                <height>112</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: 2px solid;
 background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));
 border-top-left-radius: 55px;
 border-top-right-radius: 55px;
 border-bottom-left-radius: 22px;
 border-bottom-right-radius: 22px;
 </string>
-           </property>
-           <property name="text">
-            <string>ЗАПОЛНИТЬ ДОКУМЕНТ</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_15">
-         <item>
-          <widget class="QTextEdit" name="Poisk">
-           <property name="maximumSize">
-            <size>
-             <width>430</width>
-             <height>64</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>20</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#Poisk {
+              </property>
+              <property name="text">
+               <string>ЗАПОЛНИТЬ ДОКУМЕНТ</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_15">
+            <item>
+             <widget class="QTextEdit" name="Poisk">
+              <property name="maximumSize">
+               <size>
+                <width>430</width>
+                <height>64</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#Poisk {
 background-color: rgb(181, 173, 173);
 }
 #Poisk:Focus {
 background-color: rgb(219, 219, 219);
 }</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="Button_Find_Fill">
-           <property name="maximumSize">
-            <size>
-             <width>70</width>
-             <height>67</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#Button_Find_Fill {
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Button_Find_Fill">
+              <property name="maximumSize">
+               <size>
+                <width>70</width>
+                <height>67</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#Button_Find_Fill {
 image: url(:/Lupa/Lupa.png);
 border: 3px solid;
 border-radius: 9px;
@@ -811,27 +790,27 @@ background-color: rgb(219, 219, 219);
 #Button_Find_Fill:pressed { 
 background-color: #BBB4B4;
 }</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="Button_Back_Fill">
-           <property name="maximumSize">
-            <size>
-             <width>157</width>
-             <height>44</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>20</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#Button_Back_Fill {
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Button_Back_Fill">
+              <property name="maximumSize">
+               <size>
+                <width>157</width>
+                <height>44</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#Button_Back_Fill {
 border: 3px solid;
 border-radius: 9px;
 border-color: #7A6D6D;
@@ -843,146 +822,146 @@ background-color: rgb(219, 219, 219);
 #Button_Back_Fill:pressed { 
 background-color: #BBB4B4;
 }</string>
-           </property>
-           <property name="text">
-            <string>НАЗАД</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_17">
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_20">
-           <item>
-            <widget class="QLabel" name="label_2">
-             <property name="maximumSize">
-              <size>
-               <width>362</width>
-               <height>60</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>20</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">border: 3px solid;
+              </property>
+              <property name="text">
+               <string>НАЗАД</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_17">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_20">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="maximumSize">
+                 <size>
+                  <width>362</width>
+                  <height>60</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 3px solid;
 border-top-left-radius: 6px;
 background-color: rgb(210, 163, 116);</string>
-             </property>
-             <property name="text">
-              <string>НАЗВАНИЕ</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_19">
-           <item>
-            <widget class="QLabel" name="label_3">
-             <property name="maximumSize">
-              <size>
-               <width>362</width>
-               <height>60</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>20</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">border: 3px solid;
+                </property>
+                <property name="text">
+                 <string>НАЗВАНИЕ</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_19">
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="maximumSize">
+                 <size>
+                  <width>362</width>
+                  <height>60</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 3px solid;
 border-top-left-radius: 6px;
 background-color: rgb(210, 163, 116);</string>
-             </property>
-             <property name="text">
-              <string>ДЕЙСТВИЕ</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_16">
-         <item>
-          <widget class="QScrollArea" name="Name">
-           <property name="maximumSize">
-            <size>
-             <width>365</width>
-             <height>211</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border: 2px solid</string>
-           </property>
-           <property name="verticalScrollBarPolicy">
-            <enum>Qt::ScrollBarAlwaysOn</enum>
-           </property>
-           <property name="horizontalScrollBarPolicy">
-            <enum>Qt::ScrollBarAsNeeded</enum>
-           </property>
-           <property name="widgetResizable">
-            <bool>true</bool>
-           </property>
-           <widget class="QWidget" name="scrollAreaWidgetContents_2">
-            <property name="geometry">
-             <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>344</width>
-              <height>193</height>
-             </rect>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_5"/>
-           </widget>
-          </widget>
-         </item>
-         <item>
-          <widget class="QScrollArea" name="Action">
-           <property name="maximumSize">
-            <size>
-             <width>365</width>
-             <height>211</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border: 2px solid</string>
-           </property>
-           <property name="widgetResizable">
-            <bool>true</bool>
-           </property>
-           <widget class="QWidget" name="scrollAreaWidgetContents">
-            <property name="geometry">
-             <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>361</width>
-              <height>193</height>
-             </rect>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_6">
-             <item>
-              <widget class="QPushButton" name="Button_Fill_Fill">
-               <property name="font">
-                <font>
-                 <pointsize>20</pointsize>
-                </font>
+                </property>
+                <property name="text">
+                 <string>ДЕЙСТВИЕ</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_16">
+            <item>
+             <widget class="QScrollArea" name="Name">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: 2px solid</string>
+              </property>
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOn</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAsNeeded</enum>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>386</width>
+                 <height>246</height>
+                </rect>
                </property>
-               <property name="styleSheet">
-                <string notr="true">#Button_Fill_Fill {
+               <layout class="QVBoxLayout" name="verticalLayout_5"/>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="Action">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: 2px solid</string>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>403</width>
+                 <height>246</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <widget class="QPushButton" name="Button_Fill_Fill">
+                  <property name="font">
+                   <font>
+                    <pointsize>20</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">#Button_Fill_Fill {
 border: 3px solid;
 border-radius: 9px;
 border-color: #7A6D6D;
@@ -994,29 +973,32 @@ background-color: rgb(219, 219, 219);
 #Button_Fill_Fill:pressed { 
 background-color: #BBB4B4;
 }</string>
-               </property>
-               <property name="text">
-                <string>ЗАПОЛНИТЬ</string>
-               </property>
+                  </property>
+                  <property name="text">
+                   <string>ЗАПОЛНИТЬ</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
               </widget>
-             </item>
-            </layout>
-           </widget>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
      </widget>
-    </widget>
-   </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>790</width>
+     <width>802</width>
      <height>21</height>
     </rect>
    </property>

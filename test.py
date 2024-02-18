@@ -79,9 +79,14 @@ class AppWindow_main(QMainWindow):
         self.ui.Button_Forma_plus.clicked.connect(self.add_field)
     def add_field(self):
         _translate = QtCore.QCoreApplication.translate
-        self.verticalLayout_t = QtWidgets.QVBoxLayout()
+        self.widget_t = QtWidgets.QWidget()
+        self.widget_t.setStyleSheet("#widget_t {\n"
+"border: 3px solid;\n"
+"}")
+        self.widget_t.setObjectName("widget_t")
+        self.verticalLayout_t = QtWidgets.QVBoxLayout(self.widget_t)
         self.verticalLayout_t.setObjectName("verticalLayout_t")
-        self.ui.verticalLayout_7.addLayout(self.verticalLayout_t)
+        self.ui.verticalLayout_7.addWidget(self.widget_t)
         # Основное размещение (верхнее)
         self.horizontalLayout_01 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_01.setObjectName("horizontalLayout_01_")
@@ -108,6 +113,7 @@ class AppWindow_main(QMainWindow):
 "}")
         self.textField_01.setObjectName("Vopros_0")
         self.horizontalLayout_04.addWidget(self.textField_01)
+        self.textField_01.setPlaceholderText("ВОПРОС")
         # Кнопка
         self.pushButton_01 = QtWidgets.QPushButton()
         self.pushButton_01.setMaximumSize(QtCore.QSize(141, 80))
@@ -151,6 +157,7 @@ class AppWindow_main(QMainWindow):
 "}")
         self.textField_02.setObjectName("Answer_0")
         self.horizontalLayout_06.addWidget(self.textField_02)
+        self.textField_02.setPlaceholderText("КРАТКИЙ ОТВЕТ")
         # Размещение кнопок
         self.horizontalLayout_07 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_07.setObjectName("horizontalLayout_07_")
