@@ -55,6 +55,9 @@ class AppWindow_main(QMainWindow):
         self.ui = Form()
         self.ui.setupUi(self)
 
+        global a, b
+        a = []
+        b = 0
         self.ui.Kratki_otvet.setFont(font6)
         self.ui.Vopros.setFont(font6)
 
@@ -73,11 +76,13 @@ class AppWindow_main(QMainWindow):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
         self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
         self.ui.Button_Zapolnit.clicked.connect(self.transfer_Fill)
+        self.ui.Button_Save.clicked.connect(self.save_form)
     def transfer_page_add(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
         self.ui.Button_Back.clicked.connect(self.transfer_back)
         self.ui.Button_Forma_plus.clicked.connect(self.add_field)
     def add_field(self):
+        global a, b
         _translate = QtCore.QCoreApplication.translate
         self.widget_t = QtWidgets.QWidget()
         self.widget_t.setStyleSheet("#widget_t {\n"
@@ -105,15 +110,16 @@ class AppWindow_main(QMainWindow):
         font = QtGui.QFont()
         font.setPointSize(20)
         self.textField_01.setFont(font)
-        self.textField_01.setStyleSheet("#Vopros_0 {\n"
+        self.textField_01.setStyleSheet('#Vopros_0{\n'
 "background-color: rgb(181, 173, 173);\n"
 "}\n"
 "#Vopros_0:Focus {\n"
 "background-color: rgb(219, 219, 219);\n"
 "}")
-        self.textField_01.setObjectName("Vopros_0")
+        self.textField_01.setObjectName('Vopros_0')
         self.horizontalLayout_04.addWidget(self.textField_01)
         self.textField_01.setPlaceholderText("ВОПРОС")
+        a.append(self.textField_01)
         # Кнопка
         self.pushButton_01 = QtWidgets.QPushButton()
         self.pushButton_01.setMaximumSize(QtCore.QSize(141, 80))
@@ -273,10 +279,16 @@ class AppWindow_main(QMainWindow):
 "}")
         self.horizontalLayout_03.addWidget(self.pushButton_05)
 
-
-
-        
-        
+    def save_form(self):
+        global a
+        voprosi = []
+        print(a)
+        c = self.ui.Vopros.text()
+        print(c)
+        for i in a:
+            vopros = i.toPlainText()
+            voprosi.append(vopros)
+            print(vopros)
     def transfer_back(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
     def transfer_Fill(self):
