@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'Main_s.ui'
+# Form implementation generated from reading ui file 'Main_Form.ui'
 #
 # Created by: PyQt6 UI code generator 6.6.1
 #
@@ -12,10 +12,8 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(802, 549)
-        MainWindow.setMaximumSize(QtCore.QSize(9999999, 9999999))
+        MainWindow.resize(800, 599)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
-        self.centralwidget.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout_8.setObjectName("verticalLayout_8")
@@ -36,12 +34,7 @@ class Ui_MainWindow(object):
         font.setPointSize(72)
         self.Glavnaya.setFont(font)
         self.Glavnaya.setContextMenuPolicy(QtCore.Qt.ContextMenuPolicy.DefaultContextMenu)
-        self.Glavnaya.setStyleSheet("border: 2px solid;\n"
-"border-top-left-radius: 55px;\n"
-"border-top-right-radius: 55px;\n"
-"border-bottom-right-radius: 20px;\n"
-"border-bottom-left-radius: 20px;\n"
-"background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));")
+        self.Glavnaya.setStyleSheet("")
         self.Glavnaya.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.Glavnaya.setObjectName("Glavnaya")
         self.horizontalLayout_5.addWidget(self.Glavnaya)
@@ -55,16 +48,14 @@ class Ui_MainWindow(object):
         font.setPointSize(24)
         self.Button_Zapolnit.setFont(font)
         self.Button_Zapolnit.setStyleSheet("#Button_Zapolnit{\n"
-"background-color: rgb(133, 114, 85);\n"
-"border-top-left-radius: 30px;\n"
-"border-bottom-right-radius: 30px;\n"
-"border: 2px solid;\n"
+"border-top: 2px solid;\n"
+"border-bottom: 2px solid;\n"
 "}\n"
 "#Button_Zapolnit:hover {\n"
-"background:#dabb8b;\n"
+"\n"
 "}\n"
 "#Button_Zapolnit:pressed {\n"
-"background-color: rgb(133, 114, 85);\n"
+"\n"
 "}")
         self.Button_Zapolnit.setObjectName("Button_Zapolnit")
         self.horizontalLayout.addWidget(self.Button_Zapolnit)
@@ -74,16 +65,14 @@ class Ui_MainWindow(object):
         font.setPointSize(24)
         self.Button_Spisok.setFont(font)
         self.Button_Spisok.setStyleSheet("#Button_Spisok{\n"
-"background-color: rgb(133, 114, 85);\n"
-"border-top-right-radius: 30px;\n"
-"border-bottom-left-radius: 30px;\n"
-"border: 2px solid;\n"
+"border-top: 2px solid;\n"
+"border-bottom: 2px solid;\n"
 "}\n"
 "#Button_Spisok:hover {\n"
-"background:#dabb8b;\n"
+"\n"
 "}\n"
 "#Button_Spisok:pressed {\n"
-"background-color: rgb(133, 114, 85);\n"
+"\n"
 "}")
         self.Button_Spisok.setObjectName("Button_Spisok")
         self.horizontalLayout.addWidget(self.Button_Spisok)
@@ -103,14 +92,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(48)
         self.Dobavochnoe_pole.setFont(font)
-        self.Dobavochnoe_pole.setStyleSheet("border: 2px solid;\n"
-"background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));\n"
-"border-top-left-radius: 55px;\n"
-"border-top-right-radius: 55px;\n"
-"border-bottom-left-radius: 22px;\n"
-"border-bottom-right-radius: 22px;\n"
-"\n"
-"")
+        self.Dobavochnoe_pole.setStyleSheet("")
         self.Dobavochnoe_pole.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.Dobavochnoe_pole.setObjectName("Dobavochnoe_pole")
         self.horizontalLayout_14.addWidget(self.Dobavochnoe_pole)
@@ -122,43 +104,40 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Dobavit_dokument_label.setFont(font)
+        self.Dobavit_dokument_label.setStyleSheet("border-bottom: 2px solid black;\n"
+"")
+        self.Dobavit_dokument_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.Dobavit_dokument_label.setObjectName("Dobavit_dokument_label")
         self.horizontalLayout_2.addWidget(self.Dobavit_dokument_label)
         self.Button_Dok = QtWidgets.QPushButton(parent=self.Add_page)
-        self.Button_Dok.setMaximumSize(QtCore.QSize(120, 44))
+        self.Button_Dok.setMaximumSize(QtCore.QSize(180, 44))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Button_Dok.setFont(font)
         self.Button_Dok.setStyleSheet("#Button_Dok {\n"
-"border: 3px solid;\n"
-"border-radius: 9px;\n"
-"border-color: #7A6D6D;\n"
-"background-color: #BBB4B4\n"
+"border-top: 2px solid;\n"
+"border-bottom: 2px solid;\n"
 "}\n"
 "#Button_Dok:hover {\n"
-"background-color: rgb(219, 219, 219);\n"
 "}\n"
 "#Button_Dok:pressed { \n"
-"background-color: #BBB4B4;\n"
 "}")
         self.Button_Dok.setObjectName("Button_Dok")
         self.horizontalLayout_2.addWidget(self.Button_Dok)
         self.Button_Forma_plus = QtWidgets.QPushButton(parent=self.Add_page)
-        self.Button_Forma_plus.setMaximumSize(QtCore.QSize(157, 44))
+        self.Button_Forma_plus.setMaximumSize(QtCore.QSize(130, 44))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Button_Forma_plus.setFont(font)
         self.Button_Forma_plus.setStyleSheet("#Button_Forma_plus {\n"
-"border: 3px solid;\n"
-"border-radius: 9px;\n"
-"border-color: #7A6D6D;\n"
-"background-color: #BBB4B4\n"
+"border-top: 2px solid;\n"
+"border-bottom: 2px solid;\n"
 "}\n"
 "#Button_Forma_plus:hover {\n"
-"background-color: rgb(219, 219, 219);\n"
+"\n"
 "}\n"
 "#Button_Forma_plus:pressed { \n"
-"background-color: #BBB4B4;\n"
+"\n"
 "}")
         self.Button_Forma_plus.setObjectName("Button_Forma_plus")
         self.horizontalLayout_2.addWidget(self.Button_Forma_plus)
@@ -175,14 +154,14 @@ class Ui_MainWindow(object):
         self.scrollArea.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 743, 283))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 417, 198))
         self.scrollAreaWidgetContents_3.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_7.setObjectName("verticalLayout_7")
         self.widget = QtWidgets.QWidget(parent=self.scrollAreaWidgetContents_3)
         self.widget.setStyleSheet("#widget {\n"
-"border: 3px solid;\n"
+"background-color: rgb(194, 194, 194)\n"
 "}")
         self.widget.setObjectName("widget")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.widget)
@@ -191,17 +170,15 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
         self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_8.setObjectName("horizontalLayout_8")
-        self.Vopros = QtWidgets.QTextEdit(parent=self.widget)
+        self.Vopros = QtWidgets.QLineEdit(parent=self.widget)
         self.Vopros.setMaximumSize(QtCore.QSize(425, 60))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Vopros.setFont(font)
-        self.Vopros.setStyleSheet("#Vopros {\n"
-"background-color: rgb(181, 173, 173);\n"
-"}\n"
-"#Vopros:Focus {\n"
-"background-color: rgb(219, 219, 219);\n"
-"}")
+        self.Vopros.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(194, 194, 194);")
+        self.Vopros.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.Vopros.setObjectName("Vopros")
         self.horizontalLayout_8.addWidget(self.Vopros)
         self.horizontalLayout_7.addLayout(self.horizontalLayout_8)
@@ -213,16 +190,14 @@ class Ui_MainWindow(object):
         font.setPointSize(20)
         self.Odin_iz_spiska.setFont(font)
         self.Odin_iz_spiska.setStyleSheet("#Odin_iz_spiska {\n"
-"border: 3px solid;\n"
-"border-radius: 9px;\n"
-"border-color: #7A6D6D;\n"
-"background-color: #BBB4B4\n"
+"border-top: 2px solid;\n"
+"border-bottom: 2px solid;\n"
 "}\n"
 "#Odin_iz_spiska:hover {\n"
-"background-color: rgb(219, 219, 219);\n"
+"\n"
 "}\n"
 "#Odin_iz_spiska:pressed { \n"
-"background-color: #BBB4B4;\n"
+"\n"
 "}")
         self.Odin_iz_spiska.setObjectName("Odin_iz_spiska")
         self.horizontalLayout_9.addWidget(self.Odin_iz_spiska)
@@ -232,57 +207,45 @@ class Ui_MainWindow(object):
         self.horizontalLayout_10.setObjectName("horizontalLayout_10")
         self.horizontalLayout_12 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_12.setObjectName("horizontalLayout_12")
-        self.Kratki_otvet = QtWidgets.QTextEdit(parent=self.widget)
+        self.Kratki_otvet = QtWidgets.QLineEdit(parent=self.widget)
         self.Kratki_otvet.setMaximumSize(QtCore.QSize(425, 60))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Kratki_otvet.setFont(font)
-        self.Kratki_otvet.setStyleSheet("#Kratki_otvet {\n"
-"background-color: rgb(181, 173, 173);\n"
-"}\n"
-"#Kratki_otvet:Focus {\n"
-"background-color: rgb(219, 219, 219);\n"
-"}")
+        self.Kratki_otvet.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(194, 194, 194);")
+        self.Kratki_otvet.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.Kratki_otvet.setObjectName("Kratki_otvet")
         self.horizontalLayout_12.addWidget(self.Kratki_otvet)
         self.horizontalLayout_10.addLayout(self.horizontalLayout_12)
         self.horizontalLayout_11 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_11.setObjectName("horizontalLayout_11")
-        self.Button_Teg = QtWidgets.QPushButton(parent=self.widget)
-        self.Button_Teg.setMaximumSize(QtCore.QSize(100, 48))
+        self.Tag = QtWidgets.QLineEdit(parent=self.widget)
+        self.Tag.setMaximumSize(QtCore.QSize(100, 60))
         font = QtGui.QFont()
         font.setPointSize(20)
-        self.Button_Teg.setFont(font)
-        self.Button_Teg.setStyleSheet("#Button_Teg {\n"
-"border: 3px solid;\n"
-"border-radius: 9px;\n"
-"border-color: #7A6D6D;\n"
-"background-color: #BBB4B4\n"
-"}\n"
-"#Button_Teg:hover {\n"
-"background-color: rgb(219, 219, 219);\n"
-"}\n"
-"#Button_Teg:pressed { \n"
-"background-color: #BBB4B4;\n"
-"}")
-        self.Button_Teg.setObjectName("Button_Teg")
-        self.horizontalLayout_11.addWidget(self.Button_Teg)
+        self.Tag.setFont(font)
+        self.Tag.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(194, 194, 194);")
+        self.Tag.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Tag.setObjectName("Tag")
+        self.horizontalLayout_11.addWidget(self.Tag)
         self.Button_Question = QtWidgets.QPushButton(parent=self.widget)
         self.Button_Question.setMaximumSize(QtCore.QSize(37, 33))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Button_Question.setFont(font)
         self.Button_Question.setStyleSheet("#Button_Question {\n"
-"border: 3px solid;\n"
-"border-radius: 9px;\n"
-"border-color: #7A6D6D;\n"
-"background-color: #BBB4B4\n"
+"border-top: 2px solid;\n"
+"border-bottom: 2px solid;\n"
 "}\n"
 "#Button_Question:hover {\n"
-"background-color: rgb(219, 219, 219);\n"
+"\n"
 "}\n"
 "#Button_Question:pressed { \n"
-"background-color: #BBB4B4;\n"
+"\n"
 "}")
         self.Button_Question.setObjectName("Button_Question")
         self.horizontalLayout_11.addWidget(self.Button_Question)
@@ -293,39 +256,19 @@ class Ui_MainWindow(object):
         self.Button_Copy = QtWidgets.QPushButton(parent=self.widget)
         self.Button_Copy.setMaximumSize(QtCore.QSize(43, 41))
         self.Button_Copy.setStyleSheet("#Button_Copy {\n"
-"border: 3px solid;\n"
-"border-radius: 9px;\n"
-"border-color: #7A6D6D;\n"
-"background-color: #BBB4B4;\n"
 "image: url(:/Copycopycopy/Copycopycopy.png);\n"
+"border-top: 2px solid;\n"
+"border-bottom: 2px solid;\n"
 "}\n"
 "#Button_Copy:hover {\n"
-"background-color: rgb(219, 219, 219);\n"
+"\n"
 "}\n"
 "#Button_Copy:pressed { \n"
-"background-color: #BBB4B4;\n"
+"\n"
 "}")
         self.Button_Copy.setText("")
         self.Button_Copy.setObjectName("Button_Copy")
         self.horizontalLayout_13.addWidget(self.Button_Copy)
-        self.Button_Trash = QtWidgets.QPushButton(parent=self.widget)
-        self.Button_Trash.setMaximumSize(QtCore.QSize(43, 41))
-        self.Button_Trash.setStyleSheet("#Button_Trash {\n"
-"image: url(:/Trashcan/trashcan.png);\n"
-"border: 3px solid;\n"
-"border-radius: 9px;\n"
-"border-color: #7A6D6D;\n"
-"background-color: #BBB4B4\n"
-"}\n"
-"#Button_Trash:hover {\n"
-"background-color: rgb(219, 219, 219);\n"
-"}\n"
-"#Button_Trash:pressed { \n"
-"background-color: #BBB4B4;\n"
-"}")
-        self.Button_Trash.setText("")
-        self.Button_Trash.setObjectName("Button_Trash")
-        self.horizontalLayout_13.addWidget(self.Button_Trash)
         self.Obyazatelny_vopros = QtWidgets.QLabel(parent=self.widget)
         self.Obyazatelny_vopros.setMaximumSize(QtCore.QSize(400, 34))
         font = QtGui.QFont()
@@ -336,17 +279,15 @@ class Ui_MainWindow(object):
         self.Button_Galka = QtWidgets.QPushButton(parent=self.widget)
         self.Button_Galka.setMaximumSize(QtCore.QSize(43, 41))
         self.Button_Galka.setStyleSheet("#Button_Galka {\n"
-"border: 3px solid;\n"
 "image: url(:/Galka/galka.png);\n"
-"border-radius: 9px;\n"
-"border-color: #7A6D6D;\n"
-"background-color: #BBB4B4\n"
+"border-top: 2px solid;\n"
+"border-bottom: 2px solid;\n"
 "}\n"
 "#Button_Galka:hover {\n"
-"background-color: rgb(219, 219, 219);\n"
+"\n"
 "}\n"
 "#Button_Galka:pressed { \n"
-"background-color: #BBB4B4;\n"
+"\n"
 "}")
         self.Button_Galka.setText("")
         self.Button_Galka.setObjectName("Button_Galka")
@@ -358,22 +299,37 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.addLayout(self.horizontalLayout_3)
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.Button_Trash = QtWidgets.QPushButton(parent=self.Add_page)
+        self.Button_Trash.setMaximumSize(QtCore.QSize(157, 44))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Trash.setFont(font)
+        self.Button_Trash.setStyleSheet("#Button_Trash {\n"
+"border-top: 2px solid;\n"
+"border-bottom: 2px solid;\n"
+"}\n"
+"#Button_Trash:hover {\n"
+"\n"
+"}\n"
+"#Button_Trash:pressed { \n"
+"\n"
+"}")
+        self.Button_Trash.setObjectName("Button_Trash")
+        self.horizontalLayout_4.addWidget(self.Button_Trash)
         self.Button_Save = QtWidgets.QPushButton(parent=self.Add_page)
         self.Button_Save.setMaximumSize(QtCore.QSize(157, 44))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Button_Save.setFont(font)
         self.Button_Save.setStyleSheet("#Button_Save {\n"
-"border: 3px solid;\n"
-"border-radius: 9px;\n"
-"border-color: #7A6D6D;\n"
-"background-color: #BBB4B4\n"
+"border-top: 2px solid;\n"
+"border-bottom: 2px solid;\n"
 "}\n"
 "#Button_Save:hover {\n"
-"background-color: rgb(219, 219, 219);\n"
+"\n"
 "}\n"
 "#Button_Save:pressed { \n"
-"background-color: #BBB4B4;\n"
+"\n"
 "}")
         self.Button_Save.setObjectName("Button_Save")
         self.horizontalLayout_4.addWidget(self.Button_Save)
@@ -383,16 +339,14 @@ class Ui_MainWindow(object):
         font.setPointSize(20)
         self.Button_Back.setFont(font)
         self.Button_Back.setStyleSheet("#Button_Back {\n"
-"border: 3px solid;\n"
-"border-radius: 9px;\n"
-"border-color: #7A6D6D;\n"
-"background-color: #BBB4B4\n"
+"border-top: 2px solid;\n"
+"border-bottom: 2px solid;\n"
 "}\n"
 "#Button_Back:hover {\n"
-"background-color: rgb(219, 219, 219);\n"
+"\n"
 "}\n"
 "#Button_Back:pressed { \n"
-"background-color: #BBB4B4;\n"
+"\n"
 "}")
         self.Button_Back.setObjectName("Button_Back")
         self.horizontalLayout_4.addWidget(self.Button_Back)
@@ -409,158 +363,113 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
         self.label = QtWidgets.QLabel(parent=self.Fill_page)
-        self.label.setMaximumSize(QtCore.QSize(777, 112))
+        self.label.setMaximumSize(QtCore.QSize(777, 30))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.label.setFont(font)
-        self.label.setStyleSheet("border: 2px solid;\n"
-"background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));\n"
-"border-top-left-radius: 55px;\n"
-"border-top-right-radius: 55px;\n"
-"border-bottom-left-radius: 22px;\n"
-"border-bottom-right-radius: 22px;\n"
-"")
+        self.label.setStyleSheet("")
         self.label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label.setObjectName("label")
         self.horizontalLayout_6.addWidget(self.label)
         self.verticalLayout_4.addLayout(self.horizontalLayout_6)
+        self.horizontalLayout_20 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_20.setObjectName("horizontalLayout_20")
+        self.label_2 = QtWidgets.QLabel(parent=self.Fill_page)
+        self.label_2.setMaximumSize(QtCore.QSize(600, 40))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("#label_2 {\n"
+"border-bottom: 2px solid;\n"
+"}")
+        self.label_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout_20.addWidget(self.label_2)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_20)
         self.horizontalLayout_15 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_15.setObjectName("horizontalLayout_15")
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.horizontalLayout_18 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_18.setContentsMargins(-1, -1, -1, 20)
+        self.horizontalLayout_18.setSpacing(6)
+        self.horizontalLayout_18.setObjectName("horizontalLayout_18")
         self.Poisk = QtWidgets.QTextEdit(parent=self.Fill_page)
         self.Poisk.setMaximumSize(QtCore.QSize(430, 64))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Poisk.setFont(font)
         self.Poisk.setStyleSheet("#Poisk {\n"
-"background-color: rgb(181, 173, 173);\n"
+"border-bottom: 2px solid;\n"
 "}\n"
 "#Poisk:Focus {\n"
-"background-color: rgb(219, 219, 219);\n"
+"\n"
 "}")
         self.Poisk.setObjectName("Poisk")
-        self.horizontalLayout_15.addWidget(self.Poisk)
-        self.Button_Find_Fill = QtWidgets.QPushButton(parent=self.Fill_page)
-        self.Button_Find_Fill.setMaximumSize(QtCore.QSize(70, 67))
-        self.Button_Find_Fill.setStyleSheet("#Button_Find_Fill {\n"
-"image: url(:/Lupa/Lupa.png);\n"
-"border: 3px solid;\n"
-"border-radius: 9px;\n"
-"border-color: #7A6D6D;\n"
-"background-color: #BBB4B4\n"
+        self.horizontalLayout_18.addWidget(self.Poisk)
+        self.verticalLayout_5.addLayout(self.horizontalLayout_18)
+        self.verticalLayout_6 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_6.setObjectName("verticalLayout_6")
+        self.horizontalLayout_19 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_19.setContentsMargins(-1, 20, -1, -1)
+        self.horizontalLayout_19.setObjectName("horizontalLayout_19")
+        self.textEdit_2 = QtWidgets.QTextEdit(parent=self.Fill_page)
+        self.textEdit_2.setMaximumSize(QtCore.QSize(430, 64))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textEdit_2.setFont(font)
+        self.textEdit_2.setObjectName("textEdit_2")
+        self.horizontalLayout_19.addWidget(self.textEdit_2)
+        self.verticalLayout_6.addLayout(self.horizontalLayout_19)
+        self.verticalLayout_5.addLayout(self.verticalLayout_6)
+        self.horizontalLayout_15.addLayout(self.verticalLayout_5)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_15)
+        self.horizontalLayout_17 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_17.setObjectName("horizontalLayout_17")
+        self.verticalLayout_4.addLayout(self.horizontalLayout_17)
+        self.horizontalLayout_16 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_16.setObjectName("horizontalLayout_16")
+        self.Button_Save_Fill = QtWidgets.QPushButton(parent=self.Fill_page)
+        self.Button_Save_Fill.setMaximumSize(QtCore.QSize(157, 44))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Save_Fill.setFont(font)
+        self.Button_Save_Fill.setStyleSheet("#Button_Save_Fill {\n"
+"border-top: 2px solid;\n"
+"border-bottom: 2px solid;\n"
 "}\n"
-"#Button_Find_Fill:hover {\n"
-"background-color: rgb(219, 219, 219);\n"
+"#Button_Save_Fill:hover {\n"
+"\n"
 "}\n"
-"#Button_Find_Fill:pressed { \n"
-"background-color: #BBB4B4;\n"
+"#Button_Save_Fill:pressed { \n"
+"\n"
 "}")
-        self.Button_Find_Fill.setText("")
-        self.Button_Find_Fill.setObjectName("Button_Find_Fill")
-        self.horizontalLayout_15.addWidget(self.Button_Find_Fill)
+        self.Button_Save_Fill.setObjectName("Button_Save_Fill")
+        self.horizontalLayout_16.addWidget(self.Button_Save_Fill)
         self.Button_Back_Fill = QtWidgets.QPushButton(parent=self.Fill_page)
         self.Button_Back_Fill.setMaximumSize(QtCore.QSize(157, 44))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Button_Back_Fill.setFont(font)
         self.Button_Back_Fill.setStyleSheet("#Button_Back_Fill {\n"
-"border: 3px solid;\n"
-"border-radius: 9px;\n"
-"border-color: #7A6D6D;\n"
-"background-color: #BBB4B4\n"
+"border-top: 2px solid;\n"
+"border-bottom: 2px solid;\n"
 "}\n"
 "#Button_Back_Fill:hover {\n"
-"background-color: rgb(219, 219, 219);\n"
+"\n"
 "}\n"
 "#Button_Back_Fill:pressed { \n"
-"background-color: #BBB4B4;\n"
+"\n"
 "}")
         self.Button_Back_Fill.setObjectName("Button_Back_Fill")
-        self.horizontalLayout_15.addWidget(self.Button_Back_Fill)
-        self.verticalLayout_4.addLayout(self.horizontalLayout_15)
-        self.horizontalLayout_17 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_17.setObjectName("horizontalLayout_17")
-        self.horizontalLayout_20 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_20.setObjectName("horizontalLayout_20")
-        self.label_2 = QtWidgets.QLabel(parent=self.Fill_page)
-        self.label_2.setMaximumSize(QtCore.QSize(362, 60))
-        font = QtGui.QFont()
-        font.setPointSize(20)
-        self.label_2.setFont(font)
-        self.label_2.setStyleSheet("border: 3px solid;\n"
-"border-top-left-radius: 6px;\n"
-"background-color: rgb(210, 163, 116);")
-        self.label_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_2.setObjectName("label_2")
-        self.horizontalLayout_20.addWidget(self.label_2)
-        self.horizontalLayout_17.addLayout(self.horizontalLayout_20)
-        self.horizontalLayout_19 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_19.setObjectName("horizontalLayout_19")
-        self.label_3 = QtWidgets.QLabel(parent=self.Fill_page)
-        self.label_3.setMaximumSize(QtCore.QSize(362, 60))
-        font = QtGui.QFont()
-        font.setPointSize(20)
-        self.label_3.setFont(font)
-        self.label_3.setStyleSheet("border: 3px solid;\n"
-"border-top-left-radius: 6px;\n"
-"background-color: rgb(210, 163, 116);")
-        self.label_3.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_3.setObjectName("label_3")
-        self.horizontalLayout_19.addWidget(self.label_3)
-        self.horizontalLayout_17.addLayout(self.horizontalLayout_19)
-        self.verticalLayout_4.addLayout(self.horizontalLayout_17)
-        self.horizontalLayout_16 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_16.setObjectName("horizontalLayout_16")
-        self.Name = QtWidgets.QScrollArea(parent=self.Fill_page)
-        self.Name.setMaximumSize(QtCore.QSize(16777215, 16777215))
-        self.Name.setStyleSheet("border: 2px solid")
-        self.Name.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
-        self.Name.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAsNeeded)
-        self.Name.setWidgetResizable(True)
-        self.Name.setObjectName("Name")
-        self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 386, 246))
-        self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
-        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
-        self.verticalLayout_5.setObjectName("verticalLayout_5")
-        self.Name.setWidget(self.scrollAreaWidgetContents_2)
-        self.horizontalLayout_16.addWidget(self.Name)
-        self.Action = QtWidgets.QScrollArea(parent=self.Fill_page)
-        self.Action.setMaximumSize(QtCore.QSize(16777215, 16777215))
-        self.Action.setStyleSheet("border: 2px solid")
-        self.Action.setWidgetResizable(True)
-        self.Action.setObjectName("Action")
-        self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 403, 246))
-        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
-        self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
-        self.verticalLayout_6.setObjectName("verticalLayout_6")
-        self.Button_Fill_Fill = QtWidgets.QPushButton(parent=self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(20)
-        self.Button_Fill_Fill.setFont(font)
-        self.Button_Fill_Fill.setStyleSheet("#Button_Fill_Fill {\n"
-"border: 3px solid;\n"
-"border-radius: 9px;\n"
-"border-color: #7A6D6D;\n"
-"background-color: #BBB4B4\n"
-"}\n"
-"#Button_Fill_Fill:hover {\n"
-"background-color: rgb(219, 219, 219);\n"
-"}\n"
-"#Button_Fill_Fill:pressed { \n"
-"background-color: #BBB4B4;\n"
-"}")
-        self.Button_Fill_Fill.setObjectName("Button_Fill_Fill")
-        self.verticalLayout_6.addWidget(self.Button_Fill_Fill)
-        self.Action.setWidget(self.scrollAreaWidgetContents)
-        self.horizontalLayout_16.addWidget(self.Action)
+        self.horizontalLayout_16.addWidget(self.Button_Back_Fill)
         self.verticalLayout_4.addLayout(self.horizontalLayout_16)
         self.verticalLayout_11.addLayout(self.verticalLayout_4)
         self.stackedWidget.addWidget(self.Fill_page)
         self.verticalLayout_8.addWidget(self.stackedWidget)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 802, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -568,7 +477,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -579,26 +488,21 @@ class Ui_MainWindow(object):
 "ДОКУМЕНТ"))
         self.Button_Spisok.setText(_translate("MainWindow", "СПИСОК\n"
 "ФОРМ"))
-        self.Dobavochnoe_pole.setText(_translate("MainWindow", "ДОБАВОЧНОЕ ПОЛЕ"))
-        self.Dobavit_dokument_label.setText(_translate("MainWindow", "ДОБАВИТЬ ДОКУМЕНТ"))
-        self.Button_Dok.setText(_translate("MainWindow", "ДОК."))
-        self.Button_Forma_plus.setText(_translate("MainWindow", "+ ФОРМА"))
-        self.Vopros.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:20pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.Vopros.setPlaceholderText(_translate("MainWindow", "ВОПРОС"))
+        self.Dobavochnoe_pole.setText(_translate("MainWindow", "РЕДАКТОР ФОРМ"))
+        self.Dobavit_dokument_label.setText(_translate("MainWindow", "ДОБАВИТЬ"))
+        self.Button_Dok.setText(_translate("MainWindow", "ДОКУМЕНТ"))
+        self.Button_Forma_plus.setText(_translate("MainWindow", "ФОРМА"))
+        self.Vopros.setPlaceholderText(_translate("MainWindow", "Вопрос"))
         self.Odin_iz_spiska.setText(_translate("MainWindow", "ОДИН ИЗ\n"
 "СПИСКА"))
-        self.Kratki_otvet.setPlaceholderText(_translate("MainWindow", "КРАТКИЙ ОТВЕТ"))
-        self.Button_Teg.setText(_translate("MainWindow", "ТЭГ"))
+        self.Kratki_otvet.setPlaceholderText(_translate("MainWindow", "Краткий ответ"))
+        self.Tag.setPlaceholderText(_translate("MainWindow", "Тэг"))
         self.Button_Question.setText(_translate("MainWindow", "?"))
         self.Obyazatelny_vopros.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
+        self.Button_Trash.setText(_translate("MainWindow", "Удалить"))
         self.Button_Save.setText(_translate("MainWindow", "Сохранить"))
         self.Button_Back.setText(_translate("MainWindow", "Назад"))
         self.label.setText(_translate("MainWindow", "ЗАПОЛНИТЬ ДОКУМЕНТ"))
+        self.label_2.setText(_translate("MainWindow", "Название формы / название документа"))
+        self.Button_Save_Fill.setText(_translate("MainWindow", "СОХРАНИТЬ"))
         self.Button_Back_Fill.setText(_translate("MainWindow", "НАЗАД"))
-        self.label_2.setText(_translate("MainWindow", "НАЗВАНИЕ"))
-        self.label_3.setText(_translate("MainWindow", "ДЕЙСТВИЕ"))
-        self.Button_Fill_Fill.setText(_translate("MainWindow", "ЗАПОЛНИТЬ"))
