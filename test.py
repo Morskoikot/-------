@@ -5,7 +5,7 @@ from PyQt6.QtWidgets import (
     QApplication
 )
 from Authorization import Ui_MainWindow as Register
-from Main_s import Ui_MainWindow as Form
+from Main_Form import Ui_MainWindow as Form
 import Pictures
 from PyQt6.QtGui     import QFontDatabase, QFont
 from PyQt6.QtCore    import Qt
@@ -67,7 +67,7 @@ class AppWindow_main(QMainWindow):
         self.ui.Button_Dok.setFont(font3)
         self.ui.Button_Forma_plus.setFont(font3)
         self.ui.Dobavit_dokument_label.setFont(font5)
-        self.ui.Button_Teg.setFont(font3)
+
         self.ui.Odin_iz_spiska.setFont(font5)
         self.ui.Dobavochnoe_pole.setFont(font)
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
@@ -81,7 +81,7 @@ class AppWindow_main(QMainWindow):
         _translate = QtCore.QCoreApplication.translate
         self.widget_t = QtWidgets.QWidget()
         self.widget_t.setStyleSheet("#widget_t {\n"
-"border: 3px solid;\n"
+"background-color: rgb(194, 194, 194); \n"
 "}")
         self.widget_t.setObjectName("widget_t")
         self.verticalLayout_t = QtWidgets.QVBoxLayout(self.widget_t)
