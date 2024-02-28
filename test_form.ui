@@ -73,14 +73,14 @@
         <number>2</number>
        </property>
        <property name="bottomMargin">
-        <number>30</number>
+        <number>10</number>
        </property>
        <item>
         <widget class="QLabel" name="label_3">
          <property name="maximumSize">
           <size>
            <width>210</width>
-           <height>39</height>
+           <height>45</height>
           </size>
          </property>
          <property name="font">
@@ -111,10 +111,10 @@
          </property>
          <property name="styleSheet">
           <string notr="true">#Login {
-background-color: rgb(181, 173, 173);
+
 }
 #Login:Focus {
-background-color: rgb(219, 219, 219);
+
 }</string>
          </property>
         </widget>
@@ -127,14 +127,14 @@ background-color: rgb(219, 219, 219);
         <number>0</number>
        </property>
        <property name="bottomMargin">
-        <number>30</number>
+        <number>0</number>
        </property>
        <item>
         <widget class="QLabel" name="label_2">
          <property name="maximumSize">
           <size>
            <width>210</width>
-           <height>39</height>
+           <height>45</height>
           </size>
          </property>
          <property name="font">
@@ -165,10 +165,10 @@ background-color: rgb(219, 219, 219);
          </property>
          <property name="styleSheet">
           <string notr="true">#Password {
-background-color: rgb(181, 173, 173);
+
 }
 #Password:Focus {
-background-color: rgb(219, 219, 219);
+
 }</string>
          </property>
         </widget>
@@ -179,6 +179,9 @@ background-color: rgb(219, 219, 219);
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <property name="spacing">
         <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>60</number>
        </property>
        <item>
         <widget class="QPushButton" name="pushButton">
@@ -195,15 +198,14 @@ background-color: rgb(219, 219, 219);
          </property>
          <property name="styleSheet">
           <string notr="true">#pushButton {
-background-color: rgb(133, 114, 85);
-border-radius: 20px;
-border: 2px solid;
+border-bottom: 2px solid;
+border-top: 2px solid;
 }
 #pushButton:hover {
-background:#dabb8b;
+
 }
 #pushButton:pressed {
-background-color: rgb(133, 114, 85);
+
 }</string>
          </property>
          <property name="text">
