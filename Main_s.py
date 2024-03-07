@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
         self.centralwidget.setMaximumSize(QtCore.QSize(790, 557))
         self.centralwidget.setObjectName("centralwidget")
         self.stackedWidget = QtWidgets.QStackedWidget(parent=self.centralwidget)
-        self.stackedWidget.setGeometry(QtCore.QRect(10, -1, 771, 491))
+        self.stackedWidget.setGeometry(QtCore.QRect(10, -1, 771, 511))
         self.stackedWidget.setObjectName("stackedWidget")
         self.Main_page = QtWidgets.QWidget()
         self.Main_page.setMaximumSize(QtCore.QSize(790, 557))
@@ -92,10 +92,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.addWidget(self.Glavnaya)
         self.verticalLayout.addLayout(self.horizontalLayout_5)
         self.stackedWidget.addWidget(self.Main_page)
-        self.Add_Page = QtWidgets.QWidget()
-        self.Add_Page.setMaximumSize(QtCore.QSize(790, 557))
-        self.Add_Page.setObjectName("Add_Page")
-        self.verticalLayoutWidget_2 = QtWidgets.QWidget(parent=self.Add_Page)
+        self.Add_page = QtWidgets.QWidget()
+        self.Add_page.setMaximumSize(QtCore.QSize(790, 557))
+        self.Add_page.setObjectName("Add_page")
+        self.verticalLayoutWidget_2 = QtWidgets.QWidget(parent=self.Add_page)
         self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(0, 10, 771, 481))
         self.verticalLayoutWidget_2.setObjectName("verticalLayoutWidget_2")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_2)
@@ -396,7 +396,166 @@ class Ui_MainWindow(object):
         self.Button_Back.setObjectName("Button_Back")
         self.horizontalLayout_4.addWidget(self.Button_Back)
         self.verticalLayout_2.addLayout(self.horizontalLayout_4)
-        self.stackedWidget.addWidget(self.Add_Page)
+        self.stackedWidget.addWidget(self.Add_page)
+        self.Fill_page = QtWidgets.QWidget()
+        self.Fill_page.setMaximumSize(QtCore.QSize(790, 557))
+        self.Fill_page.setObjectName("Fill_page")
+        self.verticalLayoutWidget_4 = QtWidgets.QWidget(parent=self.Fill_page)
+        self.verticalLayoutWidget_4.setGeometry(QtCore.QRect(0, 10, 771, 501))
+        self.verticalLayoutWidget_4.setObjectName("verticalLayoutWidget_4")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_4)
+        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+        self.label = QtWidgets.QLabel(parent=self.verticalLayoutWidget_4)
+        self.label.setMaximumSize(QtCore.QSize(777, 112))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label.setFont(font)
+        self.label.setStyleSheet("border: 2px solid;\n"
+"background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.501, y2:0.511, stop:0 rgba(19, 19, 19, 255), stop:0.0227273 rgba(89, 67, 42, 239), stop:1 rgba(249, 179, 96, 200));\n"
+"border-top-left-radius: 55px;\n"
+"border-top-right-radius: 55px;\n"
+"border-bottom-left-radius: 22px;\n"
+"border-bottom-right-radius: 22px;\n"
+"")
+        self.label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label.setObjectName("label")
+        self.horizontalLayout_6.addWidget(self.label)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_6)
+        self.horizontalLayout_15 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_15.setObjectName("horizontalLayout_15")
+        self.Poisk = QtWidgets.QTextEdit(parent=self.verticalLayoutWidget_4)
+        self.Poisk.setMaximumSize(QtCore.QSize(430, 64))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Poisk.setFont(font)
+        self.Poisk.setStyleSheet("#Poisk {\n"
+"background-color: rgb(181, 173, 173);\n"
+"}\n"
+"#Poisk:Focus {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}")
+        self.Poisk.setObjectName("Poisk")
+        self.horizontalLayout_15.addWidget(self.Poisk)
+        self.Button_Find_Fill = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_4)
+        self.Button_Find_Fill.setMaximumSize(QtCore.QSize(70, 67))
+        self.Button_Find_Fill.setStyleSheet("#Button_Find_Fill {\n"
+"image: url(:/Lupa/Lupa.png);\n"
+"border: 3px solid;\n"
+"border-radius: 9px;\n"
+"border-color: #7A6D6D;\n"
+"background-color: #BBB4B4\n"
+"}\n"
+"#Button_Find_Fill:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Find_Fill:pressed { \n"
+"background-color: #BBB4B4;\n"
+"}")
+        self.Button_Find_Fill.setText("")
+        self.Button_Find_Fill.setObjectName("Button_Find_Fill")
+        self.horizontalLayout_15.addWidget(self.Button_Find_Fill)
+        self.Button_Back_Fill = QtWidgets.QPushButton(parent=self.verticalLayoutWidget_4)
+        self.Button_Back_Fill.setMaximumSize(QtCore.QSize(157, 44))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Back_Fill.setFont(font)
+        self.Button_Back_Fill.setStyleSheet("#Button_Back_Fill {\n"
+"border: 3px solid;\n"
+"border-radius: 9px;\n"
+"border-color: #7A6D6D;\n"
+"background-color: #BBB4B4\n"
+"}\n"
+"#Button_Back_Fill:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Back_Fill:pressed { \n"
+"background-color: #BBB4B4;\n"
+"}")
+        self.Button_Back_Fill.setObjectName("Button_Back_Fill")
+        self.horizontalLayout_15.addWidget(self.Button_Back_Fill)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_15)
+        self.horizontalLayout_17 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_17.setObjectName("horizontalLayout_17")
+        self.horizontalLayout_20 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_20.setObjectName("horizontalLayout_20")
+        self.label_2 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_4)
+        self.label_2.setMaximumSize(QtCore.QSize(362, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("border: 3px solid;\n"
+"border-top-left-radius: 6px;\n"
+"background-color: rgb(210, 163, 116);")
+        self.label_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout_20.addWidget(self.label_2)
+        self.horizontalLayout_17.addLayout(self.horizontalLayout_20)
+        self.horizontalLayout_19 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_19.setObjectName("horizontalLayout_19")
+        self.label_3 = QtWidgets.QLabel(parent=self.verticalLayoutWidget_4)
+        self.label_3.setMaximumSize(QtCore.QSize(362, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label_3.setFont(font)
+        self.label_3.setStyleSheet("border: 3px solid;\n"
+"border-top-left-radius: 6px;\n"
+"background-color: rgb(210, 163, 116);")
+        self.label_3.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_3.setObjectName("label_3")
+        self.horizontalLayout_19.addWidget(self.label_3)
+        self.horizontalLayout_17.addLayout(self.horizontalLayout_19)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_17)
+        self.horizontalLayout_16 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_16.setObjectName("horizontalLayout_16")
+        self.Name = QtWidgets.QScrollArea(parent=self.verticalLayoutWidget_4)
+        self.Name.setMaximumSize(QtCore.QSize(365, 211))
+        self.Name.setStyleSheet("border: 2px solid")
+        self.Name.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
+        self.Name.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAsNeeded)
+        self.Name.setWidgetResizable(True)
+        self.Name.setObjectName("Name")
+        self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 344, 193))
+        self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_2)
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.Name.setWidget(self.scrollAreaWidgetContents_2)
+        self.horizontalLayout_16.addWidget(self.Name)
+        self.Action = QtWidgets.QScrollArea(parent=self.verticalLayoutWidget_4)
+        self.Action.setMaximumSize(QtCore.QSize(365, 211))
+        self.Action.setStyleSheet("border: 2px solid")
+        self.Action.setWidgetResizable(True)
+        self.Action.setObjectName("Action")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 361, 193))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_6.setObjectName("verticalLayout_6")
+        self.Button_Fill_Fill = QtWidgets.QPushButton(parent=self.scrollAreaWidgetContents)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Fill_Fill.setFont(font)
+        self.Button_Fill_Fill.setStyleSheet("#Button_Fill_Fill {\n"
+"border: 3px solid;\n"
+"border-radius: 9px;\n"
+"border-color: #7A6D6D;\n"
+"background-color: #BBB4B4\n"
+"}\n"
+"#Button_Fill_Fill:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Fill_Fill:pressed { \n"
+"background-color: #BBB4B4;\n"
+"}")
+        self.Button_Fill_Fill.setObjectName("Button_Fill_Fill")
+        self.verticalLayout_6.addWidget(self.Button_Fill_Fill)
+        self.Action.setWidget(self.scrollAreaWidgetContents)
+        self.horizontalLayout_16.addWidget(self.Action)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_16)
+        self.stackedWidget.addWidget(self.Fill_page)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 790, 21))
@@ -407,7 +566,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -436,3 +595,8 @@ class Ui_MainWindow(object):
         self.Obyazatelny_vopros.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
         self.Button_Save.setText(_translate("MainWindow", "Сохранить"))
         self.Button_Back.setText(_translate("MainWindow", "Назад"))
+        self.label.setText(_translate("MainWindow", "ЗАПОЛНИТЬ ДОКУМЕНТ"))
+        self.Button_Back_Fill.setText(_translate("MainWindow", "НАЗАД"))
+        self.label_2.setText(_translate("MainWindow", "НАЗВАНИЕ"))
+        self.label_3.setText(_translate("MainWindow", "ДЕЙСТВИЕ"))
+        self.Button_Fill_Fill.setText(_translate("MainWindow", "ЗАПОЛНИТЬ"))

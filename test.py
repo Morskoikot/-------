@@ -24,11 +24,19 @@ class AppWindow_main(QMainWindow):
         self.ui.setupUi(self)
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
         self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
-        self.ui.Button_Back.clicked.connect(self.open_main)
+        self.ui.Button_Zapolnit.clicked.connect(self.transfer_page_fill)
     def transfer_page_add(self):
-        self.ui.stackedWidget.setCurrentWidget(self.ui.Add_Page)
-    def open_main(self):
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
+        self.ui.Button_Back.clicked.connect(self.transfer_page_back)
+    def transfer_page_back(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
+    def transfer_page_fill(self):
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Fill_page)
+        self.ui.Button_Back_Fill.clicked.connect(self.transfer_page_back)
+
+
+
+
 app = QApplication([])
 AppWindow_main = AppWindow_main()
 AppWindow = AppWindow()
