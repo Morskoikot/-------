@@ -1,5 +1,5 @@
-import os
-import sys
+import os, ast, sys
+
 from tkinter import filedialog
 from PyQt6.QtWidgets import (
     QApplication,
@@ -14,7 +14,7 @@ from PyQt6.QtWidgets import (
 )
 from Authorization import Ui_MainWindow as Register
 from Main_Form import Ui_MainWindow as Form
-import Pictures
+
 from PyQt6.QtGui     import QFontDatabase, QFont
 from PyQt6.QtCore    import Qt
 from PyQt6 import QtCore, QtGui, QtWidgets
@@ -22,14 +22,15 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class AppWindow(QMainWindow):
     def __init__(self):
         super(AppWindow, self).__init__()
-        id = QFontDatabase.addApplicationFont('./Fonts/Gagarin Star Mix Cyrillic.ttf')
-        id2 = QFontDatabase.addApplicationFont('./Fonts/NokiaKokia(RYS BY LYAJKA).ttf')
+        #загрузка шрифтов в приложение
+        id = QFontDatabase.addApplicationFont('./Fonts/SFProText-Light.ttf')
+        id2 = QFontDatabase.addApplicationFont('./Fonts/Lato-Light.ttf')
         # Если id равен -1, то шрифт не установлен
         if id == -1 or id2 == -1: 
             print('Ошибка подключения шрифтов')
-        font = QFont('Gagarin Star Mix Cyrillic', 86)
-        font2 = QFont('NokiaKokia(RYS BY LYAJKA)', 32)
-        font3 = QFont('Gagarin Star Mix Cyrillic', 12)
+        font = QFont('SFProText-Light', 70)
+        font2 = QFont('Lato-Light', 28)
+        font3 = QFont('SFProText-Light', 20)
         
         self.ui = Register()
         self.ui.setupUi(self)
@@ -47,59 +48,73 @@ class AppWindow(QMainWindow):
 class AppWindow_main(QMainWindow):
     def __init__(self):
         super(AppWindow_main, self).__init__()
-        global font,font2,font3,font5,font6
-        id = QFontDatabase.addApplicationFont('./Fonts/Gagarin Star Mix Cyrillic.ttf')
-        id2 = QFontDatabase.addApplicationFont('./Fonts/NokiaKokia(RYS BY LYAJKA).ttf')
-        id3 = QFontDatabase.addApplicationFont('./Fonts/No Limits(FONT BY LYAJKA).ttf')
-        # Если id равен -1, то шрифт не установлен
-        if id == -1 or id2 == -1 or id3 == -1: 
-            print('Ошибка подключения шрифтов')
-        font = QFont('Gagarin Star Mix Cyrillic', 50)
-        font2 = QFont('NokiaKokia(RYS BY LYAJKA)', 25)
-        font3 = QFont('No Limits(FONT BY LYAJKA)', 20)
-        font5 = QFont('No Limits(FONT BY LYAJKA)', 16)
-        font6 = QFont('NokiaKokia(RYS BY LYAJKA)', 24)
-        font4 = QFont('Gagarin Star Mix Cyrillic', 40)
-
+        #добовление шрифтов
+        global font,font2,font3,font4,font5,font6,font7
+        font = QFont('SFProText-Light', 80)
+        font2 = QFont('Lato-Light', 30)
+        font3 = QFont('Lato-Light', 20)
+        font4 = QFont('SFProText-Light', 50)
+        font5 = QFont('SFProText-Light', 20)
+        font6 = QFont('SFProText-Light', 30)
+        font7 = QFont('Lato-Light', 22)
+        font8 = QFont('SFProText-Light', 26)
         self.ui = Form()
         self.ui.setupUi(self)
 
-        self.ui.Kratki_otvet.setFont(font6)
-        self.ui.Vopros.setFont(font6)
-
+        global a, b, d, e, f, g, h, j
+        a = []
+        b = 0
+        d = []
+        e = 0
+        f = []
+        g = 0
+        h = []
+        j = 0
+        
+        #присвоение шрифтов объектам
+        self.ui.Kratki_otvet.setFont(font2)
+        self.ui.Vopros.setFont(font2)
         self.ui.Glavnaya.setFont(font)
-        self.ui.Button_Zapolnit.setFont(font2)
-        self.ui.Button_Spisok.setFont(font2)
+        self.ui.Button_Zapolnit.setFont(font6)
+        self.ui.Button_Spisok.setFont(font6)
         self.ui.Button_Save.setFont(font5)
         self.ui.Button_Back.setFont(font5)
-        self.ui.Obyazatelny_vopros.setFont(font3)
-        self.ui.Button_Dok.setFont(font3)
-        self.ui.Button_Forma_plus.setFont(font3)
-        self.ui.Dobavit_dokument_label.setFont(font5)
-
+        self.ui.Obyazatelny_vopros.setFont(font7)
+        self.ui.Button_Dok.setFont(font5)
+        self.ui.Button_Forma_plus.setFont(font5)
+        self.ui.Dobavit_dokument_label.setFont(font3)
+        self.ui.Tag.setFont(font2)
         self.ui.Odin_iz_spiska.setFont(font5)
         self.ui.Dobavochnoe_pole.setFont(font4)
-        self.ui.Button_Question.setFont(font3)
-        
+        self.ui.Button_Question.setFont(font5)
+        self.ui.Button_Trash.setFont(font5)
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
-        self.ui.label.setFont(font)
-        self.ui.label_2.setFont(font3)
-        self.ui.Button_Back_Fill.setFont(font3)
+        self.ui.label.setFont(font8)
+        self.ui.label_2.setFont(font5)
+        self.ui.Button_Back_Fill.setFont(font5)
+        self.ui.Button_Save_Fill.setFont(font5)
         self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
         self.ui.Button_Zapolnit.clicked.connect(self.transfer_Fill)
+        self.ui.Button_Save.clicked.connect(self.save_form)
         self.ui.Button_Dok.clicked.connect(self.Open_main_file_btn)
-    
+        
+    #постороение пути к документу
     def Open_main_file_btn(self):
         res =QFileDialog.getOpenFileName(self, 'Open File', ".",'DOC file (*.doc*)')
         res = os.path.basename(res[0])
         self.ui.Dobavit_dokument_label.setText(res)
+        global K, L
+    #разделение названия файла от его расширения  
+        K = res
+        filename = K
+        L, extension = os.path.splitext(filename)
 
     def transfer_page_add(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
         self.ui.Button_Back.clicked.connect(self.transfer_back)
         self.ui.Button_Forma_plus.clicked.connect(self.add_field)
     def add_field(self):
-        
+        global a, b, d, e, f, g, h, j
         _translate = QtCore.QCoreApplication.translate
         self.widget_t = QtWidgets.QWidget()
         self.widget_t.setStyleSheet("#widget_t {\n"
@@ -127,16 +142,17 @@ class AppWindow_main(QMainWindow):
         font = QtGui.QFont()
         font.setPointSize(20)
         self.textField_01.setFont(font)
-        self.textField_01.setStyleSheet("#Vopros_0 {\n"
+        self.textField_01.setStyleSheet('#Vopros_0{\n'
 "background-color: rgb(181, 173, 173);\n"
 "}\n"
 "#Vopros_0:Focus {\n"
 "background-color: rgb(219, 219, 219);\n"
 "}")
-        self.textField_01.setObjectName("Vopros_0")
+        self.textField_01.setObjectName('Vopros_0')
         self.horizontalLayout_04.addWidget(self.textField_01)
-        self.textField_01.setPlaceholderText("ВОПРОС")
-        self.textField_01.setFont(font6)
+        self.textField_01.setPlaceholderText("Вопрос")
+        a.append(self.textField_01)
+        self.textField_01.setFont(font2)
         # Кнопка
         self.pushButton_01 = QtWidgets.QPushButton()
         self.pushButton_01.setMaximumSize(QtCore.QSize(141, 80))
@@ -159,6 +175,7 @@ class AppWindow_main(QMainWindow):
         self.horizontalLayout_05.addWidget(self.pushButton_01)
         self.pushButton_01.setText(_translate("MainWindow", "ОДИН ИЗ\nСПИСКА"))
         self.pushButton_01.setFont(font5)
+        f.append(self.pushButton_01)
         ### Вторая часть, Основное размещение (середина)
         self.horizontalLayout_02 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_02.setObjectName("horizontalLayout_02_")
@@ -181,8 +198,8 @@ class AppWindow_main(QMainWindow):
 "}")
         self.textField_02.setObjectName("Answer_0")
         self.horizontalLayout_06.addWidget(self.textField_02)
-        self.textField_02.setPlaceholderText("КРАТКИЙ ОТВЕТ")
-        self.textField_02.setFont(font6)
+        self.textField_02.setPlaceholderText("Краткий ответ")
+        self.textField_02.setFont(font2)
         # Размещение кнопок
         self.horizontalLayout_07 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_07.setObjectName("horizontalLayout_07_")
@@ -207,8 +224,9 @@ class AppWindow_main(QMainWindow):
 "background-color: #BBB4B4;\n"
 "}")
         self.horizontalLayout_07.addWidget(self.pushButton_02)
-        self.pushButton_02.setText(_translate("MainWindow", "ТЭГ"))
-        self.pushButton_02.setFont(font3)
+        self.pushButton_02.setText(_translate("MainWindow", "Тэг"))
+        self.pushButton_02.setFont(font2)
+        d.append(self.pushButton_02)
         # Кнопка вопроса
         self.pushButton20 = QtWidgets.QPushButton()
         self.pushButton20.setMaximumSize(QtCore.QSize(37, 33))
@@ -230,7 +248,7 @@ class AppWindow_main(QMainWindow):
 "}")
         self.horizontalLayout_07.addWidget(self.pushButton20)
         self.pushButton20.setText(_translate("MainWindow", "?"))
-        self.pushButton20.setFont(font3)
+        self.pushButton20.setFont(font5)
         ### Третья часть
         self.horizontalLayout_03 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_03.setObjectName("horizontalLayout_03_")
@@ -281,7 +299,7 @@ class AppWindow_main(QMainWindow):
         
         self.horizontalLayout_03.addWidget(self.Label_01)
         self.Label_01.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
-        self.Label_01.setFont(font3)
+        self.Label_01.setFont(font7)
         # Кнопка галочка
         self.pushButton_05 = QtWidgets.QPushButton()
         self.pushButton_05.setMaximumSize(QtCore.QSize(43, 41))
@@ -300,7 +318,47 @@ class AppWindow_main(QMainWindow):
 "background-color: #BBB4B4;\n"
 "}")
         self.horizontalLayout_03.addWidget(self.pushButton_05)
-
+    #сохранение данных
+    def save_form(self):
+        global a, d, f, L, K
+        voprosi = []
+        c = self.ui.Vopros.text()        
+        vopros0 = []
+        vopros0.append(c)
+        tegi = []
+        p = self.ui.Tag.text()
+        tag0 = []
+        tag0.append(p)
+        odni_iz_spiska = []
+        u = self.ui.Button_Spisok.text()
+        odin0 = []
+        odin0.append(u)
+        for y in f:
+           odin_iz = y.text()
+           odni_iz_spiska.append(odin_iz)
+        odin_s = odin0 + odni_iz_spiska
+        print(odin_s)
+        for o in d:
+            tag = o.text()
+            tegi.append(tag)
+        tege = tag0 + tegi
+        print(tege)    
+        for i in a:
+            vopros = i.toPlainText()
+            voprosi.append(vopros)  
+        voprose = vopros0 + voprosi    
+        print(voprose) 
+        qwe = []
+        qwe.append(K)
+        qwe.append(voprose)
+        qwe.append(tege)
+        qwe.append(odin_s)
+        my_file = open(L+".txt", "w+")
+        my_file.write(str(qwe))
+        my_file.close()
+        with open(L+'.txt', 'r') as f:
+            mylist = ast.literal_eval(f.read())
+        print(mylist[0])        
     def transfer_back(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
     def transfer_Fill(self):
