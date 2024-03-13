@@ -12,8 +12,9 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(800, 599)
+        MainWindow.resize(1000, 791)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
+        self.centralwidget.setMinimumSize(QtCore.QSize(1000, 750))
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout_8.setObjectName("verticalLayout_8")
@@ -43,13 +44,15 @@ class Ui_MainWindow(object):
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.Button_Zapolnit = QtWidgets.QPushButton(parent=self.Main_page)
-        self.Button_Zapolnit.setMaximumSize(QtCore.QSize(270, 180))
+        self.Button_Zapolnit.setMaximumSize(QtCore.QSize(270, 120))
         font = QtGui.QFont()
         font.setPointSize(24)
         self.Button_Zapolnit.setFont(font)
         self.Button_Zapolnit.setStyleSheet("#Button_Zapolnit{\n"
 "border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
 "border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Zapolnit:hover {\n"
 "\n"
@@ -60,13 +63,15 @@ class Ui_MainWindow(object):
         self.Button_Zapolnit.setObjectName("Button_Zapolnit")
         self.horizontalLayout.addWidget(self.Button_Zapolnit)
         self.Button_Spisok = QtWidgets.QPushButton(parent=self.Main_page)
-        self.Button_Spisok.setMaximumSize(QtCore.QSize(270, 180))
+        self.Button_Spisok.setMaximumSize(QtCore.QSize(270, 120))
         font = QtGui.QFont()
         font.setPointSize(24)
         self.Button_Spisok.setFont(font)
         self.Button_Spisok.setStyleSheet("#Button_Spisok{\n"
 "border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
 "border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Spisok:hover {\n"
 "\n"
@@ -104,19 +109,22 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Dobavit_dokument_label.setFont(font)
-        self.Dobavit_dokument_label.setStyleSheet("border-bottom: 2px solid black;\n"
-"")
+        self.Dobavit_dokument_label.setStyleSheet("#Dobavit_dokument_label{\n"
+"\n"
+"}")
         self.Dobavit_dokument_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.Dobavit_dokument_label.setObjectName("Dobavit_dokument_label")
         self.horizontalLayout_2.addWidget(self.Dobavit_dokument_label)
         self.Button_Dok = QtWidgets.QPushButton(parent=self.Add_page)
-        self.Button_Dok.setMaximumSize(QtCore.QSize(180, 44))
+        self.Button_Dok.setMaximumSize(QtCore.QSize(250, 44))
         font = QtGui.QFont()
-        font.setPointSize(20)
+        font.setPointSize(16)
         self.Button_Dok.setFont(font)
         self.Button_Dok.setStyleSheet("#Button_Dok {\n"
 "border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
 "border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Dok:hover {\n"
 "}\n"
@@ -125,13 +133,15 @@ class Ui_MainWindow(object):
         self.Button_Dok.setObjectName("Button_Dok")
         self.horizontalLayout_2.addWidget(self.Button_Dok)
         self.Button_Forma_plus = QtWidgets.QPushButton(parent=self.Add_page)
-        self.Button_Forma_plus.setMaximumSize(QtCore.QSize(130, 44))
+        self.Button_Forma_plus.setMaximumSize(QtCore.QSize(310, 44))
         font = QtGui.QFont()
-        font.setPointSize(20)
+        font.setPointSize(16)
         self.Button_Forma_plus.setFont(font)
         self.Button_Forma_plus.setStyleSheet("#Button_Forma_plus {\n"
 "border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
 "border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Forma_plus:hover {\n"
 "\n"
@@ -151,20 +161,31 @@ class Ui_MainWindow(object):
         self.scrollArea.setStyleSheet("")
         self.scrollArea.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
         self.scrollArea.setWidgetResizable(True)
-        self.scrollArea.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
+        self.scrollArea.setAlignment(QtCore.Qt.AlignmentFlag.AlignHCenter|QtCore.Qt.AlignmentFlag.AlignTop)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 417, 198))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 941, 537))
         self.scrollAreaWidgetContents_3.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_3)
+        self.verticalLayout_7.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
         self.verticalLayout_7.setObjectName("verticalLayout_7")
-        self.widget = QtWidgets.QWidget(parent=self.scrollAreaWidgetContents_3)
+        self.stackedWidget_2 = QtWidgets.QStackedWidget(parent=self.scrollAreaWidgetContents_3)
+        self.stackedWidget_2.setObjectName("stackedWidget_2")
+        self.page_2 = QtWidgets.QWidget()
+        self.page_2.setObjectName("page_2")
+        self.verticalLayout_14 = QtWidgets.QVBoxLayout(self.page_2)
+        self.verticalLayout_14.setObjectName("verticalLayout_14")
+        self.horizontalLayout_97 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_97.setObjectName("horizontalLayout_97")
+        self.widget = QtWidgets.QWidget(parent=self.page_2)
+        self.widget.setMaximumSize(QtCore.QSize(900, 400))
         self.widget.setStyleSheet("#widget {\n"
-"background-color: rgb(194, 194, 194)\n"
+"background-color: rgb(228, 228, 228)\n"
 "}")
         self.widget.setObjectName("widget")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.widget)
+        self.verticalLayout_3.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
@@ -177,48 +198,74 @@ class Ui_MainWindow(object):
         self.Vopros.setFont(font)
         self.Vopros.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
-"background-color: rgb(194, 194, 194);")
+"background-color: rgb(228, 228, 228);")
         self.Vopros.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.Vopros.setObjectName("Vopros")
         self.horizontalLayout_8.addWidget(self.Vopros)
-        self.horizontalLayout_7.addLayout(self.horizontalLayout_8)
         self.horizontalLayout_9 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_9.setContentsMargins(28, -1, -1, -1)
         self.horizontalLayout_9.setObjectName("horizontalLayout_9")
-        self.Odin_iz_spiska = QtWidgets.QPushButton(parent=self.widget)
-        self.Odin_iz_spiska.setMaximumSize(QtCore.QSize(141, 80))
+        self.comboBox = QtWidgets.QComboBox(parent=self.widget)
+        self.comboBox.setMaximumSize(QtCore.QSize(220, 80))
         font = QtGui.QFont()
-        font.setPointSize(20)
-        self.Odin_iz_spiska.setFont(font)
-        self.Odin_iz_spiska.setStyleSheet("#Odin_iz_spiska {\n"
-"border-top: 2px solid;\n"
-"border-bottom: 2px solid;\n"
+        font.setPointSize(14)
+        self.comboBox.setFont(font)
+        self.comboBox.setStyleSheet("#comboBox {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#Odin_iz_spiska:hover {\n"
-"\n"
+"#comboBox:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
 "}\n"
-"#Odin_iz_spiska:pressed { \n"
-"\n"
-"}")
-        self.Odin_iz_spiska.setObjectName("Odin_iz_spiska")
-        self.horizontalLayout_9.addWidget(self.Odin_iz_spiska)
-        self.horizontalLayout_7.addLayout(self.horizontalLayout_9)
+"#comboBox:pressed { \n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"")
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.horizontalLayout_9.addWidget(self.comboBox)
+        self.horizontalLayout_8.addLayout(self.horizontalLayout_9)
+        self.horizontalLayout_7.addLayout(self.horizontalLayout_8)
         self.verticalLayout_3.addLayout(self.horizontalLayout_7)
         self.horizontalLayout_10 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_10.setObjectName("horizontalLayout_10")
         self.horizontalLayout_12 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_12.setObjectName("horizontalLayout_12")
-        self.Kratki_otvet = QtWidgets.QLineEdit(parent=self.widget)
-        self.Kratki_otvet.setMaximumSize(QtCore.QSize(425, 60))
-        font = QtGui.QFont()
-        font.setPointSize(20)
-        self.Kratki_otvet.setFont(font)
-        self.Kratki_otvet.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 2px solid;\n"
-"background-color: rgb(194, 194, 194);")
-        self.Kratki_otvet.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
-        self.Kratki_otvet.setObjectName("Kratki_otvet")
-        self.horizontalLayout_12.addWidget(self.Kratki_otvet)
         self.horizontalLayout_10.addLayout(self.horizontalLayout_12)
+        self.horizontalLayout_24 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_24.setContentsMargins(-1, -1, 228, -1)
+        self.horizontalLayout_24.setObjectName("horizontalLayout_24")
+        self.dateEdit = QtWidgets.QDateEdit(parent=self.widget)
+        self.dateEdit.setMaximumSize(QtCore.QSize(160, 45))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.dateEdit.setFont(font)
+        self.dateEdit.setStyleSheet("#dateEdit {\n"
+"border: 2px solid;\n"
+"border-radius: 5px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+"#dateEdit:hover {\n"
+"background-color: rgb(243, 243, 243);\n"
+"}\n"
+"#dateEdit:pressed { \n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+"\n"
+"")
+        self.dateEdit.setObjectName("dateEdit")
+        self.horizontalLayout_24.addWidget(self.dateEdit)
+        self.horizontalLayout_10.addLayout(self.horizontalLayout_24)
         self.horizontalLayout_11 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_11.setObjectName("horizontalLayout_11")
         self.Tag = QtWidgets.QLineEdit(parent=self.widget)
@@ -228,72 +275,1535 @@ class Ui_MainWindow(object):
         self.Tag.setFont(font)
         self.Tag.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
-"background-color: rgb(194, 194, 194);")
+"background-color: rgb(228, 228, 228);")
         self.Tag.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.Tag.setObjectName("Tag")
         self.horizontalLayout_11.addWidget(self.Tag)
+        self.verticalLayout_13 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_13.setObjectName("verticalLayout_13")
+        spacerItem = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
+        self.verticalLayout_13.addItem(spacerItem)
         self.Button_Question = QtWidgets.QPushButton(parent=self.widget)
-        self.Button_Question.setMaximumSize(QtCore.QSize(37, 33))
+        self.Button_Question.setMaximumSize(QtCore.QSize(33, 33))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Button_Question.setFont(font)
         self.Button_Question.setStyleSheet("#Button_Question {\n"
-"border-top: 2px solid;\n"
-"border-bottom: 2px solid;\n"
+"border: 2px solid;\n"
+"border-radius: 7px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Question:hover {\n"
-"\n"
+"background-color:rgb(219, 219, 219);\n"
 "}\n"
 "#Button_Question:pressed { \n"
-"\n"
+"background-color:rgb(204, 204, 204);\n"
 "}")
         self.Button_Question.setObjectName("Button_Question")
-        self.horizontalLayout_11.addWidget(self.Button_Question)
+        self.verticalLayout_13.addWidget(self.Button_Question)
+        self.horizontalLayout_11.addLayout(self.verticalLayout_13)
         self.horizontalLayout_10.addLayout(self.horizontalLayout_11)
         self.verticalLayout_3.addLayout(self.horizontalLayout_10)
         self.horizontalLayout_13 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_13.setObjectName("horizontalLayout_13")
         self.Button_Copy = QtWidgets.QPushButton(parent=self.widget)
-        self.Button_Copy.setMaximumSize(QtCore.QSize(43, 41))
+        self.Button_Copy.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy.setStyleSheet("#Button_Copy {\n"
-"image: url(:/Copycopycopy/Copycopycopy.png);\n"
-"border-top: 2px solid;\n"
-"border-bottom: 2px solid;\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Copy:hover {\n"
-"\n"
+"background-color:rgb(219, 219, 219);\n"
 "}\n"
 "#Button_Copy:pressed { \n"
-"\n"
-"}")
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
         self.Button_Copy.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("../../../../../../1621635.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.Button_Copy.setIcon(icon)
         self.Button_Copy.setObjectName("Button_Copy")
         self.horizontalLayout_13.addWidget(self.Button_Copy)
+        self.horizontalLayout_26 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_26.setSpacing(0)
+        self.horizontalLayout_26.setObjectName("horizontalLayout_26")
         self.Obyazatelny_vopros = QtWidgets.QLabel(parent=self.widget)
         self.Obyazatelny_vopros.setMaximumSize(QtCore.QSize(400, 34))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Obyazatelny_vopros.setFont(font)
         self.Obyazatelny_vopros.setObjectName("Obyazatelny_vopros")
-        self.horizontalLayout_13.addWidget(self.Obyazatelny_vopros)
-        self.Button_Galka = QtWidgets.QPushButton(parent=self.widget)
-        self.Button_Galka.setMaximumSize(QtCore.QSize(43, 41))
-        self.Button_Galka.setStyleSheet("#Button_Galka {\n"
-"image: url(:/Galka/galka.png);\n"
-"border-top: 2px solid;\n"
-"border-bottom: 2px solid;\n"
-"}\n"
-"#Button_Galka:hover {\n"
-"\n"
-"}\n"
-"#Button_Galka:pressed { \n"
-"\n"
-"}")
-        self.Button_Galka.setText("")
-        self.Button_Galka.setObjectName("Button_Galka")
-        self.horizontalLayout_13.addWidget(self.Button_Galka)
+        self.horizontalLayout_26.addWidget(self.Obyazatelny_vopros)
+        self.widget_2 = QtWidgets.QWidget(parent=self.widget)
+        self.widget_2.setMinimumSize(QtCore.QSize(45, 45))
+        self.widget_2.setMaximumSize(QtCore.QSize(45, 45))
+        self.widget_2.setObjectName("widget_2")
+        self.pushButton_2 = QtWidgets.QPushButton(parent=self.widget_2)
+        self.pushButton_2.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_2.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_2.setText("")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(parent=self.widget_2)
+        self.pushButton_3.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_3.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_3.setText("")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.pushButton_3.setIcon(icon1)
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.horizontalLayout_26.addWidget(self.widget_2)
+        self.horizontalLayout_13.addLayout(self.horizontalLayout_26)
         self.verticalLayout_3.addLayout(self.horizontalLayout_13)
-        self.verticalLayout_7.addWidget(self.widget)
+        self.horizontalLayout_97.addWidget(self.widget)
+        self.verticalLayout_14.addLayout(self.horizontalLayout_97)
+        self.stackedWidget_2.addWidget(self.page_2)
+        self.page_4 = QtWidgets.QWidget()
+        self.page_4.setObjectName("page_4")
+        self.verticalLayout_17 = QtWidgets.QVBoxLayout(self.page_4)
+        self.verticalLayout_17.setObjectName("verticalLayout_17")
+        self.horizontalLayout_98 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_98.setObjectName("horizontalLayout_98")
+        self.widget_3 = QtWidgets.QWidget(parent=self.page_4)
+        self.widget_3.setMaximumSize(QtCore.QSize(900, 400))
+        self.widget_3.setStyleSheet("#widget_3 {\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+        self.widget_3.setObjectName("widget_3")
+        self.verticalLayout_15 = QtWidgets.QVBoxLayout(self.widget_3)
+        self.verticalLayout_15.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
+        self.verticalLayout_15.setObjectName("verticalLayout_15")
+        self.horizontalLayout_21 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_21.setObjectName("horizontalLayout_21")
+        self.horizontalLayout_27 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_27.setObjectName("horizontalLayout_27")
+        self.Vopros_2 = QtWidgets.QLineEdit(parent=self.widget_3)
+        self.Vopros_2.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Vopros_2.setFont(font)
+        self.Vopros_2.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Vopros_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Vopros_2.setObjectName("Vopros_2")
+        self.horizontalLayout_27.addWidget(self.Vopros_2)
+        self.horizontalLayout_28 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_28.setContentsMargins(28, -1, -1, -1)
+        self.horizontalLayout_28.setObjectName("horizontalLayout_28")
+        self.comboBox_2 = QtWidgets.QComboBox(parent=self.widget_3)
+        self.comboBox_2.setMaximumSize(QtCore.QSize(220, 80))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.comboBox_2.setFont(font)
+        self.comboBox_2.setStyleSheet("#comboBox_2 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#comboBox_2:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#comboBox_2:pressed { \n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"\n"
+"")
+        self.comboBox_2.setObjectName("comboBox_2")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.horizontalLayout_28.addWidget(self.comboBox_2)
+        self.horizontalLayout_27.addLayout(self.horizontalLayout_28)
+        self.horizontalLayout_21.addLayout(self.horizontalLayout_27)
+        self.verticalLayout_15.addLayout(self.horizontalLayout_21)
+        self.horizontalLayout_29 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_29.setObjectName("horizontalLayout_29")
+        self.horizontalLayout_30 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_30.setObjectName("horizontalLayout_30")
+        self.Kratki_otvet = QtWidgets.QLineEdit(parent=self.widget_3)
+        self.Kratki_otvet.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Kratki_otvet.setFont(font)
+        self.Kratki_otvet.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Kratki_otvet.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Kratki_otvet.setObjectName("Kratki_otvet")
+        self.horizontalLayout_30.addWidget(self.Kratki_otvet)
+        self.horizontalLayout_29.addLayout(self.horizontalLayout_30)
+        self.horizontalLayout_31 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_31.setObjectName("horizontalLayout_31")
+        self.Tag_2 = QtWidgets.QLineEdit(parent=self.widget_3)
+        self.Tag_2.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Tag_2.setFont(font)
+        self.Tag_2.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Tag_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Tag_2.setObjectName("Tag_2")
+        self.horizontalLayout_31.addWidget(self.Tag_2)
+        self.verticalLayout_16 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_16.setObjectName("verticalLayout_16")
+        spacerItem1 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
+        self.verticalLayout_16.addItem(spacerItem1)
+        self.Button_Question_2 = QtWidgets.QPushButton(parent=self.widget_3)
+        self.Button_Question_2.setMaximumSize(QtCore.QSize(33, 33))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Question_2.setFont(font)
+        self.Button_Question_2.setStyleSheet("#Button_Question_2 {\n"
+"border: 2px solid;\n"
+"border-radius: 7px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Question_2:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Question_2:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"\n"
+"")
+        self.Button_Question_2.setObjectName("Button_Question_2")
+        self.verticalLayout_16.addWidget(self.Button_Question_2)
+        self.horizontalLayout_31.addLayout(self.verticalLayout_16)
+        self.horizontalLayout_29.addLayout(self.horizontalLayout_31)
+        self.verticalLayout_15.addLayout(self.horizontalLayout_29)
+        self.horizontalLayout_32 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_32.setObjectName("horizontalLayout_32")
+        self.Button_Copy_2 = QtWidgets.QPushButton(parent=self.widget_3)
+        self.Button_Copy_2.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Copy_2.setStyleSheet("#Button_Copy_2 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Copy_2:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Copy_2:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Copy_2.setText("")
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("../../../../../1621635.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.Button_Copy_2.setIcon(icon2)
+        self.Button_Copy_2.setObjectName("Button_Copy_2")
+        self.horizontalLayout_32.addWidget(self.Button_Copy_2)
+        self.horizontalLayout_33 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_33.setSpacing(0)
+        self.horizontalLayout_33.setObjectName("horizontalLayout_33")
+        self.Obyazatelny_vopros_2 = QtWidgets.QLabel(parent=self.widget_3)
+        self.Obyazatelny_vopros_2.setMaximumSize(QtCore.QSize(400, 34))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Obyazatelny_vopros_2.setFont(font)
+        self.Obyazatelny_vopros_2.setObjectName("Obyazatelny_vopros_2")
+        self.horizontalLayout_33.addWidget(self.Obyazatelny_vopros_2)
+        self.widget_4 = QtWidgets.QWidget(parent=self.widget_3)
+        self.widget_4.setMinimumSize(QtCore.QSize(45, 45))
+        self.widget_4.setMaximumSize(QtCore.QSize(45, 45))
+        self.widget_4.setObjectName("widget_4")
+        self.pushButton_4 = QtWidgets.QPushButton(parent=self.widget_4)
+        self.pushButton_4.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_4.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_4.setText("")
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.pushButton_5 = QtWidgets.QPushButton(parent=self.widget_4)
+        self.pushButton_5.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_5.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_5.setText("")
+        self.pushButton_5.setIcon(icon1)
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.horizontalLayout_33.addWidget(self.widget_4)
+        self.horizontalLayout_32.addLayout(self.horizontalLayout_33)
+        self.verticalLayout_15.addLayout(self.horizontalLayout_32)
+        self.horizontalLayout_98.addWidget(self.widget_3)
+        self.verticalLayout_17.addLayout(self.horizontalLayout_98)
+        self.stackedWidget_2.addWidget(self.page_4)
+        self.page_5 = QtWidgets.QWidget()
+        self.page_5.setObjectName("page_5")
+        self.verticalLayout_20 = QtWidgets.QVBoxLayout(self.page_5)
+        self.verticalLayout_20.setObjectName("verticalLayout_20")
+        self.horizontalLayout_99 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_99.setObjectName("horizontalLayout_99")
+        self.widget_5 = QtWidgets.QWidget(parent=self.page_5)
+        self.widget_5.setMaximumSize(QtCore.QSize(900, 400))
+        self.widget_5.setStyleSheet("#widget_5 {\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+        self.widget_5.setObjectName("widget_5")
+        self.verticalLayout_18 = QtWidgets.QVBoxLayout(self.widget_5)
+        self.verticalLayout_18.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
+        self.verticalLayout_18.setObjectName("verticalLayout_18")
+        self.horizontalLayout_34 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_34.setObjectName("horizontalLayout_34")
+        self.horizontalLayout_35 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_35.setObjectName("horizontalLayout_35")
+        self.Vopros_3 = QtWidgets.QLineEdit(parent=self.widget_5)
+        self.Vopros_3.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Vopros_3.setFont(font)
+        self.Vopros_3.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Vopros_3.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Vopros_3.setObjectName("Vopros_3")
+        self.horizontalLayout_35.addWidget(self.Vopros_3)
+        self.horizontalLayout_36 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_36.setContentsMargins(28, -1, -1, -1)
+        self.horizontalLayout_36.setObjectName("horizontalLayout_36")
+        self.comboBox_3 = QtWidgets.QComboBox(parent=self.widget_5)
+        self.comboBox_3.setMaximumSize(QtCore.QSize(220, 80))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.comboBox_3.setFont(font)
+        self.comboBox_3.setStyleSheet("#comboBox_3 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#comboBox_3:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#comboBox_3:pressed { \n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"")
+        self.comboBox_3.setObjectName("comboBox_3")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.horizontalLayout_36.addWidget(self.comboBox_3)
+        self.horizontalLayout_35.addLayout(self.horizontalLayout_36)
+        self.horizontalLayout_34.addLayout(self.horizontalLayout_35)
+        self.verticalLayout_18.addLayout(self.horizontalLayout_34)
+        self.horizontalLayout_37 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_37.setObjectName("horizontalLayout_37")
+        self.horizontalLayout_38 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_38.setObjectName("horizontalLayout_38")
+        self.Kratki_otvet_2 = QtWidgets.QLineEdit(parent=self.widget_5)
+        self.Kratki_otvet_2.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Kratki_otvet_2.setFont(font)
+        self.Kratki_otvet_2.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Kratki_otvet_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Kratki_otvet_2.setObjectName("Kratki_otvet_2")
+        self.horizontalLayout_38.addWidget(self.Kratki_otvet_2)
+        self.horizontalLayout_37.addLayout(self.horizontalLayout_38)
+        self.horizontalLayout_39 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_39.setObjectName("horizontalLayout_39")
+        self.Tag_3 = QtWidgets.QLineEdit(parent=self.widget_5)
+        self.Tag_3.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Tag_3.setFont(font)
+        self.Tag_3.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Tag_3.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Tag_3.setObjectName("Tag_3")
+        self.horizontalLayout_39.addWidget(self.Tag_3)
+        self.verticalLayout_19 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_19.setObjectName("verticalLayout_19")
+        spacerItem2 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
+        self.verticalLayout_19.addItem(spacerItem2)
+        self.Button_Question_3 = QtWidgets.QPushButton(parent=self.widget_5)
+        self.Button_Question_3.setMaximumSize(QtCore.QSize(33, 33))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Question_3.setFont(font)
+        self.Button_Question_3.setStyleSheet("#Button_Question_3 {\n"
+"border: 2px solid;\n"
+"border-radius: 7px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Question_3:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Question_3:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}")
+        self.Button_Question_3.setObjectName("Button_Question_3")
+        self.verticalLayout_19.addWidget(self.Button_Question_3)
+        self.horizontalLayout_39.addLayout(self.verticalLayout_19)
+        self.horizontalLayout_37.addLayout(self.horizontalLayout_39)
+        self.verticalLayout_18.addLayout(self.horizontalLayout_37)
+        self.horizontalLayout_40 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_40.setContentsMargins(-1, 10, -1, -1)
+        self.horizontalLayout_40.setObjectName("horizontalLayout_40")
+        self.pushButton_DOPvariany = QtWidgets.QPushButton(parent=self.widget_5)
+        self.pushButton_DOPvariany.setMaximumSize(QtCore.QSize(300, 40))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.pushButton_DOPvariany.setFont(font)
+        self.pushButton_DOPvariany.setStyleSheet("#pushButton_DOPvariany {\n"
+"border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
+"border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
+"}\n"
+"#pushButton_DOPvariany:hover {\n"
+"}\n"
+"#pushButton_DOPvariany:pressed { \n"
+"}")
+        self.pushButton_DOPvariany.setObjectName("pushButton_DOPvariany")
+        self.horizontalLayout_40.addWidget(self.pushButton_DOPvariany)
+        self.verticalLayout_18.addLayout(self.horizontalLayout_40)
+        self.horizontalLayout_41 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_41.setObjectName("horizontalLayout_41")
+        self.Button_Copy_3 = QtWidgets.QPushButton(parent=self.widget_5)
+        self.Button_Copy_3.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Copy_3.setStyleSheet("#Button_Copy_3 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Copy_3:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Copy_3:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Copy_3.setText("")
+        self.Button_Copy_3.setIcon(icon)
+        self.Button_Copy_3.setObjectName("Button_Copy_3")
+        self.horizontalLayout_41.addWidget(self.Button_Copy_3)
+        self.horizontalLayout_42 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_42.setSpacing(0)
+        self.horizontalLayout_42.setObjectName("horizontalLayout_42")
+        self.Obyazatelny_vopros_3 = QtWidgets.QLabel(parent=self.widget_5)
+        self.Obyazatelny_vopros_3.setMaximumSize(QtCore.QSize(400, 34))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Obyazatelny_vopros_3.setFont(font)
+        self.Obyazatelny_vopros_3.setObjectName("Obyazatelny_vopros_3")
+        self.horizontalLayout_42.addWidget(self.Obyazatelny_vopros_3)
+        self.widget_6 = QtWidgets.QWidget(parent=self.widget_5)
+        self.widget_6.setMinimumSize(QtCore.QSize(45, 45))
+        self.widget_6.setMaximumSize(QtCore.QSize(45, 45))
+        self.widget_6.setObjectName("widget_6")
+        self.pushButton_6 = QtWidgets.QPushButton(parent=self.widget_6)
+        self.pushButton_6.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_6.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_6.setText("")
+        self.pushButton_6.setObjectName("pushButton_6")
+        self.pushButton_7 = QtWidgets.QPushButton(parent=self.widget_6)
+        self.pushButton_7.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_7.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_7.setText("")
+        self.pushButton_7.setIcon(icon1)
+        self.pushButton_7.setObjectName("pushButton_7")
+        self.horizontalLayout_42.addWidget(self.widget_6)
+        self.horizontalLayout_41.addLayout(self.horizontalLayout_42)
+        self.verticalLayout_18.addLayout(self.horizontalLayout_41)
+        self.horizontalLayout_99.addWidget(self.widget_5)
+        self.verticalLayout_20.addLayout(self.horizontalLayout_99)
+        self.stackedWidget_2.addWidget(self.page_5)
+        self.page_6 = QtWidgets.QWidget()
+        self.page_6.setObjectName("page_6")
+        self.verticalLayout_23 = QtWidgets.QVBoxLayout(self.page_6)
+        self.verticalLayout_23.setObjectName("verticalLayout_23")
+        self.horizontalLayout_100 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_100.setObjectName("horizontalLayout_100")
+        self.widget_7 = QtWidgets.QWidget(parent=self.page_6)
+        self.widget_7.setMaximumSize(QtCore.QSize(900, 400))
+        self.widget_7.setStyleSheet("#widget_7 {\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+        self.widget_7.setObjectName("widget_7")
+        self.verticalLayout_21 = QtWidgets.QVBoxLayout(self.widget_7)
+        self.verticalLayout_21.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
+        self.verticalLayout_21.setObjectName("verticalLayout_21")
+        self.horizontalLayout_43 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_43.setObjectName("horizontalLayout_43")
+        self.horizontalLayout_44 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_44.setObjectName("horizontalLayout_44")
+        self.Vopros_4 = QtWidgets.QLineEdit(parent=self.widget_7)
+        self.Vopros_4.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Vopros_4.setFont(font)
+        self.Vopros_4.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Vopros_4.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Vopros_4.setObjectName("Vopros_4")
+        self.horizontalLayout_44.addWidget(self.Vopros_4)
+        self.horizontalLayout_45 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_45.setContentsMargins(28, -1, -1, -1)
+        self.horizontalLayout_45.setObjectName("horizontalLayout_45")
+        self.comboBox_4 = QtWidgets.QComboBox(parent=self.widget_7)
+        self.comboBox_4.setMaximumSize(QtCore.QSize(220, 80))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.comboBox_4.setFont(font)
+        self.comboBox_4.setStyleSheet("#comboBox_4 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#comboBox_4:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#comboBox_4:pressed { \n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"")
+        self.comboBox_4.setObjectName("comboBox_4")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.horizontalLayout_45.addWidget(self.comboBox_4)
+        self.horizontalLayout_44.addLayout(self.horizontalLayout_45)
+        self.horizontalLayout_43.addLayout(self.horizontalLayout_44)
+        self.verticalLayout_21.addLayout(self.horizontalLayout_43)
+        self.horizontalLayout_46 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_46.setObjectName("horizontalLayout_46")
+        self.horizontalLayout_47 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_47.setContentsMargins(-1, -1, 0, -1)
+        self.horizontalLayout_47.setObjectName("horizontalLayout_47")
+        self.Kratki_otvet_3 = QtWidgets.QLineEdit(parent=self.widget_7)
+        self.Kratki_otvet_3.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Kratki_otvet_3.setFont(font)
+        self.Kratki_otvet_3.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Kratki_otvet_3.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Kratki_otvet_3.setObjectName("Kratki_otvet_3")
+        self.horizontalLayout_47.addWidget(self.Kratki_otvet_3)
+        self.horizontalLayout_46.addLayout(self.horizontalLayout_47)
+        self.horizontalLayout_48 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_48.setObjectName("horizontalLayout_48")
+        self.Tag_4 = QtWidgets.QLineEdit(parent=self.widget_7)
+        self.Tag_4.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Tag_4.setFont(font)
+        self.Tag_4.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Tag_4.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Tag_4.setObjectName("Tag_4")
+        self.horizontalLayout_48.addWidget(self.Tag_4)
+        self.verticalLayout_22 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_22.setObjectName("verticalLayout_22")
+        spacerItem3 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
+        self.verticalLayout_22.addItem(spacerItem3)
+        self.Button_Question_4 = QtWidgets.QPushButton(parent=self.widget_7)
+        self.Button_Question_4.setMaximumSize(QtCore.QSize(33, 33))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Question_4.setFont(font)
+        self.Button_Question_4.setStyleSheet("#Button_Question_4 {\n"
+"border: 2px solid;\n"
+"border-radius: 7px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Question_4:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Question_4:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}")
+        self.Button_Question_4.setObjectName("Button_Question_4")
+        self.verticalLayout_22.addWidget(self.Button_Question_4)
+        self.horizontalLayout_48.addLayout(self.verticalLayout_22)
+        self.horizontalLayout_46.addLayout(self.horizontalLayout_48)
+        self.verticalLayout_21.addLayout(self.horizontalLayout_46)
+        self.horizontalLayout_49 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_49.setContentsMargins(0, 10, 0, -1)
+        self.horizontalLayout_49.setObjectName("horizontalLayout_49")
+        self.pushButton_DOPvariany_2 = QtWidgets.QPushButton(parent=self.widget_7)
+        self.pushButton_DOPvariany_2.setMaximumSize(QtCore.QSize(300, 40))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        font.setStyleStrategy(QtGui.QFont.StyleStrategy.PreferDefault)
+        self.pushButton_DOPvariany_2.setFont(font)
+        self.pushButton_DOPvariany_2.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
+        self.pushButton_DOPvariany_2.setStyleSheet("#pushButton_DOPvariany_2 {\n"
+"border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
+"border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
+"}\n"
+"#pushButton_DOPvariany_2:hover {\n"
+"}\n"
+"#pushButton_DOPvariany_2:pressed { \n"
+"}")
+        self.pushButton_DOPvariany_2.setObjectName("pushButton_DOPvariany_2")
+        self.horizontalLayout_49.addWidget(self.pushButton_DOPvariany_2)
+        self.verticalLayout_21.addLayout(self.horizontalLayout_49)
+        self.horizontalLayout_50 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_50.setObjectName("horizontalLayout_50")
+        self.Button_Copy_4 = QtWidgets.QPushButton(parent=self.widget_7)
+        self.Button_Copy_4.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Copy_4.setStyleSheet("#Button_Copy_4 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Copy_4:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Copy_4:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"\n"
+"")
+        self.Button_Copy_4.setText("")
+        self.Button_Copy_4.setIcon(icon)
+        self.Button_Copy_4.setObjectName("Button_Copy_4")
+        self.horizontalLayout_50.addWidget(self.Button_Copy_4)
+        self.horizontalLayout_51 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_51.setSpacing(0)
+        self.horizontalLayout_51.setObjectName("horizontalLayout_51")
+        self.Obyazatelny_vopros_4 = QtWidgets.QLabel(parent=self.widget_7)
+        self.Obyazatelny_vopros_4.setMaximumSize(QtCore.QSize(400, 34))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Obyazatelny_vopros_4.setFont(font)
+        self.Obyazatelny_vopros_4.setObjectName("Obyazatelny_vopros_4")
+        self.horizontalLayout_51.addWidget(self.Obyazatelny_vopros_4)
+        self.widget_8 = QtWidgets.QWidget(parent=self.widget_7)
+        self.widget_8.setMinimumSize(QtCore.QSize(45, 45))
+        self.widget_8.setMaximumSize(QtCore.QSize(45, 45))
+        self.widget_8.setObjectName("widget_8")
+        self.pushButton_8 = QtWidgets.QPushButton(parent=self.widget_8)
+        self.pushButton_8.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_8.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_8.setText("")
+        self.pushButton_8.setObjectName("pushButton_8")
+        self.pushButton_9 = QtWidgets.QPushButton(parent=self.widget_8)
+        self.pushButton_9.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_9.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_9.setText("")
+        self.pushButton_9.setIcon(icon1)
+        self.pushButton_9.setObjectName("pushButton_9")
+        self.horizontalLayout_51.addWidget(self.widget_8)
+        self.horizontalLayout_50.addLayout(self.horizontalLayout_51)
+        self.verticalLayout_21.addLayout(self.horizontalLayout_50)
+        self.horizontalLayout_100.addWidget(self.widget_7)
+        self.verticalLayout_23.addLayout(self.horizontalLayout_100)
+        self.stackedWidget_2.addWidget(self.page_6)
+        self.page_7 = QtWidgets.QWidget()
+        self.page_7.setObjectName("page_7")
+        self.verticalLayout_26 = QtWidgets.QVBoxLayout(self.page_7)
+        self.verticalLayout_26.setObjectName("verticalLayout_26")
+        self.horizontalLayout_101 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_101.setObjectName("horizontalLayout_101")
+        self.widget_9 = QtWidgets.QWidget(parent=self.page_7)
+        self.widget_9.setMaximumSize(QtCore.QSize(900, 400))
+        self.widget_9.setStyleSheet("#widget_9 {\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+        self.widget_9.setObjectName("widget_9")
+        self.verticalLayout_24 = QtWidgets.QVBoxLayout(self.widget_9)
+        self.verticalLayout_24.setObjectName("verticalLayout_24")
+        self.horizontalLayout_52 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_52.setObjectName("horizontalLayout_52")
+        self.horizontalLayout_53 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_53.setObjectName("horizontalLayout_53")
+        self.Vopros_5 = QtWidgets.QLineEdit(parent=self.widget_9)
+        self.Vopros_5.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Vopros_5.setFont(font)
+        self.Vopros_5.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Vopros_5.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Vopros_5.setObjectName("Vopros_5")
+        self.horizontalLayout_53.addWidget(self.Vopros_5)
+        self.horizontalLayout_52.addLayout(self.horizontalLayout_53)
+        self.horizontalLayout_54 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_54.setContentsMargins(0, -1, -1, -1)
+        self.horizontalLayout_54.setObjectName("horizontalLayout_54")
+        self.comboBox_5 = QtWidgets.QComboBox(parent=self.widget_9)
+        self.comboBox_5.setMaximumSize(QtCore.QSize(220, 80))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.comboBox_5.setFont(font)
+        self.comboBox_5.setStyleSheet("#comboBox_5 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#comboBox_5:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#comboBox_5:pressed { \n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"\n"
+"")
+        self.comboBox_5.setObjectName("comboBox_5")
+        self.comboBox_5.addItem("")
+        self.comboBox_5.addItem("")
+        self.comboBox_5.addItem("")
+        self.comboBox_5.addItem("")
+        self.comboBox_5.addItem("")
+        self.comboBox_5.addItem("")
+        self.comboBox_5.addItem("")
+        self.comboBox_5.addItem("")
+        self.horizontalLayout_54.addWidget(self.comboBox_5)
+        self.horizontalLayout_52.addLayout(self.horizontalLayout_54)
+        self.verticalLayout_24.addLayout(self.horizontalLayout_52)
+        self.horizontalLayout_55 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_55.setObjectName("horizontalLayout_55")
+        self.horizontalLayout_56 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_56.setObjectName("horizontalLayout_56")
+        self.Kratki_otvet_4 = QtWidgets.QLineEdit(parent=self.widget_9)
+        self.Kratki_otvet_4.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Kratki_otvet_4.setFont(font)
+        self.Kratki_otvet_4.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Kratki_otvet_4.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Kratki_otvet_4.setObjectName("Kratki_otvet_4")
+        self.horizontalLayout_56.addWidget(self.Kratki_otvet_4)
+        self.horizontalLayout_55.addLayout(self.horizontalLayout_56)
+        self.horizontalLayout_57 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_57.setObjectName("horizontalLayout_57")
+        self.horizontalLayout_58 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_58.setContentsMargins(72, -1, 0, -1)
+        self.horizontalLayout_58.setObjectName("horizontalLayout_58")
+        self.Tag_5 = QtWidgets.QLineEdit(parent=self.widget_9)
+        self.Tag_5.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Tag_5.setFont(font)
+        self.Tag_5.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Tag_5.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Tag_5.setObjectName("Tag_5")
+        self.horizontalLayout_58.addWidget(self.Tag_5)
+        self.verticalLayout_25 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_25.setObjectName("verticalLayout_25")
+        spacerItem4 = QtWidgets.QSpacerItem(1, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
+        self.verticalLayout_25.addItem(spacerItem4)
+        self.Button_Question_5 = QtWidgets.QPushButton(parent=self.widget_9)
+        self.Button_Question_5.setMaximumSize(QtCore.QSize(33, 33))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Question_5.setFont(font)
+        self.Button_Question_5.setStyleSheet("#Button_Question_5 {\n"
+"border: 2px solid;\n"
+"border-radius: 7px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Question_5:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Question_5:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Question_5.setObjectName("Button_Question_5")
+        self.verticalLayout_25.addWidget(self.Button_Question_5)
+        self.horizontalLayout_58.addLayout(self.verticalLayout_25)
+        self.horizontalLayout_57.addLayout(self.horizontalLayout_58)
+        self.horizontalLayout_55.addLayout(self.horizontalLayout_57)
+        self.verticalLayout_24.addLayout(self.horizontalLayout_55)
+        self.horizontalLayout_59 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_59.setObjectName("horizontalLayout_59")
+        self.Button_Copy_5 = QtWidgets.QPushButton(parent=self.widget_9)
+        self.Button_Copy_5.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Copy_5.setStyleSheet("#Button_Copy_5 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Copy_5:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Copy_5:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"\n"
+"")
+        self.Button_Copy_5.setText("")
+        self.Button_Copy_5.setIcon(icon)
+        self.Button_Copy_5.setObjectName("Button_Copy_5")
+        self.horizontalLayout_59.addWidget(self.Button_Copy_5)
+        self.horizontalLayout_60 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_60.setSpacing(0)
+        self.horizontalLayout_60.setObjectName("horizontalLayout_60")
+        self.Obyazatelny_vopros_5 = QtWidgets.QLabel(parent=self.widget_9)
+        self.Obyazatelny_vopros_5.setMaximumSize(QtCore.QSize(400, 34))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Obyazatelny_vopros_5.setFont(font)
+        self.Obyazatelny_vopros_5.setObjectName("Obyazatelny_vopros_5")
+        self.horizontalLayout_60.addWidget(self.Obyazatelny_vopros_5)
+        self.widget_10 = QtWidgets.QWidget(parent=self.widget_9)
+        self.widget_10.setMinimumSize(QtCore.QSize(45, 45))
+        self.widget_10.setMaximumSize(QtCore.QSize(45, 45))
+        self.widget_10.setObjectName("widget_10")
+        self.pushButton_10 = QtWidgets.QPushButton(parent=self.widget_10)
+        self.pushButton_10.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_10.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_10.setText("")
+        self.pushButton_10.setObjectName("pushButton_10")
+        self.pushButton_11 = QtWidgets.QPushButton(parent=self.widget_10)
+        self.pushButton_11.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_11.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_11.setText("")
+        self.pushButton_11.setIcon(icon1)
+        self.pushButton_11.setObjectName("pushButton_11")
+        self.horizontalLayout_60.addWidget(self.widget_10)
+        self.horizontalLayout_59.addLayout(self.horizontalLayout_60)
+        self.verticalLayout_24.addLayout(self.horizontalLayout_59)
+        self.horizontalLayout_101.addWidget(self.widget_9)
+        self.verticalLayout_26.addLayout(self.horizontalLayout_101)
+        self.stackedWidget_2.addWidget(self.page_7)
+        self.page_8 = QtWidgets.QWidget()
+        self.page_8.setObjectName("page_8")
+        self.verticalLayout_30 = QtWidgets.QVBoxLayout(self.page_8)
+        self.verticalLayout_30.setObjectName("verticalLayout_30")
+        self.horizontalLayout_102 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_102.setObjectName("horizontalLayout_102")
+        self.widget_11 = QtWidgets.QWidget(parent=self.page_8)
+        self.widget_11.setMaximumSize(QtCore.QSize(900, 400))
+        self.widget_11.setStyleSheet("#widget_11 {\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+        self.widget_11.setObjectName("widget_11")
+        self.verticalLayout_27 = QtWidgets.QVBoxLayout(self.widget_11)
+        self.verticalLayout_27.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
+        self.verticalLayout_27.setObjectName("verticalLayout_27")
+        self.horizontalLayout_61 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_61.setObjectName("horizontalLayout_61")
+        self.horizontalLayout_62 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_62.setObjectName("horizontalLayout_62")
+        self.horizontalLayout_63 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_63.setObjectName("horizontalLayout_63")
+        self.horizontalLayout_64 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_64.setContentsMargins(29, -1, 210, -1)
+        self.horizontalLayout_64.setSpacing(30)
+        self.horizontalLayout_64.setObjectName("horizontalLayout_64")
+        self.comboBox_6 = QtWidgets.QComboBox(parent=self.widget_11)
+        self.comboBox_6.setMaximumSize(QtCore.QSize(60, 45))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.comboBox_6.setFont(font)
+        self.comboBox_6.setStyleSheet("#comboBox_6 {\n"
+"border: 2px solid;\n"
+"border-radius: 5px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+"#comboBox_6:hover {\n"
+"background-color: rgb(243, 243, 243);\n"
+"}\n"
+"#comboBox_6:pressed { \n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+"")
+        self.comboBox_6.setObjectName("comboBox_6")
+        self.comboBox_6.addItem("")
+        self.comboBox_6.addItem("")
+        self.horizontalLayout_64.addWidget(self.comboBox_6)
+        self.comboBox_7 = QtWidgets.QComboBox(parent=self.widget_11)
+        self.comboBox_7.setMaximumSize(QtCore.QSize(60, 45))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.comboBox_7.setFont(font)
+        self.comboBox_7.setStyleSheet("#comboBox_7 {\n"
+"border: 2px solid;\n"
+"border-radius: 5px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+"#comboBox_7:hover {\n"
+"background-color: rgb(243, 243, 243);\n"
+"}\n"
+"#comboBox_7:pressed { \n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+"")
+        self.comboBox_7.setObjectName("comboBox_7")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.horizontalLayout_64.addWidget(self.comboBox_7)
+        self.horizontalLayout_63.addLayout(self.horizontalLayout_64)
+        self.horizontalLayout_65 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_65.setContentsMargins(180, -1, -1, 0)
+        self.horizontalLayout_65.setSpacing(10)
+        self.horizontalLayout_65.setObjectName("horizontalLayout_65")
+        self.comboBox_8 = QtWidgets.QComboBox(parent=self.widget_11)
+        self.comboBox_8.setMaximumSize(QtCore.QSize(220, 80))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.comboBox_8.setFont(font)
+        self.comboBox_8.setStyleSheet("#comboBox_8 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color:  rgb(228, 228, 228);\n"
+"}\n"
+"#comboBox_8:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#comboBox_8:pressed { \n"
+"background-color:rgb(219, 219, 219);\n"
+"}")
+        self.comboBox_8.setObjectName("comboBox_8")
+        self.comboBox_8.addItem("")
+        self.comboBox_8.addItem("")
+        self.comboBox_8.addItem("")
+        self.comboBox_8.addItem("")
+        self.comboBox_8.addItem("")
+        self.comboBox_8.addItem("")
+        self.comboBox_8.addItem("")
+        self.comboBox_8.addItem("")
+        self.horizontalLayout_65.addWidget(self.comboBox_8)
+        self.horizontalLayout_63.addLayout(self.horizontalLayout_65)
+        self.horizontalLayout_62.addLayout(self.horizontalLayout_63)
+        self.horizontalLayout_61.addLayout(self.horizontalLayout_62)
+        self.verticalLayout_27.addLayout(self.horizontalLayout_61)
+        self.horizontalLayout_66 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_66.setObjectName("horizontalLayout_66")
+        self.horizontalLayout_93 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_93.setObjectName("horizontalLayout_93")
+        self.verticalLayout_40 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_40.setObjectName("verticalLayout_40")
+        self.horizontalLayout_70 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_70.setContentsMargins(-1, -1, 0, 0)
+        self.horizontalLayout_70.setSpacing(6)
+        self.horizontalLayout_70.setObjectName("horizontalLayout_70")
+        spacerItem5 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_70.addItem(spacerItem5)
+        self.horizontalLayout_71 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_71.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_71.setSpacing(6)
+        self.horizontalLayout_71.setObjectName("horizontalLayout_71")
+        self.label_6 = QtWidgets.QLabel(parent=self.widget_11)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label_6.setFont(font)
+        self.label_6.setObjectName("label_6")
+        self.horizontalLayout_71.addWidget(self.label_6)
+        self.horizontalLayout_70.addLayout(self.horizontalLayout_71)
+        self.Vopros_6 = QtWidgets.QLineEdit(parent=self.widget_11)
+        self.Vopros_6.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Vopros_6.setFont(font)
+        self.Vopros_6.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Vopros_6.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Vopros_6.setObjectName("Vopros_6")
+        self.horizontalLayout_70.addWidget(self.Vopros_6)
+        spacerItem6 = QtWidgets.QSpacerItem(130, 20, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_70.addItem(spacerItem6)
+        self.verticalLayout_40.addLayout(self.horizontalLayout_70)
+        self.horizontalLayout_67 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_67.setContentsMargins(-1, 30, 0, -1)
+        self.horizontalLayout_67.setObjectName("horizontalLayout_67")
+        spacerItem7 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_67.addItem(spacerItem7)
+        self.horizontalLayout_68 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_68.setObjectName("horizontalLayout_68")
+        self.label_5 = QtWidgets.QLabel(parent=self.widget_11)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+        self.horizontalLayout_68.addWidget(self.label_5)
+        self.horizontalLayout_67.addLayout(self.horizontalLayout_68)
+        self.Kratki_otvet_5 = QtWidgets.QLineEdit(parent=self.widget_11)
+        self.Kratki_otvet_5.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Kratki_otvet_5.setFont(font)
+        self.Kratki_otvet_5.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Kratki_otvet_5.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Kratki_otvet_5.setObjectName("Kratki_otvet_5")
+        self.horizontalLayout_67.addWidget(self.Kratki_otvet_5)
+        spacerItem8 = QtWidgets.QSpacerItem(130, 10, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_67.addItem(spacerItem8)
+        self.verticalLayout_40.addLayout(self.horizontalLayout_67)
+        self.horizontalLayout_93.addLayout(self.verticalLayout_40)
+        self.horizontalLayout_66.addLayout(self.horizontalLayout_93)
+        self.horizontalLayout_69 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_69.setContentsMargins(-1, -1, 80, -1)
+        self.horizontalLayout_69.setObjectName("horizontalLayout_69")
+        self.Tag_6 = QtWidgets.QLineEdit(parent=self.widget_11)
+        self.Tag_6.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Tag_6.setFont(font)
+        self.Tag_6.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Tag_6.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Tag_6.setObjectName("Tag_6")
+        self.horizontalLayout_69.addWidget(self.Tag_6)
+        self.verticalLayout_28 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_28.setObjectName("verticalLayout_28")
+        spacerItem9 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
+        self.verticalLayout_28.addItem(spacerItem9)
+        self.Button_Question_6 = QtWidgets.QPushButton(parent=self.widget_11)
+        self.Button_Question_6.setMaximumSize(QtCore.QSize(33, 33))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Question_6.setFont(font)
+        self.Button_Question_6.setStyleSheet("#Button_Question_6 {\n"
+"border: 2px solid;\n"
+"border-radius: 7px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Question_6:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Question_6:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}")
+        self.Button_Question_6.setObjectName("Button_Question_6")
+        self.verticalLayout_28.addWidget(self.Button_Question_6)
+        self.horizontalLayout_69.addLayout(self.verticalLayout_28)
+        self.horizontalLayout_66.addLayout(self.horizontalLayout_69)
+        self.verticalLayout_27.addLayout(self.horizontalLayout_66)
+        self.horizontalLayout_72 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_72.setObjectName("horizontalLayout_72")
+        self.Button_Copy_6 = QtWidgets.QPushButton(parent=self.widget_11)
+        self.Button_Copy_6.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Copy_6.setStyleSheet("#Button_Copy_6 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Copy_6:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Copy_6:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"\n"
+"")
+        self.Button_Copy_6.setText("")
+        self.Button_Copy_6.setIcon(icon)
+        self.Button_Copy_6.setObjectName("Button_Copy_6")
+        self.horizontalLayout_72.addWidget(self.Button_Copy_6)
+        self.horizontalLayout_73 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_73.setSpacing(0)
+        self.horizontalLayout_73.setObjectName("horizontalLayout_73")
+        self.Obyazatelny_vopros_6 = QtWidgets.QLabel(parent=self.widget_11)
+        self.Obyazatelny_vopros_6.setMaximumSize(QtCore.QSize(400, 34))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Obyazatelny_vopros_6.setFont(font)
+        self.Obyazatelny_vopros_6.setObjectName("Obyazatelny_vopros_6")
+        self.horizontalLayout_73.addWidget(self.Obyazatelny_vopros_6)
+        self.widget_12 = QtWidgets.QWidget(parent=self.widget_11)
+        self.widget_12.setMinimumSize(QtCore.QSize(45, 45))
+        self.widget_12.setMaximumSize(QtCore.QSize(45, 45))
+        self.widget_12.setObjectName("widget_12")
+        self.pushButton_12 = QtWidgets.QPushButton(parent=self.widget_12)
+        self.pushButton_12.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_12.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_12.setText("")
+        self.pushButton_12.setObjectName("pushButton_12")
+        self.pushButton_13 = QtWidgets.QPushButton(parent=self.widget_12)
+        self.pushButton_13.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_13.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_13.setText("")
+        self.pushButton_13.setIcon(icon1)
+        self.pushButton_13.setObjectName("pushButton_13")
+        self.horizontalLayout_73.addWidget(self.widget_12)
+        self.horizontalLayout_72.addLayout(self.horizontalLayout_73)
+        self.verticalLayout_27.addLayout(self.horizontalLayout_72)
+        self.horizontalLayout_102.addWidget(self.widget_11)
+        self.verticalLayout_30.addLayout(self.horizontalLayout_102)
+        self.stackedWidget_2.addWidget(self.page_8)
+        self.page_9 = QtWidgets.QWidget()
+        self.page_9.setObjectName("page_9")
+        self.verticalLayout_33 = QtWidgets.QVBoxLayout(self.page_9)
+        self.verticalLayout_33.setObjectName("verticalLayout_33")
+        self.horizontalLayout_95 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_95.setObjectName("horizontalLayout_95")
+        self.widget_13 = QtWidgets.QWidget(parent=self.page_9)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.widget_13.sizePolicy().hasHeightForWidth())
+        self.widget_13.setSizePolicy(sizePolicy)
+        self.widget_13.setMinimumSize(QtCore.QSize(0, 0))
+        self.widget_13.setMaximumSize(QtCore.QSize(900, 400))
+        self.widget_13.setStyleSheet("#widget_13 {\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+        self.widget_13.setObjectName("widget_13")
+        self.verticalLayout_31 = QtWidgets.QVBoxLayout(self.widget_13)
+        self.verticalLayout_31.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
+        self.verticalLayout_31.setObjectName("verticalLayout_31")
+        self.horizontalLayout_74 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_74.setObjectName("horizontalLayout_74")
+        self.horizontalLayout_75 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_75.setObjectName("horizontalLayout_75")
+        self.horizontalLayout_76 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_76.setContentsMargins(75, -1, -1, -1)
+        self.horizontalLayout_76.setObjectName("horizontalLayout_76")
+        self.Vopros_7 = QtWidgets.QLineEdit(parent=self.widget_13)
+        self.Vopros_7.setMaximumSize(QtCore.QSize(434, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Vopros_7.setFont(font)
+        self.Vopros_7.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
+        self.Vopros_7.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Vopros_7.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Vopros_7.setObjectName("Vopros_7")
+        self.horizontalLayout_76.addWidget(self.Vopros_7)
+        self.horizontalLayout_75.addLayout(self.horizontalLayout_76)
+        self.horizontalLayout_77 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_77.setContentsMargins(174, -1, 40, -1)
+        self.horizontalLayout_77.setObjectName("horizontalLayout_77")
+        self.comboBox_9 = QtWidgets.QComboBox(parent=self.widget_13)
+        self.comboBox_9.setMaximumSize(QtCore.QSize(220, 80))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.comboBox_9.setFont(font)
+        self.comboBox_9.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
+        self.comboBox_9.setStyleSheet("#comboBox_9 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color:  rgb(228, 228, 228);\n"
+"}\n"
+"#comboBox_9:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#comboBox_9:pressed { \n"
+"background-color:rgb(219, 219, 219);\n"
+"}")
+        self.comboBox_9.setObjectName("comboBox_9")
+        self.comboBox_9.addItem("")
+        self.comboBox_9.addItem("")
+        self.comboBox_9.addItem("")
+        self.comboBox_9.addItem("")
+        self.comboBox_9.addItem("")
+        self.comboBox_9.addItem("")
+        self.comboBox_9.addItem("")
+        self.comboBox_9.addItem("")
+        self.horizontalLayout_77.addWidget(self.comboBox_9)
+        self.horizontalLayout_75.addLayout(self.horizontalLayout_77)
+        self.horizontalLayout_74.addLayout(self.horizontalLayout_75)
+        self.verticalLayout_31.addLayout(self.horizontalLayout_74)
+        self.horizontalLayout_78 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_78.setSpacing(6)
+        self.horizontalLayout_78.setObjectName("horizontalLayout_78")
+        self.horizontalLayout_94 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_94.setContentsMargins(-1, -1, 0, -1)
+        self.horizontalLayout_94.setObjectName("horizontalLayout_94")
+        self.widget_17 = QtWidgets.QWidget(parent=self.widget_13)
+        self.widget_17.setMaximumSize(QtCore.QSize(40, 40))
+        self.widget_17.setObjectName("widget_17")
+        self.pushButton = QtWidgets.QPushButton(parent=self.widget_17)
+        self.pushButton.setGeometry(QtCore.QRect(0, 0, 40, 40))
+        self.pushButton.setMaximumSize(QtCore.QSize(40, 40))
+        self.pushButton.setText("")
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_18 = QtWidgets.QPushButton(parent=self.widget_17)
+        self.pushButton_18.setGeometry(QtCore.QRect(0, 0, 40, 40))
+        self.pushButton_18.setMaximumSize(QtCore.QSize(40, 40))
+        self.pushButton_18.setText("")
+        self.pushButton_18.setObjectName("pushButton_18")
+        self.horizontalLayout_94.addWidget(self.widget_17)
+        self.horizontalLayout_79 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_79.setObjectName("horizontalLayout_79")
+        self.Kratki_otvet_6 = QtWidgets.QLineEdit(parent=self.widget_13)
+        self.Kratki_otvet_6.setMaximumSize(QtCore.QSize(405, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Kratki_otvet_6.setFont(font)
+        self.Kratki_otvet_6.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Kratki_otvet_6.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Kratki_otvet_6.setObjectName("Kratki_otvet_6")
+        self.horizontalLayout_79.addWidget(self.Kratki_otvet_6)
+        self.horizontalLayout_94.addLayout(self.horizontalLayout_79)
+        self.horizontalLayout_78.addLayout(self.horizontalLayout_94)
+        self.horizontalLayout_80 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_80.setContentsMargins(190, -1, 0, -1)
+        self.horizontalLayout_80.setObjectName("horizontalLayout_80")
+        self.Tag_7 = QtWidgets.QLineEdit(parent=self.widget_13)
+        self.Tag_7.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Tag_7.setFont(font)
+        self.Tag_7.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Tag_7.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Tag_7.setObjectName("Tag_7")
+        self.horizontalLayout_80.addWidget(self.Tag_7)
+        self.verticalLayout_32 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_32.setObjectName("verticalLayout_32")
+        spacerItem10 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
+        self.verticalLayout_32.addItem(spacerItem10)
+        self.Button_Question_7 = QtWidgets.QPushButton(parent=self.widget_13)
+        self.Button_Question_7.setMaximumSize(QtCore.QSize(33, 33))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Question_7.setFont(font)
+        self.Button_Question_7.setStyleSheet("#Button_Question_7 {\n"
+"border: 2px solid;\n"
+"border-radius: 7px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Question_7:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Question_7:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}")
+        self.Button_Question_7.setObjectName("Button_Question_7")
+        self.verticalLayout_32.addWidget(self.Button_Question_7)
+        self.horizontalLayout_80.addLayout(self.verticalLayout_32)
+        self.horizontalLayout_78.addLayout(self.horizontalLayout_80)
+        self.verticalLayout_31.addLayout(self.horizontalLayout_78)
+        self.horizontalLayout_81 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_81.setObjectName("horizontalLayout_81")
+        self.pushButton_DOPvariany_3 = QtWidgets.QPushButton(parent=self.widget_13)
+        self.pushButton_DOPvariany_3.setMaximumSize(QtCore.QSize(260, 35))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.pushButton_DOPvariany_3.setFont(font)
+        self.pushButton_DOPvariany_3.setStyleSheet("#pushButton_DOPvariany_3 {\n"
+"border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
+"border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
+"}\n"
+"#pushButton_DOPvariany_3:hover {\n"
+"}\n"
+"#pushButton_DOPvariany_3:pressed { \n"
+"}")
+        self.pushButton_DOPvariany_3.setObjectName("pushButton_DOPvariany_3")
+        self.horizontalLayout_81.addWidget(self.pushButton_DOPvariany_3)
+        self.label_9 = QtWidgets.QLabel(parent=self.widget_13)
+        self.label_9.setMaximumSize(QtCore.QSize(55, 35))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.label_9.setFont(font)
+        self.label_9.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_9.setObjectName("label_9")
+        self.horizontalLayout_81.addWidget(self.label_9)
+        self.pushButton_drVarifnt_2 = QtWidgets.QPushButton(parent=self.widget_13)
+        self.pushButton_drVarifnt_2.setMaximumSize(QtCore.QSize(380, 35))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.pushButton_drVarifnt_2.setFont(font)
+        self.pushButton_drVarifnt_2.setStyleSheet("#pushButton_drVarifnt_2 {\n"
+"border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
+"border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
+"}\n"
+"#pushButton_drVarifnt_2:hover {\n"
+"}\n"
+"#pushButton_drVarifnt_2:pressed { \n"
+"}")
+        self.pushButton_drVarifnt_2.setObjectName("pushButton_drVarifnt_2")
+        self.horizontalLayout_81.addWidget(self.pushButton_drVarifnt_2)
+        self.verticalLayout_31.addLayout(self.horizontalLayout_81)
+        self.horizontalLayout_82 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_82.setObjectName("horizontalLayout_82")
+        self.Button_Copy_7 = QtWidgets.QPushButton(parent=self.widget_13)
+        self.Button_Copy_7.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Copy_7.setStyleSheet("#Button_Copy_7 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Copy_7:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Copy_7:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}")
+        self.Button_Copy_7.setText("")
+        self.Button_Copy_7.setIcon(icon)
+        self.Button_Copy_7.setObjectName("Button_Copy_7")
+        self.horizontalLayout_82.addWidget(self.Button_Copy_7)
+        self.horizontalLayout_83 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_83.setSpacing(0)
+        self.horizontalLayout_83.setObjectName("horizontalLayout_83")
+        self.Obyazatelny_vopros_7 = QtWidgets.QLabel(parent=self.widget_13)
+        self.Obyazatelny_vopros_7.setMaximumSize(QtCore.QSize(400, 34))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Obyazatelny_vopros_7.setFont(font)
+        self.Obyazatelny_vopros_7.setObjectName("Obyazatelny_vopros_7")
+        self.horizontalLayout_83.addWidget(self.Obyazatelny_vopros_7)
+        self.widget_14 = QtWidgets.QWidget(parent=self.widget_13)
+        self.widget_14.setMinimumSize(QtCore.QSize(45, 45))
+        self.widget_14.setMaximumSize(QtCore.QSize(45, 45))
+        self.widget_14.setObjectName("widget_14")
+        self.pushButton_14 = QtWidgets.QPushButton(parent=self.widget_14)
+        self.pushButton_14.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_14.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_14.setText("")
+        self.pushButton_14.setObjectName("pushButton_14")
+        self.pushButton_15 = QtWidgets.QPushButton(parent=self.widget_14)
+        self.pushButton_15.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_15.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_15.setText("")
+        self.pushButton_15.setIcon(icon1)
+        self.pushButton_15.setObjectName("pushButton_15")
+        self.horizontalLayout_83.addWidget(self.widget_14)
+        self.horizontalLayout_82.addLayout(self.horizontalLayout_83)
+        self.verticalLayout_31.addLayout(self.horizontalLayout_82)
+        self.horizontalLayout_95.addWidget(self.widget_13)
+        self.verticalLayout_33.addLayout(self.horizontalLayout_95)
+        self.stackedWidget_2.addWidget(self.page_9)
+        self.page_3 = QtWidgets.QWidget()
+        self.page_3.setObjectName("page_3")
+        self.verticalLayout_36 = QtWidgets.QVBoxLayout(self.page_3)
+        self.verticalLayout_36.setObjectName("verticalLayout_36")
+        self.horizontalLayout_96 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_96.setObjectName("horizontalLayout_96")
+        self.widget_15 = QtWidgets.QWidget(parent=self.page_3)
+        self.widget_15.setMaximumSize(QtCore.QSize(900, 400))
+        self.widget_15.setStyleSheet("#widget_15 {\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+        self.widget_15.setObjectName("widget_15")
+        self.verticalLayout_34 = QtWidgets.QVBoxLayout(self.widget_15)
+        self.verticalLayout_34.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
+        self.verticalLayout_34.setObjectName("verticalLayout_34")
+        self.horizontalLayout_84 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_84.setObjectName("horizontalLayout_84")
+        self.horizontalLayout_85 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_85.setObjectName("horizontalLayout_85")
+        self.Vopros_8 = QtWidgets.QLineEdit(parent=self.widget_15)
+        self.Vopros_8.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Vopros_8.setFont(font)
+        self.Vopros_8.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Vopros_8.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Vopros_8.setObjectName("Vopros_8")
+        self.horizontalLayout_85.addWidget(self.Vopros_8)
+        self.horizontalLayout_86 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_86.setContentsMargins(28, -1, -1, -1)
+        self.horizontalLayout_86.setObjectName("horizontalLayout_86")
+        self.comboBox_10 = QtWidgets.QComboBox(parent=self.widget_15)
+        self.comboBox_10.setMaximumSize(QtCore.QSize(220, 80))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.comboBox_10.setFont(font)
+        self.comboBox_10.setStyleSheet("#comboBox_10 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#comboBox_10:hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+"#comboBox_10:pressed { \n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"")
+        self.comboBox_10.setObjectName("comboBox_10")
+        self.comboBox_10.addItem("")
+        self.comboBox_10.addItem("")
+        self.comboBox_10.addItem("")
+        self.comboBox_10.addItem("")
+        self.comboBox_10.addItem("")
+        self.comboBox_10.addItem("")
+        self.comboBox_10.addItem("")
+        self.comboBox_10.addItem("")
+        self.horizontalLayout_86.addWidget(self.comboBox_10)
+        self.horizontalLayout_85.addLayout(self.horizontalLayout_86)
+        self.horizontalLayout_84.addLayout(self.horizontalLayout_85)
+        self.verticalLayout_34.addLayout(self.horizontalLayout_84)
+        self.horizontalLayout_87 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_87.setObjectName("horizontalLayout_87")
+        self.horizontalLayout_88 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_88.setObjectName("horizontalLayout_88")
+        self.horizontalLayout_87.addLayout(self.horizontalLayout_88)
+        self.horizontalLayout_89 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_89.setContentsMargins(-1, -1, 298, -1)
+        self.horizontalLayout_89.setObjectName("horizontalLayout_89")
+        self.timeEdit = QtWidgets.QTimeEdit(parent=self.widget_15)
+        self.timeEdit.setMaximumSize(QtCore.QSize(90, 45))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.timeEdit.setFont(font)
+        self.timeEdit.setStyleSheet("#timeEdit {\n"
+"border: 2px solid;\n"
+"border-radius: 5px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+"#timeEdit:hover {\n"
+"background-color: rgb(243, 243, 243);\n"
+"}\n"
+"#timeEdit:pressed { \n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+"")
+        self.timeEdit.setObjectName("timeEdit")
+        self.horizontalLayout_89.addWidget(self.timeEdit)
+        self.horizontalLayout_87.addLayout(self.horizontalLayout_89)
+        self.horizontalLayout_90 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_90.setObjectName("horizontalLayout_90")
+        self.Tag_8 = QtWidgets.QLineEdit(parent=self.widget_15)
+        self.Tag_8.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Tag_8.setFont(font)
+        self.Tag_8.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Tag_8.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Tag_8.setObjectName("Tag_8")
+        self.horizontalLayout_90.addWidget(self.Tag_8)
+        self.verticalLayout_35 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_35.setObjectName("verticalLayout_35")
+        spacerItem11 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
+        self.verticalLayout_35.addItem(spacerItem11)
+        self.Button_Question_8 = QtWidgets.QPushButton(parent=self.widget_15)
+        self.Button_Question_8.setMaximumSize(QtCore.QSize(33, 33))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Question_8.setFont(font)
+        self.Button_Question_8.setStyleSheet("#Button_Question_8 {\n"
+"border: 2px solid;\n"
+"border-radius: 7px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Question_8:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Question_8:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}")
+        self.Button_Question_8.setObjectName("Button_Question_8")
+        self.verticalLayout_35.addWidget(self.Button_Question_8)
+        self.horizontalLayout_90.addLayout(self.verticalLayout_35)
+        self.horizontalLayout_87.addLayout(self.horizontalLayout_90)
+        self.verticalLayout_34.addLayout(self.horizontalLayout_87)
+        self.horizontalLayout_91 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_91.setObjectName("horizontalLayout_91")
+        self.Button_Copy_8 = QtWidgets.QPushButton(parent=self.widget_15)
+        self.Button_Copy_8.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Copy_8.setStyleSheet("#Button_Copy_8 {\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+"#Button_Copy_8:hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"#Button_Copy_8:pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Copy_8.setText("")
+        self.Button_Copy_8.setIcon(icon)
+        self.Button_Copy_8.setObjectName("Button_Copy_8")
+        self.horizontalLayout_91.addWidget(self.Button_Copy_8)
+        self.horizontalLayout_92 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_92.setObjectName("horizontalLayout_92")
+        self.Obyazatelny_vopros_8 = QtWidgets.QLabel(parent=self.widget_15)
+        self.Obyazatelny_vopros_8.setMaximumSize(QtCore.QSize(400, 34))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Obyazatelny_vopros_8.setFont(font)
+        self.Obyazatelny_vopros_8.setObjectName("Obyazatelny_vopros_8")
+        self.horizontalLayout_92.addWidget(self.Obyazatelny_vopros_8)
+        self.widget_16 = QtWidgets.QWidget(parent=self.widget_15)
+        self.widget_16.setMinimumSize(QtCore.QSize(45, 45))
+        self.widget_16.setMaximumSize(QtCore.QSize(45, 45))
+        self.widget_16.setObjectName("widget_16")
+        self.pushButton_16 = QtWidgets.QPushButton(parent=self.widget_16)
+        self.pushButton_16.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_16.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_16.setText("")
+        self.pushButton_16.setObjectName("pushButton_16")
+        self.pushButton_17 = QtWidgets.QPushButton(parent=self.widget_16)
+        self.pushButton_17.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_17.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_17.setText("")
+        self.pushButton_17.setIcon(icon1)
+        self.pushButton_17.setObjectName("pushButton_17")
+        self.horizontalLayout_92.addWidget(self.widget_16)
+        self.horizontalLayout_91.addLayout(self.horizontalLayout_92)
+        self.verticalLayout_34.addLayout(self.horizontalLayout_91)
+        self.horizontalLayout_96.addWidget(self.widget_15)
+        self.verticalLayout_36.addLayout(self.horizontalLayout_96)
+        self.stackedWidget_2.addWidget(self.page_3)
+        self.verticalLayout_7.addWidget(self.stackedWidget_2)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents_3)
         self.horizontalLayout_3.addWidget(self.scrollArea)
         self.verticalLayout_2.addLayout(self.horizontalLayout_3)
@@ -306,7 +1816,9 @@ class Ui_MainWindow(object):
         self.Button_Trash.setFont(font)
         self.Button_Trash.setStyleSheet("#Button_Trash {\n"
 "border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
 "border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Trash:hover {\n"
 "\n"
@@ -323,7 +1835,9 @@ class Ui_MainWindow(object):
         self.Button_Save.setFont(font)
         self.Button_Save.setStyleSheet("#Button_Save {\n"
 "border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
 "border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Save:hover {\n"
 "\n"
@@ -340,7 +1854,9 @@ class Ui_MainWindow(object):
         self.Button_Back.setFont(font)
         self.Button_Back.setStyleSheet("#Button_Back {\n"
 "border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
 "border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Back:hover {\n"
 "\n"
@@ -353,6 +1869,94 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.addLayout(self.horizontalLayout_4)
         self.verticalLayout_10.addLayout(self.verticalLayout_2)
         self.stackedWidget.addWidget(self.Add_page)
+        self.page = QtWidgets.QWidget()
+        self.page.setObjectName("page")
+        self.verticalLayout_12 = QtWidgets.QVBoxLayout(self.page)
+        self.verticalLayout_12.setObjectName("verticalLayout_12")
+        self.horizontalLayout_22 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_22.setObjectName("horizontalLayout_22")
+        self.label_3 = QtWidgets.QLabel(parent=self.page)
+        self.label_3.setMaximumSize(QtCore.QSize(777, 30))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label_3.setFont(font)
+        self.label_3.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_3.setObjectName("label_3")
+        self.horizontalLayout_22.addWidget(self.label_3)
+        self.verticalLayout_12.addLayout(self.horizontalLayout_22)
+        self.horizontalLayout_23 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_23.setObjectName("horizontalLayout_23")
+        self.Poisk_2 = QtWidgets.QLineEdit(parent=self.page)
+        self.Poisk_2.setMaximumSize(QtCore.QSize(430, 39))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Poisk_2.setFont(font)
+        self.Poisk_2.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(194, 194, 194);")
+        self.Poisk_2.setObjectName("Poisk_2")
+        self.horizontalLayout_23.addWidget(self.Poisk_2)
+        self.Button_Find_Fill = QtWidgets.QPushButton(parent=self.page)
+        self.Button_Find_Fill.setMaximumSize(QtCore.QSize(37, 40))
+        self.Button_Find_Fill.setStyleSheet("#Button_Find_Fill {\n"
+"border-top: 0px solid;\n"
+"border-bottom: 0px solid;\n"
+"image: url(:/Lupa/Lupa.png);\n"
+"}\n"
+"#Button_Find_Fill:hover {\n"
+"\n"
+"}\n"
+"#Button_Find_Fill:pressed { \n"
+"\n"
+"}")
+        self.Button_Find_Fill.setText("")
+        self.Button_Find_Fill.setObjectName("Button_Find_Fill")
+        self.horizontalLayout_23.addWidget(self.Button_Find_Fill)
+        self.Button_Back_Fill = QtWidgets.QPushButton(parent=self.page)
+        self.Button_Back_Fill.setMaximumSize(QtCore.QSize(157, 44))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Back_Fill.setFont(font)
+        self.Button_Back_Fill.setStyleSheet("#Button_Back_Fill {\n"
+"border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
+"border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
+"}\n"
+"#Button_Back_Fill:hover {\n"
+"\n"
+"}\n"
+"#Button_Back_Fill:pressed { \n"
+"\n"
+"}")
+        self.Button_Back_Fill.setObjectName("Button_Back_Fill")
+        self.horizontalLayout_23.addWidget(self.Button_Back_Fill)
+        self.verticalLayout_12.addLayout(self.horizontalLayout_23)
+        self.horizontalLayout_25 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_25.setObjectName("horizontalLayout_25")
+        self.tableWidget = QtWidgets.QTableWidget(parent=self.page)
+        self.tableWidget.setMaximumSize(QtCore.QSize(777, 300))
+        self.tableWidget.setStyleSheet("border: 1px solid;\n"
+"background-color: rgb(194, 194, 194);\n"
+"")
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setColumnCount(2)
+        self.tableWidget.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        item.setFont(font)
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        item.setFont(font)
+        self.tableWidget.setHorizontalHeaderItem(1, item)
+        self.horizontalLayout_25.addWidget(self.tableWidget)
+        self.verticalLayout_12.addLayout(self.horizontalLayout_25)
+        self.stackedWidget.addWidget(self.page)
         self.Fill_page = QtWidgets.QWidget()
         self.Fill_page.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.Fill_page.setObjectName("Fill_page")
@@ -394,17 +1998,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_18.setContentsMargins(-1, -1, -1, 20)
         self.horizontalLayout_18.setSpacing(6)
         self.horizontalLayout_18.setObjectName("horizontalLayout_18")
-        self.Poisk = QtWidgets.QTextEdit(parent=self.Fill_page)
+        self.Poisk = QtWidgets.QLineEdit(parent=self.Fill_page)
         self.Poisk.setMaximumSize(QtCore.QSize(430, 64))
-        font = QtGui.QFont()
-        font.setPointSize(20)
-        self.Poisk.setFont(font)
-        self.Poisk.setStyleSheet("#Poisk {\n"
+        self.Poisk.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
-"}\n"
-"#Poisk:Focus {\n"
-"\n"
-"}")
+"background-color: rgb(194, 194, 194);")
         self.Poisk.setObjectName("Poisk")
         self.horizontalLayout_18.addWidget(self.Poisk)
         self.verticalLayout_5.addLayout(self.horizontalLayout_18)
@@ -413,13 +2011,13 @@ class Ui_MainWindow(object):
         self.horizontalLayout_19 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_19.setContentsMargins(-1, 20, -1, -1)
         self.horizontalLayout_19.setObjectName("horizontalLayout_19")
-        self.textEdit_2 = QtWidgets.QTextEdit(parent=self.Fill_page)
-        self.textEdit_2.setMaximumSize(QtCore.QSize(430, 64))
-        font = QtGui.QFont()
-        font.setPointSize(20)
-        self.textEdit_2.setFont(font)
-        self.textEdit_2.setObjectName("textEdit_2")
-        self.horizontalLayout_19.addWidget(self.textEdit_2)
+        self.lineEdit = QtWidgets.QLineEdit(parent=self.Fill_page)
+        self.lineEdit.setMaximumSize(QtCore.QSize(430, 64))
+        self.lineEdit.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(194, 194, 194);")
+        self.lineEdit.setObjectName("lineEdit")
+        self.horizontalLayout_19.addWidget(self.lineEdit)
         self.verticalLayout_6.addLayout(self.horizontalLayout_19)
         self.verticalLayout_5.addLayout(self.verticalLayout_6)
         self.horizontalLayout_15.addLayout(self.verticalLayout_5)
@@ -429,47 +2027,51 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.addLayout(self.horizontalLayout_17)
         self.horizontalLayout_16 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_16.setObjectName("horizontalLayout_16")
-        self.Button_Save_Fill = QtWidgets.QPushButton(parent=self.Fill_page)
-        self.Button_Save_Fill.setMaximumSize(QtCore.QSize(157, 44))
+        self.Button_Save_Fill_2 = QtWidgets.QPushButton(parent=self.Fill_page)
+        self.Button_Save_Fill_2.setMaximumSize(QtCore.QSize(157, 44))
         font = QtGui.QFont()
         font.setPointSize(20)
-        self.Button_Save_Fill.setFont(font)
-        self.Button_Save_Fill.setStyleSheet("#Button_Save_Fill {\n"
+        self.Button_Save_Fill_2.setFont(font)
+        self.Button_Save_Fill_2.setStyleSheet("#Button_Save_Fill_2 {\n"
 "border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
 "border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
-"#Button_Save_Fill:hover {\n"
+"#Button_Save_Fill_2:hover {\n"
 "\n"
 "}\n"
-"#Button_Save_Fill:pressed { \n"
+"#Button_Save_Fill_2:pressed { \n"
 "\n"
 "}")
-        self.Button_Save_Fill.setObjectName("Button_Save_Fill")
-        self.horizontalLayout_16.addWidget(self.Button_Save_Fill)
-        self.Button_Back_Fill = QtWidgets.QPushButton(parent=self.Fill_page)
-        self.Button_Back_Fill.setMaximumSize(QtCore.QSize(157, 44))
+        self.Button_Save_Fill_2.setObjectName("Button_Save_Fill_2")
+        self.horizontalLayout_16.addWidget(self.Button_Save_Fill_2)
+        self.Button_Back_Fill_3 = QtWidgets.QPushButton(parent=self.Fill_page)
+        self.Button_Back_Fill_3.setMaximumSize(QtCore.QSize(157, 44))
         font = QtGui.QFont()
         font.setPointSize(20)
-        self.Button_Back_Fill.setFont(font)
-        self.Button_Back_Fill.setStyleSheet("#Button_Back_Fill {\n"
+        self.Button_Back_Fill_3.setFont(font)
+        self.Button_Back_Fill_3.setStyleSheet("#Button_Back_Fill_3 {\n"
 "border-top: 2px solid;\n"
+"border-top-color: rgb(255, 76, 0);\n"
 "border-bottom: 2px solid;\n"
+"border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
-"#Button_Back_Fill:hover {\n"
+"#Button_Back_Fill_3:hover {\n"
 "\n"
 "}\n"
-"#Button_Back_Fill:pressed { \n"
+"#Button_Back_Fill_3:pressed { \n"
 "\n"
 "}")
-        self.Button_Back_Fill.setObjectName("Button_Back_Fill")
-        self.horizontalLayout_16.addWidget(self.Button_Back_Fill)
+        self.Button_Back_Fill_3.setObjectName("Button_Back_Fill_3")
+        self.horizontalLayout_16.addWidget(self.Button_Back_Fill_3)
         self.verticalLayout_4.addLayout(self.horizontalLayout_16)
         self.verticalLayout_11.addLayout(self.verticalLayout_4)
         self.stackedWidget.addWidget(self.Fill_page)
         self.verticalLayout_8.addWidget(self.stackedWidget)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1000, 21))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -477,7 +2079,8 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget_2.setCurrentIndex(3)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -489,20 +2092,140 @@ class Ui_MainWindow(object):
         self.Button_Spisok.setText(_translate("MainWindow", "СПИСОК\n"
 "ФОРМ"))
         self.Dobavochnoe_pole.setText(_translate("MainWindow", "РЕДАКТОР ФОРМ"))
-        self.Dobavit_dokument_label.setText(_translate("MainWindow", "ДОБАВИТЬ"))
-        self.Button_Dok.setText(_translate("MainWindow", "ДОКУМЕНТ"))
-        self.Button_Forma_plus.setText(_translate("MainWindow", "ФОРМА"))
+        self.Dobavit_dokument_label.setText(_translate("MainWindow", "Загрузите документ"))
+        self.Button_Dok.setText(_translate("MainWindow", "ВЫБОР ФАЙЛА"))
+        self.Button_Forma_plus.setText(_translate("MainWindow", "ДОБАВИТЬ ВОПРОС"))
         self.Vopros.setPlaceholderText(_translate("MainWindow", "Вопрос"))
-        self.Odin_iz_spiska.setText(_translate("MainWindow", "ОДИН ИЗ\n"
-"СПИСКА"))
-        self.Kratki_otvet.setPlaceholderText(_translate("MainWindow", "Краткий ответ"))
+        self.comboBox.setItemText(0, _translate("MainWindow", "ТЕКСТ(СТРОКА)"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "ТЕКСТ(АБЗАЦ)"))
+        self.comboBox.setItemText(2, _translate("MainWindow", "ОДИН ИЗ СПИСКА"))
+        self.comboBox.setItemText(3, _translate("MainWindow", "МН. ИЗ СПИСКА"))
+        self.comboBox.setItemText(4, _translate("MainWindow", "РАСКР. СПИСОК"))
+        self.comboBox.setItemText(5, _translate("MainWindow", "ШКАЛА"))
+        self.comboBox.setItemText(6, _translate("MainWindow", "ДАТА"))
+        self.comboBox.setItemText(7, _translate("MainWindow", "ВРЕМЯ"))
         self.Tag.setPlaceholderText(_translate("MainWindow", "Тэг"))
         self.Button_Question.setText(_translate("MainWindow", "?"))
         self.Obyazatelny_vopros.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
+        self.Vopros_2.setPlaceholderText(_translate("MainWindow", "Вопрос"))
+        self.comboBox_2.setItemText(0, _translate("MainWindow", "ТЕКСТ(СТРОКА)"))
+        self.comboBox_2.setItemText(1, _translate("MainWindow", "ТЕКСТ(АБЗАЦ)"))
+        self.comboBox_2.setItemText(2, _translate("MainWindow", "ОДИН ИЗ СПИСКА"))
+        self.comboBox_2.setItemText(3, _translate("MainWindow", "МН. ИЗ СПИСКА"))
+        self.comboBox_2.setItemText(4, _translate("MainWindow", "РАСКР. СПИСОК"))
+        self.comboBox_2.setItemText(5, _translate("MainWindow", "ШКАЛА"))
+        self.comboBox_2.setItemText(6, _translate("MainWindow", "ДАТА"))
+        self.comboBox_2.setItemText(7, _translate("MainWindow", "ВРЕМЯ"))
+        self.Kratki_otvet.setPlaceholderText(_translate("MainWindow", "Краткий ответ"))
+        self.Tag_2.setPlaceholderText(_translate("MainWindow", "Тэг"))
+        self.Button_Question_2.setText(_translate("MainWindow", "?"))
+        self.Obyazatelny_vopros_2.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
+        self.Vopros_3.setPlaceholderText(_translate("MainWindow", "Вопрос"))
+        self.comboBox_3.setItemText(0, _translate("MainWindow", "ТЕКСТ(СТРОКА)"))
+        self.comboBox_3.setItemText(1, _translate("MainWindow", "ТЕКСТ(АБЗАЦ)"))
+        self.comboBox_3.setItemText(2, _translate("MainWindow", "ОДИН ИЗ СПИСКА"))
+        self.comboBox_3.setItemText(3, _translate("MainWindow", "МН. ИЗ СПИСКА"))
+        self.comboBox_3.setItemText(4, _translate("MainWindow", "РАСКР. СПИСОК"))
+        self.comboBox_3.setItemText(5, _translate("MainWindow", "ШКАЛА"))
+        self.comboBox_3.setItemText(6, _translate("MainWindow", "ДАТА"))
+        self.comboBox_3.setItemText(7, _translate("MainWindow", "ВРЕМЯ"))
+        self.Kratki_otvet_2.setPlaceholderText(_translate("MainWindow", "1 Вариант"))
+        self.Tag_3.setPlaceholderText(_translate("MainWindow", "Тэг"))
+        self.Button_Question_3.setText(_translate("MainWindow", "?"))
+        self.pushButton_DOPvariany.setText(_translate("MainWindow", "ДОБАВИТЬ ВАРИАНТ"))
+        self.Obyazatelny_vopros_3.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
+        self.Vopros_4.setPlaceholderText(_translate("MainWindow", "Вопрос"))
+        self.comboBox_4.setItemText(0, _translate("MainWindow", "ТЕКСТ(СТРОКА)"))
+        self.comboBox_4.setItemText(1, _translate("MainWindow", "ТЕКСТ(АБЗАЦ)"))
+        self.comboBox_4.setItemText(2, _translate("MainWindow", "ОДИН ИЗ СПИСКА"))
+        self.comboBox_4.setItemText(3, _translate("MainWindow", "МН. ИЗ СПИСКА"))
+        self.comboBox_4.setItemText(4, _translate("MainWindow", "РАСКР. СПИСОК"))
+        self.comboBox_4.setItemText(5, _translate("MainWindow", "ШКАЛА"))
+        self.comboBox_4.setItemText(6, _translate("MainWindow", "ДАТА"))
+        self.comboBox_4.setItemText(7, _translate("MainWindow", "ВРЕМЯ"))
+        self.Kratki_otvet_3.setPlaceholderText(_translate("MainWindow", "1 Вариант"))
+        self.Tag_4.setPlaceholderText(_translate("MainWindow", "Тэг"))
+        self.Button_Question_4.setText(_translate("MainWindow", "?"))
+        self.pushButton_DOPvariany_2.setText(_translate("MainWindow", "ДОБАВИТЬ ВАРИАНТ"))
+        self.Obyazatelny_vopros_4.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
+        self.Vopros_5.setPlaceholderText(_translate("MainWindow", "Вопрос"))
+        self.comboBox_5.setItemText(0, _translate("MainWindow", "ТЕКСТ(СТРОКА)"))
+        self.comboBox_5.setItemText(1, _translate("MainWindow", "ТЕКСТ(АБЗАЦ)"))
+        self.comboBox_5.setItemText(2, _translate("MainWindow", "ОДИН ИЗ СПИСКА"))
+        self.comboBox_5.setItemText(3, _translate("MainWindow", "МН. ИЗ СПИСКА"))
+        self.comboBox_5.setItemText(4, _translate("MainWindow", "РАСКР. СПИСОК"))
+        self.comboBox_5.setItemText(5, _translate("MainWindow", "ШКАЛА"))
+        self.comboBox_5.setItemText(6, _translate("MainWindow", "ДАТА"))
+        self.comboBox_5.setItemText(7, _translate("MainWindow", "ВРЕМЯ"))
+        self.Kratki_otvet_4.setPlaceholderText(_translate("MainWindow", "Развернутый ответ"))
+        self.Tag_5.setPlaceholderText(_translate("MainWindow", "Тэг"))
+        self.Button_Question_5.setText(_translate("MainWindow", "?"))
+        self.Obyazatelny_vopros_5.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
+        self.comboBox_6.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_6.setItemText(1, _translate("MainWindow", "1"))
+        self.comboBox_7.setItemText(0, _translate("MainWindow", "2"))
+        self.comboBox_7.setItemText(1, _translate("MainWindow", "3"))
+        self.comboBox_7.setItemText(2, _translate("MainWindow", "4"))
+        self.comboBox_7.setItemText(3, _translate("MainWindow", "5"))
+        self.comboBox_7.setItemText(4, _translate("MainWindow", "6"))
+        self.comboBox_7.setItemText(5, _translate("MainWindow", "7"))
+        self.comboBox_7.setItemText(6, _translate("MainWindow", "8"))
+        self.comboBox_7.setItemText(7, _translate("MainWindow", "9"))
+        self.comboBox_7.setItemText(8, _translate("MainWindow", "10"))
+        self.comboBox_8.setItemText(0, _translate("MainWindow", "ТЕКСТ(СТРОКА)"))
+        self.comboBox_8.setItemText(1, _translate("MainWindow", "ТЕКСТ(АБЗАЦ)"))
+        self.comboBox_8.setItemText(2, _translate("MainWindow", "ОДИН ИЗ СПИСКА"))
+        self.comboBox_8.setItemText(3, _translate("MainWindow", "МН. ИЗ СПИСКА"))
+        self.comboBox_8.setItemText(4, _translate("MainWindow", "РАСКР. СПИСОК"))
+        self.comboBox_8.setItemText(5, _translate("MainWindow", "ШКАЛА"))
+        self.comboBox_8.setItemText(6, _translate("MainWindow", "ДАТА"))
+        self.comboBox_8.setItemText(7, _translate("MainWindow", "ВРЕМЯ"))
+        self.label_6.setText(_translate("MainWindow", "0"))
+        self.Vopros_6.setPlaceholderText(_translate("MainWindow", "Подпись (необязательно)"))
+        self.label_5.setText(_translate("MainWindow", "2"))
+        self.Kratki_otvet_5.setPlaceholderText(_translate("MainWindow", "Подпись (необязательно)"))
+        self.Tag_6.setPlaceholderText(_translate("MainWindow", "Тэг"))
+        self.Button_Question_6.setText(_translate("MainWindow", "?"))
+        self.Obyazatelny_vopros_6.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
+        self.Vopros_7.setPlaceholderText(_translate("MainWindow", "Вопрос"))
+        self.comboBox_9.setItemText(0, _translate("MainWindow", "ТЕКСТ(СТРОКА)"))
+        self.comboBox_9.setItemText(1, _translate("MainWindow", "ТЕКСТ(АБЗАЦ)"))
+        self.comboBox_9.setItemText(2, _translate("MainWindow", "ОДИН ИЗ СПИСКА"))
+        self.comboBox_9.setItemText(3, _translate("MainWindow", "МН. ИЗ СПИСКА"))
+        self.comboBox_9.setItemText(4, _translate("MainWindow", "РАСКР. СПИСОК"))
+        self.comboBox_9.setItemText(5, _translate("MainWindow", "ШКАЛА"))
+        self.comboBox_9.setItemText(6, _translate("MainWindow", "ДАТА"))
+        self.comboBox_9.setItemText(7, _translate("MainWindow", "ВРЕМЯ"))
+        self.Kratki_otvet_6.setPlaceholderText(_translate("MainWindow", "1 Вариант"))
+        self.Tag_7.setPlaceholderText(_translate("MainWindow", "Тэг"))
+        self.Button_Question_7.setText(_translate("MainWindow", "?"))
+        self.pushButton_DOPvariany_3.setText(_translate("MainWindow", "ДОБАВИТЬ ВАРИАНТ"))
+        self.label_9.setText(_translate("MainWindow", "ИЛИ"))
+        self.pushButton_drVarifnt_2.setText(_translate("MainWindow", "ДОБАВИТЬ ВАРИАНТ \"ДРУГОЕ\""))
+        self.Obyazatelny_vopros_7.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
+        self.Vopros_8.setPlaceholderText(_translate("MainWindow", "Вопрос"))
+        self.comboBox_10.setItemText(0, _translate("MainWindow", "ТЕКСТ(СТРОКА)"))
+        self.comboBox_10.setItemText(1, _translate("MainWindow", "ТЕКСТ(АБЗАЦ)"))
+        self.comboBox_10.setItemText(2, _translate("MainWindow", "ОДИН ИЗ СПИСКА"))
+        self.comboBox_10.setItemText(3, _translate("MainWindow", "МН. ИЗ СПИСКА"))
+        self.comboBox_10.setItemText(4, _translate("MainWindow", "РАСКР. СПИСОК"))
+        self.comboBox_10.setItemText(5, _translate("MainWindow", "ШКАЛА"))
+        self.comboBox_10.setItemText(6, _translate("MainWindow", "ДАТА"))
+        self.comboBox_10.setItemText(7, _translate("MainWindow", "ВРЕМЯ"))
+        self.Tag_8.setPlaceholderText(_translate("MainWindow", "Тэг"))
+        self.Button_Question_8.setText(_translate("MainWindow", "?"))
+        self.Obyazatelny_vopros_8.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
         self.Button_Trash.setText(_translate("MainWindow", "Удалить"))
         self.Button_Save.setText(_translate("MainWindow", "Сохранить"))
         self.Button_Back.setText(_translate("MainWindow", "Назад"))
+        self.label_3.setText(_translate("MainWindow", "Заполнить документ"))
+        self.Poisk_2.setPlaceholderText(_translate("MainWindow", "Название документа"))
+        self.Button_Back_Fill.setText(_translate("MainWindow", "Назад"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "Название"))
+        item = self.tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "Действие"))
         self.label.setText(_translate("MainWindow", "ЗАПОЛНИТЬ ДОКУМЕНТ"))
         self.label_2.setText(_translate("MainWindow", "Название формы / название документа"))
-        self.Button_Save_Fill.setText(_translate("MainWindow", "СОХРАНИТЬ"))
-        self.Button_Back_Fill.setText(_translate("MainWindow", "НАЗАД"))
+        self.Button_Save_Fill_2.setText(_translate("MainWindow", "СОХРАНИТЬ"))
+        self.Button_Back_Fill_3.setText(_translate("MainWindow", "НАЗАД"))

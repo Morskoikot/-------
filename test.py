@@ -68,7 +68,7 @@ class AppWindow_main(QMainWindow):
         self.ui.Button_Forma_plus.setFont(font3)
         self.ui.Dobavit_dokument_label.setFont(font5)
 
-        self.ui.Odin_iz_spiska.setFont(font5)
+        # self.ui.Odin_iz_spiska.setFont(font5)
         self.ui.Dobavochnoe_pole.setFont(font)
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
         self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
@@ -79,14 +79,38 @@ class AppWindow_main(QMainWindow):
         self.ui.Button_Forma_plus.clicked.connect(self.add_field)
     def add_field(self):
         _translate = QtCore.QCoreApplication.translate
-        self.widget_t = QtWidgets.QWidget()
-        self.widget_t.setStyleSheet("#widget_t {\n"
-"background-color: rgb(194, 194, 194); \n"
-"}")
-        self.widget_t.setObjectName("widget_t")
-        self.verticalLayout_t = QtWidgets.QVBoxLayout(self.widget_t)
+        self.stackedWidget_t = QtWidgets.QStackedWidget ()
+        self.page_t_1 = QtWidgets.QWidget()
+        self.widget_t_1 = QtWidgets.QWidget()
+#         self.widget_t_1.setStyleSheet ((self.widget_t_1) "{\n"
+# "background-color: rgb(194, 194, 194); \n"
+# "}")
+        self.verticalLayout_t = QtWidgets.QVBoxLayout(self.widget_t_1)
         self.verticalLayout_t.setObjectName("verticalLayout_t")
-        self.ui.verticalLayout_7.addWidget(self.widget_t)
+        self.ui.verticalLayout_7.addWidget(self.widget_t_1)
+        # Основное размещение (верхнее)
+        self.horizontalLayout_01 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_01.setObjectName("horizontalLayout_01_")
+        self.verticalLayout_t.addLayout(self.horizontalLayout_01)
+        # Размещение текстового поля
+        self.horizontalLayout_04 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_04.setObjectName("horizontalLayout_04_")
+        self.horizontalLayout_01.addLayout(self.horizontalLayout_04)
+
+        self.page_t_2 = QtWidgets.QWidget()
+        self.page_t_3 = QtWidgets.QWidget()
+        self.page_t_4 = QtWidgets.QWidget()
+        self.page_t_5 = QtWidgets.QWidget()
+        self.page_t_6 = QtWidgets.QWidget()
+        self.page_t_7 = QtWidgets.QWidget()
+        self.page_t_8 = QtWidgets.QWidget()
+        self.widget_t_1 = QtWidgets.QWidget()
+#         self.widget_t_1.setStyleSheet ((self.widget_t_1) "{\n"
+# "background-color: rgb(194, 194, 194); \n"
+# "}")
+        self.verticalLayout_t = QtWidgets.QVBoxLayout(self.widget_t_1)
+        self.verticalLayout_t.setObjectName("verticalLayout_t")
+        self.ui.verticalLayout_7.addWidget(self.widget_t_1)
         # Основное размещение (верхнее)
         self.horizontalLayout_01 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_01.setObjectName("horizontalLayout_01_")
