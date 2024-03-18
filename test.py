@@ -337,28 +337,31 @@ class AppWindow_main(QMainWindow):
            odin_iz = y.text()
            odni_iz_spiska.append(odin_iz)
         odin_s = odin0 + odni_iz_spiska
-        print(odin_s)
         for o in d:
             tag = o.text()
             tegi.append(tag)
-        tege = tag0 + tegi
-        print(tege)    
+        tege = tag0 + tegi   
         for i in a:
             vopros = i.toPlainText()
             voprosi.append(vopros)  
-        voprose = vopros0 + voprosi    
-        print(voprose) 
+        voprose = vopros0 + voprosi     
         qwe = []
         qwe.append(K)
         qwe.append(voprose)
         qwe.append(tege)
         qwe.append(odin_s)
-        my_file = open(L+".txt", "w+")
+        my_file = open('Danno/' + L+".txt", "w+")
         my_file.write(str(qwe))
         my_file.close()
-        with open(L+'.txt', 'r') as f:
+        with open('Danno/' + L+'.txt', 'r') as f:
             mylist = ast.literal_eval(f.read())
-        print(mylist[0])        
+        #print(mylist[0])
+        import os
+        from os import listdir
+        from os.path import isfile, join
+        onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
+        os.path.isfile(os.path.join('Danno', f))]
+        print(onlyfiles)
     def transfer_back(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
     def transfer_Fill(self):
