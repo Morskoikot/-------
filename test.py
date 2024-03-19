@@ -84,7 +84,7 @@ class AppWindow_main(QMainWindow):
         self.ui.Button_Forma_plus.setFont(font5)
         self.ui.Dobavit_dokument_label.setFont(font3)
         self.ui.Tag.setFont(font2)
-        self.ui.Odin_iz_spiska.setFont(font5)
+        #self.ui..setFont(font5)
         self.ui.Dobavochnoe_pole.setFont(font4)
         self.ui.Button_Question.setFont(font5)
         self.ui.Button_Trash.setFont(font5)
@@ -92,11 +92,12 @@ class AppWindow_main(QMainWindow):
         self.ui.label.setFont(font8)
         self.ui.label_2.setFont(font5)
         self.ui.Button_Back_Fill.setFont(font5)
-        self.ui.Button_Save_Fill.setFont(font5)
+        #self.ui.Button_Save_Fill.setFont(font5)
         self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
         self.ui.Button_Zapolnit.clicked.connect(self.transfer_Fill)
         self.ui.Button_Save.clicked.connect(self.save_form)
         self.ui.Button_Dok.clicked.connect(self.Open_main_file_btn)
+        
         
     #постороение пути к документу
     def Open_main_file_btn(self):
@@ -108,7 +109,7 @@ class AppWindow_main(QMainWindow):
         K = res
         filename = K
         L, extension = os.path.splitext(filename)
-
+        
     def transfer_page_add(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
         self.ui.Button_Back.clicked.connect(self.transfer_back)
@@ -116,14 +117,38 @@ class AppWindow_main(QMainWindow):
     def add_field(self):
         global a, b, d, e, f, g, h, j
         _translate = QtCore.QCoreApplication.translate
-        self.widget_t = QtWidgets.QWidget()
-        self.widget_t.setStyleSheet("#widget_t {\n"
-"background-color: rgb(194, 194, 194); \n"
-"}")
-        self.widget_t.setObjectName("widget_t")
-        self.verticalLayout_t = QtWidgets.QVBoxLayout(self.widget_t)
+        self.stackedWidget_t = QtWidgets.QStackedWidget ()
+        self.page_t_1 = QtWidgets.QWidget()
+        self.widget_t_1 = QtWidgets.QWidget()
+#         self.widget_t_1.setStyleSheet ((self.widget_t_1) "{\n"
+# "background-color: rgb(194, 194, 194); \n"
+# "}")
+        self.verticalLayout_t = QtWidgets.QVBoxLayout(self.widget_t_1)
         self.verticalLayout_t.setObjectName("verticalLayout_t")
-        self.ui.verticalLayout_7.addWidget(self.widget_t)
+        self.ui.verticalLayout_7.addWidget(self.widget_t_1)
+        # Основное размещение (верхнее)
+        self.horizontalLayout_01 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_01.setObjectName("horizontalLayout_01_")
+        self.verticalLayout_t.addLayout(self.horizontalLayout_01)
+        # Размещение текстового поля
+        self.horizontalLayout_04 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_04.setObjectName("horizontalLayout_04_")
+        self.horizontalLayout_01.addLayout(self.horizontalLayout_04)
+
+        self.page_t_2 = QtWidgets.QWidget()
+        self.page_t_3 = QtWidgets.QWidget()
+        self.page_t_4 = QtWidgets.QWidget()
+        self.page_t_5 = QtWidgets.QWidget()
+        self.page_t_6 = QtWidgets.QWidget()
+        self.page_t_7 = QtWidgets.QWidget()
+        self.page_t_8 = QtWidgets.QWidget()
+        self.widget_t_1 = QtWidgets.QWidget()
+#         self.widget_t_1.setStyleSheet ((self.widget_t_1) "{\n"
+# "background-color: rgb(194, 194, 194); \n"
+# "}")
+        self.verticalLayout_t = QtWidgets.QVBoxLayout(self.widget_t_1)
+        self.verticalLayout_t.setObjectName("verticalLayout_t")
+        self.ui.verticalLayout_7.addWidget(self.widget_t_1)
         # Основное размещение (верхнее)
         self.horizontalLayout_01 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_01.setObjectName("horizontalLayout_01_")
@@ -362,10 +387,15 @@ class AppWindow_main(QMainWindow):
         onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
         os.path.isfile(os.path.join('Danno', f))]
         print(onlyfiles)
+
+        # #file_path = "path/to/your/file/document.txt"
+        # file_name = os.path.basename(file_path).split('.')[0]
+        # print(file_name)
+
     def transfer_back(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
     def transfer_Fill(self):
-        self.ui.stackedWidget.setCurrentWidget(self.ui.Fill_page)
+        self.ui.stackedWidget.setCurrentWidget(self.ui.page)
         self.ui.Button_Back_Fill.clicked.connect(self.transfer_back)
 
 app = QApplication([])
