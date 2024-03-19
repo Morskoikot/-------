@@ -38,11 +38,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4.addWidget(self.label)
         self.verticalLayout.addLayout(self.horizontalLayout_4)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_2.setContentsMargins(-1, -1, -1, 30)
+        self.horizontalLayout_2.setContentsMargins(-1, -1, -1, 10)
         self.horizontalLayout_2.setSpacing(2)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.label_3 = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
-        self.label_3.setMaximumSize(QtCore.QSize(210, 39))
+        self.label_3.setMaximumSize(QtCore.QSize(210, 45))
         font = QtGui.QFont()
         font.setPointSize(32)
         self.label_3.setFont(font)
@@ -55,20 +55,20 @@ class Ui_MainWindow(object):
         font.setPointSize(16)
         self.Login.setFont(font)
         self.Login.setStyleSheet("#Login {\n"
-"background-color: rgb(181, 173, 173);\n"
+"\n"
 "}\n"
 "#Login:Focus {\n"
-"background-color: rgb(219, 219, 219);\n"
+"\n"
 "}")
         self.Login.setObjectName("Login")
         self.horizontalLayout_2.addWidget(self.Login)
         self.verticalLayout.addLayout(self.horizontalLayout_2)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
-        self.horizontalLayout.setContentsMargins(-1, -1, -1, 30)
+        self.horizontalLayout.setContentsMargins(-1, -1, -1, 0)
         self.horizontalLayout.setSpacing(0)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.label_2 = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
-        self.label_2.setMaximumSize(QtCore.QSize(210, 39))
+        self.label_2.setMaximumSize(QtCore.QSize(210, 45))
         font = QtGui.QFont()
         font.setPointSize(32)
         self.label_2.setFont(font)
@@ -81,15 +81,16 @@ class Ui_MainWindow(object):
         font.setPointSize(16)
         self.Password.setFont(font)
         self.Password.setStyleSheet("#Password {\n"
-"background-color: rgb(181, 173, 173);\n"
+"\n"
 "}\n"
 "#Password:Focus {\n"
-"background-color: rgb(219, 219, 219);\n"
+"\n"
 "}")
         self.Password.setObjectName("Password")
         self.horizontalLayout.addWidget(self.Password)
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setContentsMargins(-1, 60, -1, -1)
         self.horizontalLayout_3.setSpacing(0)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.pushButton = QtWidgets.QPushButton(parent=self.verticalLayoutWidget)
@@ -98,15 +99,14 @@ class Ui_MainWindow(object):
         font.setPointSize(20)
         self.pushButton.setFont(font)
         self.pushButton.setStyleSheet("#pushButton {\n"
-"background-color: rgb(133, 114, 85);\n"
-"border-radius: 20px;\n"
-"border: 2px solid;\n"
+"border-bottom: 2px solid;\n"
+"border-top: 2px solid;\n"
 "}\n"
 "#pushButton:hover {\n"
-"background:#dabb8b;\n"
+"\n"
 "}\n"
 "#pushButton:pressed {\n"
-"background-color: rgb(133, 114, 85);\n"
+"\n"
 "}")
         self.pushButton.setObjectName("pushButton")
         self.horizontalLayout_3.addWidget(self.pushButton)
