@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1000</width>
-    <height>791</height>
+    <height>671</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="minimumSize">
     <size>
      <width>1000</width>
-     <height>750</height>
+     <height>630</height>
     </size>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -305,7 +305,7 @@ border-bottom-color: rgb(255, 76, 0);
                  <x>0</x>
                  <y>0</y>
                  <width>941</width>
-                 <height>537</height>
+                 <height>417</height>
                 </rect>
                </property>
                <property name="layoutDirection">
@@ -318,7 +318,7 @@ border-bottom-color: rgb(255, 76, 0);
                 <item>
                  <widget class="QStackedWidget" name="stackedWidget_2">
                   <property name="currentIndex">
-                   <number>3</number>
+                   <number>7</number>
                   </property>
                   <widget class="QWidget" name="page_2">
                    <layout class="QVBoxLayout" name="verticalLayout_14">

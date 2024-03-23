@@ -12,9 +12,9 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1000, 791)
+        MainWindow.resize(1000, 671)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
-        self.centralwidget.setMinimumSize(QtCore.QSize(1000, 750))
+        self.centralwidget.setMinimumSize(QtCore.QSize(1000, 630))
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout_8.setObjectName("verticalLayout_8")
@@ -164,7 +164,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setAlignment(QtCore.Qt.AlignmentFlag.AlignHCenter|QtCore.Qt.AlignmentFlag.AlignTop)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 941, 537))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 941, 417))
         self.scrollAreaWidgetContents_3.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_3)
@@ -2080,7 +2080,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.stackedWidget.setCurrentIndex(1)
-        self.stackedWidget_2.setCurrentIndex(3)
+        self.stackedWidget_2.setCurrentIndex(7)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
