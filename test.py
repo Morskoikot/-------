@@ -386,11 +386,13 @@ class AppWindow_main(QMainWindow):
         from os.path import isfile, join
         onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
         os.path.isfile(os.path.join('Danno', f))]
-        print(onlyfiles)
+        #print(onlyfiles)
+        v = onlyfiles
+        onlyfiles = 'path/to/your/file/' + v +'.txt'
+        file_name = os.path.basename(v).split('.')[0]
+        print(file_name)
 
-        # #file_path = "path/to/your/file/document.txt"
-        # file_name = os.path.basename(file_path).split('.')[0]
-        # print(file_name)
+
 
     def transfer_back(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
