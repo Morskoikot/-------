@@ -144,36 +144,72 @@ p, li { white-space: pre-wrap; }
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_9">
                   <item>
-                   <widget class="QPushButton" name="Odin_iz_spiska">
+                   <widget class="QComboBox" name="comboBox">
                     <property name="maximumSize">
                      <size>
-                      <width>141</width>
+                      <width>225</width>
                       <height>80</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
-                      <pointsize>20</pointsize>
+                      <pointsize>14</pointsize>
                      </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">#Odin_iz_spiska {
+                     <string notr="true">#comboBox {
 border: 3px solid;
 border-radius: 9px;
 border-color: #7A6D6D;
 background-color: #BBB4B4
 }
-#Odin_iz_spiska:hover {
+#comboBox:hover {
 background-color: rgb(219, 219, 219);
 }
-#Odin_iz_spiska:pressed { 
+#comboBox:pressed { 
 background-color: #BBB4B4;
 }</string>
                     </property>
-                    <property name="text">
-                     <string>ОДИН ИЗ
-СПИСКА</string>
-                    </property>
+                    <item>
+                     <property name="text">
+                      <string>ОДИН ИЗ СПИСКА</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>ТЕКСТ(АБЗАЦ)</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>ТЕКСТ(СТРОКА)</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>МН. ИЗ СПИСКА</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>ШКАЛА</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>ДАТА</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>ВРЕМЯ</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>РАСКР. СПИСОК</string>
+                     </property>
+                    </item>
                    </widget>
                   </item>
                  </layout>
@@ -184,11 +220,36 @@ background-color: #BBB4B4;
                <layout class="QHBoxLayout" name="horizontalLayout_10">
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_12">
+                  <property name="spacing">
+                   <number>7</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>62</number>
+                  </property>
                   <item>
-                   <widget class="QTextEdit" name="Kratki_otvet">
+                   <widget class="QRadioButton" name="radioButton">
                     <property name="maximumSize">
                      <size>
-                      <width>425</width>
+                      <width>25</width>
+                      <height>36</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QTextEdit" name="variant">
+                    <property name="maximumSize">
+                     <size>
+                      <width>386</width>
                       <height>60</height>
                      </size>
                     </property>
@@ -206,7 +267,7 @@ background-color: rgb(219, 219, 219);
 }</string>
                     </property>
                     <property name="placeholderText">
-                     <string>КРАТКИЙ ОТВЕТ</string>
+                     <string>ВАРИАНТ 1</string>
                     </property>
                    </widget>
                   </item>
@@ -263,6 +324,57 @@ background-color: #BBB4B4;
                      <string>?</string>
                     </property>
                    </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_6">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_15">
+                    <item>
+                     <widget class="QPushButton" name="pushButton_DOPvariany">
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>ДОБАВИТЬ ВАРИАНТ</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label">
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>ИЛИ</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_drVarifnt">
+                      <property name="font">
+                       <font>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>ДОБАВИТЬ ВАРИАНТ &quot;ДРУГОЕ&quot;</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
                   </item>
                  </layout>
                 </item>
@@ -345,25 +457,25 @@ background-color: #BBB4B4;
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="Button_Galka">
+                 <widget class="QPushButton" name="Button_Galka_2">
                   <property name="maximumSize">
                    <size>
-                    <width>43</width>
-                    <height>41</height>
+                    <width>36</width>
+                    <height>36</height>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">#Button_Galka {
+                   <string notr="true">#Button_Galka_2 {
 border: 3px solid;
 image: url(:/Galka/galka.png);
 border-radius: 9px;
 border-color: #7A6D6D;
 background-color: #BBB4B4
 }
-#Button_Galka:hover {
+#Button_Galka_2:hover {
 background-color: rgb(219, 219, 219);
 }
-#Button_Galka:pressed { 
+#Button_Galka_2:pressed { 
 background-color: #BBB4B4;
 }</string>
                   </property>

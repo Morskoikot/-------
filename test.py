@@ -386,12 +386,13 @@ class AppWindow_main(QMainWindow):
         from os.path import isfile, join
         onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
         os.path.isfile(os.path.join('Danno', f))]
-        #print(onlyfiles)
-        v = onlyfiles
-        onlyfiles = 'path/to/your/file/' + v +'.txt'
-        file_name = os.path.basename(v).split('.')[0]
-        print(file_name)
-
+        print(onlyfiles)
+        for b in onlyfiles:
+            file_name = os.path.basename(b).split('.')[0]
+            print(file_name)
+        p = self.ui.tableWidget.rowCount()
+        self.ui.tableWidget.insertRow(p)
+        self.ui.tableWidget.setItem(0,0,QtWidgets.QTableWidgetItem(file_name)) 
 
 
     def transfer_back(self):
