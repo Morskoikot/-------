@@ -74,7 +74,8 @@ class AppWindow_main(QMainWindow):
         g = 0
         h = []
         j = 0
- 
+
+        self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)   
         #присвоение шрифтов объектам
         self.ui.Kratki_otvet.setFont(font2)
         self.ui.Vopros.setFont(font2)
@@ -108,17 +109,54 @@ class AppWindow_main(QMainWindow):
         self.ui.Button_Dok.clicked.connect(self.Open_main_file_btn)
         self.ui.Button_Save.clicked.connect(self.save_form)
         
-        self.ui.comboBox.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox))
         self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
-        self.ui.comboBox_3.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_3))
-        self.ui.comboBox_4.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_4))
-        self.ui.comboBox_5.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_5))
-        self.ui.comboBox_6.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_6))
-        self.ui.comboBox_7.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_7))
-        self.ui.comboBox_8.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_8))
-        self.ui.comboBox_9.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_9))
-        self.ui.comboBox_10.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_10))
         
+    def opt(self,index):
+        index.currentIndexChanged.disconnect()
+        if (index.currentIndex() == 0):
+            self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
+        elif (index.currentIndex() == 1):
+            self.ui.comboBox_5.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_5))
+        elif (index.currentIndex() == 2):
+            self.ui.comboBox_9.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_9))
+        elif (index.currentIndex() == 3):
+            self.ui.comboBox_4.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_4))
+        elif (index.currentIndex() == 4):
+            self.ui.comboBox_3.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_3))
+        elif (index.currentIndex() == 5):
+            self.ui.comboBox_8.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_8))
+        elif (index.currentIndex() == 6):
+            self.ui.comboBox.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox))
+        elif (index.currentIndex() == 7):
+            self.ui.comboBox_10.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_10))
+        elif (index.currentIndex() == 8):
+            self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
+
+        self.ui.comboBox_10.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_9.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_8.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_5.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_4.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_3.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_2.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox.setCurrentIndex(index.currentIndex())
+        
+        if index.currentIndex() == 6:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_2)
+        elif index.currentIndex() == 7:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_3)
+        elif index.currentIndex() == 5:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_8)
+        elif index.currentIndex() == 4:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_5)   
+        elif index.currentIndex() == 3:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_6)     
+        elif index.currentIndex() == 2:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_9)
+        elif index.currentIndex() == 1:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_7)     
+        elif index.currentIndex() == 0:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)          
     #постороение пути к документу
     def Open_main_file_btn(self):
         res =QFileDialog.getOpenFileName(self, 'Open File', ".",'DOC file (*.doc*)')
@@ -680,35 +718,6 @@ f"#{self.Button_Copy_01.objectName()}"":pressed { \n"
             name_file = open( name_file)
             print(row, name_file.read())
             name_file.close()
-
-    def opt(self,index):
-        self.ui.comboBox_10.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_9.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_8.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_7.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_6.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_5.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_4.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_3.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_2.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox.setCurrentIndex(index.currentIndex())
-        if index.currentIndex() == 6:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_2)
-        elif index.currentIndex() == 7:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_3)
-        elif index.currentIndex() == 5:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_8)
-        elif index.currentIndex() == 4:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_5)   
-        elif index.currentIndex() == 3:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_6)     
-        elif index.currentIndex() == 2:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_9)
-        elif index.currentIndex() == 1:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_7)     
-        elif index.currentIndex() == 0:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)          
-
 
     def per(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Fill_page)
