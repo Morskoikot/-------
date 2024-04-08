@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1000</width>
-    <height>671</height>
+    <height>541</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="minimumSize">
     <size>
      <width>1000</width>
-     <height>630</height>
+     <height>500</height>
     </size>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -305,7 +305,7 @@ border-bottom-color: rgb(255, 76, 0);
                  <x>0</x>
                  <y>0</y>
                  <width>941</width>
-                 <height>417</height>
+                 <height>287</height>
                 </rect>
                </property>
                <property name="layoutDirection">
