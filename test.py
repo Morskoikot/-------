@@ -1,5 +1,5 @@
 import os, ast, sys
-
+from functools import partial
 from tkinter import filedialog
 from PyQt6.QtWidgets import (
     QApplication,
@@ -16,12 +16,13 @@ from PyQt6.QtWidgets import (
 )
 from Authorization import Ui_MainWindow as Register
 from Main_Form import Ui_MainWindow as Form
-KT = int(1)
+from delete import Ui_MainWindow as DDD
 import Pictures
 from PyQt6.QtGui     import QFontDatabase, QFont
 from PyQt6.QtCore    import Qt
 from PyQt6 import QtCore, QtGui, QtWidgets
-
+import math
+KT = int(1)  
 class AppWindow(QMainWindow):
     def __init__(self):
         super(AppWindow, self).__init__()
@@ -73,7 +74,7 @@ class AppWindow_main(QMainWindow):
         g = 0
         h = []
         j = 0
-        
+ 
         #присвоение шрифтов объектам
         self.ui.Kratki_otvet.setFont(font2)
         self.ui.Vopros.setFont(font2)
@@ -97,15 +98,26 @@ class AppWindow_main(QMainWindow):
         self.ui.Button_Question.setFont(font5)
         self.ui.Button_Trash.setFont(font5)
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
-        self.ui.label.setFont(font8)
-        self.ui.label_2.setFont(font5)
+        # self.ui.label.setFont(font8)
+        # self.ui.label_2.setFont(font5)
         self.ui.Button_Back_Fill.setFont(font5)
         #self.ui.Button_Save_Fill.setFont(font5)
         self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
         self.ui.Button_Zapolnit.clicked.connect(self.transfer_Fill)
         # self.ui.Button_Save.clicked.connect(self.save_form)
         self.ui.Button_Dok.clicked.connect(self.Open_main_file_btn)
+        self.ui.Button_Save.clicked.connect(self.save_form)
         
+        self.ui.comboBox.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox))
+        self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
+        self.ui.comboBox_3.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_3))
+        self.ui.comboBox_4.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_4))
+        self.ui.comboBox_5.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_5))
+        self.ui.comboBox_6.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_6))
+        self.ui.comboBox_7.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_7))
+        self.ui.comboBox_8.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_8))
+        self.ui.comboBox_9.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_9))
+        self.ui.comboBox_10.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_10))
         
     #постороение пути к документу
     def Open_main_file_btn(self):
@@ -603,10 +615,103 @@ f"#{self.Button_Copy_01.objectName()}"":pressed { \n"
 # "background-color: #BBB4B4;\n"
 # "}")
 #         self.horizontalLayout_03.addWidget(self.pushButton_05)
+    def save_form(self):
+        global a, d, f, L, K
+        voprosi = []
+        c = self.ui.Vopros.text()
+        vopros0 = []
+        vopros0.append(c)
+        tegi = []
+        p = self.ui.Tag.text()
+        tag0 = []
+        tag0.append(p)
+        odni_iz_spiska = []
+        u = self.ui.comboBox.currentIndex()
+        odin0 = []
+        odin0.append(u)
+        for y in f:
+           odin_iz = y.text()
+           odni_iz_spiska.append(odin_iz)
+        odin_s = odin0 + odni_iz_spiska
+        for o in d:
+            tag = o.text()
+            tegi.append(tag)
+        tege = tag0 + tegi
+        for i in a:
+            vopros = i.toPlainText()
+            voprosi.append(vopros)
+        voprose = vopros0 + voprosi
+        qwe = []
+        qwe.append(K)
+        qwe.append(voprose)
+        qwe.append(tege)
+        qwe.append(odin_s)
+        my_file = open('Danno/' + L+".txt", "w+")
+        my_file.write(str(qwe))
+        my_file.close()
+        with open('Danno/' + L+'.txt', 'r') as f:
+            mylist = ast.literal_eval(f.read())
+        #print(mylist[0])
+        import os
+        from os import listdir
+        from os.path import isfile, join
+        onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
+        os.path.isfile(os.path.join('Danno', f))]
+        # print(onlyfiles)
+     
 
-
-
+        global button
+        for i, b in enumerate(onlyfiles):
+            file_name = os.path.basename(b).split('.')[0]
+            row_index = self.ui.tableWidget.rowCount() 
+            button = QtWidgets.QPushButton("Заполнить")  
+            button.clicked.connect(self.test)
+            self.ui.tableWidget.insertRow(row_index)  
+            self.ui.tableWidget.setItem(row_index, 0, QtWidgets.QTableWidgetItem(file_name))
+            self.ui.tableWidget.setCellWidget(row_index, 1,button)
+            button.clicked.connect(self.per)  
         
+    def test (self):
+        button = self.sender()
+        if button:
+            row = self.ui.tableWidget.indexAt(button.pos()).row()
+            name_file = self.ui.tableWidget.item(row,0).text()
+            name_file = 'Danno/' + name_file +".txt"
+            name_file = open( name_file)
+            print(row, name_file.read())
+            name_file.close()
+
+    def opt(self,index):
+        self.ui.comboBox_10.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_9.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_8.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_7.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_6.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_5.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_4.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_3.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_2.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox.setCurrentIndex(index.currentIndex())
+        if index.currentIndex() == 6:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_2)
+        elif index.currentIndex() == 7:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_3)
+        elif index.currentIndex() == 5:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_8)
+        elif index.currentIndex() == 4:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_5)   
+        elif index.currentIndex() == 3:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_6)     
+        elif index.currentIndex() == 2:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_9)
+        elif index.currentIndex() == 1:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_7)     
+        elif index.currentIndex() == 0:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)          
+
+
+    def per(self):
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Fill_page)
         
     def transfer_back(self):
         global KT
@@ -621,4 +726,5 @@ app = QApplication([])
 AppWindow_main = AppWindow_main()
 AppWindow = AppWindow()
 AppWindow.show()
+
 sys.exit(app.exec())
