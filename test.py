@@ -1,4 +1,6 @@
 import os, ast, sys
+from os import listdir
+from os.path import isfile, join
 from functools import partial
 from tkinter import filedialog
 from PyQt6.QtWidgets import (
@@ -109,6 +111,8 @@ class AppWindow_main(QMainWindow):
         self.ui.Button_Dok.clicked.connect(self.Open_main_file_btn)
         self.ui.Button_Save.clicked.connect(self.save_form)
         
+        self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)
+        
         self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
         
     def opt(self,index):
@@ -140,7 +144,7 @@ class AppWindow_main(QMainWindow):
         self.ui.comboBox_3.setCurrentIndex(index.currentIndex())
         self.ui.comboBox_2.setCurrentIndex(index.currentIndex())
         self.ui.comboBox.setCurrentIndex(index.currentIndex())
-        
+
         if index.currentIndex() == 6:
            self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_2)
         elif index.currentIndex() == 7:
@@ -156,7 +160,8 @@ class AppWindow_main(QMainWindow):
         elif index.currentIndex() == 1:
            self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_7)     
         elif index.currentIndex() == 0:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)          
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)
+                     
     #постороение пути к документу
     def Open_main_file_btn(self):
         res =QFileDialog.getOpenFileName(self, 'Open File', ".",'DOC file (*.doc*)')
@@ -172,14 +177,13 @@ class AppWindow_main(QMainWindow):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
         self.ui.Button_Back.clicked.connect(self.transfer_back)
         self.ui.Button_Forma_plus.clicked.connect(self.add_field)
+
     def add_field(self):
         global KT
         global a, b, d, e, f, g, h, j
         _translate = QtCore.QCoreApplication.translate
         self.stackedWidget_t = QtWidgets.QStackedWidget ()
         self.ui.verticalLayout_7.addWidget(self.stackedWidget_t)
-        
-        
         
         self.page_t_1 = QtWidgets.QWidget()
         self.verticalLayout_t_1 = QtWidgets.QVBoxLayout(self.page_t_1)
@@ -1531,9 +1535,6 @@ f"#{self.Button_Copy_05.objectName()}"":pressed { \n"
         with open('Danno/' + L+'.txt', 'r') as f:
             mylist = ast.literal_eval(f.read())
         #print(mylist[0])
-        import os
-        from os import listdir
-        from os.path import isfile, join
         onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
         os.path.isfile(os.path.join('Danno', f))]
         # print(onlyfiles)
