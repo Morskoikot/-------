@@ -110,10 +110,8 @@ class AppWindow_main(QMainWindow):
         # self.ui.Button_Save.clicked.connect(self.save_form)
         self.ui.Button_Dok.clicked.connect(self.Open_main_file_btn)
         self.ui.Button_Save.clicked.connect(self.save_form)
-
         
         self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)
-
         
         self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
         
@@ -179,14 +177,13 @@ class AppWindow_main(QMainWindow):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
         self.ui.Button_Back.clicked.connect(self.transfer_back)
         self.ui.Button_Forma_plus.clicked.connect(self.add_field)
+
     def add_field(self):
         global KT
         global a, b, d, e, f, g, h, j
         _translate = QtCore.QCoreApplication.translate
         self.stackedWidget_t = QtWidgets.QStackedWidget ()
         self.ui.verticalLayout_7.addWidget(self.stackedWidget_t)
-        
-        
         
         self.page_t_1 = QtWidgets.QWidget()
         self.verticalLayout_t_1 = QtWidgets.QVBoxLayout(self.page_t_1)
