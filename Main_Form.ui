@@ -318,7 +318,7 @@ border-bottom-color: rgb(255, 76, 0);
                 <item>
                  <widget class="QStackedWidget" name="stackedWidget_2">
                   <property name="currentIndex">
-                   <number>3</number>
+                   <number>1</number>
                   </property>
                   <widget class="QWidget" name="page_2">
                    <layout class="QVBoxLayout" name="verticalLayout_14">
@@ -4192,8 +4192,8 @@ background-color: rgb(194, 194, 194);
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>945</width>
-             <height>413</height>
+             <width>472</width>
+             <height>206</height>
             </rect>
            </property>
            <property name="layoutDirection">

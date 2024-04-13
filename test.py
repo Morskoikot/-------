@@ -218,7 +218,6 @@ class AppWindow_main(QMainWindow):
         self.textField_vp_10.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.textField_vp_10.setPlaceholderText(_translate("MainWindow", "Вопрос"))
         self.horizontalLayout_f_110.addWidget(self.textField_vp_10)
-
         self.horizontalLayout_f_120 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_120.setContentsMargins(28, -1, -1, -1)
         self.horizontalLayout_f_110.addLayout(self.horizontalLayout_f_120)
@@ -253,9 +252,12 @@ f"#{self.comboBox_f_1.objectName()}"":pressed { \n"
         self.horizontalLayout_f_120.addWidget(self.comboBox_f_1)
         # Среднее поле
         self.horizontalLayout_f_200 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_200.setSpacing(6)
         self.verticalLayout_w_1.addLayout(self.horizontalLayout_f_200)
         self.horizontalLayout_f_210 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_210.setContentsMargins(100, 0, 0, 0)
         self.horizontalLayout_f_220 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_220.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_f_200.addLayout(self.horizontalLayout_f_210)
         self.horizontalLayout_f_200.addLayout(self.horizontalLayout_f_220)
         self.textField_low_1 = QtWidgets.QLineEdit()
@@ -282,8 +284,7 @@ f"#{self.comboBox_f_1.objectName()}"":pressed { \n"
         self.textField_tag_1.setPlaceholderText(_translate("MainWindow", "Тэг"))
         self.vertcalLayout_230 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_220.addLayout(self.vertcalLayout_230)
-        spacer_1 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
-        self.vertcalLayout_230.addItem(spacer_1)
+        spacer_1 = QtWidgets.QSpacerItem(0, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
         self.Button_Question_1 = QtWidgets.QPushButton()
         self.Button_Question_1.setMaximumSize(QtCore.QSize(33, 33))
         font = QtGui.QFont()
@@ -305,7 +306,9 @@ f"#{self.Button_Question_1.objectName()}"":pressed { \n"
 "\n"
 "")
         self.vertcalLayout_230.addWidget(self.Button_Question_1)
-
+        self.vertcalLayout_230.addItem(spacer_1)
+        spacer_Q_1 = QtWidgets.QSpacerItem(100, 0, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_f_210.addItem(spacer_Q_1)
         # Нижнее поле
         self.horizontalLayout_f_300 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_1.addLayout(self.horizontalLayout_f_300)
@@ -355,7 +358,7 @@ f"#{self.Button_Copy_01.objectName()}"":pressed { \n"
         self.pushButton_f_01_off.setText("")
         self.pushButton_f_01_off.setObjectName("pushButton_f_01_off")
         self.horizontalLayout_f_310.addWidget(self.widget_f_01)
-        
+
         self.page_t_2 = QtWidgets.QWidget()
         self.verticalLayout_t_2 = QtWidgets.QVBoxLayout(self.page_t_2)
         self.horizontalLayout_t_2 = QtWidgets.QHBoxLayout()
@@ -383,7 +386,6 @@ f"#{self.Button_Copy_01.objectName()}"":pressed { \n"
         self.textField_vp_20.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.textField_vp_20.setPlaceholderText(_translate("MainWindow", "Вопрос"))
         self.horizontalLayout_f_111.addWidget(self.textField_vp_20)
-
         self.horizontalLayout_f_121 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_121.setContentsMargins(28, -1, -1, -1)
         self.horizontalLayout_f_111.addLayout(self.horizontalLayout_f_121)
@@ -470,7 +472,6 @@ f"#{self.Button_Question_2.objectName()}"":pressed { \n"
 "\n"
 "")
         self.vertcalLayout_231.addWidget(self.Button_Question_2)
-
         # Нижнее поле
         self.horizontalLayout_f_301 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_2.addLayout(self.horizontalLayout_f_301)
@@ -520,27 +521,6 @@ f"#{self.Button_Copy_02.objectName()}"":pressed { \n"
         self.pushButton_f_02_off.setText("")
         self.pushButton_f_02_off.setObjectName("pushButton_f_02_off")
         self.horizontalLayout_f_311.addWidget(self.widget_f_02)
-
-        
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         self.page_t_3 = QtWidgets.QWidget()
         self.verticalLayout_t_3 = QtWidgets.QVBoxLayout(self.page_t_3)
@@ -676,7 +656,6 @@ f"#{self.button_var.objectName()}"":pressed { \n"
 "\n"
 "")
         self.horizontalLayout_m_03.addWidget(self.button_var)
-
         # Нижнее поле
         self.horizontalLayout_f_302 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_3.addLayout(self.horizontalLayout_f_302)
@@ -727,27 +706,6 @@ f"#{self.Button_Copy_03.objectName()}"":pressed { \n"
         self.pushButton_f_03_off.setObjectName("pushButton_f_03_off")
         self.horizontalLayout_f_312.addWidget(self.widget_f_03)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
         self.page_t_4 = QtWidgets.QWidget()
         self.verticalLayout_t_4 = QtWidgets.QVBoxLayout(self.page_t_4)
         self.horizontalLayout_t_4 = QtWidgets.QHBoxLayout()
@@ -1114,12 +1072,6 @@ f"#{self.comboBox_f_5_.objectName()}"":pressed { \n"
         spacerItem8 = QtWidgets.QSpacerItem(130, 10, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_284.addItem(spacerItem8)
         self.horizontalLayout_f_214.addLayout(self.horizontalLayout_284)
-        
-        
-        
-        
-        
-        
         self.vertcalLayout_234 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_224.addLayout(self.vertcalLayout_234)
         spacer_5 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
