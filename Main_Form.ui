@@ -304,8 +304,8 @@ border-bottom-color: rgb(255, 76, 0);
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>957</width>
-                 <height>345</height>
+                 <width>941</width>
+                 <height>287</height>
                 </rect>
                </property>
                <property name="layoutDirection">
@@ -318,7 +318,7 @@ border-bottom-color: rgb(255, 76, 0);
                 <item>
                  <widget class="QStackedWidget" name="stackedWidget_2">
                   <property name="currentIndex">
-                   <number>1</number>
+                   <number>7</number>
                   </property>
                   <widget class="QWidget" name="page_2">
                    <layout class="QVBoxLayout" name="verticalLayout_14">
@@ -455,9 +455,6 @@ background-color:rgb(219, 219, 219);
                          <item>
                           <layout class="QHBoxLayout" name="horizontalLayout_10">
                            <item>
-                            <layout class="QHBoxLayout" name="horizontalLayout_12"/>
-                           </item>
-                           <item>
                             <layout class="QHBoxLayout" name="horizontalLayout_24">
                              <property name="rightMargin">
                               <number>228</number>
@@ -581,6 +578,9 @@ background-color:rgb(204, 204, 204);
                          </item>
                          <item>
                           <layout class="QHBoxLayout" name="horizontalLayout_13">
+                           <property name="spacing">
+                            <number>3</number>
+                           </property>
                            <item>
                             <widget class="QPushButton" name="Button_Copy">
                              <property name="maximumSize">
@@ -609,7 +609,35 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_delete">
+                             <property name="maximumSize">
+                              <size>
+                               <width>41</width>
+                               <height>41</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">#pushButton_delete {
+border: 2px solid;
+border-radius: 9px;
+border-color:rgb(190, 190, 190);
+background-color: rgb(228, 228, 228);
+}
+#pushButton_delete:hover {
+background-color:rgb(219, 219, 219);
+}
+#pushButton_delete:pressed { 
+background-color:rgb(204, 204, 204);
+}
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
                              </property>
                             </widget>
                            </item>
@@ -689,7 +717,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -840,6 +868,9 @@ background-color:rgb(219, 219, 219);
                          </item>
                          <item>
                           <layout class="QHBoxLayout" name="horizontalLayout_29">
+                           <property name="leftMargin">
+                            <number>0</number>
+                           </property>
                            <item>
                             <layout class="QHBoxLayout" name="horizontalLayout_30">
                              <item>
@@ -958,6 +989,9 @@ background-color:rgb(204, 204, 204);
                          </item>
                          <item>
                           <layout class="QHBoxLayout" name="horizontalLayout_32">
+                           <property name="spacing">
+                            <number>3</number>
+                           </property>
                            <item>
                             <widget class="QPushButton" name="Button_Copy_2">
                              <property name="maximumSize">
@@ -987,6 +1021,34 @@ background-color:rgb(204, 204, 204);
                              <property name="icon">
                               <iconset>
                                <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_delete_2">
+                             <property name="maximumSize">
+                              <size>
+                               <width>41</width>
+                               <height>41</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">#pushButton_delete_2 {
+border: 2px solid;
+border-radius: 9px;
+border-color:rgb(190, 190, 190);
+background-color: rgb(228, 228, 228);
+}
+#pushButton_delete_2:hover {
+background-color:rgb(219, 219, 219);
+}
+#pushButton_delete_2:pressed { 
+background-color:rgb(204, 204, 204);
+}
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
                              </property>
                             </widget>
                            </item>
@@ -1066,7 +1128,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -1369,6 +1431,9 @@ border-bottom-color: rgb(255, 76, 0);
                          </item>
                          <item>
                           <layout class="QHBoxLayout" name="horizontalLayout_41">
+                           <property name="spacing">
+                            <number>3</number>
+                           </property>
                            <item>
                             <widget class="QPushButton" name="Button_Copy_3">
                              <property name="maximumSize">
@@ -1397,7 +1462,35 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_delete_3">
+                             <property name="maximumSize">
+                              <size>
+                               <width>41</width>
+                               <height>41</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">#pushButton_delete_3 {
+border: 2px solid;
+border-radius: 9px;
+border-color:rgb(190, 190, 190);
+background-color: rgb(228, 228, 228);
+}
+#pushButton_delete_3:hover {
+background-color:rgb(219, 219, 219);
+}
+#pushButton_delete_3:pressed { 
+background-color:rgb(204, 204, 204);
+}
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
                              </property>
                             </widget>
                            </item>
@@ -1477,7 +1570,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -1822,7 +1915,35 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_delete_4">
+                             <property name="maximumSize">
+                              <size>
+                               <width>41</width>
+                               <height>41</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">#pushButton_delete_4 {
+border: 2px solid;
+border-radius: 9px;
+border-color:rgb(190, 190, 190);
+background-color: rgb(228, 228, 228);
+}
+#pushButton_delete_4:hover {
+background-color:rgb(219, 219, 219);
+}
+#pushButton_delete_4:pressed { 
+background-color:rgb(204, 204, 204);
+}
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
                              </property>
                             </widget>
                            </item>
@@ -1902,7 +2023,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -2052,6 +2173,9 @@ background-color:rgb(219, 219, 219);
                           <layout class="QHBoxLayout" name="horizontalLayout_55">
                            <item>
                             <layout class="QHBoxLayout" name="horizontalLayout_56">
+                             <property name="rightMargin">
+                              <number>9</number>
+                             </property>
                              <item>
                               <widget class="QLineEdit" name="Kratki_otvet_4">
                                <property name="maximumSize">
@@ -2177,6 +2301,9 @@ background-color:rgb(204, 204, 204);
                          </item>
                          <item>
                           <layout class="QHBoxLayout" name="horizontalLayout_59">
+                           <property name="spacing">
+                            <number>3</number>
+                           </property>
                            <item>
                             <widget class="QPushButton" name="Button_Copy_5">
                              <property name="maximumSize">
@@ -2206,7 +2333,36 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_delete_5">
+                             <property name="maximumSize">
+                              <size>
+                               <width>41</width>
+                               <height>41</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">#pushButton_delete_5 {
+border: 2px solid;
+border-radius: 9px;
+border-color:rgb(190, 190, 190);
+background-color: rgb(228, 228, 228);
+}
+#pushButton_delete_5:hover {
+background-color:rgb(219, 219, 219);
+}
+#pushButton_delete_5:pressed { 
+background-color:rgb(204, 204, 204);
+}
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
                              </property>
                             </widget>
                            </item>
@@ -2286,7 +2442,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -2830,6 +2986,9 @@ background-color:rgb(204, 204, 204);
                          </item>
                          <item>
                           <layout class="QHBoxLayout" name="horizontalLayout_72">
+                           <property name="spacing">
+                            <number>3</number>
+                           </property>
                            <item>
                             <widget class="QPushButton" name="Button_Copy_6">
                              <property name="maximumSize">
@@ -2859,7 +3018,35 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_delete_6">
+                             <property name="maximumSize">
+                              <size>
+                               <width>41</width>
+                               <height>41</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">#pushButton_delete_6 {
+border: 2px solid;
+border-radius: 9px;
+border-color:rgb(190, 190, 190);
+background-color: rgb(228, 228, 228);
+}
+#pushButton_delete_6:hover {
+background-color:rgb(219, 219, 219);
+}
+#pushButton_delete_6:pressed { 
+background-color:rgb(204, 204, 204);
+}
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
                              </property>
                             </widget>
                            </item>
@@ -2939,7 +3126,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -3381,6 +3568,9 @@ border-bottom-color: rgb(255, 76, 0);
                          </item>
                          <item>
                           <layout class="QHBoxLayout" name="horizontalLayout_82">
+                           <property name="spacing">
+                            <number>3</number>
+                           </property>
                            <item>
                             <widget class="QPushButton" name="Button_Copy_7">
                              <property name="maximumSize">
@@ -3408,7 +3598,34 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_delete_7">
+                             <property name="maximumSize">
+                              <size>
+                               <width>41</width>
+                               <height>41</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">#pushButton_delete_7 {
+border: 2px solid;
+border-radius: 9px;
+border-color:rgb(190, 190, 190);
+background-color: rgb(228, 228, 228);
+}
+#pushButton_delete_7:hover {
+background-color:rgb(219, 219, 219);
+}
+#pushButton_delete_7:pressed { 
+background-color:rgb(204, 204, 204);
+}</string>
+                             </property>
+                             <property name="text">
+                              <string/>
                              </property>
                             </widget>
                            </item>
@@ -3488,7 +3705,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -3642,9 +3859,6 @@ background-color:rgb(219, 219, 219);
                          <item>
                           <layout class="QHBoxLayout" name="horizontalLayout_87">
                            <item>
-                            <layout class="QHBoxLayout" name="horizontalLayout_88"/>
-                           </item>
-                           <item>
                             <layout class="QHBoxLayout" name="horizontalLayout_89">
                              <property name="rightMargin">
                               <number>298</number>
@@ -3767,6 +3981,9 @@ background-color:rgb(204, 204, 204);
                          </item>
                          <item>
                           <layout class="QHBoxLayout" name="horizontalLayout_91">
+                           <property name="spacing">
+                            <number>3</number>
+                           </property>
                            <item>
                             <widget class="QPushButton" name="Button_Copy_8">
                              <property name="maximumSize">
@@ -3795,7 +4012,35 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="pushButton_delete_8">
+                             <property name="maximumSize">
+                              <size>
+                               <width>41</width>
+                               <height>41</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">#pushButton_delete_8 {
+border: 2px solid;
+border-radius: 9px;
+border-color:rgb(190, 190, 190);
+background-color: rgb(228, 228, 228);
+}
+#pushButton_delete_8:hover {
+background-color:rgb(219, 219, 219);
+}
+#pushButton_delete_8:pressed { 
+background-color:rgb(204, 204, 204);
+}
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
                              </property>
                             </widget>
                            </item>
@@ -3872,7 +4117,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -5328,7 +5573,7 @@ border-bottom-color: rgb(255, 76, 0);
      <x>0</x>
      <y>0</y>
      <width>1000</width>
-     <height>18</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

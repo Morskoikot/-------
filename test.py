@@ -24,7 +24,8 @@ from PyQt6.QtGui     import QFontDatabase, QFont
 from PyQt6.QtCore    import Qt
 from PyQt6 import QtCore, QtGui, QtWidgets
 import math
-KT = int(1)  
+KT = int(1)
+Armagedon = []
 class AppWindow(QMainWindow):
     def __init__(self):
         super(AppWindow, self).__init__()
@@ -110,7 +111,9 @@ class AppWindow_main(QMainWindow):
         # self.ui.Button_Save.clicked.connect(self.save_form)
         self.ui.Button_Dok.clicked.connect(self.Open_main_file_btn)
         self.ui.Button_Save.clicked.connect(self.save_form)
-
+        self.ui.Button_Back.clicked.connect(self.transfer_back)
+        self.ui.Button_Forma_plus.clicked.connect(self.add_field)
+        self.ui.Button_Back_Fill.clicked.connect(self.transfer_back)
         
         self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)
         
@@ -177,19 +180,15 @@ class AppWindow_main(QMainWindow):
         
     def transfer_page_add(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
-        self.ui.Button_Back.clicked.connect(self.transfer_back)
-        self.ui.Button_Forma_plus.clicked.connect(self.add_field)
-
-
-    def add_field(self):
-        global KT, Collective
-        global a, b, d, e, f, g, h, j
         
+    def add_field(self):
+        global KT, Collective, Armagedon
+        global a, b, d, e, f, g, h, j
         Collective.append([])
         
         _translate = QtCore.QCoreApplication.translate
-        self.stackedWidget_t = QtWidgets.QStackedWidget ()
-        self.ui.verticalLayout_7.addWidget(self.stackedWidget_t)
+        self.stackedWidget_t_ = QtWidgets.QStackedWidget()
+        self.ui.verticalLayout_7.addWidget(self.stackedWidget_t_)
         
         self.page_t_1 = QtWidgets.QWidget()
         self.verticalLayout_t_1 = QtWidgets.QVBoxLayout(self.page_t_1)
@@ -891,29 +890,6 @@ f"#{self.Button_Copy_04.objectName()}"":pressed { \n"
         self.pushButton_f_04_off.setObjectName("pushButton_f_04_off")
         self.horizontalLayout_f_313.addWidget(self.widget_f_04)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
         self.page_t_5 = QtWidgets.QWidget()
         self.verticalLayout_t_5 = QtWidgets.QVBoxLayout(self.page_t_5)
         self.horizontalLayout_t_5 = QtWidgets.QHBoxLayout()
@@ -1099,7 +1075,6 @@ f"#{self.Button_Question_5.objectName()}"":pressed { \n"
 "\n"
 "")
         self.vertcalLayout_234.addWidget(self.Button_Question_5)
-
         # Нижнее поле
         self.horizontalLayout_f_304 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_2.addLayout(self.horizontalLayout_f_304)
@@ -1149,29 +1124,6 @@ f"#{self.Button_Copy_05.objectName()}"":pressed { \n"
         self.pushButton_f_05_off.setText("")
         self.pushButton_f_05_off.setObjectName("pushButton_f_05_off")
         self.horizontalLayout_f_314.addWidget(self.widget_f_05)
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         self.page_t_6 = QtWidgets.QWidget()
         self.verticalLayout_t_6 = QtWidgets.QVBoxLayout(self.page_t_6)
@@ -1611,7 +1563,6 @@ f"#{self.Button_Question_8.objectName()}"":pressed { \n"
 "\n"
 "")
         self.vertcalLayout_237.addWidget(self.Button_Question_8)
-
         self.horizontalLayout_m_08 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_8.addLayout(self.horizontalLayout_m_08)
         self.button_var_8 = QtWidgets.QPushButton()
@@ -1630,7 +1581,6 @@ f"#{self.button_var_8.objectName()}"":pressed { \n"
 "}\n"
 "")
         self.horizontalLayout_m_08.addWidget(self.button_var_8)
-
         # Нижнее поле
         self.horizontalLayout_f_307 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_8.addLayout(self.horizontalLayout_f_307)
@@ -1681,15 +1631,16 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         self.pushButton_f_08_off.setObjectName("pushButton_f_08_off")
         self.horizontalLayout_f_317.addWidget(self.widget_f_08)
 
+        self.stackedWidget_t_.addWidget(self.page_t_1)
+        self.stackedWidget_t_.addWidget(self.page_t_2)
+        self.stackedWidget_t_.addWidget(self.page_t_3)
+        self.stackedWidget_t_.addWidget(self.page_t_4)
+        self.stackedWidget_t_.addWidget(self.page_t_5)
+        self.stackedWidget_t_.addWidget(self.page_t_6)
+        self.stackedWidget_t_.addWidget(self.page_t_7)
+        self.stackedWidget_t_.addWidget(self.page_t_8)
+        Armagedon.append(self.stackedWidget_t_)
         KT += 1
-        self.stackedWidget_t.addWidget(self.page_t_1)
-        self.stackedWidget_t.addWidget(self.page_t_2)
-        self.stackedWidget_t.addWidget(self.page_t_3)
-        self.stackedWidget_t.addWidget(self.page_t_4)
-        self.stackedWidget_t.addWidget(self.page_t_5)
-        self.stackedWidget_t.addWidget(self.page_t_6)
-        self.stackedWidget_t.addWidget(self.page_t_7)
-        self.stackedWidget_t.addWidget(self.page_t_8)
         
         self.comboBox_f_2_.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_2_))
         
@@ -1741,7 +1692,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
            self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)
         index_page = index.currentIndex()
 
-        Collective.append(['Danno/' + L+'.txt', 'r',b,c,[[],[],[],[],[],[],[],[]]])
+        Collective.append(['Danno/' + L+'.txt', 'r', b, c,[[],[],[],[],[],[],[],[]]])
 
     def save_form(self):
         global a, d, f, L, K
@@ -1808,15 +1759,26 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
 
     def per(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Fill_page)
+
+    def Annihilation (self, Armagedon):
+        # /////////////////////////////////////////////////////////////////////
+        pages_all = Armagedon.count()
+        for i in range(pages_all):
+                widget = Armagedon.widget(0)
+                Armagedon.removeWidget(widget)
+        Armagedon.deleteLater()
+        # /////////////////////////////////////////////////////////////////////
         
     def transfer_back(self):
-        global KT
+        global KT, Armagedon
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
+        for i in Armagedon:
+            self.Annihilation(i)
+        Armagedon = []
         KT = 1
     def transfer_Fill(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.page)
         self.ui.stackedWidget.setCurrentWidget(self.ui.page)
-        self.ui.Button_Back_Fill.clicked.connect(self.transfer_back)
 
 app = QApplication([])
 AppWindow_main = AppWindow_main()
