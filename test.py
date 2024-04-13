@@ -55,7 +55,7 @@ class AppWindow_main(QMainWindow):
     def __init__(self):
         super(AppWindow_main, self).__init__()
         #добовление шрифтов
-        global font,font2,font3,font4,font5,font6,font7
+        global font,font2,font3,font4,font5,font6,font7,Collective
         font = QFont('SFProText-Light', 80)
         font2 = QFont('Lato-Light', 30)
         font3 = QFont('Lato-Light', 20)
@@ -66,7 +66,7 @@ class AppWindow_main(QMainWindow):
         font8 = QFont('SFProText-Light', 26)
         self.ui = Form()
         self.ui.setupUi(self)
-
+        Collective = []
         global a, b, d, e, f, g, h, j
         a = []
         b = 0
@@ -79,8 +79,8 @@ class AppWindow_main(QMainWindow):
 
         self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)   
         #присвоение шрифтов объектам
-        self.ui.Kratki_otvet.setFont(font2)
-        self.ui.Vopros.setFont(font2)
+        self.ui.Kratki_otvet.setFont(font3)
+        self.ui.Vopros.setFont(font3)
         self.ui.Glavnaya.setFont(font)
         self.ui.Button_Zapolnit.setFont(font6)
         self.ui.Button_Spisok.setFont(font6)
@@ -95,7 +95,7 @@ class AppWindow_main(QMainWindow):
         self.ui.Button_Dok.setFont(font5)
         self.ui.Button_Forma_plus.setFont(font5)
         self.ui.Dobavit_dokument_label.setFont(font3)
-        self.ui.Tag.setFont(font2)
+        self.ui.Tag.setFont(font3)
         #self.ui..setFont(font5)
         self.ui.Dobavochnoe_pole.setFont(font4)
         self.ui.Button_Question.setFont(font5)
@@ -110,6 +110,7 @@ class AppWindow_main(QMainWindow):
         # self.ui.Button_Save.clicked.connect(self.save_form)
         self.ui.Button_Dok.clicked.connect(self.Open_main_file_btn)
         self.ui.Button_Save.clicked.connect(self.save_form)
+
         
         self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)
         
@@ -161,6 +162,7 @@ class AppWindow_main(QMainWindow):
            self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_7)     
         elif index.currentIndex() == 0:
            self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)
+        index_page = index.currentIndex()   
                      
     #постороение пути к документу
     def Open_main_file_btn(self):
@@ -178,9 +180,13 @@ class AppWindow_main(QMainWindow):
         self.ui.Button_Back.clicked.connect(self.transfer_back)
         self.ui.Button_Forma_plus.clicked.connect(self.add_field)
 
+
     def add_field(self):
-        global KT
+        global KT, Collective
         global a, b, d, e, f, g, h, j
+        
+        Collective.append([])
+        
         _translate = QtCore.QCoreApplication.translate
         self.stackedWidget_t = QtWidgets.QStackedWidget ()
         self.ui.verticalLayout_7.addWidget(self.stackedWidget_t)
@@ -1265,6 +1271,58 @@ f"#{self.Button_Copy_05.objectName()}"":pressed { \n"
         self.stackedWidget_t.addWidget(self.page_t_6)
         self.stackedWidget_t.addWidget(self.page_t_7)
         self.stackedWidget_t.addWidget(self.page_t_8)
+        
+        self.comboBox_f_2_.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_2_))
+        
+    def opt_2(self,index):
+        index.currentIndexChanged.disconnect()
+        if (index.currentIndex() == 0):
+            self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
+        elif (index.currentIndex() == 1):
+            self.ui.comboBox_5.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_5))
+        elif (index.currentIndex() == 2):
+            self.ui.comboBox_9.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_9))
+        elif (index.currentIndex() == 3):
+            self.ui.comboBox_4.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_4))
+        elif (index.currentIndex() == 4):
+            self.ui.comboBox_3.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_3))
+        elif (index.currentIndex() == 5):
+            self.ui.comboBox_8.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_8))
+        elif (index.currentIndex() == 6):
+            self.ui.comboBox.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox))
+        elif (index.currentIndex() == 7):
+            self.ui.comboBox_10.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_10))
+        elif (index.currentIndex() == 8):
+            self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
+
+        self.ui.comboBox_10.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_9.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_8.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_5.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_4.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_3.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_2.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox.setCurrentIndex(index.currentIndex())
+
+        if index.currentIndex() == 6:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_2)
+        elif index.currentIndex() == 7:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_3)
+        elif index.currentIndex() == 5:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_8)
+        elif index.currentIndex() == 4:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_5)   
+        elif index.currentIndex() == 3:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_6)     
+        elif index.currentIndex() == 2:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_9)
+        elif index.currentIndex() == 1:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_7)     
+        elif index.currentIndex() == 0:
+           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)
+        index_page = index.currentIndex()
+
+        Collective.append(['Danno/' + L+'.txt', 'r',b,c,[[],[],[],[],[],[],[],[]]])
 
     def save_form(self):
         global a, d, f, L, K
