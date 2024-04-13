@@ -255,7 +255,7 @@ f"#{self.comboBox_f_1.objectName()}"":pressed { \n"
         self.horizontalLayout_f_200.setSpacing(6)
         self.verticalLayout_w_1.addLayout(self.horizontalLayout_f_200)
         self.horizontalLayout_f_210 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_f_210.setContentsMargins(100, 0, 0, 0)
+        self.horizontalLayout_f_210.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_f_220 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_220.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_f_200.addLayout(self.horizontalLayout_f_210)
@@ -282,7 +282,7 @@ f"#{self.comboBox_f_1.objectName()}"":pressed { \n"
         self.textField_tag_1.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.horizontalLayout_f_220.addWidget(self.textField_tag_1)
         self.textField_tag_1.setPlaceholderText(_translate("MainWindow", "Тэг"))
-        self.vertcalLayout_230 = QtWidgets.QHBoxLayout()
+        self.vertcalLayout_230 = QtWidgets.QVBoxLayout()
         self.horizontalLayout_f_220.addLayout(self.vertcalLayout_230)
         spacer_1 = QtWidgets.QSpacerItem(0, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
         self.Button_Question_1 = QtWidgets.QPushButton()
@@ -305,10 +305,8 @@ f"#{self.Button_Question_1.objectName()}"":pressed { \n"
 "}\n"
 "\n"
 "")
-        self.vertcalLayout_230.addWidget(self.Button_Question_1)
         self.vertcalLayout_230.addItem(spacer_1)
-        spacer_Q_1 = QtWidgets.QSpacerItem(100, 0, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
-        self.horizontalLayout_f_210.addItem(spacer_Q_1)
+        self.vertcalLayout_230.addWidget(self.Button_Question_1)
         # Нижнее поле
         self.horizontalLayout_f_300 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_1.addLayout(self.horizontalLayout_f_300)
