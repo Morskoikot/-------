@@ -255,7 +255,7 @@ f"#{self.comboBox_f_1.objectName()}"":pressed { \n"
         self.horizontalLayout_f_200.setSpacing(6)
         self.verticalLayout_w_1.addLayout(self.horizontalLayout_f_200)
         self.horizontalLayout_f_210 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_f_210.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_f_210.setContentsMargins(0, 0, 5, 0)
         self.horizontalLayout_f_220 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_220.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_f_200.addLayout(self.horizontalLayout_f_210)
@@ -420,6 +420,7 @@ f"#{self.comboBox_f_2_.objectName()}"":pressed { \n"
         self.horizontalLayout_f_201 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_2.addLayout(self.horizontalLayout_f_201)
         self.horizontalLayout_f_211 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_211.setContentsMargins(0, 0, 5, 0)
         self.horizontalLayout_f_221 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_201.addLayout(self.horizontalLayout_f_211)
         self.horizontalLayout_f_201.addLayout(self.horizontalLayout_f_221)
@@ -445,7 +446,7 @@ f"#{self.comboBox_f_2_.objectName()}"":pressed { \n"
         self.textField_low_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.horizontalLayout_f_221.addWidget(self.textField_low_2)
         self.textField_low_2.setPlaceholderText(_translate("MainWindow", "Тэг"))
-        self.vertcalLayout_231 = QtWidgets.QHBoxLayout()
+        self.vertcalLayout_231 = QtWidgets.QVBoxLayout()
         self.horizontalLayout_f_221.addLayout(self.vertcalLayout_231)
         spacer_2 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
         self.vertcalLayout_231.addItem(spacer_2)
@@ -584,6 +585,7 @@ f"#{self.comboBox_f_3_.objectName()}"":pressed { \n"
         self.horizontalLayout_f_202 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_3.addLayout(self.horizontalLayout_f_202)
         self.horizontalLayout_f_212 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_212.setContentsMargins(0, 0, 5, 0)
         self.horizontalLayout_f_222 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_202.addLayout(self.horizontalLayout_f_212)
         self.horizontalLayout_f_202.addLayout(self.horizontalLayout_f_222)
@@ -609,7 +611,7 @@ f"#{self.comboBox_f_3_.objectName()}"":pressed { \n"
         self.textField_low_3.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.horizontalLayout_f_222.addWidget(self.textField_low_3)
         self.textField_low_3.setPlaceholderText(_translate("MainWindow", "Тэг"))
-        self.vertcalLayout_232 = QtWidgets.QHBoxLayout()
+        self.vertcalLayout_232 = QtWidgets.QVBoxLayout()
         self.horizontalLayout_f_222.addLayout(self.vertcalLayout_232)
         spacer_3 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
         self.vertcalLayout_232.addItem(spacer_3)
@@ -768,6 +770,7 @@ f"#{self.comboBox_f_4_.objectName()}"":pressed { \n"
         self.horizontalLayout_f_203 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_4.addLayout(self.horizontalLayout_f_203)
         self.horizontalLayout_f_213 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_213.setContentsMargins(0, 0, 5, 0)
         self.horizontalLayout_f_223 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_203.addLayout(self.horizontalLayout_f_213)
         self.horizontalLayout_f_203.addLayout(self.horizontalLayout_f_223)
@@ -793,7 +796,7 @@ f"#{self.comboBox_f_4_.objectName()}"":pressed { \n"
         self.textField_low_4.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.horizontalLayout_f_223.addWidget(self.textField_low_4)
         self.textField_low_4.setPlaceholderText(_translate("MainWindow", "Тэг"))
-        self.vertcalLayout_233 = QtWidgets.QHBoxLayout()
+        self.vertcalLayout_233 = QtWidgets.QVBoxLayout()
         self.horizontalLayout_f_223.addLayout(self.vertcalLayout_233)
         spacer_4 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
         self.vertcalLayout_233.addItem(spacer_4)
@@ -1016,6 +1019,7 @@ f"#{self.comboBox_f_5_.objectName()}"":pressed { \n"
         self.horizontalLayout_f_204 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_5.addLayout(self.horizontalLayout_f_204)
         self.horizontalLayout_f_214 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_214.setContentsMargins(0, 0, 5, 0)
         self.horizontalLayout_f_224 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_204.addLayout(self.horizontalLayout_f_214)
         self.horizontalLayout_f_204.addLayout(self.horizontalLayout_f_224)
@@ -1070,7 +1074,7 @@ f"#{self.comboBox_f_5_.objectName()}"":pressed { \n"
         spacerItem8 = QtWidgets.QSpacerItem(130, 10, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_284.addItem(spacerItem8)
         self.horizontalLayout_f_214.addLayout(self.horizontalLayout_284)
-        self.vertcalLayout_234 = QtWidgets.QHBoxLayout()
+        self.vertcalLayout_234 = QtWidgets.QVBoxLayout()
         self.horizontalLayout_f_224.addLayout(self.vertcalLayout_234)
         spacer_5 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
         self.vertcalLayout_234.addItem(spacer_5)
@@ -1179,9 +1183,157 @@ f"#{self.Button_Copy_05.objectName()}"":pressed { \n"
 "background-color: rgb(194, 194, 194); \n"
 "}")
         self.verticalLayout_w_6 = QtWidgets.QVBoxLayout(self.widget_t_6)
-        
-        
-        
+        self.verticalLayout_t_6.addLayout(self.horizontalLayout_t_6)
+        self.horizontalLayout_t_6.addWidget(self.widget_t_6)
+        self.horizontalLayout_f_105 = QtWidgets.QHBoxLayout()
+        self.verticalLayout_w_6.addLayout(self.horizontalLayout_f_105)
+        self.horizontalLayout_f_115 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_105.addLayout(self.horizontalLayout_f_115)
+        self.textField_vp_60 = QtWidgets.QLineEdit()
+        self.textField_vp_60.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textField_vp_60.setFont(font)
+        self.textField_vp_60.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.textField_vp_60.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.textField_vp_60.setPlaceholderText(_translate("MainWindow", "Вопрос"))
+        self.horizontalLayout_f_115.addWidget(self.textField_vp_60)
+        self.horizontalLayout_f_125 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_125.setContentsMargins(28, -1, -1, -1)
+        self.horizontalLayout_f_115.addLayout(self.horizontalLayout_f_125)
+        self.comboBox_f_6_ = QtWidgets.QComboBox()
+        self.comboBox_f_6_.setMaximumSize(QtCore.QSize(220, 80))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.comboBox_f_6_.setFont(font)
+        self.comboBox_f_6_.setObjectName(f"comboBox_f_6_{KT}")
+        self.comboBox_f_6_.setStyleSheet(f"#{self.comboBox_f_6_.objectName()}" "{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.comboBox_f_6_.objectName()}"":hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.comboBox_f_6_.objectName()}"":pressed { \n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"\n"
+"")
+        self.comboBox_f_6_.addItem("ТЕКСТ (СТРОКА)")
+        self.comboBox_f_6_.addItem("ТЕКСТ (АБЗАЦ)")
+        self.comboBox_f_6_.addItem("ОДИН ИЗ СПИСКА")
+        self.comboBox_f_6_.addItem("МН. ИЗ СПИСКА")
+        self.comboBox_f_6_.addItem("РАСКР. СПИСОК")
+        self.comboBox_f_6_.addItem("ШКАЛА")
+        self.comboBox_f_6_.addItem("ДАТА")
+        self.comboBox_f_6_.addItem("ВРЕМЯ")
+        self.horizontalLayout_f_125.addWidget(self.comboBox_f_6_)
+        # Среднее поле
+        self.horizontalLayout_f_205 = QtWidgets.QHBoxLayout()
+        self.verticalLayout_w_6.addLayout(self.horizontalLayout_f_205)
+        self.horizontalLayout_f_215 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_215.setContentsMargins(0, 0, 5, 0)
+        self.horizontalLayout_f_225 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_205.addLayout(self.horizontalLayout_f_215)
+        self.horizontalLayout_f_205.addLayout(self.horizontalLayout_f_225)
+        self.timeEdit_6 = QtWidgets.QTimeEdit()
+        self.timeEdit_6.setMaximumSize(QtCore.QSize(90, 45))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.timeEdit_6.setFont(font)
+        self.timeEdit_6.setObjectName(f"timeEdit_6_{KT}")
+        self.timeEdit_6.setStyleSheet(f"#{self.timeEdit_6.objectName()}" "{\n"
+"border: 2px solid;\n"
+"border-radius: 5px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+f"#{self.timeEdit_6.objectName()}" ":hover {\n"
+"background-color: rgb(243, 243, 243);\n"
+"}\n"
+f"#{self.timeEdit_6.objectName()}" ":pressed { \n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+"")
+        self.horizontalLayout_f_215.addWidget(self.timeEdit_6)
+        self.vertcalLayout_235 = QtWidgets.QVBoxLayout()
+        self.horizontalLayout_f_225.addLayout(self.vertcalLayout_235)
+        spacer_6 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
+        self.vertcalLayout_235.addItem(spacer_6)
+        self.Button_Question_6 = QtWidgets.QPushButton()
+        self.Button_Question_6.setMaximumSize(QtCore.QSize(33, 33))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Question_6.setFont(font)
+        self.Button_Question_6.setObjectName(f"Button_Question_6{KT}")
+        self.Button_Question_6.setStyleSheet(f"#{self.Button_Question_6.objectName()}" "{\n"
+"border: 2px solid;\n"
+"border-radius: 7px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Question_6.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Question_6.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"\n"
+"")
+        self.vertcalLayout_235.addWidget(self.Button_Question_6)
+        # Нижнее поле
+        self.horizontalLayout_f_305 = QtWidgets.QHBoxLayout()
+        self.verticalLayout_w_6.addLayout(self.horizontalLayout_f_305)
+        self.horizontalLayout_f_315 = QtWidgets.QHBoxLayout()
+        self.Button_Copy_06 = QtWidgets.QPushButton()
+        self.Button_Copy_06.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Copy_06.setObjectName(f"Button_Copy_06{KT}")
+        self.Button_Copy_06.setStyleSheet(f"#{self.Button_Copy_06.objectName()}""{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Copy_06.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Copy_06.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Copy_06.setText("")
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("../../../../../1621635.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.Button_Copy_06.setIcon(icon2)
+        self.horizontalLayout_f_305.addWidget(self.Button_Copy_06)
+        self.horizontalLayout_f_305.addLayout(self.horizontalLayout_f_315)
+        self.Obyazatelny_vopros_f_06 = QtWidgets.QLabel()
+        self.Obyazatelny_vopros_f_06.setMaximumSize(QtCore.QSize(400, 34))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Obyazatelny_vopros_f_06.setFont(font)
+        self.Obyazatelny_vopros_f_06.setObjectName("Obyazatelny_vopros_f_06")
+        self.Obyazatelny_vopros_f_06.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
+        self.horizontalLayout_f_315.addWidget(self.Obyazatelny_vopros_f_06)
+        self.widget_f_06 = QtWidgets.QWidget()
+        self.widget_f_06.setMinimumSize(QtCore.QSize(45, 45))
+        self.widget_f_06.setMaximumSize(QtCore.QSize(45, 45))
+        self.widget_f_06.setObjectName("widget_f_06")
+        self.pushButton_f_06_on = QtWidgets.QPushButton(self.widget_f_06)
+        self.pushButton_f_06_on.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_f_06_on.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_f_06_on.setText("")
+        self.pushButton_f_06_on.setObjectName("pushButton_f_06_on")
+        self.pushButton_f_06_off = QtWidgets.QPushButton(self.widget_f_06)
+        self.pushButton_f_06_off.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_f_06_off.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_f_06_off.setText("")
+        self.pushButton_f_06_off.setObjectName("pushButton_f_06_off")
+        self.horizontalLayout_f_315.addWidget(self.widget_f_06)
         
         self.page_t_7 = QtWidgets.QWidget()
         self.verticalLayout_t_7 = QtWidgets.QVBoxLayout(self.page_t_7)
@@ -1193,12 +1345,158 @@ f"#{self.Button_Copy_05.objectName()}"":pressed { \n"
 "background-color: rgb(194, 194, 194); \n"
 "}")
         self.verticalLayout_w_7 = QtWidgets.QVBoxLayout(self.widget_t_7)
-        
-        
-        
-        
-        
-        
+        self.verticalLayout_t_7.addLayout(self.horizontalLayout_t_7)
+        self.horizontalLayout_t_7.addWidget(self.widget_t_7)
+        self.horizontalLayout_f_106 = QtWidgets.QHBoxLayout()
+        self.verticalLayout_w_7.addLayout(self.horizontalLayout_f_106)
+        self.horizontalLayout_f_116 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_106.addLayout(self.horizontalLayout_f_116)
+        self.textField_vp_70 = QtWidgets.QLineEdit()
+        self.textField_vp_70.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textField_vp_70.setFont(font)
+        self.textField_vp_70.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.textField_vp_70.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.textField_vp_70.setPlaceholderText(_translate("MainWindow", "Вопрос"))
+        self.horizontalLayout_f_116.addWidget(self.textField_vp_70)
+        self.horizontalLayout_f_126 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_126.setContentsMargins(28, -1, -1, -1)
+        self.horizontalLayout_f_116.addLayout(self.horizontalLayout_f_126)
+        self.comboBox_f_7_ = QtWidgets.QComboBox()
+        self.comboBox_f_7_.setMaximumSize(QtCore.QSize(220, 80))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.comboBox_f_7_.setFont(font)
+        self.comboBox_f_7_.setObjectName(f"comboBox_f_7_{KT}")
+        self.comboBox_f_7_.setStyleSheet(f"#{self.comboBox_f_7_.objectName()}" "{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.comboBox_f_7_.objectName()}"":hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.comboBox_f_7_.objectName()}"":pressed { \n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"\n"
+"")
+        self.comboBox_f_7_.addItem("ТЕКСТ (СТРОКА)")
+        self.comboBox_f_7_.addItem("ТЕКСТ (АБЗАЦ)")
+        self.comboBox_f_7_.addItem("ОДИН ИЗ СПИСКА")
+        self.comboBox_f_7_.addItem("МН. ИЗ СПИСКА")
+        self.comboBox_f_7_.addItem("РАСКР. СПИСОК")
+        self.comboBox_f_7_.addItem("ШКАЛА")
+        self.comboBox_f_7_.addItem("ДАТА")
+        self.comboBox_f_7_.addItem("ВРЕМЯ")
+        self.horizontalLayout_f_126.addWidget(self.comboBox_f_7_)
+        # Среднее поле
+        self.horizontalLayout_f_206 = QtWidgets.QHBoxLayout()
+        self.verticalLayout_w_7.addLayout(self.horizontalLayout_f_206)
+        self.horizontalLayout_f_216 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_216.setContentsMargins(0, 0, 5, 0)
+        self.horizontalLayout_f_226 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_206.addLayout(self.horizontalLayout_f_216)
+        self.horizontalLayout_f_206.addLayout(self.horizontalLayout_f_226)
+        self.dateEdit_7 = QtWidgets.QDateEdit()
+        self.dateEdit_7.setMaximumSize(QtCore.QSize(90, 45))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.dateEdit_7.setFont(font)
+        self.dateEdit_7.setObjectName(f"dateEdit_7_{KT}")
+        self.dateEdit_7.setStyleSheet(f"#{self.dateEdit_7.objectName()}" "{\n"
+"border: 2px solid;\n"
+"border-radius: 5px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+f"#{self.dateEdit_7.objectName()}" ":hover {\n"
+"background-color: rgb(243, 243, 243);\n"
+"}\n"
+f"#{self.dateEdit_7.objectName()}" ":pressed { \n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+"")
+        self.horizontalLayout_f_216.addWidget(self.dateEdit_7)
+        self.vertcalLayout_236 = QtWidgets.QVBoxLayout()
+        self.horizontalLayout_f_226.addLayout(self.vertcalLayout_236)
+        spacer_7 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
+        self.vertcalLayout_236.addItem(spacer_7)
+        self.Button_Question_7 = QtWidgets.QPushButton()
+        self.Button_Question_7.setMaximumSize(QtCore.QSize(33, 33))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Question_7.setFont(font)
+        self.Button_Question_7.setObjectName(f"Button_Question_7{KT}")
+        self.Button_Question_7.setStyleSheet(f"#{self.Button_Question_7.objectName()}" "{\n"
+"border: 2px solid;\n"
+"border-radius: 7px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Question_7.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Question_7.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"\n"
+"")
+        self.vertcalLayout_236.addWidget(self.Button_Question_7)
+        # Нижнее поле
+        self.horizontalLayout_f_306 = QtWidgets.QHBoxLayout()
+        self.verticalLayout_w_7.addLayout(self.horizontalLayout_f_306)
+        self.horizontalLayout_f_316 = QtWidgets.QHBoxLayout()
+        self.Button_Copy_07 = QtWidgets.QPushButton()
+        self.Button_Copy_07.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Copy_07.setObjectName(f"Button_Copy_07{KT}")
+        self.Button_Copy_07.setStyleSheet(f"#{self.Button_Copy_07.objectName()}""{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Copy_07.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Copy_07.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Copy_07.setText("")
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("../../../../../1621635.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.Button_Copy_07.setIcon(icon2)
+        self.horizontalLayout_f_306.addWidget(self.Button_Copy_07)
+        self.horizontalLayout_f_306.addLayout(self.horizontalLayout_f_316)
+        self.Obyazatelny_vopros_f_07 = QtWidgets.QLabel()
+        self.Obyazatelny_vopros_f_07.setMaximumSize(QtCore.QSize(400, 34))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Obyazatelny_vopros_f_07.setFont(font)
+        self.Obyazatelny_vopros_f_07.setObjectName("Obyazatelny_vopros_f_07")
+        self.Obyazatelny_vopros_f_07.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
+        self.horizontalLayout_f_316.addWidget(self.Obyazatelny_vopros_f_07)
+        self.widget_f_07 = QtWidgets.QWidget()
+        self.widget_f_07.setMinimumSize(QtCore.QSize(45, 45))
+        self.widget_f_07.setMaximumSize(QtCore.QSize(45, 45))
+        self.widget_f_07.setObjectName("widget_f_07")
+        self.pushButton_f_07_on = QtWidgets.QPushButton(self.widget_f_07)
+        self.pushButton_f_07_on.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_f_07_on.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_f_07_on.setText("")
+        self.pushButton_f_07_on.setObjectName("pushButton_f_07_on")
+        self.pushButton_f_07_off = QtWidgets.QPushButton(self.widget_f_07)
+        self.pushButton_f_07_off.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_f_07_off.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_f_07_off.setText("")
+        self.pushButton_f_07_off.setObjectName("pushButton_f_07_off")
+        self.horizontalLayout_f_316.addWidget(self.widget_f_07)
+
         self.page_t_8 = QtWidgets.QWidget()
         self.verticalLayout_t_8 = QtWidgets.QVBoxLayout(self.page_t_8)
         self.horizontalLayout_t_8 = QtWidgets.QHBoxLayout()
@@ -1209,9 +1507,180 @@ f"#{self.Button_Copy_05.objectName()}"":pressed { \n"
 "background-color: rgb(194, 194, 194); \n"
 "}")
         self.verticalLayout_w_8 = QtWidgets.QVBoxLayout(self.widget_t_8)
-       
-       
-       
+        self.verticalLayout_t_8.addLayout(self.horizontalLayout_t_8)
+        self.horizontalLayout_t_8.addWidget(self.widget_t_8)
+        self.horizontalLayout_f_107 = QtWidgets.QHBoxLayout()
+        self.verticalLayout_w_8.addLayout(self.horizontalLayout_f_107)
+        self.horizontalLayout_f_117 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_107.addLayout(self.horizontalLayout_f_117)
+        self.textField_vp_80 = QtWidgets.QLineEdit()
+        self.textField_vp_80.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textField_vp_80.setFont(font)
+        self.textField_vp_80.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.textField_vp_80.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.textField_vp_80.setPlaceholderText(_translate("MainWindow", "Вопрос"))
+        self.horizontalLayout_f_117.addWidget(self.textField_vp_80)
+        self.horizontalLayout_f_127 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_127.setContentsMargins(28, -1, -1, -1)
+        self.horizontalLayout_f_117.addLayout(self.horizontalLayout_f_127)
+        self.comboBox_f_8_ = QtWidgets.QComboBox()
+        self.comboBox_f_8_.setMaximumSize(QtCore.QSize(220, 80))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.comboBox_f_8_.setFont(font)
+        self.comboBox_f_8_.setObjectName(f"comboBox_f_8_{KT}")
+        self.comboBox_f_8_.setStyleSheet(f"#{self.comboBox_f_8_.objectName()}" "{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.comboBox_f_8_.objectName()}"":hover {\n"
+"background-color: rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.comboBox_f_8_.objectName()}"":pressed { \n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+"\n"
+"")
+        self.comboBox_f_8_.addItem("ТЕКСТ (СТРОКА)")
+        self.comboBox_f_8_.addItem("ТЕКСТ (АБЗАЦ)")
+        self.comboBox_f_8_.addItem("ОДИН ИЗ СПИСКА")
+        self.comboBox_f_8_.addItem("МН. ИЗ СПИСКА")
+        self.comboBox_f_8_.addItem("РАСКР. СПИСОК")
+        self.comboBox_f_8_.addItem("ШКАЛА")
+        self.comboBox_f_8_.addItem("ДАТА")
+        self.comboBox_f_8_.addItem("ВРЕМЯ")
+        self.horizontalLayout_f_127.addWidget(self.comboBox_f_8_)
+        # Среднее поле
+        self.horizontalLayout_f_207 = QtWidgets.QHBoxLayout()
+        self.verticalLayout_w_8.addLayout(self.horizontalLayout_f_207)
+        self.horizontalLayout_f_217 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_217.setContentsMargins(0, 0, 5, 0)
+        self.horizontalLayout_f_227 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_207.addLayout(self.horizontalLayout_f_217)
+        self.horizontalLayout_f_207.addLayout(self.horizontalLayout_f_227)
+        self.textField_low_8 = QtWidgets.QLineEdit()
+        self.textField_low_8.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textField_low_8.setFont(font)
+        self.textField_low_8.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.textField_low_8.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.horizontalLayout_f_213.addWidget(self.textField_low_8)
+        self.textField_low_8.setPlaceholderText(_translate("MainWindow", "1 Вариант"))
+        self.textField_low_8 = QtWidgets.QLineEdit()
+        self.textField_low_8.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textField_low_8.setFont(font)
+        self.textField_low_8.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.textField_low_8.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.horizontalLayout_f_227.addWidget(self.textField_low_8)
+        self.textField_low_8.setPlaceholderText(_translate("MainWindow", "Тэг"))
+        self.vertcalLayout_237 = QtWidgets.QVBoxLayout()
+        self.horizontalLayout_f_227.addLayout(self.vertcalLayout_237)
+        spacer_8 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
+        self.vertcalLayout_237.addItem(spacer_8)
+        self.Button_Question_8 = QtWidgets.QPushButton()
+        self.Button_Question_8.setMaximumSize(QtCore.QSize(33, 33))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Button_Question_8.setFont(font)
+        self.Button_Question_8.setObjectName(f"Button_Question_8_{KT}")
+        self.Button_Question_8.setStyleSheet(f"#{self.Button_Question_8.objectName()}" "{\n"
+"border: 2px solid;\n"
+"border-radius: 7px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Question_8.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Question_8.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"\n"
+"")
+        self.vertcalLayout_237.addWidget(self.Button_Question_8)
+
+        self.horizontalLayout_m_08 = QtWidgets.QHBoxLayout()
+        self.verticalLayout_w_8.addLayout(self.horizontalLayout_m_08)
+        self.button_var_8 = QtWidgets.QPushButton()
+        self.button_var_8.setObjectName(f"button_var_8_{KT}")
+        self.button_var_8.setStyleSheet(f"#{self.button_var_8.objectName()}""{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.button_var_8.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.button_var_8.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.horizontalLayout_m_08.addWidget(self.button_var_8)
+
+        # Нижнее поле
+        self.horizontalLayout_f_307 = QtWidgets.QHBoxLayout()
+        self.verticalLayout_w_8.addLayout(self.horizontalLayout_f_307)
+        self.horizontalLayout_f_317 = QtWidgets.QHBoxLayout()
+        self.Button_Copy_08 = QtWidgets.QPushButton()
+        self.Button_Copy_08.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Copy_08.setObjectName(f"Button_Copy_8{KT}")
+        self.Button_Copy_08.setStyleSheet(f"#{self.Button_Copy_08.objectName()}""{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Copy_08.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Copy_08.setText("")
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("../../../../../1621635.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.Button_Copy_08.setIcon(icon2)
+        self.horizontalLayout_f_307.addWidget(self.Button_Copy_08)
+        self.horizontalLayout_f_307.addLayout(self.horizontalLayout_f_317)
+        self.Obyazatelny_vopros_f_08 = QtWidgets.QLabel()
+        self.Obyazatelny_vopros_f_08.setMaximumSize(QtCore.QSize(400, 34))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Obyazatelny_vopros_f_08.setFont(font)
+        self.Obyazatelny_vopros_f_08.setObjectName("Obyazatelny_vopros_f_08")
+        self.Obyazatelny_vopros_f_08.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
+        self.horizontalLayout_f_317.addWidget(self.Obyazatelny_vopros_f_08)
+        self.widget_f_08 = QtWidgets.QWidget()
+        self.widget_f_08.setMinimumSize(QtCore.QSize(45, 45))
+        self.widget_f_08.setMaximumSize(QtCore.QSize(45, 45))
+        self.widget_f_08.setObjectName("widget_f_08")
+        self.pushButton_f_08_on = QtWidgets.QPushButton(self.widget_f_08)
+        self.pushButton_f_08_on.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_f_08_on.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_f_08_on.setText("")
+        self.pushButton_f_08_on.setObjectName("pushButton_f_08_on")
+        self.pushButton_f_08_off = QtWidgets.QPushButton(self.widget_f_08)
+        self.pushButton_f_08_off.setGeometry(QtCore.QRect(0, 0, 45, 45))
+        self.pushButton_f_08_off.setMaximumSize(QtCore.QSize(45, 45))
+        self.pushButton_f_08_off.setText("")
+        self.pushButton_f_08_off.setObjectName("pushButton_f_08_off")
+        self.horizontalLayout_f_317.addWidget(self.widget_f_08)
+
         KT += 1
         self.stackedWidget_t.addWidget(self.page_t_1)
         self.stackedWidget_t.addWidget(self.page_t_2)
