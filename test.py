@@ -217,6 +217,7 @@ class AppWindow_main(QMainWindow):
 "background-color: rgb(228, 228, 228);")
         self.textField_vp_10.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.textField_vp_10.setPlaceholderText(_translate("MainWindow", "Вопрос"))
+        # print(self.textField_vp_10.setText('Work'))
         self.horizontalLayout_f_110.addWidget(self.textField_vp_10)
         self.horizontalLayout_f_120 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_120.setContentsMargins(28, -1, -1, -1)
@@ -1690,61 +1691,80 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         self.stackedWidget_t.addWidget(self.page_t_6)
         self.stackedWidget_t.addWidget(self.page_t_7)
         self.stackedWidget_t.addWidget(self.page_t_8)
+
+        self.Button_Copy_01.clicked.connect(partial(self.delete,self.stackedWidget_t))
         
-        self.comboBox_f_2_.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_2_))
+        self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
         
     def opt_2(self,index):
         index.currentIndexChanged.disconnect()
         if (index.currentIndex() == 0):
-            self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
+            self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
         elif (index.currentIndex() == 1):
-            self.ui.comboBox_5.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_5))
+            self.comboBox_f_2_.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_2_))
         elif (index.currentIndex() == 2):
-            self.ui.comboBox_9.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_9))
+            self.comboBox_f_3_.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_3_))
         elif (index.currentIndex() == 3):
-            self.ui.comboBox_4.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_4))
+            self.comboBox_f_4_.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_4_))
         elif (index.currentIndex() == 4):
-            self.ui.comboBox_3.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_3))
+            self.comboBox_f_5_.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_5_))
         elif (index.currentIndex() == 5):
-            self.ui.comboBox_8.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_8))
+            self.comboBox_f_6_.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_6_))
         elif (index.currentIndex() == 6):
-            self.ui.comboBox.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox))
+            self.comboBox_f_7_.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_7_))
         elif (index.currentIndex() == 7):
-            self.ui.comboBox_10.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_10))
+            self.comboBox_f_8_.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_8_))
         elif (index.currentIndex() == 8):
-            self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
+            self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
+            
 
-        self.ui.comboBox_10.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_9.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_8.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_5.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_4.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_3.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox_2.setCurrentIndex(index.currentIndex())
-        self.ui.comboBox.setCurrentIndex(index.currentIndex())
+        self.comboBox_f_1.setCurrentIndex(index.currentIndex())
+        self.comboBox_f_2_.setCurrentIndex(index.currentIndex())
+        self.comboBox_f_3_.setCurrentIndex(index.currentIndex())
+        self.comboBox_f_4_.setCurrentIndex(index.currentIndex())
+        self.comboBox_f_5_.setCurrentIndex(index.currentIndex())
+        self.comboBox_f_6_.setCurrentIndex(index.currentIndex())
+        self.comboBox_f_7_.setCurrentIndex(index.currentIndex())
+        self.comboBox_f_8_.setCurrentIndex(index.currentIndex())
 
         if index.currentIndex() == 6:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_2)
+           self.stackedWidget_t.setCurrentWidget(self.page_t_7)
         elif index.currentIndex() == 7:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_3)
+           self.stackedWidget_t.setCurrentWidget(self.page_t_6)
         elif index.currentIndex() == 5:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_8)
+           self.stackedWidget_t.setCurrentWidget(self.page_t_5)
         elif index.currentIndex() == 4:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_5)   
+           self.stackedWidget_t.setCurrentWidget(self.page_t_3)   
         elif index.currentIndex() == 3:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_6)     
+           self.stackedWidget_t.setCurrentWidget(self.page_t_4)     
         elif index.currentIndex() == 2:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_9)
+           self.stackedWidget_t.setCurrentWidget(self.page_t_8)
         elif index.currentIndex() == 1:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_7)     
+           self.stackedWidget_t.setCurrentWidget(self.page_t_2)     
         elif index.currentIndex() == 0:
-           self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)
+           self.stackedWidget_t.setCurrentWidget(self.page_t_1)
         index_page = index.currentIndex()
+        print(index_page)
 
-        Collective.append(['Danno/' + L+'.txt', 'r',b,c,[[],[],[],[],[],[],[],[]]])
 
+        
+    def delete(self,stackedWidget_t):
+        pages = stackedWidget_t.count()
+        for i in range(pages):
+                widget = stackedWidget_t.widget(0);
+                stackedWidget_t.removeWidget(widget);
+        stackedWidget_t.deleteLater()
     def save_form(self):
         global a, d, f, L, K
+        # Collective.append(['Danno/' + L+'.txt',
+        # [[self.comboBox_f_1,self.textField_vp_10,ob_vopros,teg]
+        # [self.comboBox_f_2_,self.textField_vp_20,ob_vopros,teg]
+        # [self.comboBox_f_3_,self.textField_vp_30,ob_vopros,teg]
+        # [self.comboBox_f_4_,self.textField_vp_40,ob_vopros,teg]
+        # [self.comboBox_f_5_,ob_vopros,teg,[]]
+        # [self.comboBox_f_6_,ob_vopros,teg,[]]
+        # [self.comboBox_f_7_,ob_vopros,teg,[]]
+        # [self.comboBox_f_8_,ob_vopros,teg,[]]]])
         voprosi = []
         c = self.ui.Vopros.text()
         vopros0 = []
@@ -1812,7 +1832,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
     def transfer_back(self):
         global KT
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
-        KT = 1
+        KT = 0
     def transfer_Fill(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.page)
         self.ui.stackedWidget.setCurrentWidget(self.ui.page)
