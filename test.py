@@ -363,7 +363,7 @@ f"#{self.Button_Copy_01.objectName()}"":pressed { \n"
         self.widget_t_2.setMaximumSize(QtCore.QSize(900, 400))
         self.widget_t_2.setObjectName(f"widget_t_2_{KT}")
         self.widget_t_2.setStyleSheet(f"#{self.widget_t_2.objectName()}" "{\n"
-"background-color: rgb(194, 194, 194); \n"
+"background-color: rgb(228, 228, 228); \n"
 "}")
         self.verticalLayout_w_2 = QtWidgets.QVBoxLayout(self.widget_t_2)
         self.verticalLayout_t_2.addLayout(self.horizontalLayout_t_2)
@@ -527,7 +527,7 @@ f"#{self.Button_Copy_02.objectName()}"":pressed { \n"
         self.widget_t_3.setMaximumSize(QtCore.QSize(900, 400))
         self.widget_t_3.setObjectName(f"widget_t_3_{KT}")
         self.widget_t_3.setStyleSheet (f"#{self.widget_t_3.objectName()}" "{\n"
-"background-color: rgb(194, 194, 194); \n"
+"background-color: rgb(228, 228, 228); \n"
 "}")
         self.verticalLayout_w_3 = QtWidgets.QVBoxLayout(self.widget_t_3)
         self.verticalLayout_t_3.addLayout(self.horizontalLayout_t_3)
@@ -712,7 +712,7 @@ f"#{self.Button_Copy_03.objectName()}"":pressed { \n"
         self.widget_t_4.setMaximumSize(QtCore.QSize(900, 400))
         self.widget_t_4.setObjectName(f"widget_t_4_{KT}")
         self.widget_t_4.setStyleSheet (f"#{self.widget_t_4.objectName()}" "{\n"
-"background-color: rgb(194, 194, 194); \n"
+"background-color: rgb(228, 228, 228); \n"
 "}")
         self.verticalLayout_w_4 = QtWidgets.QVBoxLayout(self.widget_t_4)
         self.verticalLayout_t_4.addLayout(self.horizontalLayout_t_4)
@@ -897,7 +897,7 @@ f"#{self.Button_Copy_04.objectName()}"":pressed { \n"
         self.widget_t_5.setMaximumSize(QtCore.QSize(900, 400))
         self.widget_t_5.setObjectName(f"widget_t_5_{KT}")
         self.widget_t_5.setStyleSheet (f"#{self.widget_t_5.objectName()}" "{\n"
-"background-color: rgb(194, 194, 194); \n"
+"background-color: rgb(228, 228, 228); \n"
 "}")
         self.verticalLayout_w_5 = QtWidgets.QVBoxLayout(self.widget_t_5)
         self.verticalLayout_t_5.addLayout(self.horizontalLayout_t_5)
@@ -1132,7 +1132,7 @@ f"#{self.Button_Copy_05.objectName()}"":pressed { \n"
         self.widget_t_6.setMaximumSize(QtCore.QSize(900, 400))
         self.widget_t_6.setObjectName(f"widget_t_6_{KT}")
         self.widget_t_6.setStyleSheet (f"#{self.widget_t_6.objectName()}" "{\n"
-"background-color: rgb(194, 194, 194); \n"
+"background-color: rgb(228, 228, 228); \n"
 "}")
         self.verticalLayout_w_6 = QtWidgets.QVBoxLayout(self.widget_t_6)
         self.verticalLayout_t_6.addLayout(self.horizontalLayout_t_6)
@@ -1294,7 +1294,7 @@ f"#{self.Button_Copy_06.objectName()}"":pressed { \n"
         self.widget_t_7.setMaximumSize(QtCore.QSize(900, 400))
         self.widget_t_7.setObjectName(f"widget_t_7_{KT}")
         self.widget_t_7.setStyleSheet (f"#{self.widget_t_7.objectName()}" "{\n"
-"background-color: rgb(194, 194, 194); \n"
+"background-color: rgb(228, 228, 228); \n"
 "}")
         self.verticalLayout_w_7 = QtWidgets.QVBoxLayout(self.widget_t_7)
         self.verticalLayout_t_7.addLayout(self.horizontalLayout_t_7)
@@ -1456,7 +1456,7 @@ f"#{self.Button_Copy_07.objectName()}"":pressed { \n"
         self.widget_t_8.setMaximumSize(QtCore.QSize(900, 400))
         self.widget_t_8.setObjectName(f"widget_t_8_{KT}")
         self.widget_t_8.setStyleSheet (f"#{self.widget_t_8.objectName()}" "{\n"
-"background-color: rgb(194, 194, 194); \n"
+"background-color: rgb(228, 228, 228); \n"
 "}")
         self.verticalLayout_w_8 = QtWidgets.QVBoxLayout(self.widget_t_8)
         self.verticalLayout_t_8.addLayout(self.horizontalLayout_t_8)
@@ -1527,17 +1527,17 @@ f"#{self.comboBox_f_8_.objectName()}"":pressed { \n"
         self.textField_low_8.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.horizontalLayout_f_213.addWidget(self.textField_low_8)
         self.textField_low_8.setPlaceholderText(_translate("MainWindow", "1 Вариант"))
-        self.textField_low_8 = QtWidgets.QLineEdit()
-        self.textField_low_8.setMaximumSize(QtCore.QSize(100, 60))
+        self.textField_Tag_8 = QtWidgets.QLineEdit()
+        self.textField_Tag_8.setMaximumSize(QtCore.QSize(100, 60))
         font = QtGui.QFont()
         font.setPointSize(20)
-        self.textField_low_8.setFont(font)
-        self.textField_low_8.setStyleSheet("border-top: 0px solid;\n"
+        self.textField_Tag_8.setFont(font)
+        self.textField_Tag_8.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
 "background-color: rgb(228, 228, 228);")
-        self.textField_low_8.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
-        self.horizontalLayout_f_227.addWidget(self.textField_low_8)
-        self.textField_low_8.setPlaceholderText(_translate("MainWindow", "Тэг"))
+        self.textField_Tag_8.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.horizontalLayout_f_227.addWidget(self.textField_Tag_8)
+        self.textField_Tag_8.setPlaceholderText(_translate("MainWindow", "Тэг"))
         self.vertcalLayout_237 = QtWidgets.QVBoxLayout()
         self.horizontalLayout_f_227.addLayout(self.vertcalLayout_237)
         spacer_8 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
