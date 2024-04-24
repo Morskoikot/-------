@@ -1217,6 +1217,17 @@ f"#{self.timeEdit_6.objectName()}" ":pressed { \n"
 "}\n"
 "")
         self.horizontalLayout_f_215.addWidget(self.timeEdit_6)
+        self.textField_Tag_6 = QtWidgets.QLineEdit()
+        self.textField_Tag_6.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textField_Tag_6.setFont(font)
+        self.textField_Tag_6.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.textField_Tag_6.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.horizontalLayout_f_225.addWidget(self.textField_Tag_6)
+        self.textField_Tag_6.setPlaceholderText(_translate("MainWindow", "Тэг"))
         self.vertcalLayout_235 = QtWidgets.QVBoxLayout()
         self.horizontalLayout_f_225.addLayout(self.vertcalLayout_235)
         spacer_6 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
@@ -1379,6 +1390,17 @@ f"#{self.dateEdit_7.objectName()}" ":pressed { \n"
 "}\n"
 "")
         self.horizontalLayout_f_216.addWidget(self.dateEdit_7)
+        self.textField_Tag_7 = QtWidgets.QLineEdit()
+        self.textField_Tag_7.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textField_Tag_7.setFont(font)
+        self.textField_Tag_7.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.textField_Tag_7.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.horizontalLayout_f_226.addWidget(self.textField_Tag_7)
+        self.textField_Tag_7.setPlaceholderText(_translate("MainWindow", "Тэг"))
         self.vertcalLayout_236 = QtWidgets.QVBoxLayout()
         self.horizontalLayout_f_226.addLayout(self.vertcalLayout_236)
         spacer_7 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
@@ -1641,7 +1663,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         self.stackedWidget_t_.addWidget(self.page_t_6)
         self.stackedWidget_t_.addWidget(self.page_t_7)
         self.stackedWidget_t_.addWidget(self.page_t_8)
-        self.stackedWidget_t_.setCurrentWidget(self.page_t_5)
+        self.stackedWidget_t_.setCurrentWidget(self.page_t_7)
         Armagedon.append(self.stackedWidget_t_) 
         KT += 1
         # Пятая
