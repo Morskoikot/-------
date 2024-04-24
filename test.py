@@ -1619,11 +1619,11 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         self.stackedWidget_t_.addWidget(self.page_t_6)
         self.stackedWidget_t_.addWidget(self.page_t_7)
         self.stackedWidget_t_.addWidget(self.page_t_8)
-        self.stackedWidget_t_.setCurrentWidget(self.page_t_5)
+        self.stackedWidget_t_.setCurrentWidget(self.page_t_1)
         Armagedon.append(self.stackedWidget_t_) 
         KT += 1
         # Пятая
-        self.comboBox_f_2_.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_2_))
+        self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
         
     def opt_2(self,index):
         index.currentIndexChanged.disconnect()
@@ -1657,32 +1657,32 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         self.comboBox_f_8_.setCurrentIndex(index.currentIndex())
 
         if index.currentIndex() == 6:
-           self.stackedWidget_t.setCurrentWidget(self.page_t_7)
+           self.stackedWidget_t_.setCurrentWidget(self.page_t_7)
         elif index.currentIndex() == 7:
-           self.stackedWidget_t.setCurrentWidget(self.page_t_6)
+           self.stackedWidget_t_.setCurrentWidget(self.page_t_6)
         elif index.currentIndex() == 5:
-           self.stackedWidget_t.setCurrentWidget(self.page_t_5)
+           self.stackedWidget_t_.setCurrentWidget(self.page_t_5)
         elif index.currentIndex() == 4:
-           self.stackedWidget_t.setCurrentWidget(self.page_t_3)   
+           self.stackedWidget_t_.setCurrentWidget(self.page_t_3)   
         elif index.currentIndex() == 3:
-           self.stackedWidget_t.setCurrentWidget(self.page_t_4)     
+           self.stackedWidget_t_.setCurrentWidget(self.page_t_4)     
         elif index.currentIndex() == 2:
-           self.stackedWidget_t.setCurrentWidget(self.page_t_8)
+           self.stackedWidget_t_.setCurrentWidget(self.page_t_8)
         elif index.currentIndex() == 1:
-           self.stackedWidget_t.setCurrentWidget(self.page_t_2)     
+           self.stackedWidget_t_.setCurrentWidget(self.page_t_2)     
         elif index.currentIndex() == 0:
-           self.stackedWidget_t.setCurrentWidget(self.page_t_1)
+           self.stackedWidget_t_.setCurrentWidget(self.page_t_1)
         index_page = index.currentIndex()
         print(index_page)
 
 
         
-    def delete(self,stackedWidget_t):
-        pages = stackedWidget_t.count()
+    def delete(self,stackedWidget_t_):
+        pages = stackedWidget_t_.count()
         for i in range(pages):
-                widget = stackedWidget_t.widget(0);
-                stackedWidget_t.removeWidget(widget);
-        stackedWidget_t.deleteLater()
+                widget = stackedWidget_t_.widget(0);
+                stackedWidget_t_.removeWidget(widget);
+        stackedWidget_t_.deleteLater()
     def save_form(self):
         global a, d, f, L, K
         # Collective.append(['Danno/' + L+'.txt',
