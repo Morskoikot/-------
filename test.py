@@ -992,47 +992,70 @@ f"#{self.comboBox_f_5_.objectName()}"":pressed { \n"
         self.horizontalLayout_f_214 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_214.setContentsMargins(0, 0, 5, 0)
         self.horizontalLayout_f_224 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_f_224.setContentsMargins(0, 0, 80, 0)
         self.horizontalLayout_f_204.addLayout(self.horizontalLayout_f_214)
         self.horizontalLayout_f_204.addLayout(self.horizontalLayout_f_224)
         self.verticalLayout_f_234 = QtWidgets.QVBoxLayout()
-        self.horizontalLayout_f_214.addLayout(self.verticalLayout_f_234)
         self.horizontalLayout_f_234 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_224.addLayout(self.horizontalLayout_f_234)
+        self.horizontalLayout_f_214.addLayout(self.verticalLayout_f_234)
         self.horizontalLayout_f_244 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_f_224.addLayout(self.horizontalLayout_f_244)
+        self.horizontalLayout_f_254 = QtWidgets.QHBoxLayout()
+        self.verticalLayout_f_234.addLayout(self.horizontalLayout_f_244)
+        self.verticalLayout_f_234.addLayout(self.horizontalLayout_f_254)
         spacer_up_l = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
-        self.horizontalLayout_f_234.addSpacerItem(spacer_up_l)
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        self.horizontalLayout_f_244.addSpacerItem(spacer_up_l)
+        self.horizontalLayout_n_204 = QtWidgets.QHBoxLayout()
+        self.Label_up = QtWidgets.QLabel()
+        self.Label_up.setFont(font)
+        self.Label_up.setText("0")
+        self.horizontalLayout_n_204.addWidget(self.Label_up)
+        self.horizontalLayout_f_244.addLayout(self.horizontalLayout_n_204)
+        self.vopros_up = QtWidgets.QLineEdit()
+        self.vopros_up.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.vopros_up.setFont(font)
+        self.vopros_up.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.vopros_up.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.vopros_up.setPlaceholderText('Подпись (Необязательно)')
+        self.horizontalLayout_f_244.addWidget(self.vopros_up)
+        spacer_up_r = QtWidgets.QSpacerItem(130, 20, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_f_244.addSpacerItem(spacer_up_r)
+        self.horizontalLayout_n_214 = QtWidgets.QHBoxLayout()
+        self.Label_Down = QtWidgets.QLabel()
+        self.Label_Down.setFont(font)
+        self.Label_Down.setText("2")
+        spacer_down_l = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_f_254.addSpacerItem(spacer_down_l)
+        self.horizontalLayout_n_214.addWidget(self.Label_Down)
+        self.horizontalLayout_f_254.addLayout(self.horizontalLayout_n_214)
+        self.vopros_down = QtWidgets.QLineEdit()
+        self.vopros_down.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.vopros_down.setFont(font)
+        self.vopros_down.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.vopros_down.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.vopros_down.setPlaceholderText('Подпись (Необязательно)')
+        self.horizontalLayout_f_254.addWidget(self.vopros_down)
+        spacer_down_r = QtWidgets.QSpacerItem(130, 20, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_f_254.addSpacerItem(spacer_down_r)
+        self.textField_Tag_5 = QtWidgets.QLineEdit()
+        self.textField_Tag_5.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textField_Tag_5.setFont(font)
+        self.textField_Tag_5.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.textField_Tag_5.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.horizontalLayout_f_224.addWidget(self.textField_Tag_5)
+        self.textField_Tag_5.setPlaceholderText(_translate("MainWindow", "Тэг"))
         self.vertcalLayout_234 = QtWidgets.QVBoxLayout()
         self.horizontalLayout_f_224.addLayout(self.vertcalLayout_234)
         spacer_5 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
@@ -1195,6 +1218,17 @@ f"#{self.timeEdit_6.objectName()}" ":pressed { \n"
 "}\n"
 "")
         self.horizontalLayout_f_215.addWidget(self.timeEdit_6)
+        self.textField_Tag_6 = QtWidgets.QLineEdit()
+        self.textField_Tag_6.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textField_Tag_6.setFont(font)
+        self.textField_Tag_6.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.textField_Tag_6.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.horizontalLayout_f_225.addWidget(self.textField_Tag_6)
+        self.textField_Tag_6.setPlaceholderText(_translate("MainWindow", "Тэг"))
         self.vertcalLayout_235 = QtWidgets.QVBoxLayout()
         self.horizontalLayout_f_225.addLayout(self.vertcalLayout_235)
         spacer_6 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
@@ -1357,6 +1391,17 @@ f"#{self.dateEdit_7.objectName()}" ":pressed { \n"
 "}\n"
 "")
         self.horizontalLayout_f_216.addWidget(self.dateEdit_7)
+        self.textField_Tag_7 = QtWidgets.QLineEdit()
+        self.textField_Tag_7.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textField_Tag_7.setFont(font)
+        self.textField_Tag_7.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.textField_Tag_7.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.horizontalLayout_f_226.addWidget(self.textField_Tag_7)
+        self.textField_Tag_7.setPlaceholderText(_translate("MainWindow", "Тэг"))
         self.vertcalLayout_236 = QtWidgets.QVBoxLayout()
         self.horizontalLayout_f_226.addLayout(self.vertcalLayout_236)
         spacer_7 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
@@ -1619,7 +1664,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         self.stackedWidget_t_.addWidget(self.page_t_6)
         self.stackedWidget_t_.addWidget(self.page_t_7)
         self.stackedWidget_t_.addWidget(self.page_t_8)
-        self.stackedWidget_t_.setCurrentWidget(self.page_t_1)
+        self.stackedWidget_t_.setCurrentWidget(self.page_t_7)
         Armagedon.append(self.stackedWidget_t_) 
         KT += 1
         # Пятая
