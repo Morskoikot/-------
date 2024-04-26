@@ -1727,33 +1727,23 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
             Collective[number_form][1][5][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][5][0]))
         # elif (index.currentIndex() == 8):
         #     self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
-            
-
-        Collective[number_form][1][0][0].setCurrentIndex(index.currentIndex())
-        Collective[number_form][1][1][0].setCurrentIndex(index.currentIndex())
-        Collective[number_form][1][2][0].setCurrentIndex(index.currentIndex())
-        Collective[number_form][1][3][0].setCurrentIndex(index.currentIndex())
-        Collective[number_form][1][4][0].setCurrentIndex(index.currentIndex())
-        Collective[number_form][1][5][0].setCurrentIndex(index.currentIndex())
-        Collective[number_form][1][6][0].setCurrentIndex(index.currentIndex())
-        Collective[number_form][1][7][0].setCurrentIndex(index.currentIndex())
        
         if index.currentIndex() == 6:
-           Collective[number_form][0].setCurrentWidget(self.page_t_7)
+           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][6][1])
         elif index.currentIndex() == 7:
-           Collective[number_form][0].setCurrentWidget(self.page_t_6)
+           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][7][1])
         elif index.currentIndex() == 5:
-           Collective[number_form][0].setCurrentWidget(self.page_t_5)
+           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][5][1])
         elif index.currentIndex() == 4:
-           Collective[number_form][0].setCurrentWidget(self.page_t_8)   
+           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][4][1])   
         elif index.currentIndex() == 3:
-           Collective[number_form][0].setCurrentWidget(self.page_t_4)     
+           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][3][1])     
         elif index.currentIndex() == 2:
-           Collective[number_form][0].setCurrentWidget(self.page_t_3)
+           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][2][1])
         elif index.currentIndex() == 1:
-           Collective[number_form][0].setCurrentWidget(self.page_t_2)     
+           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][1][1])     
         elif index.currentIndex() == 0:
-           Collective[number_form][0].setCurrentWidget(self.page_t_1)
+           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][0][1])
         index_page = index.currentIndex()
         # print(index_page)
 
