@@ -129,6 +129,14 @@ class AppWindow_main(QMainWindow):
         self.ui.comboBox_3.setCurrentIndex(index.currentIndex())
         self.ui.comboBox_2.setCurrentIndex(index.currentIndex())
         self.ui.comboBox.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_10.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_9.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_8.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_5.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_4.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_3.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox_2.setCurrentIndex(index.currentIndex())
+        self.ui.comboBox.setCurrentIndex(index.currentIndex())
         if (index.currentIndex() == 0):
             self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
         elif (index.currentIndex() == 1):
@@ -145,6 +153,8 @@ class AppWindow_main(QMainWindow):
             self.ui.comboBox.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox))
         elif (index.currentIndex() == 7):
             self.ui.comboBox_10.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_10))
+        # elif (index.currentIndex() == 8):
+        #     self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
         # elif (index.currentIndex() == 8):
         #     self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
 
@@ -166,6 +176,8 @@ class AppWindow_main(QMainWindow):
            self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)
         index_page = index.currentIndex() 
         print(index_page)  
+        index_page = index.currentIndex() 
+        print(index_page)  
                      
     #постороение пути к документу
     def Open_main_file_btn(self):
@@ -183,6 +195,9 @@ class AppWindow_main(QMainWindow):
         
     def add_field(self):
         global KT, Collective, Armagedon
+        global a, b, d, e, f, g, h, j, L
+        
+
         global a, b, d, e, f, g, h, j, L
         
 
@@ -994,17 +1009,74 @@ f"#{self.comboBox_f_5_.objectName()}"":pressed { \n"
         self.horizontalLayout_f_214.setContentsMargins(0, 0, 5, 0)
         self.horizontalLayout_f_224 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_224.setContentsMargins(0, 0, 80, 0)
+        self.horizontalLayout_f_224.setContentsMargins(0, 0, 80, 0)
         self.horizontalLayout_f_204.addLayout(self.horizontalLayout_f_214)
         self.horizontalLayout_f_204.addLayout(self.horizontalLayout_f_224)
         self.verticalLayout_f_234 = QtWidgets.QVBoxLayout()
         self.horizontalLayout_f_234 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_224.addLayout(self.horizontalLayout_f_234)
         self.horizontalLayout_f_214.addLayout(self.verticalLayout_f_234)
+        self.horizontalLayout_f_214.addLayout(self.verticalLayout_f_234)
         self.horizontalLayout_f_244 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_254 = QtWidgets.QHBoxLayout()
         self.verticalLayout_f_234.addLayout(self.horizontalLayout_f_244)
         self.verticalLayout_f_234.addLayout(self.horizontalLayout_f_254)
+        self.horizontalLayout_f_254 = QtWidgets.QHBoxLayout()
+        self.verticalLayout_f_234.addLayout(self.horizontalLayout_f_244)
+        self.verticalLayout_f_234.addLayout(self.horizontalLayout_f_254)
         spacer_up_l = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_f_244.addSpacerItem(spacer_up_l)
+        self.horizontalLayout_n_204 = QtWidgets.QHBoxLayout()
+        self.Label_up = QtWidgets.QLabel()
+        self.Label_up.setFont(font)
+        self.Label_up.setText("0")
+        self.horizontalLayout_n_204.addWidget(self.Label_up)
+        self.horizontalLayout_f_244.addLayout(self.horizontalLayout_n_204)
+        self.vopros_up = QtWidgets.QLineEdit()
+        self.vopros_up.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.vopros_up.setFont(font)
+        self.vopros_up.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.vopros_up.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.vopros_up.setPlaceholderText('Подпись (Необязательно)')
+        self.horizontalLayout_f_244.addWidget(self.vopros_up)
+        spacer_up_r = QtWidgets.QSpacerItem(130, 20, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_f_244.addSpacerItem(spacer_up_r)
+        self.horizontalLayout_n_214 = QtWidgets.QHBoxLayout()
+        self.Label_Down = QtWidgets.QLabel()
+        self.Label_Down.setFont(font)
+        self.Label_Down.setText("2")
+        spacer_down_l = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_f_254.addSpacerItem(spacer_down_l)
+        self.horizontalLayout_n_214.addWidget(self.Label_Down)
+        self.horizontalLayout_f_254.addLayout(self.horizontalLayout_n_214)
+        self.vopros_down = QtWidgets.QLineEdit()
+        self.vopros_down.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.vopros_down.setFont(font)
+        self.vopros_down.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.vopros_down.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.vopros_down.setPlaceholderText('Подпись (Необязательно)')
+        self.horizontalLayout_f_254.addWidget(self.vopros_down)
+        spacer_down_r = QtWidgets.QSpacerItem(130, 20, QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_f_254.addSpacerItem(spacer_down_r)
+        self.textField_Tag_5 = QtWidgets.QLineEdit()
+        self.textField_Tag_5.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textField_Tag_5.setFont(font)
+        self.textField_Tag_5.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.textField_Tag_5.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.horizontalLayout_f_224.addWidget(self.textField_Tag_5)
+        self.textField_Tag_5.setPlaceholderText(_translate("MainWindow", "Тэг"))
         self.horizontalLayout_f_244.addSpacerItem(spacer_up_l)
         self.horizontalLayout_n_204 = QtWidgets.QHBoxLayout()
         self.Label_up = QtWidgets.QLabel()
@@ -1230,6 +1302,17 @@ f"#{self.timeEdit_6.objectName()}" ":pressed { \n"
         self.textField_Tag_6.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.horizontalLayout_f_225.addWidget(self.textField_Tag_6)
         self.textField_Tag_6.setPlaceholderText(_translate("MainWindow", "Тэг"))
+        self.textField_Tag_6 = QtWidgets.QLineEdit()
+        self.textField_Tag_6.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textField_Tag_6.setFont(font)
+        self.textField_Tag_6.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.textField_Tag_6.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.horizontalLayout_f_225.addWidget(self.textField_Tag_6)
+        self.textField_Tag_6.setPlaceholderText(_translate("MainWindow", "Тэг"))
         self.vertcalLayout_235 = QtWidgets.QVBoxLayout()
         self.horizontalLayout_f_225.addLayout(self.vertcalLayout_235)
         spacer_6 = QtWidgets.QSpacerItem(45, 30, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
@@ -1392,6 +1475,17 @@ f"#{self.dateEdit_7.objectName()}" ":pressed { \n"
 "}\n"
 "")
         self.horizontalLayout_f_216.addWidget(self.dateEdit_7)
+        self.textField_Tag_7 = QtWidgets.QLineEdit()
+        self.textField_Tag_7.setMaximumSize(QtCore.QSize(100, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.textField_Tag_7.setFont(font)
+        self.textField_Tag_7.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.textField_Tag_7.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.horizontalLayout_f_226.addWidget(self.textField_Tag_7)
+        self.textField_Tag_7.setPlaceholderText(_translate("MainWindow", "Тэг"))
         self.textField_Tag_7 = QtWidgets.QLineEdit()
         self.textField_Tag_7.setMaximumSize(QtCore.QSize(100, 60))
         font = QtGui.QFont()
@@ -1680,6 +1774,17 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         [self.comboBox_f_7_,self.page_t_7,"ob_vopros","teg",[]],
         [self.comboBox_f_8_,self.page_t_6,"ob_vopros","teg",[]]]])
         print(Collective)
+        # print(Collective)
+        Collective.append([self.stackedWidget_t_,
+        [[self.comboBox_f_1,self.page_t_1,self.textField_vp_10,"ob_vopros","teg"],
+        [self.comboBox_f_2_,self.page_t_2,self.textField_vp_20,"ob_vopros","teg"],
+        [self.comboBox_f_3_,self.page_t_3,self.textField_vp_30,"ob_vopros","teg"],
+        [self.comboBox_f_4_,self.page_t_4,self.textField_vp_40,"ob_vopros","teg"],
+        [self.comboBox_f_5_,self.page_t_8,"ob_vopros","teg",[]],
+        [self.comboBox_f_6_,self.page_t_5,"ob_vopros","teg",[]],
+        [self.comboBox_f_7_,self.page_t_7,"ob_vopros","teg",[]],
+        [self.comboBox_f_8_,self.page_t_6,"ob_vopros","teg",[]]]])
+        print(Collective)
         self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
         
     def opt_2(self,index):
@@ -1709,42 +1814,85 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         Collective[number_form][1][7][0].setCurrentIndex(index.currentIndex())         
 
         print(number_form)
+        
+        result = False 
+        number_form = 0
+        number_list = 0  
+        for forms in Collective:
+                for lists in forms[1]:
+                        if index == lists[0]:
+                                result = True
+                                break
+                        else:
+                                number_list +=1
+                if result == True:
+                        break
+                else:                        
+                        number_form +=1   
+        Collective[number_form][1][0][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][1][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][2][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][3][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][4][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][5][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][6][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][7][0].setCurrentIndex(index.currentIndex())         
+
+        print(number_form)
         if (index.currentIndex() == 0):
+            Collective[number_form][1][0][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][0][0]))
             Collective[number_form][1][0][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][0][0]))
         elif (index.currentIndex() == 1):
             Collective[number_form][1][1][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][1][0]))
+            Collective[number_form][1][1][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][1][0]))
         elif (index.currentIndex() == 2):
+            Collective[number_form][1][2][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][2][0]))
             Collective[number_form][1][2][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][2][0]))
         elif (index.currentIndex() == 3):
             Collective[number_form][1][3][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][3][0]))
+            Collective[number_form][1][3][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][3][0]))
         elif (index.currentIndex() == 4):
+            Collective[number_form][1][7][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][7][0]))
             Collective[number_form][1][7][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][7][0]))
         elif (index.currentIndex() == 5):
             Collective[number_form][1][4][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][4][0]))
+            Collective[number_form][1][4][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][4][0]))
         elif (index.currentIndex() == 6):
+            Collective[number_form][1][6][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][6][0]))
             Collective[number_form][1][6][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][6][0]))
         elif (index.currentIndex() == 7):
             Collective[number_form][1][5][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][5][0]))
         # elif (index.currentIndex() == 8):
         #     self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
+            
+
+        Collective[number_form][1][0][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][1][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][2][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][3][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][4][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][5][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][6][0].setCurrentIndex(index.currentIndex())
+        Collective[number_form][1][7][0].setCurrentIndex(index.currentIndex())
        
         if index.currentIndex() == 6:
-           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][6][1])
+           Collective[number_form][0].setCurrentWidget(self.page_t_7)
         elif index.currentIndex() == 7:
-           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][7][1])
+           Collective[number_form][0].setCurrentWidget(self.page_t_6)
         elif index.currentIndex() == 5:
-           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][5][1])
+           Collective[number_form][0].setCurrentWidget(self.page_t_5)
         elif index.currentIndex() == 4:
-           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][4][1])   
+           Collective[number_form][0].setCurrentWidget(self.page_t_8)   
         elif index.currentIndex() == 3:
-           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][3][1])     
+           Collective[number_form][0].setCurrentWidget(self.page_t_4)     
         elif index.currentIndex() == 2:
-           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][2][1])
+           Collective[number_form][0].setCurrentWidget(self.page_t_3)
         elif index.currentIndex() == 1:
-           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][1][1])     
+           Collective[number_form][0].setCurrentWidget(self.page_t_2)     
         elif index.currentIndex() == 0:
-           Collective[number_form][0].setCurrentWidget(Collective[number_form][1][0][1])
+           Collective[number_form][0].setCurrentWidget(self.page_t_1)
         index_page = index.currentIndex()
+        # print(index_page)
         # print(index_page)
 
 
@@ -1757,6 +1905,16 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         stackedWidget_t_.deleteLater()
     def save_form(self):
         global a, d, f, L, K
+        # Collective.append(['Danno/' + L+'.txt',self.stackedWidget_t_,
+        # [[self.comboBox_f_1,self.page_t_1,self.textField_vp_10,"ob_vopros","teg"]
+        # [self.comboBox_f_2_,self.page_t_2,self.textField_vp_20,"ob_vopros","teg"]
+        # [self.comboBox_f_3_,self.page_t_3,self.textField_vp_30,"ob_vopros","teg"]
+        # [self.comboBox_f_4_,self.page_t_4,self.textField_vp_40,"ob_vopros","teg"]
+        # [self.comboBox_f_5_,self.page_t_8,"ob_vopros","teg",[]]
+        # [self.comboBox_f_6_,self.page_t_5,"ob_vopros","teg",[]]
+        # [self.comboBox_f_7_,self.page_t_7,"ob_vopros","teg",[]]
+        # [self.comboBox_f_8_,self.page_t_6,"ob_vopros","teg",[]]]])
+        # print(Collective)
         # Collective.append(['Danno/' + L+'.txt',self.stackedWidget_t_,
         # [[self.comboBox_f_1,self.page_t_1,self.textField_vp_10,"ob_vopros","teg"]
         # [self.comboBox_f_2_,self.page_t_2,self.textField_vp_20,"ob_vopros","teg"]
