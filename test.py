@@ -118,6 +118,8 @@ class AppWindow_main(QMainWindow):
         self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)
         
         self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
+
+        self.newDoument()
         
     def opt(self,index):
         index.currentIndexChanged.disconnect()
@@ -1801,12 +1803,12 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         my_file.close()
         with open('Danno/' + L+'.txt', 'r') as f:
             mylist = ast.literal_eval(f.read())
-        #print(mylist[0])
+        #print(mylist[0]) 
+
+    def newDoument(self):
         onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
         os.path.isfile(os.path.join('Danno', f))]
         # print(onlyfiles)
-     
-
         global button
         for i, b in enumerate(onlyfiles):
             file_name = os.path.basename(b).split('.')[0]
