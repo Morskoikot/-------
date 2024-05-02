@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1000</width>
-    <height>541</height>
+    <height>536</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>3</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="Main_page">
        <property name="maximumSize">
@@ -92,10 +92,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Zapolnit:hover {
-
+background: silver;
+transition: 3s;
 }
 #Button_Zapolnit:pressed {
-
+background: rgb(101, 101, 101);
+transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -125,10 +127,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Spisok:hover {
-
+background: silver;
+transition: 3s;
 }
 #Button_Spisok:pressed {
-
+background: rgb(101, 101, 101);
+transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -304,8 +308,8 @@ border-bottom-color: rgb(255, 76, 0);
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>941</width>
-                 <height>287</height>
+                 <width>957</width>
+                 <height>340</height>
                 </rect>
                </property>
                <property name="layoutDirection">
@@ -318,7 +322,7 @@ border-bottom-color: rgb(255, 76, 0);
                 <item>
                  <widget class="QStackedWidget" name="stackedWidget_2">
                   <property name="currentIndex">
-                   <number>7</number>
+                   <number>6</number>
                   </property>
                   <widget class="QWidget" name="page_2">
                    <layout class="QVBoxLayout" name="verticalLayout_14">
@@ -609,7 +613,7 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -689,7 +693,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -1066,7 +1070,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -1397,7 +1401,7 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -1477,7 +1481,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -1822,7 +1826,7 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -1902,7 +1906,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -2206,7 +2210,7 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -2286,7 +2290,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -2859,7 +2863,7 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -2939,7 +2943,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -3408,7 +3412,7 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -3488,7 +3492,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -3792,7 +3796,7 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -3869,7 +3873,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -4175,7 +4179,7 @@ background-color: rgb(194, 194, 194);
      <x>0</x>
      <y>0</y>
      <width>1000</width>
-     <height>21</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>

@@ -56,7 +56,7 @@ class AppWindow_main(QMainWindow):
     def __init__(self):
         super(AppWindow_main, self).__init__()
         #добовление шрифтов
-        global font,font2,font3,font4,font5,font6,font7,Collective
+        global font,font2,font3,font4,font5,font6,font7,Collective, Collectiv_1
         font = QFont('SFProText-Light', 80)
         font2 = QFont('Lato-Light', 30)
         font3 = QFont('Lato-Light', 20)
@@ -68,15 +68,16 @@ class AppWindow_main(QMainWindow):
         self.ui = Form()
         self.ui.setupUi(self)
         Collective = []
-        global a, b, d, e, f, g, h, j
-        a = []
-        b = 0
-        d = []
-        e = 0
-        f = []
-        g = 0
-        h = []
-        j = 0
+        Collectiv_1 = []
+        Collectiv_1.append([self.ui.stackedWidget_2,
+        [[self.ui.comboBox_2, self.ui.page_4,self.ui.Vopros_2,self.ui.Obyazatelny_vopros_2,self.ui.Tag_2],
+        [self.ui.comboBox_5, self.ui.page_7,self.ui.Vopros_5,self.ui.Obyazatelny_vopros_5,self.ui.Tag_5],
+        [self.ui.comboBox_9, self.ui.page_9,self.ui.Vopros_7,self.ui.Obyazatelny_vopros_7,self.ui.Tag_7,[]],
+        [self.ui.comboBox_4, self.ui.page_6,self.ui.Vopros_4,self.ui.Obyazatelny_vopros_4,self.ui.Tag_4,[]],
+        [self.ui.comboBox_3, self.ui.page_5,self.ui.Vopros_3,self.ui.Obyazatelny_vopros_3,self.ui.Tag_3,[]],
+        [self.ui.comboBox_8, self.ui.page_8,"pool",self.ui.Obyazatelny_vopros_6,self.ui.Tag_6,[]],
+        [ self.ui.comboBox, self.ui.page_2,self.ui.Vopros,self.ui.Obyazatelny_vopros,self.ui.Tag],
+        [self.ui.comboBox_10, self.ui.page_3,self.ui.Vopros_8,self.ui.Obyazatelny_vopros_8,self.ui.Tag_8]]])
 
         self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)   
         #присвоение шрифтов объектам
@@ -174,18 +175,18 @@ class AppWindow_main(QMainWindow):
         res =QFileDialog.getOpenFileName(self, 'Open File', ".",'DOC file (*.doc*)')
         res = os.path.basename(res[0])
         self.ui.Dobavit_dokument_label.setText(res)
-        global K, L
+        global fool_name, name
     #разделение названия файла от его расширения  
-        K = res
-        filename = K
-        L, extension = os.path.splitext(filename)
+        fool_name = res
+        filename = fool_name
+        name, extension = os.path.splitext(filename)
         
     def transfer_page_add(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
         
     def add_field(self):
-        global KT, Collective, Armagedon
-        global a, b, d, e, f, g, h, j, L
+        global KT, Collective, Armagedon, Collectiv_1
+        global name
         
 
         
@@ -1673,20 +1674,21 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         # Пятая
         # print(Collective)
         Collective.append([self.stackedWidget_t_,
-        [[self.comboBox_f_1,self.page_t_1,self.textField_vp_10,"ob_vopros","teg"],
-        [self.comboBox_f_2_,self.page_t_2,self.textField_vp_20,"ob_vopros","teg"],
-        [self.comboBox_f_3_,self.page_t_3,self.textField_vp_30,"ob_vopros","teg"],
-        [self.comboBox_f_4_,self.page_t_4,self.textField_vp_40,"ob_vopros","teg"],
-        [self.comboBox_f_5_,self.page_t_8,"ob_vopros","teg",[]],
-        [self.comboBox_f_6_,self.page_t_5,"ob_vopros","teg",[]],
-        [self.comboBox_f_7_,self.page_t_7,"ob_vopros","teg",[]],
-        [self.comboBox_f_8_,self.page_t_6,"ob_vopros","teg",[]]]])
-        print(Collective)
+        [[self.comboBox_f_1,self.page_t_1,self.textField_vp_10,self.Obyazatelny_vopros_f_01,self.textField_tag_1],
+        [self.comboBox_f_2_,self.page_t_2,self.textField_vp_20,self.Obyazatelny_vopros_f_02,self.textField_low_2],
+        [self.comboBox_f_3_,self.page_t_3,self.textField_vp_30,self.Obyazatelny_vopros_f_03,self.textField_low_3],
+        [self.comboBox_f_4_,self.page_t_4,self.textField_vp_40,self.Obyazatelny_vopros_f_04,self.textField_low_4],
+        [self.comboBox_f_5_,self.page_t_8,"fool",self.Obyazatelny_vopros_f_05,self.textField_Tag_5,[]],
+        [self.comboBox_f_6_,self.page_t_5,self.textField_vp_60,self.Obyazatelny_vopros_f_06,self.textField_Tag_6,[]],
+        [self.comboBox_f_7_,self.page_t_7,self.textField_vp_70,self.Obyazatelny_vopros_f_07,self.textField_Tag_7,[]],
+        [self.comboBox_f_8_,self.page_t_6,self.textField_vp_80,self.Obyazatelny_vopros_f_08,self.textField_Tag_8,[]]]])
+        # print(Collective)
+
         self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
         
     def opt_2(self,index):
         index.currentIndexChanged.disconnect()
-        
+        global number_form
         result = False 
         number_form = 0
         number_list = 0  
@@ -1710,7 +1712,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         Collective[number_form][1][6][0].setCurrentIndex(index.currentIndex())
         Collective[number_form][1][7][0].setCurrentIndex(index.currentIndex())         
 
-        print(number_form)
+        # print(number_form)
         if (index.currentIndex() == 0):
             Collective[number_form][1][0][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][0][0]))
         elif (index.currentIndex() == 1):
@@ -1757,58 +1759,46 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                 widget = stackedWidget_t_.widget(0);
                 stackedWidget_t_.removeWidget(widget);
         stackedWidget_t_.deleteLater()
-    def save_form(self):
-        global a, d, f, L, K
-        # Collective.append(['Danno/' + L+'.txt',self.stackedWidget_t_,
-        # [[self.comboBox_f_1,self.page_t_1,self.textField_vp_10,"ob_vopros","teg"]
-        # [self.comboBox_f_2_,self.page_t_2,self.textField_vp_20,"ob_vopros","teg"]
-        # [self.comboBox_f_3_,self.page_t_3,self.textField_vp_30,"ob_vopros","teg"]
-        # [self.comboBox_f_4_,self.page_t_4,self.textField_vp_40,"ob_vopros","teg"]
-        # [self.comboBox_f_5_,self.page_t_8,"ob_vopros","teg",[]]
-        # [self.comboBox_f_6_,self.page_t_5,"ob_vopros","teg",[]]
-        # [self.comboBox_f_7_,self.page_t_7,"ob_vopros","teg",[]]
-        # [self.comboBox_f_8_,self.page_t_6,"ob_vopros","teg",[]]]])
-        # print(Collective)
-        voprosi = []
-        c = self.ui.Vopros.text()
-        vopros0 = []
-        vopros0.append(c)
-        tegi = []
-        p = self.ui.Tag.text()
-        tag0 = []
-        tag0.append(p)
-        odni_iz_spiska = []
-        u = self.ui.comboBox.currentIndex()
-        odin0 = []
-        odin0.append(u)
-        for y in f:
-           odin_iz = y.text()
-           odni_iz_spiska.append(odin_iz)
-        odin_s = odin0 + odni_iz_spiska
-        for o in d:
-            tag = o.text()
-            tegi.append(tag)
-        tege = tag0 + tegi
-        for i in a:
-            vopros = i.toPlainText()
-            voprosi.append(vopros)
-        voprose = vopros0 + voprosi
-        qwe = []
-        qwe.append(K)
-        qwe.append(voprose)
-        qwe.append(tege)
-        qwe.append(odin_s)
-        my_file = open('Danno/' + L+".txt", "w+")
-        my_file.write(str(qwe))
+    def save_form(self, index):
+        global name, fool_name, Collective, number_form, Collectiv_1
+        forma_1 = [] 
+        vse = []
+        forma = [] 
+        vse.append(fool_name)
+        for forms_1 in Collectiv_1:
+             forma_1 = [] 
+             Box_1 = forms_1[1][0][0].currentIndex() 
+             text_1 = forms_1[1][Box_1][2].text()
+             ob_vopros_1 = False
+             Teg_1 = forms_1[1][Box_1][4].text() 
+             forma_1.append(Box_1)
+             forma_1.append(text_1)
+             forma_1.append(Teg_1)
+             vse.append(forma_1) 
+
+        for forms in Collective:
+              forma = []
+              Box = forms[1][0][0].currentIndex()
+              text = forms[1][Box][2].text()
+              ob_vopros = False
+              Teg = forms[1][Box][4].text()
+              forma.append(Box)
+              forma.append(text)
+              forma.append(Teg)
+              vse.append(forma) 
+               
+
+        my_file = open('Danno/' + name+".txt", "w+")
+        my_file.write(str(vse))
         my_file.close()
-        with open('Danno/' + L+'.txt', 'r') as f:
+        with open('Danno/' + name+'.txt', 'r') as f:
             mylist = ast.literal_eval(f.read())
-        #print(mylist[0]) 
 
     def newDoument(self):
         onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
         os.path.isfile(os.path.join('Danno', f))]
-        # print(onlyfiles)
+
+
         global button
         for i, b in enumerate(onlyfiles):
             file_name = os.path.basename(b).split('.')[0]
@@ -1829,7 +1819,10 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
             name_file = open( name_file)
             print(row, name_file.read())
             name_file.close()
-
+            self.ui.Button_Back_2.clicked.connect(self.transfer_back_2)
+    def transfer_back_2(self):
+            self.ui.stackedWidget.setCurrentWidget(self.ui.page)          
+           
     def per(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Fill_page)
 
