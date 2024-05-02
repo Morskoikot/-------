@@ -654,6 +654,22 @@ f"#{self.Button_Question_3.objectName()}"":pressed { \n"
         self.button_var.setText("ДОБАВИТЬ ВАРИАНТ")
         self.button_var.setFont(font)
         self.horizontalLayout_m_03.addWidget(self.button_var)
+        self.label_or = QtWidgets.QLabel()
+        self.label_or.setText('ИЛИ')
+        self.label_or.setMaximumSize(55, 35)
+        self.horizontalLayout_m_03.addWidget(self.label_or)
+        self.button_difvar = QtWidgets.QPushButton()
+        self.button_difvar.setMaximumSize(380, 35)
+        self.button_difvar.setText('ДОБАВИТЬ ВАРИАНТ "Другое"')
+        self.button_difvar.setObjectName(f"button_difvar_{KT}")
+        self.button_difvar.setStyleSheet(f"#{self.button_difvar.objectName()}""{\n"
+"border-top: 2px solid;"
+"border-top-color: rgb(255, 76, 0);"
+"border-bottom: 2px solid;"
+"border-bottom-color: rgb(255, 76, 0);"
+"}"
+"")
+        self.horizontalLayout_m_03.addWidget(self.button_difvar)
         # Нижнее поле
         self.horizontalLayout_f_302 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_3.addLayout(self.horizontalLayout_f_302)
