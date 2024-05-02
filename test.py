@@ -119,8 +119,6 @@ class AppWindow_main(QMainWindow):
         self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)
         
         self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
-
-        self.newDoument()
         
     def opt(self,index):
         index.currentIndexChanged.disconnect()
