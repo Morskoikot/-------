@@ -92,10 +92,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Zapolnit:hover {
-
+background: rgb(188, 188, 188);
+transition: 3s;
 }
 #Button_Zapolnit:pressed {
-
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -125,10 +127,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Spisok:hover {
-
+background: rgb(188, 188, 188);
+transition: 3s;
 }
 #Button_Spisok:pressed {
-
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -228,8 +232,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Dok:hover {
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Dok:pressed { 
+#Button_Dok:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
               </property>
               <property name="text">
@@ -258,10 +266,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Forma_plus:hover {
-
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Forma_plus:pressed { 
-
+#Button_Forma_plus:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
               </property>
               <property name="text">
@@ -304,8 +314,8 @@ border-bottom-color: rgb(255, 76, 0);
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>941</width>
-                 <height>287</height>
+                 <width>957</width>
+                 <height>345</height>
                 </rect>
                </property>
                <property name="layoutDirection">
@@ -609,7 +619,7 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -717,7 +727,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -1128,7 +1138,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -1462,7 +1472,7 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -1570,7 +1580,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -1915,7 +1925,7 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -2023,7 +2033,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -2333,7 +2343,7 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -2442,7 +2452,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -3018,7 +3028,7 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -3126,7 +3136,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -3598,7 +3608,7 @@ background-color:rgb(204, 204, 204);
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -3705,7 +3715,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -3962,10 +3972,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Question_8:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Question_8:pressed { 
-background-color:rgb(204, 204, 204);
+#Button_Question_8:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
                                  </property>
                                  <property name="text">
@@ -4000,19 +4012,20 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Copy_8:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Copy_8:pressed { 
-background-color:rgb(204, 204, 204);
-}
-</string>
+#Button_Copy_8:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
+}</string>
                              </property>
                              <property name="text">
                               <string/>
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../../../../../1621635.png</normaloff>../../../../../../1621635.png</iconset>
+                               <normaloff>../../../../../1621635.png</normaloff>../../../../../1621635.png</iconset>
                              </property>
                             </widget>
                            </item>
@@ -4032,12 +4045,13 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #pushButton_delete_8:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#pushButton_delete_8:pressed { 
-background-color:rgb(204, 204, 204);
-}
-</string>
+#pushButton_delete_8:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
+}</string>
                              </property>
                              <property name="text">
                               <string/>
@@ -4117,7 +4131,7 @@ background-color:rgb(204, 204, 204);
                                 </property>
                                 <property name="icon">
                                  <iconset>
-                                  <normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
+                                  <normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</normaloff>../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png</iconset>
                                 </property>
                                </widget>
                               </widget>
@@ -4312,10 +4326,12 @@ border-bottom: 0px solid;
 image: url(:/Lupa/Lupa.png);
 }
 #Button_Find_Fill:hover {
-
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Find_Fill:pressed { 
-
+#Button_Find_Fill:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -4344,10 +4360,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Back_Fill:hover {
-
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Back_Fill:pressed { 
-
+#Button_Back_Fill:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -4437,8 +4455,8 @@ background-color: rgb(194, 194, 194);
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>472</width>
-             <height>206</height>
+             <width>961</width>
+             <height>442</height>
             </rect>
            </property>
            <property name="layoutDirection">
@@ -5516,10 +5534,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Save:hover {
-
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Save:pressed { 
-
+#Button_Save:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -5547,11 +5567,13 @@ border-top-color: rgb(255, 76, 0);
 border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
-#Button_Back:hover {
-
+#Button_Backt:hover {
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Back:pressed { 
-
+#Button_Back:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -5573,7 +5595,7 @@ border-bottom-color: rgb(255, 76, 0);
      <x>0</x>
      <y>0</y>
      <width>1000</width>
-     <height>21</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>
