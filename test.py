@@ -1,4 +1,5 @@
-import os, ast, sys
+import os, ast, sys, tkinter.messagebox
+from tkinter.messagebox import showinfo, askyesno
 from os import listdir
 from os.path import isfile, join
 from functools import partial
@@ -56,7 +57,8 @@ class AppWindow_main(QMainWindow):
     def __init__(self):
         super(AppWindow_main, self).__init__()
         #добовление шрифтов
-        global font,font2,font3,font4,font5,font6,font7,Collective, Collectiv_1
+        global font,font2,font3,font4,font5,font6,font7,Collective, Collectiv_1, fool_name
+        fool_name = ''
         font = QFont('SFProText-Light', 80)
         font2 = QFont('Lato-Light', 30)
         font3 = QFont('Lato-Light', 20)
@@ -1759,38 +1761,41 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         stackedWidget_t_.deleteLater()
     def save_form(self, index):
         global name, fool_name, Collective, number_form, Collectiv_1
-        forma_1 = [] 
-        vse = []
-        forma = [] 
-        vse.append(fool_name)
-        for forms_1 in Collectiv_1:
-             forma_1 = [] 
-             Box_1 = forms_1[1][0][0].currentIndex() 
-             text_1 = forms_1[1][Box_1][2].text()
-             ob_vopros_1 = False
-             Teg_1 = forms_1[1][Box_1][4].text() 
-             forma_1.append(Box_1)
-             forma_1.append(text_1)
-             forma_1.append(Teg_1)
-             vse.append(forma_1) 
+        if fool_name == '':
+            tkinter.messagebox.showwarning(title="Внимание!",message="Выберите документ для формы!")
+        else:
+                forma_1 = [] 
+                vse = []
+                forma = [] 
+                vse.append(fool_name)
+                for forms_1 in Collectiv_1:
+                        forma_1 = [] 
+                        Box_1 = forms_1[1][0][0].currentIndex() 
+                        text_1 = forms_1[1][Box_1][2].text()
+                        ob_vopros_1 = False
+                        Teg_1 = forms_1[1][Box_1][4].text() 
+                        forma_1.append(Box_1)
+                        forma_1.append(text_1)
+                        forma_1.append(Teg_1)
+                        vse.append(forma_1) 
 
-        for forms in Collective:
-              forma = []
-              Box = forms[1][0][0].currentIndex()
-              text = forms[1][Box][2].text()
-              ob_vopros = False
-              Teg = forms[1][Box][4].text()
-              forma.append(Box)
-              forma.append(text)
-              forma.append(Teg)
-              vse.append(forma) 
+                for forms in Collective:
+                        forma = []
+                        Box = forms[1][0][0].currentIndex()
+                        text = forms[1][Box][2].text()
+                        ob_vopros = False
+                        Teg = forms[1][Box][4].text()
+                        forma.append(Box)
+                        forma.append(text)
+                        forma.append(Teg)
+                        vse.append(forma) 
                
 
-        my_file = open('Danno/' + name+".txt", "w+")
-        my_file.write(str(vse))
-        my_file.close()
-        with open('Danno/' + name+'.txt', 'r') as f:
-            mylist = ast.literal_eval(f.read())
+                my_file = open('Danno/' + name+".txt", "w+")
+                my_file.write(str(vse))
+                my_file.close()
+                with open('Danno/' + name+'.txt', 'r') as f:
+                        mylist = ast.literal_eval(f.read())
 
     def newDoument(self):
         onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
