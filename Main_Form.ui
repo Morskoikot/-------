@@ -328,7 +328,7 @@ transition: 3s;
                 <item>
                  <widget class="QStackedWidget" name="stackedWidget_2">
                   <property name="currentIndex">
-                   <number>7</number>
+                   <number>0</number>
                   </property>
                   <widget class="QWidget" name="page_2">
                    <layout class="QVBoxLayout" name="verticalLayout_14">
@@ -569,10 +569,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Question:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Question:pressed { 
-background-color:rgb(204, 204, 204);
+#Button_Question:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
                                  </property>
                                  <property name="text">
@@ -607,10 +609,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Copy:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Copy:pressed { 
-background-color:rgb(204, 204, 204);
+#Button_Copy:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }
 </string>
                              </property>
@@ -639,10 +643,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #pushButton_delete:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#pushButton_delete:pressed { 
-background-color:rgb(204, 204, 204);
+#pushButton_delete:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }
 </string>
                              </property>
@@ -978,12 +984,13 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Question_2:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Question_2:pressed { 
-background-color:rgb(204, 204, 204);
+#Button_Question_2:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }
-
 </string>
                                  </property>
                                  <property name="text">
@@ -1018,12 +1025,13 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Copy_2:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Copy_2:pressed { 
-background-color:rgb(204, 204, 204);
-}
-</string>
+#Button_Copy_2:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
+}</string>
                              </property>
                              <property name="text">
                               <string/>
@@ -1050,10 +1058,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #pushButton_delete_2:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#pushButton_delete_2:pressed { 
-background-color:rgb(204, 204, 204);
+#pushButton_delete_2:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }
 </string>
                              </property>
@@ -1385,10 +1395,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Question_3:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Question_3:pressed { 
-background-color:rgb(204, 204, 204);
+#Button_Question_3:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
                                  </property>
                                  <property name="text">
@@ -1428,8 +1440,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #pushButton_DOPvariany:hover {
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#pushButton_DOPvariany:pressed { 
+#pushButton_DOPvariany:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -1460,10 +1476,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Copy_3:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Copy_3:pressed { 
-background-color:rgb(204, 204, 204);
+#Button_Copy_3:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }
 </string>
                              </property>
@@ -1492,10 +1510,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #pushButton_delete_3:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#pushButton_delete_3:pressed { 
-background-color:rgb(204, 204, 204);
+#pushButton_delete_3:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }
 </string>
                              </property>
@@ -1830,10 +1850,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Question_4:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Question_4:pressed { 
-background-color:rgb(204, 204, 204);
+#Button_Question_4:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
                                  </property>
                                  <property name="text">
@@ -1883,8 +1905,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #pushButton_DOPvariany_2:hover {
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#pushButton_DOPvariany_2:pressed { 
+#pushButton_DOPvariany_2:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -1912,12 +1938,13 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Copy_4:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Copy_4:pressed { 
-background-color:rgb(204, 204, 204);
+#Button_Copy_4:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }
-
 </string>
                              </property>
                              <property name="text">
@@ -1945,10 +1972,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #pushButton_delete_4:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#pushButton_delete_4:pressed { 
-background-color:rgb(204, 204, 204);
+#pushButton_delete_4:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }
 </string>
                              </property>
@@ -2289,12 +2318,13 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Question_5:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Question_5:pressed { 
-background-color:rgb(204, 204, 204);
-}
-</string>
+#Button_Question_5:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
+}</string>
                                    </property>
                                    <property name="text">
                                     <string>?</string>
@@ -2330,10 +2360,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Copy_5:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Copy_5:pressed { 
-background-color:rgb(204, 204, 204);
+#Button_Copy_5:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }
 
 </string>
@@ -2363,12 +2395,13 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #pushButton_delete_5:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#pushButton_delete_5:pressed { 
-background-color:rgb(204, 204, 204);
+#pushButton_delete_5:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }
-
 </string>
                              </property>
                              <property name="text">
@@ -2977,11 +3010,14 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Question_6:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Question_6:pressed { 
-background-color:rgb(204, 204, 204);
-}</string>
+#Button_Question_6:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
+}
+</string>
                                  </property>
                                  <property name="text">
                                   <string>?</string>
@@ -3015,10 +3051,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Copy_6:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Copy_6:pressed { 
-background-color:rgb(204, 204, 204);
+#Button_Copy_6:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }
 
 </string>
@@ -3048,11 +3086,14 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #pushButton_delete_6:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#pushButton_delete_6:pressed { 
-background-color:rgb(204, 204, 204);
+#pushButton_delete_6:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }
+
 </string>
                              </property>
                              <property name="text">
@@ -3474,10 +3515,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Question_7:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Question_7:pressed { 
-background-color:rgb(204, 204, 204);
+#Button_Question_7:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
                                  </property>
                                  <property name="text">
@@ -3514,8 +3557,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #pushButton_DOPvariany_3:hover {
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#pushButton_DOPvariany_3:pressed { 
+#pushButton_DOPvariany_3:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -3565,8 +3612,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #pushButton_drVarifnt_2:hover {
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#pushButton_drVarifnt_2:pressed { 
+#pushButton_drVarifnt_2:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -3597,10 +3648,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Copy_7:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Copy_7:pressed { 
-background-color:rgb(204, 204, 204);
+#Button_Copy_7:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -3628,10 +3681,12 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #pushButton_delete_7:hover {
-background-color:rgb(219, 219, 219);
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#pushButton_delete_7:pressed { 
-background-color:rgb(204, 204, 204);
+#pushButton_delete_7:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -4178,9 +4233,11 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Trash:hover {
+background: rgb(188, 188, 188);
 
 }
-#Button_Trash:pressed { 
+#Button_Trash:pressed {
+background: rgb(171, 171, 171);
 
 }</string>
               </property>
@@ -4210,10 +4267,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Save:hover {
-
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Save:pressed { 
-
+#Button_Save:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
               </property>
               <property name="text">
@@ -4242,10 +4301,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Back:hover {
-
+background: rgb(188, 188, 188);
+transition: 3s;
 }
-#Button_Back:pressed { 
-
+#Button_Back:pressed {
+background: rgb(171, 171, 171);
+transition: 3s;
 }</string>
               </property>
               <property name="text">

@@ -166,7 +166,7 @@ class AppWindow_main(QMainWindow):
         elif index.currentIndex() == 0:
            self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)
         index_page = index.currentIndex() 
-        print(index_page)  
+         
                      
     #постороение пути к документу
     def Open_main_file_btn(self):
@@ -218,7 +218,6 @@ class AppWindow_main(QMainWindow):
 "background-color: rgb(228, 228, 228);")
         self.textField_vp_10.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.textField_vp_10.setPlaceholderText(_translate("MainWindow", "Вопрос"))
-        # print(self.textField_vp_10.setText('Work'))
         self.horizontalLayout_f_110.addWidget(self.textField_vp_10)
         self.horizontalLayout_f_120 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_120.setContentsMargins(28, -1, -1, -1)
@@ -1670,7 +1669,6 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         Armagedon.append(self.stackedWidget_t_) 
         KT += 1
         # Пятая
-        # print(Collective)
         Collective.append([self.stackedWidget_t_,
         [[self.comboBox_f_1,self.page_t_1,self.textField_vp_10,self.Obyazatelny_vopros_f_01,self.textField_tag_1],
         [self.comboBox_f_2_,self.page_t_2,self.textField_vp_20,self.Obyazatelny_vopros_f_02,self.textField_low_2],
@@ -1680,7 +1678,6 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         [self.comboBox_f_6_,self.page_t_5,self.textField_vp_60,self.Obyazatelny_vopros_f_06,self.textField_Tag_6,[]],
         [self.comboBox_f_7_,self.page_t_7,self.textField_vp_70,self.Obyazatelny_vopros_f_07,self.textField_Tag_7,[]],
         [self.comboBox_f_8_,self.page_t_6,self.textField_vp_80,self.Obyazatelny_vopros_f_08,self.textField_Tag_8,[]]]])
-        # print(Collective)
 
         self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
         
@@ -1710,7 +1707,6 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         Collective[number_form][1][6][0].setCurrentIndex(index.currentIndex())
         Collective[number_form][1][7][0].setCurrentIndex(index.currentIndex())         
 
-        # print(number_form)
         if (index.currentIndex() == 0):
             Collective[number_form][1][0][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][0][0]))
         elif (index.currentIndex() == 1):
@@ -1747,7 +1743,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         elif index.currentIndex() == 0:
            Collective[number_form][0].setCurrentWidget(Collective[number_form][1][0][1])
         index_page = index.currentIndex()
-        # print(index_page)
+
 
 
         
@@ -1815,7 +1811,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
             name_file = self.ui.tableWidget.item(row,0).text()
             name_file = 'Danno/' + name_file +".txt"
             name_file = open( name_file)
-            print(row, name_file.read())
+        #   print(row, name_file.read())
             name_file.close()
             self.ui.Button_Back_2.clicked.connect(self.transfer_back_2)
     def transfer_back_2(self):
@@ -1826,6 +1822,9 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
 
     def Annihilation (self, Armagedon):
         # /////////////////////////////////////////////////////////////////////
+        global Collective
+        print(Collective)
+        Collective =[]
         pages_all = Armagedon.count()
         for i in range(pages_all):
                 widget = Armagedon.widget(0)

@@ -55,10 +55,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Zapolnit:hover {\n"
-"\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
 "#Button_Zapolnit:pressed {\n"
-"\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.Button_Zapolnit.setObjectName("Button_Zapolnit")
         self.horizontalLayout.addWidget(self.Button_Zapolnit)
@@ -74,10 +76,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Spisok:hover {\n"
-"\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
 "#Button_Spisok:pressed {\n"
-"\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.Button_Spisok.setObjectName("Button_Spisok")
         self.horizontalLayout.addWidget(self.Button_Spisok)
@@ -127,8 +131,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Dok:hover {\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Dok:pressed { \n"
+"#Button_Dok:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.Button_Dok.setObjectName("Button_Dok")
         self.horizontalLayout_2.addWidget(self.Button_Dok)
@@ -144,10 +152,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Forma_plus:hover {\n"
-"\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Forma_plus:pressed { \n"
-"\n"
+"#Button_Forma_plus:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.Button_Forma_plus.setObjectName("Button_Forma_plus")
         self.horizontalLayout_2.addWidget(self.Button_Forma_plus)
@@ -164,7 +174,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setAlignment(QtCore.Qt.AlignmentFlag.AlignHCenter|QtCore.Qt.AlignmentFlag.AlignTop)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 941, 287))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 957, 345))
         self.scrollAreaWidgetContents_3.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_3)
@@ -292,10 +302,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Question:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Question:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#Button_Question:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.Button_Question.setObjectName("Button_Question")
         self.verticalLayout_13.addWidget(self.Button_Question)
@@ -314,15 +326,17 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Copy:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Copy:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#Button_Copy:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}\n"
 "")
         self.Button_Copy.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../../../../../1621635.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("../../../../../1621635.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.Button_Copy.setIcon(icon)
         self.Button_Copy.setObjectName("Button_Copy")
         self.horizontalLayout_13.addWidget(self.Button_Copy)
@@ -335,10 +349,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#pushButton_delete:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#pushButton_delete:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#pushButton_delete:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}\n"
 "")
         self.pushButton_delete.setText("")
@@ -368,7 +384,7 @@ class Ui_MainWindow(object):
         self.pushButton_3.setMaximumSize(QtCore.QSize(45, 45))
         self.pushButton_3.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_3.setIcon(icon1)
         self.pushButton_3.setObjectName("pushButton_3")
         self.horizontalLayout_26.addWidget(self.widget_2)
@@ -488,12 +504,13 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Question_2:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Question_2:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#Button_Question_2:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}\n"
-"\n"
 "")
         self.Button_Question_2.setObjectName("Button_Question_2")
         self.verticalLayout_16.addWidget(self.Button_Question_2)
@@ -512,16 +529,15 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Copy_2:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Copy_2:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
-"}\n"
-"")
+"#Button_Copy_2:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
+"}")
         self.Button_Copy_2.setText("")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("../../../../../1621635.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.Button_Copy_2.setIcon(icon2)
+        self.Button_Copy_2.setIcon(icon)
         self.Button_Copy_2.setObjectName("Button_Copy_2")
         self.horizontalLayout_32.addWidget(self.Button_Copy_2)
         self.pushButton_delete_2 = QtWidgets.QPushButton(parent=self.widget_3)
@@ -533,10 +549,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#pushButton_delete_2:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#pushButton_delete_2:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#pushButton_delete_2:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}\n"
 "")
         self.pushButton_delete_2.setText("")
@@ -682,10 +700,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Question_3:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Question_3:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#Button_Question_3:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.Button_Question_3.setObjectName("Button_Question_3")
         self.verticalLayout_19.addWidget(self.Button_Question_3)
@@ -707,8 +727,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#pushButton_DOPvariany:hover {\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#pushButton_DOPvariany:pressed { \n"
+"#pushButton_DOPvariany:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.pushButton_DOPvariany.setObjectName("pushButton_DOPvariany")
         self.horizontalLayout_40.addWidget(self.pushButton_DOPvariany)
@@ -725,10 +749,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Copy_3:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Copy_3:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#Button_Copy_3:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}\n"
 "")
         self.Button_Copy_3.setText("")
@@ -744,10 +770,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#pushButton_delete_3:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#pushButton_delete_3:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#pushButton_delete_3:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}\n"
 "")
         self.pushButton_delete_3.setText("")
@@ -894,10 +922,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Question_4:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Question_4:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#Button_Question_4:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.Button_Question_4.setObjectName("Button_Question_4")
         self.verticalLayout_22.addWidget(self.Button_Question_4)
@@ -921,8 +951,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#pushButton_DOPvariany_2:hover {\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#pushButton_DOPvariany_2:pressed { \n"
+"#pushButton_DOPvariany_2:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.pushButton_DOPvariany_2.setObjectName("pushButton_DOPvariany_2")
         self.horizontalLayout_49.addWidget(self.pushButton_DOPvariany_2)
@@ -938,12 +972,13 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Copy_4:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Copy_4:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#Button_Copy_4:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}\n"
-"\n"
 "")
         self.Button_Copy_4.setText("")
         self.Button_Copy_4.setIcon(icon)
@@ -958,10 +993,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#pushButton_delete_4:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#pushButton_delete_4:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#pushButton_delete_4:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}\n"
 "")
         self.pushButton_delete_4.setText("")
@@ -1111,12 +1148,13 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Question_5:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Question_5:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
-"}\n"
-"")
+"#Button_Question_5:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
+"}")
         self.Button_Question_5.setObjectName("Button_Question_5")
         self.verticalLayout_25.addWidget(self.Button_Question_5)
         self.horizontalLayout_58.addLayout(self.verticalLayout_25)
@@ -1135,10 +1173,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Copy_5:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Copy_5:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#Button_Copy_5:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}\n"
 "\n"
 "")
@@ -1155,12 +1195,13 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#pushButton_delete_5:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#pushButton_delete_5:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#pushButton_delete_5:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}\n"
-"\n"
 "")
         self.pushButton_delete_5.setText("")
         self.pushButton_delete_5.setObjectName("pushButton_delete_5")
@@ -1405,11 +1446,14 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Question_6:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Question_6:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
-"}")
+"#Button_Question_6:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
+"}\n"
+"")
         self.Button_Question_6.setObjectName("Button_Question_6")
         self.verticalLayout_28.addWidget(self.Button_Question_6)
         self.horizontalLayout_69.addLayout(self.verticalLayout_28)
@@ -1427,10 +1471,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Copy_6:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Copy_6:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#Button_Copy_6:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}\n"
 "\n"
 "")
@@ -1447,11 +1493,14 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#pushButton_delete_6:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#pushButton_delete_6:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#pushButton_delete_6:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}\n"
+"\n"
 "")
         self.pushButton_delete_6.setText("")
         self.pushButton_delete_6.setObjectName("pushButton_delete_6")
@@ -1627,10 +1676,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Question_7:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Question_7:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#Button_Question_7:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.Button_Question_7.setObjectName("Button_Question_7")
         self.verticalLayout_32.addWidget(self.Button_Question_7)
@@ -1651,8 +1702,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#pushButton_DOPvariany_3:hover {\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#pushButton_DOPvariany_3:pressed { \n"
+"#pushButton_DOPvariany_3:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.pushButton_DOPvariany_3.setObjectName("pushButton_DOPvariany_3")
         self.horizontalLayout_81.addWidget(self.pushButton_DOPvariany_3)
@@ -1676,8 +1731,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#pushButton_drVarifnt_2:hover {\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#pushButton_drVarifnt_2:pressed { \n"
+"#pushButton_drVarifnt_2:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.pushButton_drVarifnt_2.setObjectName("pushButton_drVarifnt_2")
         self.horizontalLayout_81.addWidget(self.pushButton_drVarifnt_2)
@@ -1694,10 +1753,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Copy_7:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Copy_7:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#Button_Copy_7:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.Button_Copy_7.setText("")
         self.Button_Copy_7.setIcon(icon)
@@ -1712,10 +1773,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#pushButton_delete_7:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#pushButton_delete_7:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#pushButton_delete_7:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.pushButton_delete_7.setText("")
         self.pushButton_delete_7.setObjectName("pushButton_delete_7")
@@ -1870,10 +1933,12 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Question_8:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Question_8:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"#Button_Question_8:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+ 
 "}")
         self.Button_Question_8.setObjectName("Button_Question_8")
         self.verticalLayout_35.addWidget(self.Button_Question_8)
@@ -1892,12 +1957,13 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Copy_8:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+ 
 "}\n"
-"#Button_Copy_8:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
-"}\n"
-"")
+"#Button_Copy_8:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+
+"}")
         self.Button_Copy_8.setText("")
         self.Button_Copy_8.setIcon(icon)
         self.Button_Copy_8.setObjectName("Button_Copy_8")
@@ -1911,12 +1977,13 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#pushButton_delete_8:hover {\n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
+
 "}\n"
-"#pushButton_delete_8:pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
-"}\n"
-"")
+"#pushButton_delete_8:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+
+"}")
         self.pushButton_delete_8.setText("")
         self.pushButton_delete_8.setObjectName("pushButton_delete_8")
         self.horizontalLayout_91.addWidget(self.pushButton_delete_8)
@@ -1968,10 +2035,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Trash:hover {\n"
-"\n"
+"background: rgb(188, 188, 188);\n"
+
 "}\n"
-"#Button_Trash:pressed { \n"
-"\n"
+"#Button_Trash:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+
 "}")
         self.Button_Trash.setObjectName("Button_Trash")
         self.horizontalLayout_4.addWidget(self.Button_Trash)
@@ -1987,10 +2056,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Save:hover {\n"
-"\n"
+"background: rgb(188, 188, 188);\n"
+
 "}\n"
-"#Button_Save:pressed { \n"
-"\n"
+"#Button_Save:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+
 "}")
         self.Button_Save.setObjectName("Button_Save")
         self.horizontalLayout_4.addWidget(self.Button_Save)
@@ -2006,10 +2077,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Back:hover {\n"
-"\n"
+"background: rgb(188, 188, 188);\n"
+
 "}\n"
-"#Button_Back:pressed { \n"
-"\n"
+"#Button_Back:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+
 "}")
         self.Button_Back.setObjectName("Button_Back")
         self.horizontalLayout_4.addWidget(self.Button_Back)
@@ -2051,10 +2124,12 @@ class Ui_MainWindow(object):
 "image: url(:/Lupa/Lupa.png);\n"
 "}\n"
 "#Button_Find_Fill:hover {\n"
-"\n"
+"background: rgb(188, 188, 188);\n"
+
 "}\n"
-"#Button_Find_Fill:pressed { \n"
-"\n"
+"#Button_Find_Fill:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+
 "}")
         self.Button_Find_Fill.setText("")
         self.Button_Find_Fill.setObjectName("Button_Find_Fill")
@@ -2071,10 +2146,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Back_Fill:hover {\n"
-"\n"
+"background: rgb(188, 188, 188);\n"
+
 "}\n"
-"#Button_Back_Fill:pressed { \n"
-"\n"
+"#Button_Back_Fill:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+
 "}")
         self.Button_Back_Fill.setObjectName("Button_Back_Fill")
         self.horizontalLayout_23.addWidget(self.Button_Back_Fill)
@@ -2117,7 +2194,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignHCenter|QtCore.Qt.AlignmentFlag.AlignTop)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_4 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 472, 206))
+        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 961, 442))
         self.scrollAreaWidgetContents_4.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
         self.scrollAreaWidgetContents_4.setObjectName("scrollAreaWidgetContents_4")
         self.verticalLayout_29 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_4)
@@ -2669,10 +2746,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Save:hover {\n"
-"\n"
+"background: rgb(188, 188, 188);\n"
+
 "}\n"
-"#Button_Save:pressed { \n"
-"\n"
+"#Button_Save:pressed {\n"
+"background: rgb(171, 171, 171);\n"
+
 "}")
         self.Button_Save_2.setObjectName("Button_Save_2")
         self.horizontalLayout_6.addWidget(self.Button_Save_2)
@@ -2687,11 +2766,11 @@ class Ui_MainWindow(object):
 "border-bottom: 2px solid;\n"
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
-"#Button_Back:hover {\n"
-"\n"
+"#Button_Backt:hover {\n"
+"background: rgb(188, 188, 188);\n"
 "}\n"
-"#Button_Back:pressed { \n"
-"\n"
+"#Button_Back:pressed {\n"
+"background: rgb(171, 171, 171);\n"
 "}")
         self.Button_Back_2.setObjectName("Button_Back_2")
         self.horizontalLayout_6.addWidget(self.Button_Back_2)
@@ -2700,7 +2779,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_8.addWidget(self.stackedWidget)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1000, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1000, 18))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -2709,7 +2788,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.stackedWidget.setCurrentIndex(1)
-        self.stackedWidget_2.setCurrentIndex(7)
+        self.stackedWidget_2.setCurrentIndex(0)
         self.comboBox_10.setCurrentIndex(7)
         self.stackedWidget_3.setCurrentIndex(4)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
