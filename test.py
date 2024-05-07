@@ -236,10 +236,10 @@ class AppWindow_main(QMainWindow):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 f"#{self.comboBox_f_1.objectName()}"":hover {\n"
-"background-color: rgb(219, 219, 219);\n"
+"background: rgb(188, 188, 188);\n"
 "}\n"
 f"#{self.comboBox_f_1.objectName()}"":pressed { \n"
-"background-color:rgb(219, 219, 219);\n"
+"background: rgb(171, 171, 171);\n"
 "}\n"
 "\n"
 "")
@@ -303,7 +303,7 @@ f"#{self.Button_Question_1.objectName()}"":hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
 f"#{self.Button_Question_1.objectName()}"":pressed { \n"
-"background-color:rgb(204, 204, 204);\n"
+"background: rgb(171, 171, 171);\n"
 "}\n"
 "\n"
 "")
@@ -1699,6 +1699,260 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         # print(Collective)
 
         self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
+    def Question_gen(self):
+        global KT
+        self.stackedWidget_Question = QtWidgets.QStackedWidget(parent=self.scrollAreaWidgetContents_4)
+        self.stackedWidget_Question.setObjectName(f"stackedWidget_Question_{KT}")
+        self.page_date_q = QtWidgets.QWidget()
+        self.verticalLayout_Date_1 = QtWidgets.QVBoxLayout(self.page_date_q)
+        self.horizontalLayout_Date_1 = QtWidgets.QHBoxLayout()
+        self.widget_Date = QtWidgets.QWidget()
+        self.widget_Date.setMaximumSize(QtCore.QSize(900, 400))
+        self.widget_Date.setObjectName(f"widget_Date_{KT}")
+        self.widget_Date.setStyleSheet(f"#{self.widget_Date.objectName()}" "{\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+        self.verticalLayout_Date_2 = QtWidgets.QVBoxLayout(self.widget_Date)
+        self.verticalLayout_Date_2.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
+        self.horizontalLayout_Date_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_17 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_17.setObjectName("horizontalLayout_17")
+        self.Question_Date = QtWidgets.QLabel(parent=self.widget_19)
+        self.Question_Date.setMaximumSize(QtCore.QSize(425, 60))
+        self.Question_Date.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;")
+        self.Question_Date.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
+        self.Question_Date.setObjectName("Question_Date")
+        self.verticalLayout_Date_2.addWidget(self.Question_Date)
+        self.horizontalLayout_Date_2.addLayout(self.horizontalLayout_17)
+        self.verticalLayout_Date_2.addLayout(self.horizontalLayout_Date_2)
+        self.horizontalLayout_Date_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_88 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_88.setContentsMargins(-1, -1, 0, -1)
+        self.horizontalLayout_88.setObjectName("horizontalLayout_88")
+        self.dateEdit_3 = QtWidgets.QDateEdit(parent=self.widget_19)
+        self.dateEdit_3.setMaximumSize(QtCore.QSize(160, 45))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.dateEdit_3.setFont(font)
+        self.dateEdit_3.setStyleSheet("#dateEdit {\n"
+"border: 2px solid;\n"
+"border-radius: 5px;\n"
+"border-color:rgb(190, 190, 190) ;\n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+"#dateEdit:hover {\n"
+"background-color: rgb(243, 243, 243);\n"
+"}\n"
+"#dateEdit:pressed { \n"
+"background-color:rgb(243, 243, 243);\n"
+"}\n"
+"\n"
+"")
+        self.dateEdit_3.setObjectName("dateEdit_3")
+        self.horizontalLayout_88.addWidget(self.dateEdit_3)
+        self.horizontalLayout_Date_3.addLayout(self.horizontalLayout_88)
+        self.verticalLayout_Date_1.addLayout(self.horizontalLayout_Date_3)
+        self.horizontalLayout_Date_1.addWidget(self.widget_Date)
+        self.verticalLayout_38.addLayout(self.horizontalLayout_Date_1)
+        self.stackedWidget_4.addWidget(self.page_18)
+        self.page_19 = QtWidgets.QWidget()
+        self.page_19.setObjectName("page_19")
+        self.verticalLayout_45 = QtWidgets.QVBoxLayout(self.page_19)
+        self.verticalLayout_45.setObjectName("verticalLayout_45")
+        self.horizontalLayout_114 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_114.setObjectName("horizontalLayout_114")
+        self.widget_23 = QtWidgets.QWidget(parent=self.page_19)
+        self.widget_23.setMaximumSize(QtCore.QSize(900, 400))
+        self.widget_23.setStyleSheet("#widget_3 {\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+        self.widget_23.setObjectName("widget_23")
+        self.verticalLayout_48 = QtWidgets.QVBoxLayout(self.widget_23)
+        self.verticalLayout_48.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
+        self.verticalLayout_48.setObjectName("verticalLayout_48")
+        self.horizontalLayout_115 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_115.setObjectName("horizontalLayout_115")
+        self.horizontalLayout_119 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_119.setObjectName("horizontalLayout_119")
+        self.Question_Sentence = QtWidgets.QLabel(parent=self.widget_23)
+        self.Question_Sentence.setMaximumSize(QtCore.QSize(425, 60))
+        self.Question_Sentence.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;")
+        self.Question_Sentence.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
+        self.Question_Sentence.setObjectName("Question_Sentence")
+        self.horizontalLayout_119.addWidget(self.Question_Sentence)
+        self.horizontalLayout_115.addLayout(self.horizontalLayout_119)
+        self.verticalLayout_48.addLayout(self.horizontalLayout_115)
+        self.horizontalLayout_123 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_123.setContentsMargins(0, -1, -1, -1)
+        self.horizontalLayout_123.setObjectName("horizontalLayout_123")
+        self.horizontalLayout_124 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_124.setObjectName("horizontalLayout_124")
+        self.Kratki_otvet_10 = QtWidgets.QLineEdit(parent=self.widget_23)
+        self.Kratki_otvet_10.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Kratki_otvet_10.setFont(font)
+        self.Kratki_otvet_10.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Kratki_otvet_10.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Kratki_otvet_10.setObjectName("Kratki_otvet_10")
+        self.horizontalLayout_124.addWidget(self.Kratki_otvet_10)
+        self.horizontalLayout_123.addLayout(self.horizontalLayout_124)
+        self.verticalLayout_48.addLayout(self.horizontalLayout_123)
+        self.horizontalLayout_114.addWidget(self.widget_23)
+        self.verticalLayout_45.addLayout(self.horizontalLayout_114)
+        self.stackedWidget_4.addWidget(self.page_19)
+        self.page_20 = QtWidgets.QWidget()
+        self.page_20.setObjectName("page_20")
+        self.verticalLayout_51 = QtWidgets.QVBoxLayout(self.page_20)
+        self.verticalLayout_51.setObjectName("verticalLayout_51")
+        self.horizontalLayout_133 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_133.setObjectName("horizontalLayout_133")
+        self.widget_26 = QtWidgets.QWidget(parent=self.page_20)
+        self.widget_26.setMaximumSize(QtCore.QSize(900, 400))
+        self.widget_26.setStyleSheet("#widget_5 {\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+        self.widget_26.setObjectName("widget_26")
+        self.verticalLayout_55 = QtWidgets.QVBoxLayout(self.widget_26)
+        self.verticalLayout_55.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
+        self.verticalLayout_55.setObjectName("verticalLayout_55")
+        self.horizontalLayout_134 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_134.setObjectName("horizontalLayout_134")
+        self.horizontalLayout_135 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_135.setObjectName("horizontalLayout_135")
+        self.Question_VarMany = QtWidgets.QLabel(parent=self.widget_26)
+        self.Question_VarMany.setMaximumSize(QtCore.QSize(425, 60))
+        self.Question_VarMany.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;")
+        self.Question_VarMany.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
+        self.Question_VarMany.setObjectName("Question_VarMany")
+        self.horizontalLayout_135.addWidget(self.Question_VarMany)
+        self.horizontalLayout_134.addLayout(self.horizontalLayout_135)
+        self.verticalLayout_55.addLayout(self.horizontalLayout_134)
+        self.horizontalLayout_137 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_137.setObjectName("horizontalLayout_137")
+        self.horizontalLayout_138 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_138.setObjectName("horizontalLayout_138")
+        self.Kratki_otvet_11 = QtWidgets.QLineEdit(parent=self.widget_26)
+        self.Kratki_otvet_11.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Kratki_otvet_11.setFont(font)
+        self.Kratki_otvet_11.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Kratki_otvet_11.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Kratki_otvet_11.setObjectName("Kratki_otvet_11")
+        self.horizontalLayout_138.addWidget(self.Kratki_otvet_11)
+        self.horizontalLayout_137.addLayout(self.horizontalLayout_138)
+        self.verticalLayout_55.addLayout(self.horizontalLayout_137)
+        self.horizontalLayout_133.addWidget(self.widget_26)
+        self.verticalLayout_51.addLayout(self.horizontalLayout_133)
+        self.stackedWidget_4.addWidget(self.page_20)
+        self.page_21 = QtWidgets.QWidget()
+        self.page_21.setObjectName("page_21")
+        self.verticalLayout_61 = QtWidgets.QVBoxLayout(self.page_21)
+        self.verticalLayout_61.setObjectName("verticalLayout_61")
+        self.horizontalLayout_143 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_143.setObjectName("horizontalLayout_143")
+        self.widget_29 = QtWidgets.QWidget(parent=self.page_21)
+        self.widget_29.setMaximumSize(QtCore.QSize(900, 400))
+        self.widget_29.setStyleSheet("#widget_7 {\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+        self.widget_29.setObjectName("widget_29")
+        self.verticalLayout_62 = QtWidgets.QVBoxLayout(self.widget_29)
+        self.verticalLayout_62.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
+        self.verticalLayout_62.setObjectName("verticalLayout_62")
+        self.horizontalLayout_144 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_144.setObjectName("horizontalLayout_144")
+        self.horizontalLayout_145 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_145.setObjectName("horizontalLayout_145")
+        self.Question_Var = QtWidgets.QLabel(parent=self.widget_29)
+        self.Question_Var.setMaximumSize(QtCore.QSize(425, 60))
+        self.Question_Var.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;")
+        self.Question_Var.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
+        self.Question_Var.setObjectName("Question_Var")
+        self.horizontalLayout_145.addWidget(self.Question_Var)
+        self.horizontalLayout_144.addLayout(self.horizontalLayout_145)
+        self.verticalLayout_62.addLayout(self.horizontalLayout_144)
+        self.horizontalLayout_149 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_149.setObjectName("horizontalLayout_149")
+        self.horizontalLayout_150 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_150.setContentsMargins(-1, -1, 0, -1)
+        self.horizontalLayout_150.setObjectName("horizontalLayout_150")
+        self.Kratki_otvet_13 = QtWidgets.QLineEdit(parent=self.widget_29)
+        self.Kratki_otvet_13.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Kratki_otvet_13.setFont(font)
+        self.Kratki_otvet_13.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Kratki_otvet_13.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Kratki_otvet_13.setObjectName("Kratki_otvet_13")
+        self.horizontalLayout_150.addWidget(self.Kratki_otvet_13)
+        self.horizontalLayout_149.addLayout(self.horizontalLayout_150)
+        self.verticalLayout_62.addLayout(self.horizontalLayout_149)
+        self.horizontalLayout_143.addWidget(self.widget_29)
+        self.verticalLayout_61.addLayout(self.horizontalLayout_143)
+        self.stackedWidget_4.addWidget(self.page_21)
+        self.page_22 = QtWidgets.QWidget()
+        self.page_22.setObjectName("page_22")
+        self.verticalLayout_64 = QtWidgets.QVBoxLayout(self.page_22)
+        self.verticalLayout_64.setObjectName("verticalLayout_64")
+        self.horizontalLayout_160 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_160.setObjectName("horizontalLayout_160")
+        self.widget_32 = QtWidgets.QWidget(parent=self.page_22)
+        self.widget_32.setMaximumSize(QtCore.QSize(900, 400))
+        self.widget_32.setStyleSheet("#widget_9 {\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+        self.widget_32.setObjectName("widget_32")
+        self.verticalLayout_65 = QtWidgets.QVBoxLayout(self.widget_32)
+        self.verticalLayout_65.setObjectName("verticalLayout_65")
+        self.horizontalLayout_163 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_163.setObjectName("horizontalLayout_163")
+        self.horizontalLayout_164 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_164.setObjectName("horizontalLayout_164")
+        self.Question_Text = QtWidgets.QLabel(parent=self.widget_32)
+        self.Question_Text.setMaximumSize(QtCore.QSize(425, 60))
+        self.Question_Text.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;")
+        self.Question_Text.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
+        self.Question_Text.setObjectName("Question_Text")
+        self.horizontalLayout_164.addWidget(self.Question_Text)
+        self.horizontalLayout_163.addLayout(self.horizontalLayout_164)
+        self.verticalLayout_65.addLayout(self.horizontalLayout_163)
+        self.horizontalLayout_167 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_167.setObjectName("horizontalLayout_167")
+        self.horizontalLayout_168 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_168.setContentsMargins(-1, -1, 9, -1)
+        self.horizontalLayout_168.setObjectName("horizontalLayout_168")
+        self.Kratki_otvet_14 = QtWidgets.QLineEdit(parent=self.widget_32)
+        self.Kratki_otvet_14.setMaximumSize(QtCore.QSize(425, 60))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.Kratki_otvet_14.setFont(font)
+        self.Kratki_otvet_14.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(228, 228, 228);")
+        self.Kratki_otvet_14.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+        self.Kratki_otvet_14.setObjectName("Kratki_otvet_14")
+        self.horizontalLayout_168.addWidget(self.Kratki_otvet_14)
+        self.horizontalLayout_167.addLayout(self.horizontalLayout_168)
+        self.horizontalLayout_169 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_169.setObjectName("horizontalLayout_169")
+        self.horizontalLayout_167.addLayout(self.horizontalLayout_169)
+        self.verticalLayout_65.addLayout(self.horizontalLayout_167)
+        self.horizontalLayout_160.addWidget(self.widget_32)
+        self.verticalLayout_64.addLayout(self.horizontalLayout_160)
+        self.stackedWidget_4.addWidget(self.page_22)
         
     def opt_2(self,index):
         index.currentIndexChanged.disconnect()
