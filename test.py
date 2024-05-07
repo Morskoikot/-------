@@ -1822,9 +1822,8 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
 
     def Annihilation (self, Armagedon):
         # /////////////////////////////////////////////////////////////////////
-        global Collective
-        print(Collective)
-        Collective =[]
+        # global Collective
+        # Collective =[]
         pages_all = Armagedon.count()
         for i in range(pages_all):
                 widget = Armagedon.widget(0)
