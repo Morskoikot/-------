@@ -1701,61 +1701,57 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
     def Question_gen(self):
         global KT
-        self.stackedWidget_Question = QtWidgets.QStackedWidget(parent=self.scrollAreaWidgetContents_4)
+        self.stackedWidget_Question = QtWidgets.QStackedWidget()
         self.stackedWidget_Question.setObjectName(f"stackedWidget_Question_{KT}")
-        self.page_date_q = QtWidgets.QWidget()
-        self.verticalLayout_Date_1 = QtWidgets.QVBoxLayout(self.page_date_q)
-        self.horizontalLayout_Date_1 = QtWidgets.QHBoxLayout()
-        self.widget_Date = QtWidgets.QWidget()
+        self.page_date_q = QtWidgets.QWidget() #W19
+        self.verticalLayout_Date_1 = QtWidgets.QVBoxLayout(self.page_date_q) #V38
+        self.horizontalLayout_Date_1 = QtWidgets.QHBoxLayout() #H105
+        self.widget_Date = QtWidgets.QWidget() #P19
         self.widget_Date.setMaximumSize(QtCore.QSize(900, 400))
-        self.widget_Date.setObjectName(f"widget_Date_{KT}")
-        self.widget_Date.setStyleSheet(f"#{self.widget_Date.objectName()}" "{\n"
+        self.widget_Date.setStyleSheet("#widget {\n"
 "background-color: rgb(228, 228, 228)\n"
 "}")
-        self.verticalLayout_Date_2 = QtWidgets.QVBoxLayout(self.widget_Date)
+        self.verticalLayout_Date_2 = QtWidgets.QVBoxLayout(self.widget_Date) #V5
         self.verticalLayout_Date_2.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
-        self.horizontalLayout_Date_2 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_17 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_17.setObjectName("horizontalLayout_17")
-        self.Question_Date = QtWidgets.QLabel(parent=self.widget_19)
-        self.Question_Date.setMaximumSize(QtCore.QSize(425, 60))
-        self.Question_Date.setStyleSheet("border-top: 0px solid;\n"
+        self.horizontalLayout_Date_2 = QtWidgets.QHBoxLayout() #H12
+        self.horizontalLayout_Date_3 = QtWidgets.QHBoxLayout() #H17
+        self.Question_Date_qt = QtWidgets.QLabel()
+        self.Question_Date_qt.setMaximumSize(QtCore.QSize(425, 60))
+        self.Question_Date_qt.setObjectName(f"Question_Date_qt_{KT}")
+        self.Question_Date_qt.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;")
-        self.Question_Date.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
-        self.Question_Date.setObjectName("Question_Date")
-        self.verticalLayout_Date_2.addWidget(self.Question_Date)
-        self.horizontalLayout_Date_2.addLayout(self.horizontalLayout_17)
+        self.Question_Date_qt.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
+        self.horizontalLayout_Date_3.addWidget(self.Question_Date_qt)
+        self.horizontalLayout_Date_2.addLayout(self.horizontalLayout_Date_3)
         self.verticalLayout_Date_2.addLayout(self.horizontalLayout_Date_2)
-        self.horizontalLayout_Date_3 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_88 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_88.setContentsMargins(-1, -1, 0, -1)
-        self.horizontalLayout_88.setObjectName("horizontalLayout_88")
-        self.dateEdit_3 = QtWidgets.QDateEdit(parent=self.widget_19)
-        self.dateEdit_3.setMaximumSize(QtCore.QSize(160, 45))
+        self.horizontalLayout_Date_4 = QtWidgets.QHBoxLayout() #H20
+        self.horizontalLayout_Date_5 = QtWidgets.QHBoxLayout() #H88
+        self.dateEdit_qt = QtWidgets.QDateEdit()
+        self.dateEdit_qt.setMaximumSize(QtCore.QSize(160, 45))
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.dateEdit_3.setFont(font)
-        self.dateEdit_3.setStyleSheet("#dateEdit {\n"
+        self.dateEdit_qt.setFont(font)
+        self.dateEdit_qt.setObjectName(f"dateEdit_qt_{KT}")
+        self.dateEdit_qt.setStyleSheet(f"#{self.dateEdit_qt.objectName()}" "{\n"
 "border: 2px solid;\n"
 "border-radius: 5px;\n"
 "border-color:rgb(190, 190, 190) ;\n"
 "background-color:rgb(243, 243, 243);\n"
 "}\n"
-"#dateEdit:hover {\n"
+f"#{self.dateEdit_qt.objectName()}" ":hover {\n"
 "background-color: rgb(243, 243, 243);\n"
 "}\n"
-"#dateEdit:pressed { \n"
+f"#{self.dateEdit_qt.objectName()}" ":pressed { \n"
 "background-color:rgb(243, 243, 243);\n"
 "}\n"
-"\n"
 "")
-        self.dateEdit_3.setObjectName("dateEdit_3")
-        self.horizontalLayout_88.addWidget(self.dateEdit_3)
-        self.horizontalLayout_Date_3.addLayout(self.horizontalLayout_88)
-        self.verticalLayout_Date_1.addLayout(self.horizontalLayout_Date_3)
+        self.dateEdit_qt.setObjectName("dateEdit_3")
+        self.horizontalLayout_Date_5.addWidget(self.dateEdit_qt)
+        self.horizontalLayout_Date_4.addLayout(self.horizontalLayout_Date_5)
+        self.verticalLayout_Date_2.addLayout(self.horizontalLayout_Date_4)
         self.horizontalLayout_Date_1.addWidget(self.widget_Date)
-        self.verticalLayout_38.addLayout(self.horizontalLayout_Date_1)
-        self.stackedWidget_4.addWidget(self.page_18)
+        self.verticalLayout_Date_1.addLayout(self.horizontalLayout_Date_1)
+        self.stackedWidget_Question.addWidget(self.page_date_q)
         self.page_19 = QtWidgets.QWidget()
         self.page_19.setObjectName("page_19")
         self.verticalLayout_45 = QtWidgets.QVBoxLayout(self.page_19)
