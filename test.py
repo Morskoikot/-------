@@ -81,7 +81,14 @@ class AppWindow_main(QMainWindow):
         [ self.ui.comboBox, self.ui.page_2,self.ui.Vopros,self.ui.Obyazatelny_vopros,self.ui.Tag],
         [self.ui.comboBox_10, self.ui.page_3,self.ui.Vopros_8,self.ui.Obyazatelny_vopros_8,self.ui.Tag_8]]])
 
-        self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)   
+        self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)
+
+        #Делаем не активными поля на формах
+        self.ui.dateEdit.setDisabled(True)
+        self.ui.timeEdit.setDisabled(True)
+        self.ui.Kratki_otvet.setDisabled(True)
+        self.ui.Kratki_otvet_4.setDisabled(True)
+
         #присвоение шрифтов объектам
         self.ui.Kratki_otvet.setFont(font3)
         self.ui.Vopros.setFont(font3)
@@ -121,6 +128,8 @@ class AppWindow_main(QMainWindow):
         self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)
         
         self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
+
+        self.newDocument()
         
     def opt(self,index):
         index.currentIndexChanged.disconnect()
@@ -1796,8 +1805,13 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                 my_file.close()
                 with open('Danno/' + name+'.txt', 'r') as f:
                         mylist = ast.literal_eval(f.read())
+                self.newDocument()
+                self.ui.stackedWidget.setCurrentWidget(self.ui.page)
+                self.transfer_back_save()
 
-    def newDoument(self):
+    def newDocument(self):
+        while (self.ui.tableWidget.rowCount() > 0):
+            self.ui.tableWidget.setRowCount(0)
         onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
         os.path.isfile(os.path.join('Danno', f))]
 
@@ -1845,6 +1859,14 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
             self.Annihilation(i)
         Armagedon = []
         KT = 1
+
+    def transfer_back_save(self):
+            global KT, Armagedon
+            for i in Armagedon:
+                self.Annihilation(i)
+            Armagedon = []
+            KT = 1
+
     def transfer_Fill(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.page)
         self.ui.stackedWidget.setCurrentWidget(self.ui.page)
