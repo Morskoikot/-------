@@ -24,8 +24,9 @@ import Pictures
 from PyQt6.QtGui     import QFontDatabase, QFont
 from PyQt6.QtCore    import Qt
 from PyQt6 import QtCore, QtGui, QtWidgets
-import math
 KT = int(1)
+DT = int(8)
+Ammount = int()
 Armagedon = []
 class AppWindow(QMainWindow):
     def __init__(self):
@@ -57,7 +58,7 @@ class AppWindow_main(QMainWindow):
     def __init__(self):
         super(AppWindow_main, self).__init__()
         #добовление шрифтов
-        global font,font2,font3,font4,font5,font6,font7,Collective, Collectiv_1, fool_name
+        global font,font2,font3,font4,font5,font6,font7,Collective, Collectiv_1, fool_name, Collectable
         fool_name = ''
         font = QFont('SFProText-Light', 80)
         font2 = QFont('Lato-Light', 30)
@@ -69,6 +70,7 @@ class AppWindow_main(QMainWindow):
         font8 = QFont('SFProText-Light', 26)
         self.ui = Form()
         self.ui.setupUi(self)
+        Collectable = []
         Collective = []
         Collectiv_1 = []
         Collectiv_1.append([self.ui.stackedWidget_2,
@@ -1711,7 +1713,8 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
 
         self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
     def Question_gen(self):
-        global KT
+        global DT
+        global Collectable
         self.stackedWidget_Question = QtWidgets.QStackedWidget()
         self.stackedWidget_Question.setObjectName(f"stackedWidget_Question_{KT}")
         self.page_date_q = QtWidgets.QWidget() #W19
@@ -2026,8 +2029,14 @@ f"#{self.dateEdit_qt.objectName()}" ":pressed { \n"
         index_page = index.currentIndex()
         # print(index_page)
 
+    def Questioning(self):
+        global Collectable, Ammount
+        Ammount = ((len(Collectable))-1)
+        with open("/Danno/Test.txt") as textFile:
+                lines = [line.split() for line in textFile]
+                print (lines)
 
-        
+
     def delete(self,stackedWidget_t_):
         pages = stackedWidget_t_.count()
         for i in range(pages):
@@ -2094,6 +2103,7 @@ f"#{self.dateEdit_qt.objectName()}" ":pressed { \n"
             button.clicked.connect(self.per)  
         
     def test (self):
+        global Collectable, Ammount
         button = self.sender()
         if button:
             row = self.ui.tableWidget.indexAt(button.pos()).row()
@@ -2101,8 +2111,16 @@ f"#{self.dateEdit_qt.objectName()}" ":pressed { \n"
             name_file = 'Danno/' + name_file +".txt"
             name_file = open( name_file)
             print(row, name_file.read())
-            name_file.close()
             self.ui.Button_Back_2.clicked.connect(self.transfer_back_2)
+            Ammount = ((len(Collectable))-1)
+            
+            any =  open("./Danno/test.txt", 'r')
+            mylist = ast.literal_eval(any.read())
+            print(mylist)
+            for any in mylist:
+                print (any)
+            name_file.close()
+            any.close()
     def transfer_back_2(self):
             self.ui.stackedWidget.setCurrentWidget(self.ui.page)          
            
