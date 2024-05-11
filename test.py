@@ -326,6 +326,23 @@ f"#{self.Button_Question_1.objectName()}"":pressed { \n"
         self.horizontalLayout_f_300 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_1.addLayout(self.horizontalLayout_f_300)
         self.horizontalLayout_f_310 = QtWidgets.QHBoxLayout()
+        self.Button_Delete_01 = QtWidgets.QPushButton()
+        self.Button_Delete_01.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Delete_01.setObjectName(f"Button_Delete_0{KT}")
+        self.Button_Delete_01.setStyleSheet(f"#{self.Button_Delete_01.objectName()}""{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Delete_01.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Delete_01.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Delete_01.setText("")
         self.Button_Copy_01 = QtWidgets.QPushButton()
         self.Button_Copy_01.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_01.setObjectName(f"Button_Copy_0{KT}")
@@ -346,6 +363,7 @@ f"#{self.Button_Copy_01.objectName()}"":pressed { \n"
         icon2 = QtGui.QIcon()
         icon2.addPixmap(QtGui.QPixmap("../../../../../1621635.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.Button_Copy_01.setIcon(icon2)
+        self.horizontalLayout_f_300.addWidget(self.Button_Delete_01)
         self.horizontalLayout_f_300.addWidget(self.Button_Copy_01)
         self.horizontalLayout_f_300.addLayout(self.horizontalLayout_f_310)
         self.Obyazatelny_vopros_f_01 = QtWidgets.QLabel()
@@ -490,6 +508,24 @@ f"#{self.Button_Question_2.objectName()}"":pressed { \n"
         self.horizontalLayout_f_301 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_2.addLayout(self.horizontalLayout_f_301)
         self.horizontalLayout_f_311 = QtWidgets.QHBoxLayout()
+        self.Button_Delete_02 = QtWidgets.QPushButton()
+        self.Button_Delete_02.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Delete_02.setObjectName(f"Button_Delete_1{KT}")
+        self.Button_Delete_02.setStyleSheet(f"#{self.Button_Delete_02.objectName()}""{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Delete_02.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Delete_02.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Delete_02.setText("")
+        self.horizontalLayout_f_301.addWidget(self.Button_Delete_02)
         self.Button_Copy_02 = QtWidgets.QPushButton()
         self.Button_Copy_02.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_02.setObjectName(f"Button_Copy_1{KT}")
@@ -687,6 +723,24 @@ f"#{self.Button_Question_3.objectName()}"":pressed { \n"
         self.horizontalLayout_f_302 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_3.addLayout(self.horizontalLayout_f_302)
         self.horizontalLayout_f_312 = QtWidgets.QHBoxLayout()
+        self.Button_Delete_03 = QtWidgets.QPushButton()
+        self.Button_Delete_03.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Delete_03.setObjectName(f"Button_Delete_2{KT}")
+        self.Button_Delete_03.setStyleSheet(f"#{self.Button_Delete_03.objectName()}""{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Delete_03.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Delete_03.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Delete_03.setText("")
+        self.horizontalLayout_f_302.addWidget(self.Button_Delete_03)
         self.Button_Copy_03 = QtWidgets.QPushButton()
         self.Button_Copy_03.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_03.setObjectName(f"Button_Copy_3{KT}")
@@ -869,6 +923,24 @@ f"#{self.Button_Question_4.objectName()}"":pressed { \n"
         self.horizontalLayout_f_303 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_4.addLayout(self.horizontalLayout_f_303)
         self.horizontalLayout_f_313 = QtWidgets.QHBoxLayout()
+        self.Button_Delete_04 = QtWidgets.QPushButton()
+        self.Button_Delete_04.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Delete_04.setObjectName(f"Button_Delete_3{KT}")
+        self.Button_Delete_04.setStyleSheet(f"#{self.Button_Delete_04.objectName()}""{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Delete_04.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Delete_04.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Delete_04.setText("")
+        self.horizontalLayout_f_303.addWidget(self.Button_Delete_04)
         self.Button_Copy_04 = QtWidgets.QPushButton()
         self.Button_Copy_04.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_04.setObjectName(f"Button_Copy_4{KT}")
@@ -1116,6 +1188,24 @@ f"#{self.Button_Question_5.objectName()}"":pressed { \n"
         self.horizontalLayout_f_304 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_5.addLayout(self.horizontalLayout_f_304)
         self.horizontalLayout_f_314 = QtWidgets.QHBoxLayout()
+        self.Button_Delete_05 = QtWidgets.QPushButton()
+        self.Button_Delete_05.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Delete_05.setObjectName(f"Button_Delete_4{KT}")
+        self.Button_Delete_05.setStyleSheet(f"#{self.Button_Delete_05.objectName()}""{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Delete_05.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Delete_05.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Delete_05.setText("")
+        self.horizontalLayout_f_304.addWidget(self.Button_Delete_05)
         self.Button_Copy_05 = QtWidgets.QPushButton()
         self.Button_Copy_05.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_05.setObjectName(f"Button_Copy_05{KT}")
@@ -1289,6 +1379,24 @@ f"#{self.Button_Question_6.objectName()}"":pressed { \n"
         self.horizontalLayout_f_305 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_6.addLayout(self.horizontalLayout_f_305)
         self.horizontalLayout_f_315 = QtWidgets.QHBoxLayout()
+        self.Button_Delete_06 = QtWidgets.QPushButton()
+        self.Button_Delete_06.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Delete_06.setObjectName(f"Button_Delete_5{KT}")
+        self.Button_Delete_06.setStyleSheet(f"#{self.Button_Delete_06.objectName()}""{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Delete_06.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Delete_06.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Delete_06.setText("")
+        self.horizontalLayout_f_305.addWidget(self.Button_Delete_06)
         self.Button_Copy_06 = QtWidgets.QPushButton()
         self.Button_Copy_06.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_06.setObjectName(f"Button_Copy_06{KT}")
@@ -1462,6 +1570,24 @@ f"#{self.Button_Question_7.objectName()}"":pressed { \n"
         self.horizontalLayout_f_306 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_7.addLayout(self.horizontalLayout_f_306)
         self.horizontalLayout_f_316 = QtWidgets.QHBoxLayout()
+        self.Button_Delete_07 = QtWidgets.QPushButton()
+        self.Button_Delete_07.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Delete_07.setObjectName(f"Button_Delete_6{KT}")
+        self.Button_Delete_07.setStyleSheet(f"#{self.Button_Delete_07.objectName()}""{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Delete_07.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Delete_07.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Delete_07.setText("")
+        self.horizontalLayout_f_306.addWidget(self.Button_Delete_07)
         self.Button_Copy_07 = QtWidgets.QPushButton()
         self.Button_Copy_07.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_07.setObjectName(f"Button_Copy_07{KT}")
@@ -1641,6 +1767,24 @@ f"#{self.Button_Question_8.objectName()}"":pressed { \n"
         self.horizontalLayout_f_307 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_8.addLayout(self.horizontalLayout_f_307)
         self.horizontalLayout_f_317 = QtWidgets.QHBoxLayout()
+        self.Button_Delete_08 = QtWidgets.QPushButton()
+        self.Button_Delete_08.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_Delete_08.setObjectName(f"Button_Delete_7{KT}")
+        self.Button_Delete_08.setStyleSheet(f"#{self.Button_Delete_08.objectName()}""{\n"
+"border: 2px solid;\n"
+"border-radius: 9px;\n"
+"border-color:rgb(190, 190, 190);\n"
+"background-color: rgb(228, 228, 228);\n"
+"}\n"
+f"#{self.Button_Delete_08.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.Button_Delete_08.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
+"")
+        self.Button_Delete_08.setText("")
+        self.horizontalLayout_f_307.addWidget(self.Button_Delete_08)
         self.Button_Copy_08 = QtWidgets.QPushButton()
         self.Button_Copy_08.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_08.setObjectName(f"Button_Copy_8{KT}")
@@ -2117,8 +2261,8 @@ f"#{self.dateEdit_qt.objectName()}" ":pressed { \n"
             any =  open("./Danno/test.txt", 'r')
             mylist = ast.literal_eval(any.read())
             print(mylist)
-            for any in mylist:
-                print (any)
+            for f in mylist:
+                print (mylist)
             name_file.close()
             any.close()
     def transfer_back_2(self):
