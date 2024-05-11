@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 ['Test_final.docx', [0, '', 'rewrew'], [0, '', 'fsdf'], [0, 'fdfsd', '']]
-=======
-['Test_final.docx', [0, 'выап', 'ывап']]
->>>>>>> b9517f6c92d8745415fe0140f1cf7ead7d762901
