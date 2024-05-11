@@ -1,4 +1,5 @@
-import os, ast, sys
+import os, ast, sys, tkinter.messagebox
+from tkinter.messagebox import showinfo, askyesno
 from os import listdir
 from os.path import isfile, join
 from functools import partial
@@ -56,7 +57,8 @@ class AppWindow_main(QMainWindow):
     def __init__(self):
         super(AppWindow_main, self).__init__()
         #добовление шрифтов
-        global font,font2,font3,font4,font5,font6,font7,Collective, Collectiv_1
+        global font,font2,font3,font4,font5,font6,font7,Collective, Collectiv_1, fool_name
+        fool_name = ''
         font = QFont('SFProText-Light', 80)
         font2 = QFont('Lato-Light', 30)
         font3 = QFont('Lato-Light', 20)
@@ -79,7 +81,14 @@ class AppWindow_main(QMainWindow):
         [ self.ui.comboBox, self.ui.page_2,self.ui.Vopros,self.ui.Obyazatelny_vopros,self.ui.Tag],
         [self.ui.comboBox_10, self.ui.page_3,self.ui.Vopros_8,self.ui.Obyazatelny_vopros_8,self.ui.Tag_8]]])
 
-        self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)   
+        self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)
+
+        #Делаем не активными поля на формах
+        self.ui.dateEdit.setDisabled(True)
+        self.ui.timeEdit.setDisabled(True)
+        self.ui.Kratki_otvet.setDisabled(True)
+        self.ui.Kratki_otvet_4.setDisabled(True)
+
         #присвоение шрифтов объектам
         self.ui.Kratki_otvet.setFont(font3)
         self.ui.Vopros.setFont(font3)
@@ -119,6 +128,8 @@ class AppWindow_main(QMainWindow):
         self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)
         
         self.ui.comboBox_2.currentIndexChanged.connect(partial(self.opt,self.ui.comboBox_2))
+
+        self.newDocument()
         
     def opt(self,index):
         index.currentIndexChanged.disconnect()
@@ -1195,7 +1206,7 @@ f"#{self.comboBox_f_6_.objectName()}"":pressed { \n"
         self.horizontalLayout_f_205 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_6.addLayout(self.horizontalLayout_f_205)
         self.horizontalLayout_f_215 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_f_215.setContentsMargins(0, 0, 5, 0)
+        self.horizontalLayout_f_215.setContentsMargins(0, 0, 300, 0)
         self.horizontalLayout_f_225 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_205.addLayout(self.horizontalLayout_f_215)
         self.horizontalLayout_f_205.addLayout(self.horizontalLayout_f_225)
@@ -1368,7 +1379,7 @@ f"#{self.comboBox_f_7_.objectName()}"":pressed { \n"
         self.horizontalLayout_f_206 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_7.addLayout(self.horizontalLayout_f_206)
         self.horizontalLayout_f_216 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_f_216.setContentsMargins(0, 0, 5, 0)
+        self.horizontalLayout_f_216.setContentsMargins(0, 0, 300, 0)
         self.horizontalLayout_f_226 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_206.addLayout(self.horizontalLayout_f_216)
         self.horizontalLayout_f_206.addLayout(self.horizontalLayout_f_226)
@@ -1755,40 +1766,48 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         stackedWidget_t_.deleteLater()
     def save_form(self, index):
         global name, fool_name, Collective, number_form, Collectiv_1
-        forma_1 = [] 
-        vse = []
-        forma = [] 
-        vse.append(fool_name)
-        for forms_1 in Collectiv_1:
-             forma_1 = [] 
-             Box_1 = forms_1[1][0][0].currentIndex() 
-             text_1 = forms_1[1][Box_1][2].text()
-             ob_vopros_1 = False
-             Teg_1 = forms_1[1][Box_1][4].text() 
-             forma_1.append(Box_1)
-             forma_1.append(text_1)
-             forma_1.append(Teg_1)
-             vse.append(forma_1) 
+        if fool_name == '':
+            tkinter.messagebox.showwarning(title="Внимание!",message="Выберите документ для формы!")
+        else:
+                forma_1 = [] 
+                vse = []
+                forma = [] 
+                vse.append(fool_name)
+                for forms_1 in Collectiv_1:
+                        forma_1 = [] 
+                        Box_1 = forms_1[1][0][0].currentIndex() 
+                        text_1 = forms_1[1][Box_1][2].text()
+                        ob_vopros_1 = False
+                        Teg_1 = forms_1[1][Box_1][4].text() 
+                        forma_1.append(Box_1)
+                        forma_1.append(text_1)
+                        forma_1.append(Teg_1)
+                        vse.append(forma_1) 
 
-        for forms in Collective:
-              forma = []
-              Box = forms[1][0][0].currentIndex()
-              text = forms[1][Box][2].text()
-              ob_vopros = False
-              Teg = forms[1][Box][4].text()
-              forma.append(Box)
-              forma.append(text)
-              forma.append(Teg)
-              vse.append(forma) 
+                for forms in Collective:
+                        forma = []
+                        Box = forms[1][0][0].currentIndex()
+                        text = forms[1][Box][2].text()
+                        ob_vopros = False
+                        Teg = forms[1][Box][4].text()
+                        forma.append(Box)
+                        forma.append(text)
+                        forma.append(Teg)
+                        vse.append(forma) 
                
 
-        my_file = open('Danno/' + name+".txt", "w+")
-        my_file.write(str(vse))
-        my_file.close()
-        with open('Danno/' + name+'.txt', 'r') as f:
-            mylist = ast.literal_eval(f.read())
+                my_file = open('Danno/' + name+".txt", "w+")
+                my_file.write(str(vse))
+                my_file.close()
+                with open('Danno/' + name+'.txt', 'r') as f:
+                        mylist = ast.literal_eval(f.read())
+                self.newDocument()
+                self.ui.stackedWidget.setCurrentWidget(self.ui.page)
+                self.transfer_back_save()
 
-    def newDoument(self):
+    def newDocument(self):
+        while (self.ui.tableWidget.rowCount() > 0):
+            self.ui.tableWidget.setRowCount(0)
         onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
         os.path.isfile(os.path.join('Danno', f))]
 
@@ -1838,6 +1857,14 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
             self.Annihilation(i)
         Armagedon = []
         KT = 1
+
+    def transfer_back_save(self):
+            global KT, Armagedon
+            for i in Armagedon:
+                self.Annihilation(i)
+            Armagedon = []
+            KT = 1
+
     def transfer_Fill(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.page)
         self.ui.stackedWidget.setCurrentWidget(self.ui.page)
