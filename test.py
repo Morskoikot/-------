@@ -1878,258 +1878,6 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         [self.comboBox_f_8_,self.page_t_6,self.textField_vp_80,self.Obyazatelny_vopros_f_08,self.textField_Tag_8,[]]]])
 
         self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
-    def Question_gen(self):
-        global DT
-        global Collectable
-        self.stackedWidget_Question = QtWidgets.QStackedWidget()
-        self.stackedWidget_Question.setObjectName(f"stackedWidget_Question_{KT}")
-        self.page_date_q = QtWidgets.QWidget() #W19
-        self.verticalLayout_Date_1 = QtWidgets.QVBoxLayout(self.page_date_q) #V38
-        self.horizontalLayout_Date_1 = QtWidgets.QHBoxLayout() #H105
-        self.widget_Date = QtWidgets.QWidget() #P19
-        self.widget_Date.setMaximumSize(QtCore.QSize(900, 400))
-        self.widget_Date.setStyleSheet("#widget {\n"
-"background-color: rgb(228, 228, 228)\n"
-"}")
-        self.verticalLayout_Date_2 = QtWidgets.QVBoxLayout(self.widget_Date) #V5
-        self.verticalLayout_Date_2.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
-        self.horizontalLayout_Date_2 = QtWidgets.QHBoxLayout() #H12
-        self.horizontalLayout_Date_3 = QtWidgets.QHBoxLayout() #H17
-        self.Question_Date_qt = QtWidgets.QLabel()
-        self.Question_Date_qt.setMaximumSize(QtCore.QSize(425, 60))
-        self.Question_Date_qt.setObjectName(f"Question_Date_qt_{KT}")
-        self.Question_Date_qt.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 2px solid;")
-        self.Question_Date_qt.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
-        self.horizontalLayout_Date_3.addWidget(self.Question_Date_qt)
-        self.horizontalLayout_Date_2.addLayout(self.horizontalLayout_Date_3)
-        self.verticalLayout_Date_2.addLayout(self.horizontalLayout_Date_2)
-        self.horizontalLayout_Date_4 = QtWidgets.QHBoxLayout() #H20
-        self.horizontalLayout_Date_5 = QtWidgets.QHBoxLayout() #H88
-        self.dateEdit_qt = QtWidgets.QDateEdit()
-        self.dateEdit_qt.setMaximumSize(QtCore.QSize(160, 45))
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        self.dateEdit_qt.setFont(font)
-        self.dateEdit_qt.setObjectName(f"dateEdit_qt_{KT}")
-        self.dateEdit_qt.setStyleSheet(f"#{self.dateEdit_qt.objectName()}" "{\n"
-"border: 2px solid;\n"
-"border-radius: 5px;\n"
-"border-color:rgb(190, 190, 190) ;\n"
-"background-color:rgb(243, 243, 243);\n"
-"}\n"
-f"#{self.dateEdit_qt.objectName()}" ":hover {\n"
-"background-color: rgb(243, 243, 243);\n"
-"}\n"
-f"#{self.dateEdit_qt.objectName()}" ":pressed { \n"
-"background-color:rgb(243, 243, 243);\n"
-"}\n"
-"")
-        self.dateEdit_qt.setObjectName("dateEdit_3")
-        self.horizontalLayout_Date_5.addWidget(self.dateEdit_qt)
-        self.horizontalLayout_Date_4.addLayout(self.horizontalLayout_Date_5)
-        self.verticalLayout_Date_2.addLayout(self.horizontalLayout_Date_4)
-        self.horizontalLayout_Date_1.addWidget(self.widget_Date)
-        self.verticalLayout_Date_1.addLayout(self.horizontalLayout_Date_1)
-        self.stackedWidget_Question.addWidget(self.page_date_q)
-        self.page_19 = QtWidgets.QWidget()
-        self.page_19.setObjectName("page_19")
-        self.verticalLayout_45 = QtWidgets.QVBoxLayout(self.page_19)
-        self.verticalLayout_45.setObjectName("verticalLayout_45")
-        self.horizontalLayout_114 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_114.setObjectName("horizontalLayout_114")
-        self.widget_23 = QtWidgets.QWidget(parent=self.page_19)
-        self.widget_23.setMaximumSize(QtCore.QSize(900, 400))
-        self.widget_23.setStyleSheet("#widget_3 {\n"
-"background-color: rgb(228, 228, 228)\n"
-"}")
-        self.widget_23.setObjectName("widget_23")
-        self.verticalLayout_48 = QtWidgets.QVBoxLayout(self.widget_23)
-        self.verticalLayout_48.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
-        self.verticalLayout_48.setObjectName("verticalLayout_48")
-        self.horizontalLayout_115 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_115.setObjectName("horizontalLayout_115")
-        self.horizontalLayout_119 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_119.setObjectName("horizontalLayout_119")
-        self.Question_Sentence = QtWidgets.QLabel(parent=self.widget_23)
-        self.Question_Sentence.setMaximumSize(QtCore.QSize(425, 60))
-        self.Question_Sentence.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 2px solid;")
-        self.Question_Sentence.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
-        self.Question_Sentence.setObjectName("Question_Sentence")
-        self.horizontalLayout_119.addWidget(self.Question_Sentence)
-        self.horizontalLayout_115.addLayout(self.horizontalLayout_119)
-        self.verticalLayout_48.addLayout(self.horizontalLayout_115)
-        self.horizontalLayout_123 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_123.setContentsMargins(0, -1, -1, -1)
-        self.horizontalLayout_123.setObjectName("horizontalLayout_123")
-        self.horizontalLayout_124 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_124.setObjectName("horizontalLayout_124")
-        self.Kratki_otvet_10 = QtWidgets.QLineEdit(parent=self.widget_23)
-        self.Kratki_otvet_10.setMaximumSize(QtCore.QSize(425, 60))
-        font = QtGui.QFont()
-        font.setPointSize(20)
-        self.Kratki_otvet_10.setFont(font)
-        self.Kratki_otvet_10.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 2px solid;\n"
-"background-color: rgb(228, 228, 228);")
-        self.Kratki_otvet_10.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
-        self.Kratki_otvet_10.setObjectName("Kratki_otvet_10")
-        self.horizontalLayout_124.addWidget(self.Kratki_otvet_10)
-        self.horizontalLayout_123.addLayout(self.horizontalLayout_124)
-        self.verticalLayout_48.addLayout(self.horizontalLayout_123)
-        self.horizontalLayout_114.addWidget(self.widget_23)
-        self.verticalLayout_45.addLayout(self.horizontalLayout_114)
-        self.stackedWidget_4.addWidget(self.page_19)
-        self.page_20 = QtWidgets.QWidget()
-        self.page_20.setObjectName("page_20")
-        self.verticalLayout_51 = QtWidgets.QVBoxLayout(self.page_20)
-        self.verticalLayout_51.setObjectName("verticalLayout_51")
-        self.horizontalLayout_133 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_133.setObjectName("horizontalLayout_133")
-        self.widget_26 = QtWidgets.QWidget(parent=self.page_20)
-        self.widget_26.setMaximumSize(QtCore.QSize(900, 400))
-        self.widget_26.setStyleSheet("#widget_5 {\n"
-"background-color: rgb(228, 228, 228)\n"
-"}")
-        self.widget_26.setObjectName("widget_26")
-        self.verticalLayout_55 = QtWidgets.QVBoxLayout(self.widget_26)
-        self.verticalLayout_55.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
-        self.verticalLayout_55.setObjectName("verticalLayout_55")
-        self.horizontalLayout_134 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_134.setObjectName("horizontalLayout_134")
-        self.horizontalLayout_135 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_135.setObjectName("horizontalLayout_135")
-        self.Question_VarMany = QtWidgets.QLabel(parent=self.widget_26)
-        self.Question_VarMany.setMaximumSize(QtCore.QSize(425, 60))
-        self.Question_VarMany.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 2px solid;")
-        self.Question_VarMany.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
-        self.Question_VarMany.setObjectName("Question_VarMany")
-        self.horizontalLayout_135.addWidget(self.Question_VarMany)
-        self.horizontalLayout_134.addLayout(self.horizontalLayout_135)
-        self.verticalLayout_55.addLayout(self.horizontalLayout_134)
-        self.horizontalLayout_137 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_137.setObjectName("horizontalLayout_137")
-        self.horizontalLayout_138 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_138.setObjectName("horizontalLayout_138")
-        self.Kratki_otvet_11 = QtWidgets.QLineEdit(parent=self.widget_26)
-        self.Kratki_otvet_11.setMaximumSize(QtCore.QSize(425, 60))
-        font = QtGui.QFont()
-        font.setPointSize(20)
-        self.Kratki_otvet_11.setFont(font)
-        self.Kratki_otvet_11.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 2px solid;\n"
-"background-color: rgb(228, 228, 228);")
-        self.Kratki_otvet_11.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
-        self.Kratki_otvet_11.setObjectName("Kratki_otvet_11")
-        self.horizontalLayout_138.addWidget(self.Kratki_otvet_11)
-        self.horizontalLayout_137.addLayout(self.horizontalLayout_138)
-        self.verticalLayout_55.addLayout(self.horizontalLayout_137)
-        self.horizontalLayout_133.addWidget(self.widget_26)
-        self.verticalLayout_51.addLayout(self.horizontalLayout_133)
-        self.stackedWidget_4.addWidget(self.page_20)
-        self.page_21 = QtWidgets.QWidget()
-        self.page_21.setObjectName("page_21")
-        self.verticalLayout_61 = QtWidgets.QVBoxLayout(self.page_21)
-        self.verticalLayout_61.setObjectName("verticalLayout_61")
-        self.horizontalLayout_143 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_143.setObjectName("horizontalLayout_143")
-        self.widget_29 = QtWidgets.QWidget(parent=self.page_21)
-        self.widget_29.setMaximumSize(QtCore.QSize(900, 400))
-        self.widget_29.setStyleSheet("#widget_7 {\n"
-"background-color: rgb(228, 228, 228)\n"
-"}")
-        self.widget_29.setObjectName("widget_29")
-        self.verticalLayout_62 = QtWidgets.QVBoxLayout(self.widget_29)
-        self.verticalLayout_62.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
-        self.verticalLayout_62.setObjectName("verticalLayout_62")
-        self.horizontalLayout_144 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_144.setObjectName("horizontalLayout_144")
-        self.horizontalLayout_145 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_145.setObjectName("horizontalLayout_145")
-        self.Question_Var = QtWidgets.QLabel(parent=self.widget_29)
-        self.Question_Var.setMaximumSize(QtCore.QSize(425, 60))
-        self.Question_Var.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 2px solid;")
-        self.Question_Var.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
-        self.Question_Var.setObjectName("Question_Var")
-        self.horizontalLayout_145.addWidget(self.Question_Var)
-        self.horizontalLayout_144.addLayout(self.horizontalLayout_145)
-        self.verticalLayout_62.addLayout(self.horizontalLayout_144)
-        self.horizontalLayout_149 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_149.setObjectName("horizontalLayout_149")
-        self.horizontalLayout_150 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_150.setContentsMargins(-1, -1, 0, -1)
-        self.horizontalLayout_150.setObjectName("horizontalLayout_150")
-        self.Kratki_otvet_13 = QtWidgets.QLineEdit(parent=self.widget_29)
-        self.Kratki_otvet_13.setMaximumSize(QtCore.QSize(425, 60))
-        font = QtGui.QFont()
-        font.setPointSize(20)
-        self.Kratki_otvet_13.setFont(font)
-        self.Kratki_otvet_13.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 2px solid;\n"
-"background-color: rgb(228, 228, 228);")
-        self.Kratki_otvet_13.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
-        self.Kratki_otvet_13.setObjectName("Kratki_otvet_13")
-        self.horizontalLayout_150.addWidget(self.Kratki_otvet_13)
-        self.horizontalLayout_149.addLayout(self.horizontalLayout_150)
-        self.verticalLayout_62.addLayout(self.horizontalLayout_149)
-        self.horizontalLayout_143.addWidget(self.widget_29)
-        self.verticalLayout_61.addLayout(self.horizontalLayout_143)
-        self.stackedWidget_4.addWidget(self.page_21)
-        self.page_22 = QtWidgets.QWidget()
-        self.page_22.setObjectName("page_22")
-        self.verticalLayout_64 = QtWidgets.QVBoxLayout(self.page_22)
-        self.verticalLayout_64.setObjectName("verticalLayout_64")
-        self.horizontalLayout_160 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_160.setObjectName("horizontalLayout_160")
-        self.widget_32 = QtWidgets.QWidget(parent=self.page_22)
-        self.widget_32.setMaximumSize(QtCore.QSize(900, 400))
-        self.widget_32.setStyleSheet("#widget_9 {\n"
-"background-color: rgb(228, 228, 228)\n"
-"}")
-        self.widget_32.setObjectName("widget_32")
-        self.verticalLayout_65 = QtWidgets.QVBoxLayout(self.widget_32)
-        self.verticalLayout_65.setObjectName("verticalLayout_65")
-        self.horizontalLayout_163 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_163.setObjectName("horizontalLayout_163")
-        self.horizontalLayout_164 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_164.setObjectName("horizontalLayout_164")
-        self.Question_Text = QtWidgets.QLabel(parent=self.widget_32)
-        self.Question_Text.setMaximumSize(QtCore.QSize(425, 60))
-        self.Question_Text.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 2px solid;")
-        self.Question_Text.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
-        self.Question_Text.setObjectName("Question_Text")
-        self.horizontalLayout_164.addWidget(self.Question_Text)
-        self.horizontalLayout_163.addLayout(self.horizontalLayout_164)
-        self.verticalLayout_65.addLayout(self.horizontalLayout_163)
-        self.horizontalLayout_167 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_167.setObjectName("horizontalLayout_167")
-        self.horizontalLayout_168 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_168.setContentsMargins(-1, -1, 9, -1)
-        self.horizontalLayout_168.setObjectName("horizontalLayout_168")
-        self.Kratki_otvet_14 = QtWidgets.QLineEdit(parent=self.widget_32)
-        self.Kratki_otvet_14.setMaximumSize(QtCore.QSize(425, 60))
-        font = QtGui.QFont()
-        font.setPointSize(20)
-        self.Kratki_otvet_14.setFont(font)
-        self.Kratki_otvet_14.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 2px solid;\n"
-"background-color: rgb(228, 228, 228);")
-        self.Kratki_otvet_14.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
-        self.Kratki_otvet_14.setObjectName("Kratki_otvet_14")
-        self.horizontalLayout_168.addWidget(self.Kratki_otvet_14)
-        self.horizontalLayout_167.addLayout(self.horizontalLayout_168)
-        self.horizontalLayout_169 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_169.setObjectName("horizontalLayout_169")
-        self.horizontalLayout_167.addLayout(self.horizontalLayout_169)
-        self.verticalLayout_65.addLayout(self.horizontalLayout_167)
-        self.horizontalLayout_160.addWidget(self.widget_32)
-        self.verticalLayout_64.addLayout(self.horizontalLayout_160)
-        self.stackedWidget_4.addWidget(self.page_22)
-        
     def opt_2(self,index):
         index.currentIndexChanged.disconnect()
         global number_form
@@ -2203,8 +1951,8 @@ f"#{self.dateEdit_qt.objectName()}" ":pressed { \n"
     def delete(self,stackedWidget_t_):
         pages = stackedWidget_t_.count()
         for i in range(pages):
-                widget = stackedWidget_t_.widget(0);
-                stackedWidget_t_.removeWidget(widget);
+                widget = stackedWidget_t_.widget(0)
+                stackedWidget_t_.removeWidget(widget)
         stackedWidget_t_.deleteLater()
     def save_form(self, index):
         global name, fool_name, Collective, number_form, Collectiv_1
@@ -2263,27 +2011,116 @@ f"#{self.dateEdit_qt.objectName()}" ":pressed { \n"
             self.ui.tableWidget.insertRow(row_index)  
             self.ui.tableWidget.setItem(row_index, 0, QtWidgets.QTableWidgetItem(file_name))
             self.ui.tableWidget.setCellWidget(row_index, 1,button)
-            button.clicked.connect(self.per)  
+            button.clicked.connect(self.per)
         
     def test (self):
-        global Collectable, Ammount
+        global Collectable, Ammount, KT
         button = self.sender()
         if button:
-            row = self.ui.tableWidget.indexAt(button.pos()).row()
-            name_file = self.ui.tableWidget.item(row,0).text()
-            name_file = 'Danno/' + name_file +".txt"
-            name_file = open( name_file)
-            print(row, name_file.read())
-            self.ui.Button_Back_2.clicked.connect(self.transfer_back_2)
-            Ammount = ((len(Collectable))-1)
+                row = self.ui.tableWidget.indexAt(button.pos()).row()
+                name_file = self.ui.tableWidget.item(row,0).text()
+                name_file = 'Danno/' + name_file +".txt"
+                name_file = open( name_file)
+                print(row, name_file.read())
+                self.ui.Button_Back_2.clicked.connect(self.transfer_back_2)
+                Ammount = ((len(Collectable))-1)
             
-            any =  open("./Danno/test.txt", 'r')
-            mylist = ast.literal_eval(any.read())
-            print(mylist)
-            for f in mylist:
-                print (mylist)
-            name_file.close()
-            any.close()
+                any =  open("./Danno/test.txt", 'r')
+                mylist = ast.literal_eval(any.read())
+                print(mylist)
+                for f in mylist:
+                        if f != mylist[0]:
+                                form_id = f[0]
+                                form_question = f[1]
+                                form_tag = f[2]
+                                print (form_id, form_question, form_tag)
+                                if form_id == 0:
+                                        self.verticalLayout_q_01 = QtWidgets.QVBoxLayout()
+                                        self.horizontalLayout_q_01 = QtWidgets.QHBoxLayout()
+                                        self.widget_q_01 = QtWidgets.QWidget()
+                                        self.widget_q_01.setMaximumSize(QtCore.QSize(600, 400))
+                                        self.widget_q_01.setObjectName(f"widget_q_01_{KT}")
+                                        self.widget_q_01.setStyleSheet(f"#{self.widget_q_01.objectName()}""{\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+                                        self.verticalLayout_q_02 = QtWidgets.QVBoxLayout(self.widget_q_01)
+                                        self.horizontalLayout_q_02 = QtWidgets.QHBoxLayout()
+                                        self.horizontalLayout_q_03 = QtWidgets.QHBoxLayout()
+                                        self.Question_Sentence = QtWidgets.QLabel()
+                                        self.Question_Sentence.setMaximumSize(QtCore.QSize(500, 60))
+                                        # self.Question_Sentence.setStyleSheet()
+                                        self.Question_Sentence.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
+                                        self.Question_Sentence.setObjectName("Question_Sentence")
+                                        self.horizontalLayout_q_03.addWidget(self.Question_Sentence)
+                                        self.horizontalLayout_q_02.addLayout(self.horizontalLayout_q_03)
+                                        self.verticalLayout_q_02.addLayout(self.horizontalLayout_q_02)
+                                        self.horizontalLayout_q_04 = QtWidgets.QHBoxLayout()
+                                        self.horizontalLayout_q_05 = QtWidgets.QHBoxLayout()
+                                        self.Line_Answer = QtWidgets.QLineEdit()
+                                        self.Line_Answer.setMaximumSize(QtCore.QSize(500, 60))
+                                        font = QtGui.QFont()
+                                        font.setPointSize(20)
+                                        self.Line_Answer.setFont(font)
+                                        self.Line_Answer.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(255, 255, 255);")
+                                        self.Line_Answer.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+                                        self.horizontalLayout_q_05.addWidget(self.Line_Answer)
+                                        self.Line_Answer.setPlaceholderText("Ответ")
+                                        self.horizontalLayout_q_04.addLayout(self.horizontalLayout_q_05)
+                                        self.verticalLayout_q_02.addLayout(self.horizontalLayout_q_04)
+                                        self.horizontalLayout_q_01.addWidget(self.widget_q_01)
+                                        self.verticalLayout_q_01.addLayout(self.horizontalLayout_q_01)
+                                        self.verticalLayout_q_03 = QtWidgets.QVBoxLayout()
+                                        self.verticalLayout_q_03.addLayout(self.verticalLayout_q_01)
+                                        self.ui.verticalLayout_29.addLayout(self.verticalLayout_q_03)
+                                        self.Question_Sentence.setText(form_question)
+                                        KT += 1
+                                if form_id == 1: #////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                        self.verticalLayout_q_11 = QtWidgets.QVBoxLayout()
+                                        self.horizontalLayout_q_11 = QtWidgets.QHBoxLayout()
+                                        self.widget_q_11 = QtWidgets.QWidget()
+                                        self.widget_q_11.setMaximumSize(QtCore.QSize(600, 400))
+                                        self.widget_q_11.setObjectName(f"widget_q_11_{KT}")
+                                        self.widget_q_11.setStyleSheet(f"#{self.widget_q_11.objectName()}""{\n"
+"background-color: rgb(228, 228, 228)\n"
+"}")
+                                        self.verticalLayout_q_12 = QtWidgets.QVBoxLayout(self.widget_q_11)
+                                        self.horizontalLayout_q_12 = QtWidgets.QHBoxLayout()
+                                        self.horizontalLayout_q_13 = QtWidgets.QHBoxLayout()
+                                        self.Question_Text = QtWidgets.QLabel()
+                                        self.Question_Text.setMaximumSize(QtCore.QSize(500, 60))
+                                        # self.Question_Text.setStyleSheet()
+                                        self.Question_Text.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
+                                        self.Question_Text.setObjectName("Question_Text")
+                                        self.horizontalLayout_q_13.addWidget(self.Question_Text)
+                                        self.horizontalLayout_q_12.addLayout(self.horizontalLayout_q_13)
+                                        self.verticalLayout_q_12.addLayout(self.horizontalLayout_q_12)
+                                        self.horizontalLayout_q_14 = QtWidgets.QHBoxLayout()
+                                        self.horizontalLayout_q_15 = QtWidgets.QHBoxLayout()
+                                        self.Text_Answer = QtWidgets.QTextEdit()
+                                        self.Text_Answer.setMinimumSize(QtCore.QSize(500, 50))
+                                        self.Text_Answer.setMaximumSize(QtCore.QSize(500, 150))
+                                        font = QtGui.QFont()
+                                        font.setPointSize(20)
+                                        self.Text_Answer.setFont(font)
+                                        self.Text_Answer.setStyleSheet("border-top: 0px solid;\n"
+"border-bottom: 2px solid;\n"
+"background-color: rgb(255, 255, 255);")
+                                        self.Text_Answer.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
+                                        self.horizontalLayout_q_15.addWidget(self.Text_Answer)
+                                        self.Text_Answer.setPlaceholderText("Ответ")
+                                        self.horizontalLayout_q_14.addLayout(self.horizontalLayout_q_15)
+                                        self.verticalLayout_q_12.addLayout(self.horizontalLayout_q_14)
+                                        self.horizontalLayout_q_11.addWidget(self.widget_q_11)
+                                        self.verticalLayout_q_11.addLayout(self.horizontalLayout_q_11)
+                                        self.verticalLayout_q_13 = QtWidgets.QVBoxLayout()
+                                        self.verticalLayout_q_13.addLayout(self.verticalLayout_q_11)
+                                        self.ui.verticalLayout_29.addLayout(self.verticalLayout_q_13)
+                                        self.Question_Text.setText(form_question)
+                                        KT += 1
+                name_file.close()
+                any.close()
     def transfer_back_2(self):
             self.ui.stackedWidget.setCurrentWidget(self.ui.page)          
            
