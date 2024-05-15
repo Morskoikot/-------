@@ -24,6 +24,8 @@ import Pictures, copy_delete
 from PyQt6.QtGui     import QFontDatabase, QFont
 from PyQt6.QtCore    import Qt
 from PyQt6 import QtCore, QtGui, QtWidgets
+from docxtpl import DocxTemplate
+
 # import delete, copy
 KT = int(1)
 DT = int(8)
@@ -190,7 +192,7 @@ class AppWindow_main(QMainWindow):
         res =QFileDialog.getOpenFileName(self, 'Open File', ".",'DOC file (*.doc*)')
         res = os.path.basename(res[0])
         self.ui.Dobavit_dokument_label.setText(res)
-        global fool_name, name
+        global fool_name, name,filename
     #разделение названия файла от его расширения  
         fool_name = res
         filename = fool_name
@@ -2014,7 +2016,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
             button.clicked.connect(self.per)
         
     def test (self):
-        global Collectable, Ammount, KT
+        global Collectable, Ammount, KT, galavni_collective, mylist
         button = self.sender()
         if button:
                 row = self.ui.tableWidget.indexAt(button.pos()).row()
@@ -2028,6 +2030,8 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                 any =  open("./Danno/test.txt", 'r')
                 mylist = ast.literal_eval(any.read())
                 print(mylist)
+                galavni_collective = []
+
                 for f in mylist:
                         if f != mylist[0]:
                                 form_id = f[0]
@@ -2076,6 +2080,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.ui.verticalLayout_29.addLayout(self.verticalLayout_q_03)
                                         self.Question_Sentence.setText(form_question)
                                         KT += 1
+                                        galavni_collective.append([self.Line_Answer,form_tag])
                                 if form_id == 1: #////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                         self.verticalLayout_q_11 = QtWidgets.QVBoxLayout()
                                         self.horizontalLayout_q_11 = QtWidgets.QHBoxLayout()
@@ -2119,8 +2124,23 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.ui.verticalLayout_29.addLayout(self.verticalLayout_q_13)
                                         self.Question_Text.setText(form_question)
                                         KT += 1
+                                        galavni_collective.append([self.Text_Answer,form_tag])
                 name_file.close()
                 any.close()
+                
+    def save_document(self):
+        global filename, galavni_collective, mylist
+        forma = {}
+        for danni in galavni_collective:
+             text = danni[0].text()
+             forma[danni[1]] = text
+
+        doc = DocxTemplate(mylist[0])
+        try:
+            doc.render(forma)
+            doc.save("gotovo/" + mylist[0])
+        except:
+            print("Закройте документ - шаблон-final.docx")
     def transfer_back_2(self):
             self.ui.stackedWidget.setCurrentWidget(self.ui.page)          
            
