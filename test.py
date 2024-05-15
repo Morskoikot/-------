@@ -2029,8 +2029,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.horizontalLayout_q_03 = QtWidgets.QHBoxLayout()
                                         self.Question_Sentence = QtWidgets.QLabel()
                                         self.Question_Sentence.setMaximumSize(QtCore.QSize(500, 60))
-                                        self.Question_Sentence.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 2px solid;")
+                                        # self.Question_Sentence.setStyleSheet()
                                         self.Question_Sentence.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
                                         self.Question_Sentence.setObjectName("Question_Sentence")
                                         self.horizontalLayout_q_03.addWidget(self.Question_Sentence)
@@ -2045,9 +2044,10 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.Line_Answer.setFont(font)
                                         self.Line_Answer.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
-"background-color: rgb(228, 228, 228);")
+"background-color: rgb(255, 255, 255);")
                                         self.Line_Answer.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
                                         self.horizontalLayout_q_05.addWidget(self.Line_Answer)
+                                        self.Line_Answer.setPlaceholderText("Ответ")
                                         self.horizontalLayout_q_04.addLayout(self.horizontalLayout_q_05)
                                         self.verticalLayout_q_02.addLayout(self.horizontalLayout_q_04)
                                         self.horizontalLayout_q_01.addWidget(self.widget_q_01)
@@ -2071,8 +2071,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.horizontalLayout_q_13 = QtWidgets.QHBoxLayout()
                                         self.Question_Text = QtWidgets.QLabel()
                                         self.Question_Text.setMaximumSize(QtCore.QSize(500, 60))
-                                        self.Question_Text.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 2px solid;")
+                                        # self.Question_Text.setStyleSheet()
                                         self.Question_Text.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
                                         self.Question_Text.setObjectName("Question_Text")
                                         self.horizontalLayout_q_13.addWidget(self.Question_Text)
@@ -2081,15 +2080,17 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.horizontalLayout_q_14 = QtWidgets.QHBoxLayout()
                                         self.horizontalLayout_q_15 = QtWidgets.QHBoxLayout()
                                         self.Text_Answer = QtWidgets.QTextEdit()
+                                        self.Text_Answer.setMinimumSize(QtCore.QSize(500, 50))
                                         self.Text_Answer.setMaximumSize(QtCore.QSize(500, 150))
                                         font = QtGui.QFont()
                                         font.setPointSize(20)
                                         self.Text_Answer.setFont(font)
                                         self.Text_Answer.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
-"background-color: rgb(228, 228, 228);")
+"background-color: rgb(255, 255, 255);")
                                         self.Text_Answer.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
                                         self.horizontalLayout_q_15.addWidget(self.Text_Answer)
+                                        self.Text_Answer.setPlaceholderText("Ответ")
                                         self.horizontalLayout_q_14.addLayout(self.horizontalLayout_q_15)
                                         self.verticalLayout_q_12.addLayout(self.horizontalLayout_q_14)
                                         self.horizontalLayout_q_11.addWidget(self.widget_q_11)
