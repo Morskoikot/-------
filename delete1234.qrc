@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="copy">
+    <file>1621635.png</file>
+  </qresource>
+  <qresource prefix="delete">
+    <file>Rectangle_32.png</file>
+  </qresource>
+</RCC>

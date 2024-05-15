@@ -8,6 +8,7 @@
   <qresource prefix="Trashcan">
     <file>trashcan.png</file>
   </qresource>
+  <qresource prefix="newPrefix"/>
   <qresource prefix="Galka">
     <file>galka.png</file>
   </qresource>
