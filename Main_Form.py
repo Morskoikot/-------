@@ -315,45 +315,47 @@ class Ui_MainWindow(object):
         self.horizontalLayout_13 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_13.setSpacing(3)
         self.horizontalLayout_13.setObjectName("horizontalLayout_13")
-        self.Button_Copy = QtWidgets.QPushButton(parent=self.widget)
-        self.Button_Copy.setMaximumSize(QtCore.QSize(41, 41))
-        self.Button_Copy.setStyleSheet("#Button_Copy {\n"
+        self.Button_delete = QtWidgets.QPushButton(parent=self.widget)
+        self.Button_delete.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_delete.setStyleSheet("#Button_delete {\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#Button_Copy:hover {\n"
+"#Button_delete:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#Button_Copy:pressed { \n"
+"#Button_delete:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}\n"
 "")
-        self.Button_Copy.setText("")
+        self.Button_delete.setText("")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("../../../../../1621635.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.Button_Copy.setIcon(icon)
-        self.Button_Copy.setObjectName("Button_Copy")
-        self.horizontalLayout_13.addWidget(self.Button_Copy)
-        self.pushButton_delete = QtWidgets.QPushButton(parent=self.widget)
-        self.pushButton_delete.setMaximumSize(QtCore.QSize(41, 41))
-        self.pushButton_delete.setStyleSheet("#pushButton_delete {\n"
+        self.Button_delete.setIcon(icon)
+        self.Button_delete.setObjectName("Button_delete")
+        self.horizontalLayout_13.addWidget(self.Button_delete)
+        self.pushButton_copy = QtWidgets.QPushButton(parent=self.widget)
+        self.pushButton_copy.setMaximumSize(QtCore.QSize(41, 41))
+        self.pushButton_copy.setStyleSheet("#pushButton_copy {\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#pushButton_delete:hover {\n"
+"#pushButton_copy:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#pushButton_delete:pressed { \n"
+"#pushButton_copy:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}\n"
 "")
-        self.pushButton_delete.setText("")
-        self.pushButton_delete.setObjectName("pushButton_delete")
-        self.horizontalLayout_13.addWidget(self.pushButton_delete)
+        self.pushButton_copy.setText("")
+        self.pushButton_copy.setObjectName("pushButton_copy")
+        self.horizontalLayout_13.addWidget(self.pushButton_copy)
         self.horizontalLayout_26 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_26.setSpacing(0)
         self.horizontalLayout_26.setObjectName("horizontalLayout_26")
@@ -513,43 +515,45 @@ class Ui_MainWindow(object):
         self.horizontalLayout_32 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_32.setSpacing(3)
         self.horizontalLayout_32.setObjectName("horizontalLayout_32")
-        self.Button_Copy_2 = QtWidgets.QPushButton(parent=self.widget_3)
-        self.Button_Copy_2.setMaximumSize(QtCore.QSize(41, 41))
-        self.Button_Copy_2.setStyleSheet("#Button_Copy_2 {\n"
+        self.Button_delete_2 = QtWidgets.QPushButton(parent=self.widget_3)
+        self.Button_delete_2.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_delete_2.setStyleSheet("#Button_delete_2 {\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#Button_Copy_2:hover {\n"
+"#Button_delete_2:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#Button_Copy_2:pressed { \n"
+"#Button_delete_2:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}\n"
 "")
-        self.Button_Copy_2.setText("")
-        self.Button_Copy_2.setIcon(icon)
-        self.Button_Copy_2.setObjectName("Button_Copy_2")
-        self.horizontalLayout_32.addWidget(self.Button_Copy_2)
-        self.pushButton_delete_2 = QtWidgets.QPushButton(parent=self.widget_3)
-        self.pushButton_delete_2.setMaximumSize(QtCore.QSize(41, 41))
-        self.pushButton_delete_2.setStyleSheet("#pushButton_delete_2 {\n"
+        self.Button_delete_2.setText("")
+        self.Button_delete_2.setIcon(icon)
+        self.Button_delete_2.setObjectName("Button_delete_2")
+        self.horizontalLayout_32.addWidget(self.Button_delete_2)
+        self.pushButton_copy_2 = QtWidgets.QPushButton(parent=self.widget_3)
+        self.pushButton_copy_2.setMaximumSize(QtCore.QSize(41, 41))
+        self.pushButton_copy_2.setStyleSheet("#pushButton_copy_2{\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#pushButton_delete_2:hover {\n"
+"#pushButton_copy_2:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#pushButton_delete_2:pressed { \n"
+"#pushButton_copy_2:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}\n"
 "")
-        self.pushButton_delete_2.setText("")
-        self.pushButton_delete_2.setObjectName("pushButton_delete_2")
-        self.horizontalLayout_32.addWidget(self.pushButton_delete_2)
+        self.pushButton_copy_2.setText("")
+        self.pushButton_copy_2.setObjectName("pushButton_copy_2")
+        self.horizontalLayout_32.addWidget(self.pushButton_copy_2)
         self.horizontalLayout_33 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_33.setSpacing(0)
         self.horizontalLayout_33.setObjectName("horizontalLayout_33")
@@ -728,43 +732,45 @@ class Ui_MainWindow(object):
         self.horizontalLayout_41 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_41.setSpacing(3)
         self.horizontalLayout_41.setObjectName("horizontalLayout_41")
-        self.Button_Copy_3 = QtWidgets.QPushButton(parent=self.widget_5)
-        self.Button_Copy_3.setMaximumSize(QtCore.QSize(41, 41))
-        self.Button_Copy_3.setStyleSheet("#Button_Copy_3 {\n"
+        self.Button_delete_3 = QtWidgets.QPushButton(parent=self.widget_5)
+        self.Button_delete_3.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_delete_3.setStyleSheet("#Button_delete_3 {\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#Button_Copy_3:hover {\n"
+"#Button_delete_3:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#Button_Copy_3:pressed { \n"
+"#Button_delete_3:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}\n"
 "")
-        self.Button_Copy_3.setText("")
-        self.Button_Copy_3.setIcon(icon)
-        self.Button_Copy_3.setObjectName("Button_Copy_3")
-        self.horizontalLayout_41.addWidget(self.Button_Copy_3)
-        self.pushButton_delete_3 = QtWidgets.QPushButton(parent=self.widget_5)
-        self.pushButton_delete_3.setMaximumSize(QtCore.QSize(41, 41))
-        self.pushButton_delete_3.setStyleSheet("#pushButton_delete_3 {\n"
+        self.Button_delete_3.setText("")
+        self.Button_delete_3.setIcon(icon)
+        self.Button_delete_3.setObjectName("Button_delete_3")
+        self.horizontalLayout_41.addWidget(self.Button_delete_3)
+        self.pushButton_copy_3 = QtWidgets.QPushButton(parent=self.widget_5)
+        self.pushButton_copy_3.setMaximumSize(QtCore.QSize(41, 41))
+        self.pushButton_copy_3.setStyleSheet("#pushButton_copy_3 {\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#pushButton_delete_3:hover {\n"
+"#pushButton_copy_3:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#pushButton_delete_3:pressed { \n"
+"#pushButton_copy_3:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}\n"
 "")
-        self.pushButton_delete_3.setText("")
-        self.pushButton_delete_3.setObjectName("pushButton_delete_3")
-        self.horizontalLayout_41.addWidget(self.pushButton_delete_3)
+        self.pushButton_copy_3.setText("")
+        self.pushButton_copy_3.setObjectName("pushButton_copy_3")
+        self.horizontalLayout_41.addWidget(self.pushButton_copy_3)
         self.horizontalLayout_42 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_42.setSpacing(0)
         self.horizontalLayout_42.setObjectName("horizontalLayout_42")
@@ -945,44 +951,46 @@ class Ui_MainWindow(object):
         self.verticalLayout_21.addLayout(self.horizontalLayout_49)
         self.horizontalLayout_50 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_50.setObjectName("horizontalLayout_50")
-        self.Button_Copy_4 = QtWidgets.QPushButton(parent=self.widget_7)
-        self.Button_Copy_4.setMaximumSize(QtCore.QSize(41, 41))
-        self.Button_Copy_4.setStyleSheet("#Button_Copy_4 {\n"
+        self.Button_delete_4 = QtWidgets.QPushButton(parent=self.widget_7)
+        self.Button_delete_4.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_delete_4.setStyleSheet("#Button_delete_4 {\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#Button_Copy_4:hover {\n"
+"#Button_delete_4:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#Button_Copy_4:pressed { \n"
+"#Button_delete_4:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}\n"
 "\n"
 "")
-        self.Button_Copy_4.setText("")
-        self.Button_Copy_4.setIcon(icon)
-        self.Button_Copy_4.setObjectName("Button_Copy_4")
-        self.horizontalLayout_50.addWidget(self.Button_Copy_4)
-        self.pushButton_delete_4 = QtWidgets.QPushButton(parent=self.widget_7)
-        self.pushButton_delete_4.setMaximumSize(QtCore.QSize(41, 41))
-        self.pushButton_delete_4.setStyleSheet("#pushButton_delete_4 {\n"
+        self.Button_delete_4.setText("")
+        self.Button_delete_4.setIcon(icon)
+        self.Button_delete_4.setObjectName("Button_delete_4")
+        self.horizontalLayout_50.addWidget(self.Button_delete_4)
+        self.pushButton_copy_4 = QtWidgets.QPushButton(parent=self.widget_7)
+        self.pushButton_copy_4.setMaximumSize(QtCore.QSize(41, 41))
+        self.pushButton_copy_4.setStyleSheet("#pushButton_copy_4{\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#pushButton_delete_4:hover {\n"
+"#pushButton_copy_4:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#pushButton_delete_4:pressed { \n"
+"#pushButton_copy_4:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}\n"
 "")
-        self.pushButton_delete_4.setText("")
-        self.pushButton_delete_4.setObjectName("pushButton_delete_4")
-        self.horizontalLayout_50.addWidget(self.pushButton_delete_4)
+        self.pushButton_copy_4.setText("")
+        self.pushButton_copy_4.setObjectName("pushButton_copy_4")
+        self.horizontalLayout_50.addWidget(self.pushButton_copy_4)
         self.horizontalLayout_51 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_51.setSpacing(0)
         self.horizontalLayout_51.setObjectName("horizontalLayout_51")
@@ -1142,45 +1150,47 @@ class Ui_MainWindow(object):
         self.horizontalLayout_59 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_59.setSpacing(3)
         self.horizontalLayout_59.setObjectName("horizontalLayout_59")
-        self.Button_Copy_5 = QtWidgets.QPushButton(parent=self.widget_9)
-        self.Button_Copy_5.setMaximumSize(QtCore.QSize(41, 41))
-        self.Button_Copy_5.setStyleSheet("#Button_Copy_5 {\n"
+        self.Button_delete_5 = QtWidgets.QPushButton(parent=self.widget_9)
+        self.Button_delete_5.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_delete_5.setStyleSheet("#Button_delete_5 {\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#Button_Copy_5:hover {\n"
+"#Button_delete_5:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#Button_Copy_5:pressed { \n"
+"#Button_delete_5:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}\n"
 "\n"
 "")
-        self.Button_Copy_5.setText("")
-        self.Button_Copy_5.setIcon(icon)
-        self.Button_Copy_5.setObjectName("Button_Copy_5")
-        self.horizontalLayout_59.addWidget(self.Button_Copy_5)
-        self.pushButton_delete_5 = QtWidgets.QPushButton(parent=self.widget_9)
-        self.pushButton_delete_5.setMaximumSize(QtCore.QSize(41, 41))
-        self.pushButton_delete_5.setStyleSheet("#pushButton_delete_5 {\n"
+        self.Button_delete_5.setText("")
+        self.Button_delete_5.setIcon(icon)
+        self.Button_delete_5.setObjectName("Button_delete_5")
+        self.horizontalLayout_59.addWidget(self.Button_delete_5)
+        self.pushButton_copy_5 = QtWidgets.QPushButton(parent=self.widget_9)
+        self.pushButton_copy_5.setMaximumSize(QtCore.QSize(41, 41))
+        self.pushButton_copy_5.setStyleSheet("#pushButton_copy_5 {\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#pushButton_delete_5:hover {\n"
+"#pushButton_copy_5:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#pushButton_delete_5:pressed { \n"
+"#pushButton_copy_5:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}\n"
 "\n"
 "")
-        self.pushButton_delete_5.setText("")
-        self.pushButton_delete_5.setObjectName("pushButton_delete_5")
-        self.horizontalLayout_59.addWidget(self.pushButton_delete_5)
+        self.pushButton_copy_5.setText("")
+        self.pushButton_copy_5.setObjectName("pushButton_copy_5")
+        self.horizontalLayout_59.addWidget(self.pushButton_copy_5)
         self.horizontalLayout_60 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_60.setSpacing(0)
         self.horizontalLayout_60.setObjectName("horizontalLayout_60")
@@ -1434,44 +1444,46 @@ class Ui_MainWindow(object):
         self.horizontalLayout_72 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_72.setSpacing(3)
         self.horizontalLayout_72.setObjectName("horizontalLayout_72")
-        self.Button_Copy_6 = QtWidgets.QPushButton(parent=self.widget_11)
-        self.Button_Copy_6.setMaximumSize(QtCore.QSize(41, 41))
-        self.Button_Copy_6.setStyleSheet("#Button_Copy_6 {\n"
+        self.Button_delete_6 = QtWidgets.QPushButton(parent=self.widget_11)
+        self.Button_delete_6.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_delete_6.setStyleSheet("#Button_delete_6 {\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#Button_Copy_6:hover {\n"
+"#Button_delete_6:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#Button_Copy_6:pressed { \n"
+"#Button_delete_6:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}\n"
 "\n"
 "")
-        self.Button_Copy_6.setText("")
-        self.Button_Copy_6.setIcon(icon)
-        self.Button_Copy_6.setObjectName("Button_Copy_6")
-        self.horizontalLayout_72.addWidget(self.Button_Copy_6)
-        self.pushButton_delete_6 = QtWidgets.QPushButton(parent=self.widget_11)
-        self.pushButton_delete_6.setMaximumSize(QtCore.QSize(41, 41))
-        self.pushButton_delete_6.setStyleSheet("#pushButton_delete_6 {\n"
+        self.Button_delete_6.setText("")
+        self.Button_delete_6.setIcon(icon)
+        self.Button_delete_6.setObjectName("Button_delete_6")
+        self.horizontalLayout_72.addWidget(self.Button_delete_6)
+        self.pushButton_copy_6 = QtWidgets.QPushButton(parent=self.widget_11)
+        self.pushButton_copy_6.setMaximumSize(QtCore.QSize(41, 41))
+        self.pushButton_copy_6.setStyleSheet("#pushButton_copy_6 {\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#pushButton_delete_6:hover {\n"
+"#pushButton_copy_6:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#pushButton_delete_6:pressed { \n"
+"#pushButton_copy_6:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}\n"
 "")
-        self.pushButton_delete_6.setText("")
-        self.pushButton_delete_6.setObjectName("pushButton_delete_6")
-        self.horizontalLayout_72.addWidget(self.pushButton_delete_6)
+        self.pushButton_copy_6.setText("")
+        self.pushButton_copy_6.setObjectName("pushButton_copy_6")
+        self.horizontalLayout_72.addWidget(self.pushButton_copy_6)
         self.horizontalLayout_73 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_73.setSpacing(0)
         self.horizontalLayout_73.setObjectName("horizontalLayout_73")
@@ -1709,41 +1721,43 @@ class Ui_MainWindow(object):
         self.horizontalLayout_82 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_82.setSpacing(3)
         self.horizontalLayout_82.setObjectName("horizontalLayout_82")
-        self.Button_Copy_7 = QtWidgets.QPushButton(parent=self.widget_13)
-        self.Button_Copy_7.setMaximumSize(QtCore.QSize(41, 41))
-        self.Button_Copy_7.setStyleSheet("#Button_Copy_7 {\n"
+        self.Button_delete_7 = QtWidgets.QPushButton(parent=self.widget_13)
+        self.Button_delete_7.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_delete_7.setStyleSheet("#Button_delete_7 {\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#Button_Copy_7:hover {\n"
+"#Button_delete_7:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#Button_Copy_7:pressed { \n"
+"#Button_delete_7:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}")
-        self.Button_Copy_7.setText("")
-        self.Button_Copy_7.setIcon(icon)
-        self.Button_Copy_7.setObjectName("Button_Copy_7")
-        self.horizontalLayout_82.addWidget(self.Button_Copy_7)
-        self.pushButton_delete_7 = QtWidgets.QPushButton(parent=self.widget_13)
-        self.pushButton_delete_7.setMaximumSize(QtCore.QSize(41, 41))
-        self.pushButton_delete_7.setStyleSheet("#pushButton_delete_7 {\n"
+        self.Button_delete_7.setText("")
+        self.Button_delete_7.setIcon(icon)
+        self.Button_delete_7.setObjectName("Button_delete_7")
+        self.horizontalLayout_82.addWidget(self.Button_delete_7)
+        self.pushButton_copy_7 = QtWidgets.QPushButton(parent=self.widget_13)
+        self.pushButton_copy_7.setMaximumSize(QtCore.QSize(41, 41))
+        self.pushButton_copy_7.setStyleSheet("#pushButton_copy_7 {\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
-"#pushButton_delete_7:hover {\n"
+"#pushButton_copy_7:hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
-"#pushButton_delete_7:pressed { \n"
+"#pushButton_copy_7:pressed { \n"
 "background-color:rgb(204, 204, 204);\n"
 "}")
-        self.pushButton_delete_7.setText("")
-        self.pushButton_delete_7.setObjectName("pushButton_delete_7")
-        self.horizontalLayout_82.addWidget(self.pushButton_delete_7)
+        self.pushButton_copy_7.setText("")
+        self.pushButton_copy_7.setObjectName("pushButton_copy_7")
+        self.horizontalLayout_82.addWidget(self.pushButton_copy_7)
         self.horizontalLayout_83 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_83.setSpacing(0)
         self.horizontalLayout_83.setObjectName("horizontalLayout_83")
@@ -1909,9 +1923,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_91 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_91.setSpacing(3)
         self.horizontalLayout_91.setObjectName("horizontalLayout_91")
-        self.Button_Copy_8 = QtWidgets.QPushButton(parent=self.widget_15)
-        self.Button_Copy_8.setMaximumSize(QtCore.QSize(41, 41))
-        self.Button_Copy_8.setStyleSheet("#Button_Copy_8 {\n"
+        self.Button_delete_8 = QtWidgets.QPushButton(parent=self.widget_15)
+        self.Button_delete_8.setMaximumSize(QtCore.QSize(41, 41))
+        self.Button_delete_8.setStyleSheet("#Button_delete_8 {\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -1925,13 +1940,14 @@ class Ui_MainWindow(object):
 "background: rgb(204, 204, 204);\n"
 "transition: 3s;\n"
 "}")
-        self.Button_Copy_8.setText("")
-        self.Button_Copy_8.setIcon(icon)
-        self.Button_Copy_8.setObjectName("Button_Copy_8")
-        self.horizontalLayout_91.addWidget(self.Button_Copy_8)
-        self.pushButton_delete_8 = QtWidgets.QPushButton(parent=self.widget_15)
-        self.pushButton_delete_8.setMaximumSize(QtCore.QSize(41, 41))
-        self.pushButton_delete_8.setStyleSheet("#pushButton_delete_8 {\n"
+        self.Button_delete_8.setText("")
+        self.Button_delete_8.setIcon(icon)
+        self.Button_delete_8.setObjectName("Button_delete_8")
+        self.horizontalLayout_91.addWidget(self.Button_delete_8)
+        self.pushButton_copy_8 = QtWidgets.QPushButton(parent=self.widget_15)
+        self.pushButton_copy_8.setMaximumSize(QtCore.QSize(41, 41))
+        self.pushButton_copy_8.setStyleSheet("#pushButton_copy_8{\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -1945,9 +1961,9 @@ class Ui_MainWindow(object):
 "background: rgb(204, 204, 204);\n"
 "transition: 3s;\n"
 "}")
-        self.pushButton_delete_8.setText("")
-        self.pushButton_delete_8.setObjectName("pushButton_delete_8")
-        self.horizontalLayout_91.addWidget(self.pushButton_delete_8)
+        self.pushButton_copy_8.setText("")
+        self.pushButton_copy_8.setObjectName("pushButton_copy_8")
+        self.horizontalLayout_91.addWidget(self.pushButton_copy_8)
         self.horizontalLayout_92 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_92.setObjectName("horizontalLayout_92")
         self.Obyazatelny_vopros_8 = QtWidgets.QLabel(parent=self.widget_15)
@@ -2121,6 +2137,7 @@ class Ui_MainWindow(object):
         self.Button_Back_Fill.setObjectName("Button_Back_Fill")
         self.horizontalLayout_23.addWidget(self.Button_Back_Fill)
         self.verticalLayout_12.addLayout(self.horizontalLayout_23)
+        # тут начало таблицы
         self.horizontalLayout_25 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_25.setObjectName("horizontalLayout_25")
         self.tableWidget = QtWidgets.QTableWidget(parent=self.page)
@@ -2146,6 +2163,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_25.addWidget(self.tableWidget)
         self.verticalLayout_12.addLayout(self.horizontalLayout_25)
         self.stackedWidget.addWidget(self.page)
+        # тут конец но не точно
         self.Fill_page = QtWidgets.QWidget()
         self.Fill_page.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.Fill_page.setObjectName("Fill_page")
@@ -2237,7 +2255,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_8.addWidget(self.stackedWidget)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1000, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1000, 18))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)

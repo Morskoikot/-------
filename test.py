@@ -18,29 +18,57 @@ from PyQt6.QtWidgets import (
     QApplication
 )
 from Main_Form import Ui_MainWindow as Form
-import Pictures
+# from delete import Ui_MainWindow as DDD
+import Pictures, copy_delete
 from PyQt6.QtGui     import QFontDatabase, QFont
 from PyQt6.QtCore    import Qt
 from PyQt6 import QtCore, QtGui, QtWidgets
+from docxtpl import DocxTemplate
+
+# import delete, copy
 KT = int(1)
 DT = int(8)
 Ammount = int()
 Armagedon = []
+class AppWindow(QMainWindow):
+    def __init__(self):
+        super(AppWindow, self).__init__()
+        #загрузка шрифтов в приложение
+        id = QFontDatabase.addApplicationFont('./Fonts/ofont.ru_Noah.ttf')
+        # Если id равен -1, то шрифт не установлен
+        if id == -1: 
+            print('Ошибка подключения шрифтов')
+        font = QFont('ofont.ru_Noah', 70)
+        font2 = QFont('ofont.ru_Noah', 28)
+        font3 = QFont('ofont.ru_Noah', 20)
+        
+        self.ui = Register()
+        self.ui.setupUi(self)
+
+        self.ui.label.setFont(font)
+        self.ui.label_3.setFont(font2)
+        self.ui.label_2.setFont(font2)
+        self.ui.pushButton.setFont(font3)
+        self.ui.pushButton.clicked.connect(self.transfer)
+    def transfer(self):
+        AppWindow_main.show()
+        AppWindow.close()
+       
 #основное окно программы        
 class AppWindow_main(QMainWindow):
     def __init__(self):
         super(AppWindow_main, self).__init__()
         #добовление шрифтов
-        global font,font2,font3,font4,font5,font6,font7,Collective, Collectiv_1, fool_name, Collectable
+        global font,font2,font3,font4,font9,font6,font7,Collective, Collectiv_1, fool_name, Collectable
         fool_name = ''
-        font = QFont('SFProText-Light', 80)
-        font2 = QFont('Lato-Light', 30)
-        font3 = QFont('Lato-Light', 20)
-        font4 = QFont('SFProText-Light', 50)
-        font5 = QFont('SFProText-Light', 20)
-        font6 = QFont('SFProText-Light', 30)
-        font7 = QFont('Lato-Light', 22)
-        font8 = QFont('SFProText-Light', 26)
+        font = QFont('ofont.ru_Noah', 80)
+        font2 = QFont('ofont.ru_Noah', 30)
+        font3 = QFont('ofont.ru_Noah', 20)
+        font4 = QFont('ofont.ru_Noah', 70)
+        font6 = QFont('ofont.ru_Noah', 30)
+        font7 = QFont('ofont.ru_Noah', 22)
+        font8 = QFont('ofont.ru_Noah', 60)
+        font9 = QFont('ofont.ru_Noah', 14)
         self.ui = Form()
         self.ui.setupUi(self)
         Collectable = []
@@ -66,39 +94,47 @@ class AppWindow_main(QMainWindow):
 
         #присвоение шрифтов объектам
         self.ui.Kratki_otvet.setFont(font3)
-        self.ui.Vopros.setFont(font3)
-        self.ui.Glavnaya.setFont(font)
+
+        self.ui.Vopros_2.setFont(font3)
+        self.ui.Glavnaya.setFont(font4)
         self.ui.Button_Zapolnit.setFont(font6)
         self.ui.Button_Spisok.setFont(font6)
-        self.ui.Button_Save.setFont(font5)
-        self.ui.Button_Back.setFont(font5)
-        # self.ui.Obyazatelny_vopros.setFont(font3)
-        self.ui.Obyazatelny_vopros.setFont(font7)
+        self.ui.Button_Save.setFont(font3)
+        self.ui.Button_Back.setFont(font3)
+
+        self.ui.Obyazatelny_vopros_2.setFont(font7)
         self.ui.Button_Dok.setFont(font3)
         self.ui.Button_Forma_plus.setFont(font3)
-        self.ui.Dobavit_dokument_label.setFont(font5)
-        self.ui.Dobavochnoe_pole.setFont(font)
-        self.ui.Button_Dok.setFont(font5)
-        self.ui.Button_Forma_plus.setFont(font5)
         self.ui.Dobavit_dokument_label.setFont(font3)
-        self.ui.Tag.setFont(font3)
-        #self.ui..setFont(font5)
-        self.ui.Dobavochnoe_pole.setFont(font4)
-        self.ui.Button_Question.setFont(font5)
-        self.ui.Button_Trash.setFont(font5)
+        self.ui.Dobavochnoe_pole.setFont(font8)
+        self.ui.Button_Dok.setFont(font3)
+        self.ui.Button_Forma_plus.setFont(font3)
+        self.ui.Dobavit_dokument_label.setFont(font3)
+        self.ui.Tag_2.setFont(font3)
+        self.ui.Vopros_5.setFont(font3)
+        self.ui.Kratki_otvet_4.setFont(font3)
+        self.ui.comboBox_5.setFont(font9)
+        self.ui.comboBox_2.setFont(font9)
+        self.ui.Tag_5.setFont(font3)
+        self.ui.Obyazatelny_vopros_5.setFont(font7)
+        self.ui.Button_Question.setFont(font3)
+        self.ui.Button_Trash.setFont(font3)
+
+        self.ui.Button_Question_5.setFont(font3)
+        self.ui.label_3.setFont(font7)
+        self.ui.Poisk_2.setFont(font3)
+        self.ui.tableWidget.setFont(font9)
+        self.ui.Button_Back_Fill.setFont(font3)
+        
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
-        # self.ui.label.setFont(font8)
-        # self.ui.label_2.setFont(font5)
-        self.ui.Button_Back_Fill.setFont(font5)
-        #self.ui.Button_Save_Fill.setFont(font5)
         self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
         self.ui.Button_Zapolnit.clicked.connect(self.transfer_Fill)
-        # self.ui.Button_Save.clicked.connect(self.save_form)
         self.ui.Button_Dok.clicked.connect(self.Open_main_file_btn)
         self.ui.Button_Save.clicked.connect(self.save_form)
         self.ui.Button_Back.clicked.connect(self.transfer_back)
         self.ui.Button_Forma_plus.clicked.connect(self.add_field)
         self.ui.Button_Back_Fill.clicked.connect(self.transfer_back)
+        self.ui.Button_Save_2.clicked.connect(self.save_document) 
         
         self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)
         
@@ -152,14 +188,14 @@ class AppWindow_main(QMainWindow):
         elif index.currentIndex() == 0:
            self.ui.stackedWidget_2.setCurrentWidget(self.ui.page_4)
         index_page = index.currentIndex() 
-        print(index_page)  
+         
                      
     #постороение пути к документу
     def Open_main_file_btn(self):
         res =QFileDialog.getOpenFileName(self, 'Open File', ".",'DOC file (*.doc*)')
         res = os.path.basename(res[0])
         self.ui.Dobavit_dokument_label.setText(res)
-        global fool_name, name
+        global fool_name, name,filename
     #разделение названия файла от его расширения  
         fool_name = res
         filename = fool_name
@@ -169,7 +205,7 @@ class AppWindow_main(QMainWindow):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Add_page)
         
     def add_field(self):
-        global KT, Collective, Armagedon, Collectiv_1
+        global KT, Collective, Armagedon, Collectiv_1,font,font2,font3,font4,font9,font6,font7
         global name
         
 
@@ -204,7 +240,7 @@ class AppWindow_main(QMainWindow):
 "background-color: rgb(228, 228, 228);")
         self.textField_vp_10.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
         self.textField_vp_10.setPlaceholderText(_translate("MainWindow", "Вопрос"))
-        # print(self.textField_vp_10.setText('Work'))
+        self.textField_vp_10.setFont(font3)
         self.horizontalLayout_f_110.addWidget(self.textField_vp_10)
         self.horizontalLayout_f_120 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_f_120.setContentsMargins(28, -1, -1, -1)
@@ -213,7 +249,7 @@ class AppWindow_main(QMainWindow):
         self.comboBox_f_1.setMaximumSize(QtCore.QSize(220, 80))
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.comboBox_f_1.setFont(font)
+        self.comboBox_f_1.setFont(font9)
         self.comboBox_f_1.setObjectName(f"comboBox_f_1_{KT}")
         self.comboBox_f_1.setStyleSheet(f"#{self.comboBox_f_1.objectName()}" "{\n"
 "border: 2px solid;\n"
@@ -252,7 +288,7 @@ f"#{self.comboBox_f_1.objectName()}"":pressed { \n"
         self.textField_low_1.setMaximumSize(QtCore.QSize(425, 60))
         font = QtGui.QFont()
         font.setPointSize(20)
-        self.textField_low_1.setFont(font)
+        self.textField_low_1.setFont(font3)
         self.textField_low_1.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
 "background-color: rgb(228, 228, 228);")
@@ -263,7 +299,7 @@ f"#{self.comboBox_f_1.objectName()}"":pressed { \n"
         self.textField_tag_1.setMaximumSize(QtCore.QSize(100, 60))
         font = QtGui.QFont()
         font.setPointSize(20)
-        self.textField_tag_1.setFont(font)
+        self.textField_tag_1.setFont(font3)
         self.textField_tag_1.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
 "background-color: rgb(228, 228, 228);")
@@ -293,8 +329,10 @@ f"#{self.Button_Question_1.objectName()}"":pressed { \n"
 "}\n"
 "\n"
 "")
+        self.Button_Question_1.setText(_translate("MainWindow", "?"))
         self.vertcalLayout_230.addItem(spacer_1)
         self.vertcalLayout_230.addWidget(self.Button_Question_1)
+        self.Button_Question_1.setFont(font3)
         # Нижнее поле
         self.horizontalLayout_f_300 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_1.addLayout(self.horizontalLayout_f_300)
@@ -303,6 +341,7 @@ f"#{self.Button_Question_1.objectName()}"":pressed { \n"
         self.Button_Delete_01.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Delete_01.setObjectName(f"Button_Delete_0{KT}")
         self.Button_Delete_01.setStyleSheet(f"#{self.Button_Delete_01.objectName()}""{\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -316,10 +355,12 @@ f"#{self.Button_Delete_01.objectName()}"":pressed { \n"
 "}\n"
 "")
         self.Button_Delete_01.setText("")
+        # self.Button_Delete_01.setIcon(QIcon("delete.png"))
         self.Button_Copy_01 = QtWidgets.QPushButton()
         self.Button_Copy_01.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_01.setObjectName(f"Button_Copy_0{KT}")
         self.Button_Copy_01.setStyleSheet(f"#{self.Button_Copy_01.objectName()}""{\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -334,7 +375,7 @@ f"#{self.Button_Copy_01.objectName()}"":pressed { \n"
 "")
         self.Button_Copy_01.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("../../../../../1621635.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon2.addPixmap(QtGui.QPixmap("../../../../../copy.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.Button_Copy_01.setIcon(icon2)
         self.horizontalLayout_f_300.addWidget(self.Button_Delete_01)
         self.horizontalLayout_f_300.addWidget(self.Button_Copy_01)
@@ -343,7 +384,7 @@ f"#{self.Button_Copy_01.objectName()}"":pressed { \n"
         self.Obyazatelny_vopros_f_01.setMaximumSize(QtCore.QSize(400, 34))
         font = QtGui.QFont()
         font.setPointSize(20)
-        self.Obyazatelny_vopros_f_01.setFont(font)
+        self.Obyazatelny_vopros_f_01.setFont(font7)
         self.Obyazatelny_vopros_f_01.setObjectName("Obyazatelny_vopros_f_01")
         self.Obyazatelny_vopros_f_01.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
         self.horizontalLayout_f_310.addWidget(self.Obyazatelny_vopros_f_01)
@@ -383,7 +424,7 @@ f"#{self.Button_Copy_01.objectName()}"":pressed { \n"
         self.textField_vp_20.setMaximumSize(QtCore.QSize(425, 60))
         font = QtGui.QFont()
         font.setPointSize(20)
-        self.textField_vp_20.setFont(font)
+        self.textField_vp_20.setFont(font3)
         self.textField_vp_20.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
 "background-color: rgb(228, 228, 228);")
@@ -397,7 +438,7 @@ f"#{self.Button_Copy_01.objectName()}"":pressed { \n"
         self.comboBox_f_2_.setMaximumSize(QtCore.QSize(220, 80))
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.comboBox_f_2_.setFont(font)
+        self.comboBox_f_2_.setFont(font9)
         self.comboBox_f_2_.setObjectName(f"comboBox_f_2_{KT}")
         self.comboBox_f_2_.setStyleSheet(f"#{self.comboBox_f_2_.objectName()}" "{\n"
 "border: 2px solid;\n"
@@ -434,7 +475,7 @@ f"#{self.comboBox_f_2_.objectName()}"":pressed { \n"
         self.textField_low_2.setMaximumSize(QtCore.QSize(425, 60))
         font = QtGui.QFont()
         font.setPointSize(20)
-        self.textField_low_2.setFont(font)
+        self.textField_low_2.setFont(font3)
         self.textField_low_2.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
 "background-color: rgb(228, 228, 228);")
@@ -445,7 +486,7 @@ f"#{self.comboBox_f_2_.objectName()}"":pressed { \n"
         self.textField_low_2.setMaximumSize(QtCore.QSize(100, 60))
         font = QtGui.QFont()
         font.setPointSize(20)
-        self.textField_low_2.setFont(font)
+        self.textField_low_2.setFont(font3)
         self.textField_low_2.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
 "background-color: rgb(228, 228, 228);")
@@ -460,7 +501,7 @@ f"#{self.comboBox_f_2_.objectName()}"":pressed { \n"
         self.Button_Question_2.setMaximumSize(QtCore.QSize(33, 33))
         font = QtGui.QFont()
         font.setPointSize(20)
-        self.Button_Question_2.setFont(font)
+        self.Button_Question_2.setFont(font3)
         self.Button_Question_2.setObjectName(f"Button_Question_2_{KT}")
         self.Button_Question_2.setStyleSheet(f"#{self.Button_Question_2.objectName()}" "{\n"
 "border: 2px solid;\n"
@@ -477,6 +518,7 @@ f"#{self.Button_Question_2.objectName()}"":pressed { \n"
 "\n"
 "")
         self.vertcalLayout_231.addWidget(self.Button_Question_2)
+        self.Button_Question_2.setText(_translate("MainWindow", "?"))
         # Нижнее поле
         self.horizontalLayout_f_301 = QtWidgets.QHBoxLayout()
         self.verticalLayout_w_2.addLayout(self.horizontalLayout_f_301)
@@ -485,6 +527,7 @@ f"#{self.Button_Question_2.objectName()}"":pressed { \n"
         self.Button_Delete_02.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Delete_02.setObjectName(f"Button_Delete_1{KT}")
         self.Button_Delete_02.setStyleSheet(f"#{self.Button_Delete_02.objectName()}""{\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -503,6 +546,7 @@ f"#{self.Button_Delete_02.objectName()}"":pressed { \n"
         self.Button_Copy_02.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_02.setObjectName(f"Button_Copy_1{KT}")
         self.Button_Copy_02.setStyleSheet(f"#{self.Button_Copy_02.objectName()}""{\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -525,7 +569,7 @@ f"#{self.Button_Copy_02.objectName()}"":pressed { \n"
         self.Obyazatelny_vopros_f_02.setMaximumSize(QtCore.QSize(400, 34))
         font = QtGui.QFont()
         font.setPointSize(20)
-        self.Obyazatelny_vopros_f_02.setFont(font)
+        self.Obyazatelny_vopros_f_02.setFont(font7)
         self.Obyazatelny_vopros_f_02.setObjectName("Obyazatelny_vopros_f_02")
         self.Obyazatelny_vopros_f_02.setText(_translate("MainWindow", "ОБЯЗАТЕЛЬНЫЙ ВОПРОС"))
         self.horizontalLayout_f_311.addWidget(self.Obyazatelny_vopros_f_02)
@@ -712,6 +756,7 @@ f"#{self.button_difvar.objectName()}"":pressed { \n"
         self.Button_Delete_03.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Delete_03.setObjectName(f"Button_Delete_2{KT}")
         self.Button_Delete_03.setStyleSheet(f"#{self.Button_Delete_03.objectName()}""{\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -730,6 +775,7 @@ f"#{self.Button_Delete_03.objectName()}"":pressed { \n"
         self.Button_Copy_03.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_03.setObjectName(f"Button_Copy_3{KT}")
         self.Button_Copy_03.setStyleSheet(f"#{self.Button_Copy_03.objectName()}""{\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -918,6 +964,7 @@ f"#{self.button_var_1.objectName()}"":pressed { \n"
         self.Button_Delete_04.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Delete_04.setObjectName(f"Button_Delete_3{KT}")
         self.Button_Delete_04.setStyleSheet(f"#{self.Button_Delete_04.objectName()}""{\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -936,6 +983,7 @@ f"#{self.Button_Delete_04.objectName()}"":pressed { \n"
         self.Button_Copy_04.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_04.setObjectName(f"Button_Copy_4{KT}")
         self.Button_Copy_04.setStyleSheet(f"#{self.Button_Copy_04.objectName()}""{\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -1183,6 +1231,7 @@ f"#{self.Button_Question_5.objectName()}"":pressed { \n"
         self.Button_Delete_05.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Delete_05.setObjectName(f"Button_Delete_4{KT}")
         self.Button_Delete_05.setStyleSheet(f"#{self.Button_Delete_05.objectName()}""{\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -1201,6 +1250,7 @@ f"#{self.Button_Delete_05.objectName()}"":pressed { \n"
         self.Button_Copy_05.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_05.setObjectName(f"Button_Copy_05{KT}")
         self.Button_Copy_05.setStyleSheet(f"#{self.Button_Copy_05.objectName()}""{\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -1374,6 +1424,7 @@ f"#{self.Button_Question_6.objectName()}"":pressed { \n"
         self.Button_Delete_06.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Delete_06.setObjectName(f"Button_Delete_5{KT}")
         self.Button_Delete_06.setStyleSheet(f"#{self.Button_Delete_06.objectName()}""{\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -1392,6 +1443,7 @@ f"#{self.Button_Delete_06.objectName()}"":pressed { \n"
         self.Button_Copy_06.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_06.setObjectName(f"Button_Copy_06{KT}")
         self.Button_Copy_06.setStyleSheet(f"#{self.Button_Copy_06.objectName()}""{\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -1565,6 +1617,7 @@ f"#{self.Button_Question_7.objectName()}"":pressed { \n"
         self.Button_Delete_07.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Delete_07.setObjectName(f"Button_Delete_6{KT}")
         self.Button_Delete_07.setStyleSheet(f"#{self.Button_Delete_07.objectName()}""{\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -1583,6 +1636,7 @@ f"#{self.Button_Delete_07.objectName()}"":pressed { \n"
         self.Button_Copy_07.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_07.setObjectName(f"Button_Copy_07{KT}")
         self.Button_Copy_07.setStyleSheet(f"#{self.Button_Copy_07.objectName()}""{\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -1768,6 +1822,7 @@ f"#{self.button_var_8.objectName()}"":pressed { \n"
         self.Button_Delete_08.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Delete_08.setObjectName(f"Button_Delete_7{KT}")
         self.Button_Delete_08.setStyleSheet(f"#{self.Button_Delete_08.objectName()}""{\n"
+"image: url(:/delete/Rectangle_32.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -1786,6 +1841,7 @@ f"#{self.Button_Delete_08.objectName()}"":pressed { \n"
         self.Button_Copy_08.setMaximumSize(QtCore.QSize(41, 41))
         self.Button_Copy_08.setObjectName(f"Button_Copy_8{KT}")
         self.Button_Copy_08.setStyleSheet(f"#{self.Button_Copy_08.objectName()}""{\n"
+"image: url(:/copy/1621635.png);\n"
 "border: 2px solid;\n"
 "border-radius: 9px;\n"
 "border-color:rgb(190, 190, 190);\n"
@@ -1840,7 +1896,6 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         Armagedon.append(self.stackedWidget_t_) 
         KT += 1
         # Пятая
-        # print(Collective)
         Collective.append([self.stackedWidget_t_,
         [[self.comboBox_f_1,self.page_t_1,self.textField_vp_10,self.Obyazatelny_vopros_f_01,self.textField_tag_1],
         [self.comboBox_f_2_,self.page_t_2,self.textField_vp_20,self.Obyazatelny_vopros_f_02,self.textField_low_2],
@@ -1850,7 +1905,6 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         [self.comboBox_f_6_,self.page_t_5,self.textField_vp_60,self.Obyazatelny_vopros_f_06,self.textField_Tag_6,[]],
         [self.comboBox_f_7_,self.page_t_7,self.textField_vp_70,self.Obyazatelny_vopros_f_07,self.textField_Tag_7,[]],
         [self.comboBox_f_8_,self.page_t_6,self.textField_vp_80,self.Obyazatelny_vopros_f_08,self.textField_Tag_8,[]]]])
-        # print(Collective)
 
         self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
     def opt_2(self,index):
@@ -1879,7 +1933,6 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         Collective[number_form][1][6][0].setCurrentIndex(index.currentIndex())
         Collective[number_form][1][7][0].setCurrentIndex(index.currentIndex())         
 
-        # print(number_form)
         if (index.currentIndex() == 0):
             Collective[number_form][1][0][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][0][0]))
         elif (index.currentIndex() == 1):
@@ -1916,14 +1969,12 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         elif index.currentIndex() == 0:
            Collective[number_form][0].setCurrentWidget(Collective[number_form][1][0][1])
         index_page = index.currentIndex()
-        # print(index_page)
 
     def Questioning(self):
         global Collectable, Ammount
         Ammount = ((len(Collectable))-1)
         with open("/Danno/Test.txt") as textFile:
                 lines = [line.split() for line in textFile]
-                print (lines)
 
 
     def delete(self,stackedWidget_t_):
@@ -1974,6 +2025,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                 self.transfer_back_save()
 
     def newDocument(self):
+        global font9
         while (self.ui.tableWidget.rowCount() > 0):
             self.ui.tableWidget.setRowCount(0)
         onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
@@ -1984,7 +2036,8 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         for i, b in enumerate(onlyfiles):
             file_name = os.path.basename(b).split('.')[0]
             row_index = self.ui.tableWidget.rowCount() 
-            button = QtWidgets.QPushButton("Заполнить")  
+            button = QtWidgets.QPushButton("Заполнить")
+            button.setFont(font9)  
             button.clicked.connect(self.test)
             self.ui.tableWidget.insertRow(row_index)  
             self.ui.tableWidget.setItem(row_index, 0, QtWidgets.QTableWidgetItem(file_name))
@@ -1992,7 +2045,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
             button.clicked.connect(self.per)
         
     def test (self):
-        global Collectable, Ammount, KT
+        global Collectable, Ammount, KT, galavni_collective, mylist, font3, font6
         button = self.sender()
         if button:
                 row = self.ui.tableWidget.indexAt(button.pos()).row()
@@ -2005,13 +2058,15 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
             
                 any =  open("./Danno/test.txt", 'r')
                 mylist = ast.literal_eval(any.read())
-                print(mylist)
+                # print(mylist)
+                galavni_collective = []
+
                 for f in mylist:
                         if f != mylist[0]:
                                 form_id = f[0]
                                 form_question = f[1]
                                 form_tag = f[2]
-                                print (form_id, form_question, form_tag)
+                                # print (form_id, form_question, form_tag)
                                 if form_id == 0:
                                         self.verticalLayout_q_01 = QtWidgets.QVBoxLayout()
                                         self.horizontalLayout_q_01 = QtWidgets.QHBoxLayout()
@@ -2034,6 +2089,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         # self.Question_Sentence.setAlignment(QtCore.Qt.AlignJustify)
                                         self.Question_Sentence.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
                                         self.Question_Sentence.setObjectName("Question_Sentence")
+                                        self.Question_Sentence.setFont(font3)
                                         self.horizontalLayout_q_03.addWidget(self.Question_Sentence)
                                         self.horizontalLayout_q_02.addLayout(self.horizontalLayout_q_03)
                                         self.verticalLayout_q_02.addLayout(self.horizontalLayout_q_02)
@@ -2041,7 +2097,9 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.horizontalLayout_q_05 = QtWidgets.QHBoxLayout()
                                         self.Line_Answer = QtWidgets.QLineEdit()
                                         self.Line_Answer.setMaximumSize(QtCore.QSize(500, 60))
-                                        self.Line_Answer.setFont(font)
+                                        font = QtGui.QFont()
+                                        font.setPointSize(20)
+                                        self.Line_Answer.setFont(font3)
                                         self.Line_Answer.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
 "border-color: rgb(100, 100, 100);\n"
@@ -2058,6 +2116,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.ui.verticalLayout_29.addLayout(self.verticalLayout_q_03)
                                         self.Question_Sentence.setText(form_question)
                                         KT += 1
+                                        galavni_collective.append([self.Line_Answer,form_tag])
                                 if form_id == 1: #////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                         self.verticalLayout_q_11 = QtWidgets.QVBoxLayout()
                                         self.horizontalLayout_q_11 = QtWidgets.QHBoxLayout()
@@ -2080,6 +2139,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         # self.Question_Text.setStyleSheet("text-align: justify;")
                                         self.Question_Text.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
                                         self.Question_Text.setObjectName("Question_Text")
+                                        self.Question_Text.setFont(font3)
                                         self.horizontalLayout_q_13.addWidget(self.Question_Text)
                                         self.horizontalLayout_q_12.addLayout(self.horizontalLayout_q_13)
                                         self.verticalLayout_q_12.addLayout(self.horizontalLayout_q_12)
@@ -2087,7 +2147,9 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.horizontalLayout_q_15 = QtWidgets.QHBoxLayout()
                                         self.Text_Answer = QtWidgets.QTextEdit()
                                         self.Text_Answer.setMaximumSize(QtCore.QSize(500, 150))
-                                        self.Text_Answer.setFont(font)
+                                        font = QtGui.QFont()
+                                        font.setPointSize(20)
+                                        self.Text_Answer.setFont(font3)
                                         self.Text_Answer.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 0px solid;\n"
 "background-color: rgb(228, 228, 228);")
@@ -2103,8 +2165,23 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.ui.verticalLayout_29.addLayout(self.verticalLayout_q_13)
                                         self.Question_Text.setText(form_question)
                                         KT += 1
+                                        galavni_collective.append([self.Text_Answer,form_tag])
                 name_file.close()
                 any.close()
+           
+    def save_document(self):
+        global filename, galavni_collective, mylist
+        forma = {}
+        for danni in galavni_collective:
+             text = danni[0].text()
+             forma[danni[1]] = text
+
+        doc = DocxTemplate("shablon/"+ str(mylist[0]))
+        try:
+                doc.render(forma)
+                doc.save("gotovo/" + str(mylist[0]))
+        except:
+            print("Закройте документ - шаблон-final.docx")
     def transfer_back_2(self):
             self.ui.stackedWidget.setCurrentWidget(self.ui.page)          
            

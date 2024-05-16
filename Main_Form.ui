@@ -591,7 +591,7 @@ background-color:rgb(204, 204, 204);
                             <number>3</number>
                            </property>
                            <item>
-                            <widget class="QPushButton" name="Button_Copy">
+                            <widget class="QPushButton" name="Button_delete">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -599,16 +599,17 @@ background-color:rgb(204, 204, 204);
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#Button_Copy {
+                              <string notr="true">#Button_delete {
+image: url(:/delete/Rectangle_32.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#Button_Copy:hover {
+#Button_delete:hover {
 background-color:rgb(219, 219, 219);
 }
-#Button_Copy:pressed { 
+#Button_delete:pressed { 
 background-color:rgb(204, 204, 204);
 }
 </string>
@@ -623,7 +624,7 @@ background-color:rgb(204, 204, 204);
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="pushButton_delete">
+                            <widget class="QPushButton" name="pushButton_copy">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -631,16 +632,17 @@ background-color:rgb(204, 204, 204);
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#pushButton_delete {
+                              <string notr="true">#pushButton_copy {
+image: url(:/copy/1621635.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#pushButton_delete:hover {
+#pushButton_copy:hover {
 background-color:rgb(219, 219, 219);
 }
-#pushButton_delete:pressed { 
+#pushButton_copy:pressed { 
 background-color:rgb(204, 204, 204);
 }
 </string>
@@ -1002,7 +1004,7 @@ background-color:rgb(204, 204, 204);
                             <number>3</number>
                            </property>
                            <item>
-                            <widget class="QPushButton" name="Button_Copy_2">
+                            <widget class="QPushButton" name="Button_delete_2">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -1010,16 +1012,17 @@ background-color:rgb(204, 204, 204);
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#Button_Copy_2 {
+                              <string notr="true">#Button_delete_2 {
+image: url(:/delete/Rectangle_32.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#Button_Copy_2:hover {
+#Button_delete_2:hover {
 background-color:rgb(219, 219, 219);
 }
-#Button_Copy_2:pressed { 
+#Button_delete_2:pressed { 
 background-color:rgb(204, 204, 204);
 }
 </string>
@@ -1034,7 +1037,7 @@ background-color:rgb(204, 204, 204);
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="pushButton_delete_2">
+                            <widget class="QPushButton" name="pushButton_copy_2">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -1042,16 +1045,17 @@ background-color:rgb(204, 204, 204);
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#pushButton_delete_2 {
+                              <string notr="true">#pushButton_copy_2{
+image: url(:/copy/1621635.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#pushButton_delete_2:hover {
+#pushButton_copy_2:hover {
 background-color:rgb(219, 219, 219);
 }
-#pushButton_delete_2:pressed { 
+#pushButton_copy_2:pressed { 
 background-color:rgb(204, 204, 204);
 }
 </string>
@@ -1448,7 +1452,7 @@ transition: 3s;
                             <number>3</number>
                            </property>
                            <item>
-                            <widget class="QPushButton" name="Button_Copy_3">
+                            <widget class="QPushButton" name="Button_delete_3">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -1456,16 +1460,17 @@ transition: 3s;
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#Button_Copy_3 {
+                              <string notr="true">#Button_delete_3 {
+image: url(:/delete/Rectangle_32.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#Button_Copy_3:hover {
+#Button_delete_3:hover {
 background-color:rgb(219, 219, 219);
 }
-#Button_Copy_3:pressed { 
+#Button_delete_3:pressed { 
 background-color:rgb(204, 204, 204);
 }
 </string>
@@ -1480,7 +1485,7 @@ background-color:rgb(204, 204, 204);
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="pushButton_delete_3">
+                            <widget class="QPushButton" name="pushButton_copy_3">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -1488,16 +1493,17 @@ background-color:rgb(204, 204, 204);
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#pushButton_delete_3 {
+                              <string notr="true">#pushButton_copy_3 {
+image: url(:/copy/1621635.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#pushButton_delete_3:hover {
+#pushButton_copy_3:hover {
 background-color:rgb(219, 219, 219);
 }
-#pushButton_delete_3:pressed { 
+#pushButton_copy_3:pressed { 
 background-color:rgb(204, 204, 204);
 }
 </string>
@@ -1904,7 +1910,7 @@ transition: 3s;
                          <item>
                           <layout class="QHBoxLayout" name="horizontalLayout_50">
                            <item>
-                            <widget class="QPushButton" name="Button_Copy_4">
+                            <widget class="QPushButton" name="Button_delete_4">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -1912,16 +1918,17 @@ transition: 3s;
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#Button_Copy_4 {
+                              <string notr="true">#Button_delete_4 {
+image: url(:/delete/Rectangle_32.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#Button_Copy_4:hover {
+#Button_delete_4:hover {
 background-color:rgb(219, 219, 219);
 }
-#Button_Copy_4:pressed { 
+#Button_delete_4:pressed { 
 background-color:rgb(204, 204, 204);
 }
 
@@ -1937,7 +1944,7 @@ background-color:rgb(204, 204, 204);
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="pushButton_delete_4">
+                            <widget class="QPushButton" name="pushButton_copy_4">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -1945,16 +1952,17 @@ background-color:rgb(204, 204, 204);
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#pushButton_delete_4 {
+                              <string notr="true">#pushButton_copy_4{
+image: url(:/copy/1621635.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#pushButton_delete_4:hover {
+#pushButton_copy_4:hover {
 background-color:rgb(219, 219, 219);
 }
-#pushButton_delete_4:pressed { 
+#pushButton_copy_4:pressed { 
 background-color:rgb(204, 204, 204);
 }
 </string>
@@ -2322,7 +2330,7 @@ background-color:rgb(204, 204, 204);
                             <number>3</number>
                            </property>
                            <item>
-                            <widget class="QPushButton" name="Button_Copy_5">
+                            <widget class="QPushButton" name="Button_delete_5">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -2330,16 +2338,17 @@ background-color:rgb(204, 204, 204);
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#Button_Copy_5 {
+                              <string notr="true">#Button_delete_5 {
+image: url(:/delete/Rectangle_32.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#Button_Copy_5:hover {
+#Button_delete_5:hover {
 background-color:rgb(219, 219, 219);
 }
-#Button_Copy_5:pressed { 
+#Button_delete_5:pressed { 
 background-color:rgb(204, 204, 204);
 }
 
@@ -2355,7 +2364,7 @@ background-color:rgb(204, 204, 204);
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="pushButton_delete_5">
+                            <widget class="QPushButton" name="pushButton_copy_5">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -2363,16 +2372,17 @@ background-color:rgb(204, 204, 204);
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#pushButton_delete_5 {
+                              <string notr="true">#pushButton_copy_5 {
+image: url(:/copy/1621635.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#pushButton_delete_5:hover {
+#pushButton_copy_5:hover {
 background-color:rgb(219, 219, 219);
 }
-#pushButton_delete_5:pressed { 
+#pushButton_copy_5:pressed { 
 background-color:rgb(204, 204, 204);
 }
 
@@ -3007,7 +3017,7 @@ background-color:rgb(204, 204, 204);
                             <number>3</number>
                            </property>
                            <item>
-                            <widget class="QPushButton" name="Button_Copy_6">
+                            <widget class="QPushButton" name="Button_delete_6">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -3015,16 +3025,17 @@ background-color:rgb(204, 204, 204);
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#Button_Copy_6 {
+                              <string notr="true">#Button_delete_6 {
+image: url(:/delete/Rectangle_32.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#Button_Copy_6:hover {
+#Button_delete_6:hover {
 background-color:rgb(219, 219, 219);
 }
-#Button_Copy_6:pressed { 
+#Button_delete_6:pressed { 
 background-color:rgb(204, 204, 204);
 }
 
@@ -3040,7 +3051,7 @@ background-color:rgb(204, 204, 204);
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="pushButton_delete_6">
+                            <widget class="QPushButton" name="pushButton_copy_6">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -3048,16 +3059,17 @@ background-color:rgb(204, 204, 204);
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#pushButton_delete_6 {
+                              <string notr="true">#pushButton_copy_6 {
+image: url(:/copy/1621635.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#pushButton_delete_6:hover {
+#pushButton_copy_6:hover {
 background-color:rgb(219, 219, 219);
 }
-#pushButton_delete_6:pressed { 
+#pushButton_copy_6:pressed { 
 background-color:rgb(204, 204, 204);
 }
 </string>
@@ -3597,7 +3609,7 @@ transition: 3s;
                             <number>3</number>
                            </property>
                            <item>
-                            <widget class="QPushButton" name="Button_Copy_7">
+                            <widget class="QPushButton" name="Button_delete_7">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -3605,16 +3617,17 @@ transition: 3s;
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#Button_Copy_7 {
+                              <string notr="true">#Button_delete_7 {
+image: url(:/delete/Rectangle_32.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#Button_Copy_7:hover {
+#Button_delete_7:hover {
 background-color:rgb(219, 219, 219);
 }
-#Button_Copy_7:pressed { 
+#Button_delete_7:pressed { 
 background-color:rgb(204, 204, 204);
 }</string>
                              </property>
@@ -3628,7 +3641,7 @@ background-color:rgb(204, 204, 204);
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="pushButton_delete_7">
+                            <widget class="QPushButton" name="pushButton_copy_7">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -3636,16 +3649,17 @@ background-color:rgb(204, 204, 204);
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#pushButton_delete_7 {
+                              <string notr="true">#pushButton_copy_7 {
+image: url(:/copy/1621635.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
-#pushButton_delete_7:hover {
+#pushButton_copy_7:hover {
 background-color:rgb(219, 219, 219);
 }
-#pushButton_delete_7:pressed { 
+#pushButton_copy_7:pressed { 
 background-color:rgb(204, 204, 204);
 }</string>
                              </property>
@@ -4012,7 +4026,7 @@ transition: 3s;
                             <number>3</number>
                            </property>
                            <item>
-                            <widget class="QPushButton" name="Button_Copy_8">
+                            <widget class="QPushButton" name="Button_delete_8">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -4020,7 +4034,8 @@ transition: 3s;
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#Button_Copy_8 {
+                              <string notr="true">#Button_delete_8 {
+image: url(:/delete/Rectangle_32.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
@@ -4045,7 +4060,7 @@ transition: 3s;
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="pushButton_delete_8">
+                            <widget class="QPushButton" name="pushButton_copy_8">
                              <property name="maximumSize">
                               <size>
                                <width>41</width>
@@ -4053,7 +4068,8 @@ transition: 3s;
                               </size>
                              </property>
                              <property name="styleSheet">
-                              <string notr="true">#pushButton_delete_8 {
+                              <string notr="true">#pushButton_copy_8{
+image: url(:/copy/1621635.png);
 border: 2px solid;
 border-radius: 9px;
 border-color:rgb(190, 190, 190);
@@ -4614,7 +4630,7 @@ transition: 3s;
      <x>0</x>
      <y>0</y>
      <width>1000</width>
-     <height>21</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>
@@ -4622,6 +4638,7 @@ transition: 3s;
  </widget>
  <resources>
   <include location="Haha.qrc"/>
+  <include location="delete1234.qrc"/>
  </resources>
  <connections/>
 </ui>
