@@ -95,14 +95,14 @@ class AppWindow_main(QMainWindow):
 
         #присвоение шрифтов объектам
         self.ui.Kratki_otvet.setFont(font3)
+
         self.ui.Vopros_2.setFont(font3)
         self.ui.Glavnaya.setFont(font4)
         self.ui.Button_Zapolnit.setFont(font6)
         self.ui.Button_Spisok.setFont(font6)
         self.ui.Button_Save.setFont(font3)
         self.ui.Button_Back.setFont(font3)
-        
-        # self.ui.Obyazatelny_vopros.setFont(font3)
+
         self.ui.Obyazatelny_vopros_2.setFont(font7)
         self.ui.Button_Dok.setFont(font3)
         self.ui.Button_Forma_plus.setFont(font3)
@@ -120,11 +120,14 @@ class AppWindow_main(QMainWindow):
         self.ui.Obyazatelny_vopros_5.setFont(font7)
         self.ui.Button_Question.setFont(font3)
         self.ui.Button_Trash.setFont(font3)
-        self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
+
         self.ui.Button_Question_5.setFont(font3)
-        
+        self.ui.label_3.setFont(font7)
+        self.ui.Poisk_2.setFont(font3)
+        self.ui.tableWidget.setFont(font9)
         self.ui.Button_Back_Fill.setFont(font3)
         
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
         self.ui.Button_Spisok.clicked.connect(self.transfer_page_add)
         self.ui.Button_Zapolnit.clicked.connect(self.transfer_Fill)
         self.ui.Button_Dok.clicked.connect(self.Open_main_file_btn)
@@ -132,6 +135,7 @@ class AppWindow_main(QMainWindow):
         self.ui.Button_Back.clicked.connect(self.transfer_back)
         self.ui.Button_Forma_plus.clicked.connect(self.add_field)
         self.ui.Button_Back_Fill.clicked.connect(self.transfer_back)
+        self.ui.Button_Save_2.clicked.connect(self.save_document) 
         
         self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)
         
@@ -1998,6 +2002,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                 self.transfer_back_save()
 
     def newDocument(self):
+        global font9
         while (self.ui.tableWidget.rowCount() > 0):
             self.ui.tableWidget.setRowCount(0)
         onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
@@ -2008,7 +2013,8 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         for i, b in enumerate(onlyfiles):
             file_name = os.path.basename(b).split('.')[0]
             row_index = self.ui.tableWidget.rowCount() 
-            button = QtWidgets.QPushButton("Заполнить")  
+            button = QtWidgets.QPushButton("Заполнить")
+            button.setFont(font9)  
             button.clicked.connect(self.test)
             self.ui.tableWidget.insertRow(row_index)  
             self.ui.tableWidget.setItem(row_index, 0, QtWidgets.QTableWidgetItem(file_name))
@@ -2016,7 +2022,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
             button.clicked.connect(self.per)
         
     def test (self):
-        global Collectable, Ammount, KT, galavni_collective, mylist
+        global Collectable, Ammount, KT, galavni_collective, mylist, font3, font6
         button = self.sender()
         if button:
                 row = self.ui.tableWidget.indexAt(button.pos()).row()
@@ -2029,7 +2035,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
             
                 any =  open("./Danno/test.txt", 'r')
                 mylist = ast.literal_eval(any.read())
-                print(mylist)
+                # print(mylist)
                 galavni_collective = []
 
                 for f in mylist:
@@ -2037,7 +2043,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                 form_id = f[0]
                                 form_question = f[1]
                                 form_tag = f[2]
-                                print (form_id, form_question, form_tag)
+                                # print (form_id, form_question, form_tag)
                                 if form_id == 0:
                                         self.verticalLayout_q_01 = QtWidgets.QVBoxLayout()
                                         self.horizontalLayout_q_01 = QtWidgets.QHBoxLayout()
@@ -2055,6 +2061,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         # self.Question_Sentence.setStyleSheet()
                                         self.Question_Sentence.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
                                         self.Question_Sentence.setObjectName("Question_Sentence")
+                                        self.Question_Sentence.setFont(font3)
                                         self.horizontalLayout_q_03.addWidget(self.Question_Sentence)
                                         self.horizontalLayout_q_02.addLayout(self.horizontalLayout_q_03)
                                         self.verticalLayout_q_02.addLayout(self.horizontalLayout_q_02)
@@ -2064,7 +2071,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.Line_Answer.setMaximumSize(QtCore.QSize(500, 60))
                                         font = QtGui.QFont()
                                         font.setPointSize(20)
-                                        self.Line_Answer.setFont(font)
+                                        self.Line_Answer.setFont(font3)
                                         self.Line_Answer.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
 "background-color: rgb(255, 255, 255);")
@@ -2098,6 +2105,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         # self.Question_Text.setStyleSheet()
                                         self.Question_Text.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
                                         self.Question_Text.setObjectName("Question_Text")
+                                        self.Question_Text.setFont(font3)
                                         self.horizontalLayout_q_13.addWidget(self.Question_Text)
                                         self.horizontalLayout_q_12.addLayout(self.horizontalLayout_q_13)
                                         self.verticalLayout_q_12.addLayout(self.horizontalLayout_q_12)
@@ -2108,7 +2116,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.Text_Answer.setMaximumSize(QtCore.QSize(500, 150))
                                         font = QtGui.QFont()
                                         font.setPointSize(20)
-                                        self.Text_Answer.setFont(font)
+                                        self.Text_Answer.setFont(font3)
                                         self.Text_Answer.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
 "background-color: rgb(255, 255, 255);")
@@ -2127,7 +2135,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         galavni_collective.append([self.Text_Answer,form_tag])
                 name_file.close()
                 any.close()
-                
+           
     def save_document(self):
         global filename, galavni_collective, mylist
         forma = {}
@@ -2135,10 +2143,10 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
              text = danni[0].text()
              forma[danni[1]] = text
 
-        doc = DocxTemplate(mylist[0])
+        doc = DocxTemplate("shablon/"+ str(mylist[0]))
         try:
-            doc.render(forma)
-            doc.save("gotovo/" + mylist[0])
+                doc.render(forma)
+                doc.save("gotovo/" + str(mylist[0]))
         except:
             print("Закройте документ - шаблон-final.docx")
     def transfer_back_2(self):
