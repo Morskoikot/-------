@@ -56,11 +56,9 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Zapolnit:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
 "}\n"
 "#Button_Zapolnit:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
 "}")
         self.Button_Zapolnit.setObjectName("Button_Zapolnit")
         self.horizontalLayout.addWidget(self.Button_Zapolnit)
@@ -77,11 +75,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Spisok:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#Button_Spisok:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.Button_Spisok.setObjectName("Button_Spisok")
         self.horizontalLayout.addWidget(self.Button_Spisok)
@@ -132,11 +130,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Dok:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#Button_Dok:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.Button_Dok.setObjectName("Button_Dok")
         self.horizontalLayout_2.addWidget(self.Button_Dok)
@@ -153,11 +151,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Forma_plus:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#Button_Forma_plus:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.Button_Forma_plus.setObjectName("Button_Forma_plus")
         self.horizontalLayout_2.addWidget(self.Button_Forma_plus)
@@ -720,11 +718,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#pushButton_DOPvariany:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#pushButton_DOPvariany:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.pushButton_DOPvariany.setObjectName("pushButton_DOPvariany")
         self.horizontalLayout_40.addWidget(self.pushButton_DOPvariany)
@@ -940,11 +938,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#pushButton_DOPvariany_2:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#pushButton_DOPvariany_2:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.pushButton_DOPvariany_2.setObjectName("pushButton_DOPvariany_2")
         self.horizontalLayout_49.addWidget(self.pushButton_DOPvariany_2)
@@ -1680,11 +1678,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#pushButton_DOPvariany_3:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#pushButton_DOPvariany_3:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.pushButton_DOPvariany_3.setObjectName("pushButton_DOPvariany_3")
         self.horizontalLayout_81.addWidget(self.pushButton_DOPvariany_3)
@@ -1709,11 +1707,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#pushButton_drVarifnt_2:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#pushButton_drVarifnt_2:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.pushButton_drVarifnt_2.setObjectName("pushButton_drVarifnt_2")
         self.horizontalLayout_81.addWidget(self.pushButton_drVarifnt_2)
@@ -1909,11 +1907,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Question_8:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#Button_Question_8:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.Button_Question_8.setObjectName("Button_Question_8")
         self.verticalLayout_35.addWidget(self.Button_Question_8)
@@ -1934,11 +1932,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Copy_8:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#Button_Copy_8:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.Button_delete_8.setText("")
         self.Button_delete_8.setIcon(icon)
@@ -1955,11 +1953,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#pushButton_delete_8:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#pushButton_delete_8:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.pushButton_copy_8.setText("")
         self.pushButton_copy_8.setObjectName("pushButton_copy_8")
@@ -2013,11 +2011,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Trash:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#Button_Trash:pressed { \n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.Button_Trash.setObjectName("Button_Trash")
         self.horizontalLayout_4.addWidget(self.Button_Trash)
@@ -2034,11 +2032,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Save:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#Button_Save:pressed { \n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.Button_Save.setObjectName("Button_Save")
         self.horizontalLayout_4.addWidget(self.Button_Save)
@@ -2055,11 +2053,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Back:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#Button_Back:pressed { \n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.Button_Back.setObjectName("Button_Back")
         self.horizontalLayout_4.addWidget(self.Button_Back)
@@ -2105,11 +2103,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Find_Fill:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#Button_Find_Fill:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.Button_Find_Fill.setText("")
         self.Button_Find_Fill.setObjectName("Button_Find_Fill")
@@ -2128,11 +2126,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Back_Fill:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#Button_Back_Fill:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.Button_Back_Fill.setObjectName("Button_Back_Fill")
         self.horizontalLayout_23.addWidget(self.Button_Back_Fill)
@@ -2200,11 +2198,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Trash_2:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#Button_Trash_2:pressed { \n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.Button_Trash_2.setObjectName("Button_Trash_2")
         self.horizontalLayout_6.addWidget(self.Button_Trash_2)
@@ -2221,11 +2219,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Save_2:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#Button_Save_2:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.Button_Save_2.setObjectName("Button_Save_2")
         self.horizontalLayout_6.addWidget(self.Button_Save_2)
@@ -2242,11 +2240,11 @@ class Ui_MainWindow(object):
 "}\n"
 "#Button_Back_2:hover {\n"
 "background: rgb(219, 219, 219);\n"
-"transition: 3s;\n"
+
 "}\n"
 "#Button_Back_2:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-"transition: 3s;\n"
+
 "}")
         self.Button_Back_2.setObjectName("Button_Back_2")
         self.horizontalLayout_6.addWidget(self.Button_Back_2)

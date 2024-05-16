@@ -2151,8 +2151,9 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         font.setPointSize(20)
                                         self.Text_Answer.setFont(font3)
                                         self.Text_Answer.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 0px solid;\n"
-"background-color: rgb(228, 228, 228);")
+"border-bottom: 2px solid;\n"
+"border-color: rgb(100, 100, 100);\n"
+"background-color: rgb(220, 220, 220);")
                                         self.Text_Answer.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
                                         self.horizontalLayout_q_15.addWidget(self.Text_Answer)
                                         self.Text_Answer.setPlaceholderText("Ответ")
