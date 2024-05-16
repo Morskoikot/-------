@@ -25,8 +25,6 @@ class Ui_MainWindow(object):
         self.Main_page.setObjectName("Main_page")
         self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.Main_page)
         self.verticalLayout_9.setObjectName("verticalLayout_9")
-        self.verticalLayout = QtWidgets.QVBoxLayout()
-        self.verticalLayout.setObjectName("verticalLayout")
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
         self.Glavnaya = QtWidgets.QLabel(parent=self.Main_page)
@@ -39,7 +37,9 @@ class Ui_MainWindow(object):
         self.Glavnaya.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.Glavnaya.setObjectName("Glavnaya")
         self.horizontalLayout_5.addWidget(self.Glavnaya)
-        self.verticalLayout.addLayout(self.horizontalLayout_5)
+        self.verticalLayout_9.addLayout(self.horizontalLayout_5)
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
         self.verticalLayout_9.addLayout(self.verticalLayout)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
@@ -55,11 +55,11 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Zapolnit:hover {\n"
-"background: rgb(188, 188, 188);\n"
+"background: rgb(219, 219, 219);\n"
 "transition: 3s;\n"
 "}\n"
 "#Button_Zapolnit:pressed {\n"
-"background: rgb(171, 171, 171);\n"
+"background: rgb(204, 204, 204);\n"
 "transition: 3s;\n"
 "}")
         self.Button_Zapolnit.setObjectName("Button_Zapolnit")
@@ -76,11 +76,11 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Spisok:hover {\n"
-"background: rgb(188, 188, 188);\n"
+"background: rgb(219, 219, 219);\n"
 "transition: 3s;\n"
 "}\n"
 "#Button_Spisok:pressed {\n"
-"background: rgb(171, 171, 171);\n"
+"background: rgb(204, 204, 204);\n"
 "transition: 3s;\n"
 "}")
         self.Button_Spisok.setObjectName("Button_Spisok")
@@ -131,11 +131,11 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Dok:hover {\n"
-"background: rgb(188, 188, 188);\n"
+"background: rgb(219, 219, 219);\n"
 "transition: 3s;\n"
 "}\n"
 "#Button_Dok:pressed {\n"
-"background: rgb(171, 171, 171);\n"
+"background: rgb(204, 204, 204);\n"
 "transition: 3s;\n"
 "}")
         self.Button_Dok.setObjectName("Button_Dok")
@@ -152,11 +152,11 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Forma_plus:hover {\n"
-"background: rgb(188, 188, 188);\n"
+"background: rgb(219, 219, 219);\n"
 "transition: 3s;\n"
 "}\n"
 "#Button_Forma_plus:pressed {\n"
-"background: rgb(171, 171, 171);\n"
+"background: rgb(204, 204, 204);\n"
 "transition: 3s;\n"
 "}")
         self.Button_Forma_plus.setObjectName("Button_Forma_plus")
@@ -174,7 +174,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setAlignment(QtCore.Qt.AlignmentFlag.AlignHCenter|QtCore.Qt.AlignmentFlag.AlignTop)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 769, 279))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 941, 287))
         self.scrollAreaWidgetContents_3.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_3)
@@ -715,8 +715,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#pushButton_DOPvariany:hover {\n"
+"background: rgb(219, 219, 219);\n"
+"transition: 3s;\n"
 "}\n"
-"#pushButton_DOPvariany:pressed { \n"
+"#pushButton_DOPvariany:pressed {\n"
+"background: rgb(204, 204, 204);\n"
+"transition: 3s;\n"
 "}")
         self.pushButton_DOPvariany.setObjectName("pushButton_DOPvariany")
         self.horizontalLayout_40.addWidget(self.pushButton_DOPvariany)
@@ -929,8 +933,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#pushButton_DOPvariany_2:hover {\n"
+"background: rgb(219, 219, 219);\n"
+"transition: 3s;\n"
 "}\n"
-"#pushButton_DOPvariany_2:pressed { \n"
+"#pushButton_DOPvariany_2:pressed {\n"
+"background: rgb(204, 204, 204);\n"
+"transition: 3s;\n"
 "}")
         self.pushButton_DOPvariany_2.setObjectName("pushButton_DOPvariany_2")
         self.horizontalLayout_49.addWidget(self.pushButton_DOPvariany_2)
@@ -1659,8 +1667,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#pushButton_DOPvariany_3:hover {\n"
+"background: rgb(219, 219, 219);\n"
+"transition: 3s;\n"
 "}\n"
-"#pushButton_DOPvariany_3:pressed { \n"
+"#pushButton_DOPvariany_3:pressed {\n"
+"background: rgb(204, 204, 204);\n"
+"transition: 3s;\n"
 "}")
         self.pushButton_DOPvariany_3.setObjectName("pushButton_DOPvariany_3")
         self.horizontalLayout_81.addWidget(self.pushButton_DOPvariany_3)
@@ -1684,8 +1696,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#pushButton_drVarifnt_2:hover {\n"
+"background: rgb(219, 219, 219);\n"
+"transition: 3s;\n"
 "}\n"
-"#pushButton_drVarifnt_2:pressed { \n"
+"#pushButton_drVarifnt_2:pressed {\n"
+"background: rgb(204, 204, 204);\n"
+"transition: 3s;\n"
 "}")
         self.pushButton_drVarifnt_2.setObjectName("pushButton_drVarifnt_2")
         self.horizontalLayout_81.addWidget(self.pushButton_drVarifnt_2)
@@ -1878,11 +1894,11 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Question_8:hover {\n"
-"background: rgb(188, 188, 188);\n"
+"background: rgb(219, 219, 219);\n"
 "transition: 3s;\n"
 "}\n"
 "#Button_Question_8:pressed {\n"
-"background: rgb(171, 171, 171);\n"
+"background: rgb(204, 204, 204);\n"
 "transition: 3s;\n"
 "}")
         self.Button_Question_8.setObjectName("Button_Question_8")
@@ -1902,11 +1918,11 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#Button_Copy_8:hover {\n"
-"background: rgb(188, 188, 188);\n"
+"background: rgb(219, 219, 219);\n"
 "transition: 3s;\n"
 "}\n"
 "#Button_Copy_8:pressed {\n"
-"background: rgb(171, 171, 171);\n"
+"background: rgb(204, 204, 204);\n"
 "transition: 3s;\n"
 "}")
         self.Button_Copy_8.setText("")
@@ -1922,11 +1938,11 @@ class Ui_MainWindow(object):
 "background-color: rgb(228, 228, 228);\n"
 "}\n"
 "#pushButton_delete_8:hover {\n"
-"background: rgb(188, 188, 188);\n"
+"background: rgb(219, 219, 219);\n"
 "transition: 3s;\n"
 "}\n"
 "#pushButton_delete_8:pressed {\n"
-"background: rgb(171, 171, 171);\n"
+"background: rgb(204, 204, 204);\n"
 "transition: 3s;\n"
 "}")
         self.pushButton_delete_8.setText("")
@@ -1980,10 +1996,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Trash:hover {\n"
-"\n"
+"background: rgb(219, 219, 219);\n"
+"transition: 3s;\n"
 "}\n"
 "#Button_Trash:pressed { \n"
-"\n"
+"background: rgb(204, 204, 204);\n"
+"transition: 3s;\n"
 "}")
         self.Button_Trash.setObjectName("Button_Trash")
         self.horizontalLayout_4.addWidget(self.Button_Trash)
@@ -1999,10 +2017,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Save:hover {\n"
-"\n"
+"background: rgb(219, 219, 219);\n"
+"transition: 3s;\n"
 "}\n"
 "#Button_Save:pressed { \n"
-"\n"
+"background: rgb(204, 204, 204);\n"
+"transition: 3s;\n"
 "}")
         self.Button_Save.setObjectName("Button_Save")
         self.horizontalLayout_4.addWidget(self.Button_Save)
@@ -2018,10 +2038,12 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Back:hover {\n"
-"\n"
+"background: rgb(219, 219, 219);\n"
+"transition: 3s;\n"
 "}\n"
 "#Button_Back:pressed { \n"
-"\n"
+"background: rgb(204, 204, 204);\n"
+"transition: 3s;\n"
 "}")
         self.Button_Back.setObjectName("Button_Back")
         self.horizontalLayout_4.addWidget(self.Button_Back)
@@ -2045,6 +2067,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_12.addLayout(self.horizontalLayout_22)
         self.horizontalLayout_23 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_23.setObjectName("horizontalLayout_23")
+        self.horizontalLayout_12 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_12.setObjectName("horizontalLayout_12")
         self.Poisk_2 = QtWidgets.QLineEdit(parent=self.page)
         self.Poisk_2.setMaximumSize(QtCore.QSize(430, 39))
         font = QtGui.QFont()
@@ -2052,27 +2076,29 @@ class Ui_MainWindow(object):
         self.Poisk_2.setFont(font)
         self.Poisk_2.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
-"background-color: rgb(194, 194, 194);")
+"")
         self.Poisk_2.setObjectName("Poisk_2")
-        self.horizontalLayout_23.addWidget(self.Poisk_2)
+        self.horizontalLayout_12.addWidget(self.Poisk_2)
         self.Button_Find_Fill = QtWidgets.QPushButton(parent=self.page)
         self.Button_Find_Fill.setMaximumSize(QtCore.QSize(37, 40))
         self.Button_Find_Fill.setStyleSheet("#Button_Find_Fill {\n"
 "border-top: 0px solid;\n"
 "border-bottom: 0px solid;\n"
 "image: url(:/Lupa/Lupa.png);\n"
+"border-radius: 5px\n"
 "}\n"
 "#Button_Find_Fill:hover {\n"
-"background: rgb(188, 188, 188);\n"
+"background: rgb(219, 219, 219);\n"
 "transition: 3s;\n"
 "}\n"
 "#Button_Find_Fill:pressed {\n"
-"background: rgb(171, 171, 171);\n"
+"background: rgb(204, 204, 204);\n"
 "transition: 3s;\n"
 "}")
         self.Button_Find_Fill.setText("")
         self.Button_Find_Fill.setObjectName("Button_Find_Fill")
-        self.horizontalLayout_23.addWidget(self.Button_Find_Fill)
+        self.horizontalLayout_12.addWidget(self.Button_Find_Fill)
+        self.horizontalLayout_23.addLayout(self.horizontalLayout_12)
         self.Button_Back_Fill = QtWidgets.QPushButton(parent=self.page)
         self.Button_Back_Fill.setMaximumSize(QtCore.QSize(157, 44))
         font = QtGui.QFont()
@@ -2085,11 +2111,11 @@ class Ui_MainWindow(object):
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
 "#Button_Back_Fill:hover {\n"
-"background: rgb(188, 188, 188);\n"
+"background: rgb(219, 219, 219);\n"
 "transition: 3s;\n"
 "}\n"
 "#Button_Back_Fill:pressed {\n"
-"background: rgb(171, 171, 171);\n"
+"background: rgb(204, 204, 204);\n"
 "transition: 3s;\n"
 "}")
         self.Button_Back_Fill.setObjectName("Button_Back_Fill")
@@ -2133,7 +2159,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignHCenter|QtCore.Qt.AlignmentFlag.AlignTop)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_4 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 945, 413))
+        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 945, 417))
         self.scrollAreaWidgetContents_4.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
         self.scrollAreaWidgetContents_4.setObjectName("scrollAreaWidgetContents_4")
         self.verticalLayout_29 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_4)
@@ -2148,17 +2174,19 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Button_Trash_2.setFont(font)
-        self.Button_Trash_2.setStyleSheet("#Button_Trash {\n"
+        self.Button_Trash_2.setStyleSheet("#Button_Trash_2 {\n"
 "border-top: 2px solid;\n"
 "border-top-color: rgb(255, 76, 0);\n"
 "border-bottom: 2px solid;\n"
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
-"#Button_Trash:hover {\n"
-"\n"
+"#Button_Trash_2:hover {\n"
+"background: rgb(219, 219, 219);\n"
+"transition: 3s;\n"
 "}\n"
-"#Button_Trash:pressed { \n"
-"\n"
+"#Button_Trash_2:pressed { \n"
+"background: rgb(204, 204, 204);\n"
+"transition: 3s;\n"
 "}")
         self.Button_Trash_2.setObjectName("Button_Trash_2")
         self.horizontalLayout_6.addWidget(self.Button_Trash_2)
@@ -2167,18 +2195,18 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Button_Save_2.setFont(font)
-        self.Button_Save_2.setStyleSheet("#Button_Save {\n"
+        self.Button_Save_2.setStyleSheet("#Button_Save_2 {\n"
 "border-top: 2px solid;\n"
 "border-top-color: rgb(255, 76, 0);\n"
 "border-bottom: 2px solid;\n"
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
-"#Button_Save:hover {\n"
-"background: rgb(188, 188, 188);\n"
+"#Button_Save_2:hover {\n"
+"background: rgb(219, 219, 219);\n"
 "transition: 3s;\n"
 "}\n"
-"#Button_Save:pressed {\n"
-"background: rgb(171, 171, 171);\n"
+"#Button_Save_2:pressed {\n"
+"background: rgb(204, 204, 204);\n"
 "transition: 3s;\n"
 "}")
         self.Button_Save_2.setObjectName("Button_Save_2")
@@ -2188,18 +2216,18 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(20)
         self.Button_Back_2.setFont(font)
-        self.Button_Back_2.setStyleSheet("#Button_Back {\n"
+        self.Button_Back_2.setStyleSheet("#Button_Back_2 {\n"
 "border-top: 2px solid;\n"
 "border-top-color: rgb(255, 76, 0);\n"
 "border-bottom: 2px solid;\n"
 "border-bottom-color: rgb(255, 76, 0);\n"
 "}\n"
-"#Button_Backt:hover {\n"
-"background: rgb(188, 188, 188);\n"
+"#Button_Back_2:hover {\n"
+"background: rgb(219, 219, 219);\n"
 "transition: 3s;\n"
 "}\n"
-"#Button_Back:pressed {\n"
-"background: rgb(171, 171, 171);\n"
+"#Button_Back_2:pressed {\n"
+"background: rgb(204, 204, 204);\n"
 "transition: 3s;\n"
 "}")
         self.Button_Back_2.setObjectName("Button_Back_2")
@@ -2217,8 +2245,8 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(3)
-        self.stackedWidget_2.setCurrentIndex(7)
+        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget_2.setCurrentIndex(3)
         self.comboBox_10.setCurrentIndex(7)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
@@ -2226,9 +2254,9 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.Glavnaya.setText(_translate("MainWindow", "ГЛАВНАЯ"))
-        self.Button_Zapolnit.setText(_translate("MainWindow", " ЗАПОЛНИТЬ\n"
-"ДОКУМЕНТ"))
-        self.Button_Spisok.setText(_translate("MainWindow", "СПИСОК\n"
+        self.Button_Zapolnit.setText(_translate("MainWindow", " СПИСОК\n"
+"ФОРМ"))
+        self.Button_Spisok.setText(_translate("MainWindow", "СОЗДАНИЕ\n"
 "ФОРМ"))
         self.Dobavochnoe_pole.setText(_translate("MainWindow", "РЕДАКТОР ФОРМ"))
         self.Dobavit_dokument_label.setText(_translate("MainWindow", "Загрузите документ"))

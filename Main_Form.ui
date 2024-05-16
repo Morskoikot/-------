@@ -35,39 +35,38 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_9">
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout">
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_5">
-            <item>
-             <widget class="QLabel" name="Glavnaya">
-              <property name="maximumSize">
-               <size>
-                <width>760</width>
-                <height>142</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>72</pointsize>
-               </font>
-              </property>
-              <property name="contextMenuPolicy">
-               <enum>Qt::DefaultContextMenu</enum>
-              </property>
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>ГЛАВНАЯ</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-           </layout>
+           <widget class="QLabel" name="Glavnaya">
+            <property name="maximumSize">
+             <size>
+              <width>760</width>
+              <height>142</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>72</pointsize>
+             </font>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::DefaultContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>ГЛАВНАЯ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
           </item>
          </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout">
@@ -92,17 +91,17 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Zapolnit:hover {
-background: rgb(188, 188, 188);
+background: rgb(219, 219, 219);
 transition: 3s;
 }
 #Button_Zapolnit:pressed {
-background: rgb(171, 171, 171);
+background: rgb(204, 204, 204);
 transition: 3s;
 }</string>
             </property>
             <property name="text">
-             <string> ЗАПОЛНИТЬ
-ДОКУМЕНТ</string>
+             <string> СПИСОК
+ФОРМ</string>
             </property>
            </widget>
           </item>
@@ -127,16 +126,16 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Spisok:hover {
-background: rgb(188, 188, 188);
+background: rgb(219, 219, 219);
 transition: 3s;
 }
 #Button_Spisok:pressed {
-background: rgb(171, 171, 171);
+background: rgb(204, 204, 204);
 transition: 3s;
 }</string>
             </property>
             <property name="text">
-             <string>СПИСОК
+             <string>СОЗДАНИЕ
 ФОРМ</string>
             </property>
            </widget>
@@ -232,11 +231,11 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Dok:hover {
-background: rgb(188, 188, 188);
+background: rgb(219, 219, 219);
 transition: 3s;
 }
 #Button_Dok:pressed {
-background: rgb(171, 171, 171);
+background: rgb(204, 204, 204);
 transition: 3s;
 }</string>
               </property>
@@ -266,11 +265,11 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Forma_plus:hover {
-background: rgb(188, 188, 188);
+background: rgb(219, 219, 219);
 transition: 3s;
 }
 #Button_Forma_plus:pressed {
-background: rgb(171, 171, 171);
+background: rgb(204, 204, 204);
 transition: 3s;
 }</string>
               </property>
@@ -314,8 +313,8 @@ transition: 3s;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>769</width>
-                 <height>279</height>
+                 <width>941</width>
+                 <height>287</height>
                 </rect>
                </property>
                <property name="layoutDirection">
@@ -328,7 +327,7 @@ transition: 3s;
                 <item>
                  <widget class="QStackedWidget" name="stackedWidget_2">
                   <property name="currentIndex">
-                   <number>7</number>
+                   <number>3</number>
                   </property>
                   <widget class="QWidget" name="page_2">
                    <layout class="QVBoxLayout" name="verticalLayout_14">
@@ -1428,8 +1427,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #pushButton_DOPvariany:hover {
+background: rgb(219, 219, 219);
+transition: 3s;
 }
-#pushButton_DOPvariany:pressed { 
+#pushButton_DOPvariany:pressed {
+background: rgb(204, 204, 204);
+transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -1883,8 +1886,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #pushButton_DOPvariany_2:hover {
+background: rgb(219, 219, 219);
+transition: 3s;
 }
-#pushButton_DOPvariany_2:pressed { 
+#pushButton_DOPvariany_2:pressed {
+background: rgb(204, 204, 204);
+transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -3514,8 +3521,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #pushButton_DOPvariany_3:hover {
+background: rgb(219, 219, 219);
+transition: 3s;
 }
-#pushButton_DOPvariany_3:pressed { 
+#pushButton_DOPvariany_3:pressed {
+background: rgb(204, 204, 204);
+transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -3565,8 +3576,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #pushButton_drVarifnt_2:hover {
+background: rgb(219, 219, 219);
+transition: 3s;
 }
-#pushButton_drVarifnt_2:pressed { 
+#pushButton_drVarifnt_2:pressed {
+background: rgb(204, 204, 204);
+transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -3972,11 +3987,11 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Question_8:hover {
-background: rgb(188, 188, 188);
+background: rgb(219, 219, 219);
 transition: 3s;
 }
 #Button_Question_8:pressed {
-background: rgb(171, 171, 171);
+background: rgb(204, 204, 204);
 transition: 3s;
 }</string>
                                  </property>
@@ -4012,11 +4027,11 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #Button_Copy_8:hover {
-background: rgb(188, 188, 188);
+background: rgb(219, 219, 219);
 transition: 3s;
 }
 #Button_Copy_8:pressed {
-background: rgb(171, 171, 171);
+background: rgb(204, 204, 204);
 transition: 3s;
 }</string>
                              </property>
@@ -4045,11 +4060,11 @@ border-color:rgb(190, 190, 190);
 background-color: rgb(228, 228, 228);
 }
 #pushButton_delete_8:hover {
-background: rgb(188, 188, 188);
+background: rgb(219, 219, 219);
 transition: 3s;
 }
 #pushButton_delete_8:pressed {
-background: rgb(171, 171, 171);
+background: rgb(204, 204, 204);
 transition: 3s;
 }</string>
                              </property>
@@ -4178,10 +4193,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Trash:hover {
-
+background: rgb(219, 219, 219);
+transition: 3s;
 }
 #Button_Trash:pressed { 
-
+background: rgb(204, 204, 204);
+transition: 3s;
 }</string>
               </property>
               <property name="text">
@@ -4210,10 +4227,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Save:hover {
-
+background: rgb(219, 219, 219);
+transition: 3s;
 }
 #Button_Save:pressed { 
-
+background: rgb(204, 204, 204);
+transition: 3s;
 }</string>
               </property>
               <property name="text">
@@ -4242,10 +4261,12 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Back:hover {
-
+background: rgb(219, 219, 219);
+transition: 3s;
 }
 #Button_Back:pressed { 
-
+background: rgb(204, 204, 204);
+transition: 3s;
 }</string>
               </property>
               <property name="text">
@@ -4306,7 +4327,7 @@ border-bottom-color: rgb(255, 76, 0);
               <property name="styleSheet">
                <string notr="true">border-top: 0px solid;
 border-bottom: 2px solid;
-background-color: rgb(194, 194, 194);</string>
+</string>
               </property>
               <property name="placeholderText">
                <string>Название документа</string>
@@ -4329,11 +4350,11 @@ image: url(:/Lupa/Lupa.png);
 border-radius: 5px
 }
 #Button_Find_Fill:hover {
-background: rgb(188, 188, 188);
+background: rgb(219, 219, 219);
 transition: 3s;
 }
 #Button_Find_Fill:pressed {
-background: rgb(171, 171, 171);
+background: rgb(204, 204, 204);
 transition: 3s;
 }</string>
               </property>
@@ -4365,11 +4386,11 @@ border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Back_Fill:hover {
-background: rgb(188, 188, 188);
+background: rgb(219, 219, 219);
 transition: 3s;
 }
 #Button_Back_Fill:pressed {
-background: rgb(171, 171, 171);
+background: rgb(204, 204, 204);
 transition: 3s;
 }</string>
             </property>
@@ -4461,7 +4482,7 @@ background-color: rgb(194, 194, 194);
              <x>0</x>
              <y>0</y>
              <width>945</width>
-             <height>413</height>
+             <height>417</height>
             </rect>
            </property>
            <property name="layoutDirection">
@@ -4491,17 +4512,19 @@ background-color: rgb(194, 194, 194);
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">#Button_Trash {
+             <string notr="true">#Button_Trash_2 {
 border-top: 2px solid;
 border-top-color: rgb(255, 76, 0);
 border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
-#Button_Trash:hover {
-
+#Button_Trash_2:hover {
+background: rgb(219, 219, 219);
+transition: 3s;
 }
-#Button_Trash:pressed { 
-
+#Button_Trash_2:pressed { 
+background: rgb(204, 204, 204);
+transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -4523,18 +4546,18 @@ border-bottom-color: rgb(255, 76, 0);
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">#Button_Save {
+             <string notr="true">#Button_Save_2 {
 border-top: 2px solid;
 border-top-color: rgb(255, 76, 0);
 border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
-#Button_Save:hover {
-background: rgb(188, 188, 188);
+#Button_Save_2:hover {
+background: rgb(219, 219, 219);
 transition: 3s;
 }
-#Button_Save:pressed {
-background: rgb(171, 171, 171);
+#Button_Save_2:pressed {
+background: rgb(204, 204, 204);
 transition: 3s;
 }</string>
             </property>
@@ -4557,18 +4580,18 @@ transition: 3s;
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">#Button_Back {
+             <string notr="true">#Button_Back_2 {
 border-top: 2px solid;
 border-top-color: rgb(255, 76, 0);
 border-bottom: 2px solid;
 border-bottom-color: rgb(255, 76, 0);
 }
-#Button_Backt:hover {
-background: rgb(188, 188, 188);
+#Button_Back_2:hover {
+background: rgb(219, 219, 219);
 transition: 3s;
 }
-#Button_Back:pressed {
-background: rgb(171, 171, 171);
+#Button_Back_2:pressed {
+background: rgb(204, 204, 204);
 transition: 3s;
 }</string>
             </property>

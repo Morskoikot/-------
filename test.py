@@ -17,9 +17,7 @@ from PyQt6.QtWidgets import (
     QMainWindow, 
     QApplication
 )
-from Authorization import Ui_MainWindow as Register
 from Main_Form import Ui_MainWindow as Form
-from delete import Ui_MainWindow as DDD
 import Pictures
 from PyQt6.QtGui     import QFontDatabase, QFont
 from PyQt6.QtCore    import Qt
@@ -28,31 +26,6 @@ KT = int(1)
 DT = int(8)
 Ammount = int()
 Armagedon = []
-class AppWindow(QMainWindow):
-    def __init__(self):
-        super(AppWindow, self).__init__()
-        #загрузка шрифтов в приложение
-        id = QFontDatabase.addApplicationFont('./Fonts/SFProText-Light.ttf')
-        id2 = QFontDatabase.addApplicationFont('./Fonts/Lato-Light.ttf')
-        # Если id равен -1, то шрифт не установлен
-        if id == -1 or id2 == -1: 
-            print('Ошибка подключения шрифтов')
-        font = QFont('SFProText-Light', 70)
-        font2 = QFont('Lato-Light', 28)
-        font3 = QFont('SFProText-Light', 20)
-        
-        self.ui = Register()
-        self.ui.setupUi(self)
-
-        self.ui.label.setFont(font)
-        self.ui.label_3.setFont(font2)
-        self.ui.label_2.setFont(font2)
-        self.ui.pushButton.setFont(font3)
-        self.ui.pushButton.clicked.connect(self.transfer)
-    def transfer(self):
-        AppWindow_main.show()
-        AppWindow.close()
-       
 #основное окно программы        
 class AppWindow_main(QMainWindow):
     def __init__(self):
@@ -316,7 +289,7 @@ f"#{self.Button_Question_1.objectName()}"":hover {\n"
 "background-color:rgb(219, 219, 219);\n"
 "}\n"
 f"#{self.Button_Question_1.objectName()}"":pressed { \n"
-"background: rgb(171, 171, 171);\n"
+"background-color:rgb(204, 204, 204);\n"
 "}\n"
 "\n"
 "")
@@ -698,7 +671,13 @@ f"#{self.Button_Question_3.objectName()}"":pressed { \n"
 "border-top-color: rgb(255, 76, 0);"
 "border-bottom: 2px solid;"
 "border-bottom-color: rgb(255, 76, 0);"
-"}"
+"}\n"
+f"#{self.button_var.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.button_var.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
 "")
         self.button_var.setText("ДОБАВИТЬ ВАРИАНТ")
         self.button_var.setFont(font)
@@ -716,7 +695,13 @@ f"#{self.Button_Question_3.objectName()}"":pressed { \n"
 "border-top-color: rgb(255, 76, 0);"
 "border-bottom: 2px solid;"
 "border-bottom-color: rgb(255, 76, 0);"
-"}"
+"}\n"
+f"#{self.button_difvar.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.button_difvar.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
 "")
         self.horizontalLayout_m_03.addWidget(self.button_difvar)
         # Нижнее поле
@@ -913,7 +898,13 @@ f"#{self.Button_Question_4.objectName()}"":pressed { \n"
 "border-top-color: rgb(255, 76, 0);"
 "border-bottom: 2px solid;"
 "border-bottom-color: rgb(255, 76, 0);"
-"}"
+"}\n"
+f"#{self.button_var_1.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.button_var_1.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
 "")
         self.button_var_1.setText("ДОБАВИТЬ ВАРИАНТ")
         self.button_var_1.setFont(font)
@@ -1013,13 +1004,13 @@ f"#{self.Button_Copy_04.objectName()}"":pressed { \n"
 "border: 2px solid;\n"
 "border-radius: 5px;\n"
 "border-color:rgb(190, 190, 190) ;\n"
-"background-color:rgb(243, 243, 243);\n"
+"background-color: rgb(228, 228, 228);\n"
 "}\n"
 f"#{self.comboBox_L_5.objectName()}"":hover {\n"
-"background-color: rgb(243, 243, 243);\n"
+"background-color: rgb(219, 219, 219);\n"
 "}\n"
 f"#{self.comboBox_L_5.objectName()}"":pressed { \n"
-"background-color:rgb(243, 243, 243);\n"
+"background-color: rgb(219, 219, 219);\n"
 "}\n"
 "")
         self.comboBox_L_5.setObjectName("comboBox_6")
@@ -1758,7 +1749,13 @@ f"#{self.Button_Question_8.objectName()}"":pressed { \n"
 "border-top-color: rgb(255, 76, 0);"
 "border-bottom: 2px solid;"
 "border-bottom-color: rgb(255, 76, 0);"
-"}"
+"}\n"
+f"#{self.button_var_8.objectName()}"":hover {\n"
+"background-color:rgb(219, 219, 219);\n"
+"}\n"
+f"#{self.button_var_8.objectName()}"":pressed { \n"
+"background-color:rgb(204, 204, 204);\n"
+"}\n"
 "")
         self.button_var_8.setText("ДОБАВИТЬ ВАРИАНТ")
         self.button_var_8.setFont(font)
@@ -1901,7 +1898,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
             Collective[number_form][1][5][0].currentIndexChanged.connect(partial(self.opt_2,Collective[number_form][1][5][0]))
         # elif (index.currentIndex() == 8):
         #     self.comboBox_f_1.currentIndexChanged.connect(partial(self.opt_2,self.comboBox_f_1))
-       
+
         if index.currentIndex() == 6:
            Collective[number_form][0].setCurrentWidget(Collective[number_form][1][6][1])
         elif index.currentIndex() == 7:
@@ -2018,6 +2015,8 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                 if form_id == 0:
                                         self.verticalLayout_q_01 = QtWidgets.QVBoxLayout()
                                         self.horizontalLayout_q_01 = QtWidgets.QHBoxLayout()
+                                        font = QtGui.QFont()
+                                        font.setPointSize(20)
                                         self.widget_q_01 = QtWidgets.QWidget()
                                         self.widget_q_01.setMaximumSize(QtCore.QSize(600, 400))
                                         self.widget_q_01.setObjectName(f"widget_q_01_{KT}")
@@ -2028,8 +2027,11 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.horizontalLayout_q_02 = QtWidgets.QHBoxLayout()
                                         self.horizontalLayout_q_03 = QtWidgets.QHBoxLayout()
                                         self.Question_Sentence = QtWidgets.QLabel()
-                                        self.Question_Sentence.setMaximumSize(QtCore.QSize(500, 60))
-                                        # self.Question_Sentence.setStyleSheet()
+                                        self.Question_Sentence.setMaximumSize(QtCore.QSize(500, 150))
+                                        self.Question_Sentence.setFont(font)
+                                        self.Question_Sentence.setWordWrap(True)
+                                        # self.Question_Sentence.setTextFormat(Qt.RichText)
+                                        # self.Question_Sentence.setAlignment(QtCore.Qt.AlignJustify)
                                         self.Question_Sentence.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
                                         self.Question_Sentence.setObjectName("Question_Sentence")
                                         self.horizontalLayout_q_03.addWidget(self.Question_Sentence)
@@ -2039,12 +2041,11 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.horizontalLayout_q_05 = QtWidgets.QHBoxLayout()
                                         self.Line_Answer = QtWidgets.QLineEdit()
                                         self.Line_Answer.setMaximumSize(QtCore.QSize(500, 60))
-                                        font = QtGui.QFont()
-                                        font.setPointSize(20)
                                         self.Line_Answer.setFont(font)
                                         self.Line_Answer.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
-"background-color: rgb(255, 255, 255);")
+"border-color: rgb(100, 100, 100);\n"
+"background-color: rgb(228, 228, 228);")
                                         self.Line_Answer.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
                                         self.horizontalLayout_q_05.addWidget(self.Line_Answer)
                                         self.Line_Answer.setPlaceholderText("Ответ")
@@ -2060,6 +2061,8 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                 if form_id == 1: #////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                         self.verticalLayout_q_11 = QtWidgets.QVBoxLayout()
                                         self.horizontalLayout_q_11 = QtWidgets.QHBoxLayout()
+                                        font = QtGui.QFont()
+                                        font.setPointSize(20)
                                         self.widget_q_11 = QtWidgets.QWidget()
                                         self.widget_q_11.setMaximumSize(QtCore.QSize(600, 400))
                                         self.widget_q_11.setObjectName(f"widget_q_11_{KT}")
@@ -2070,8 +2073,11 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.horizontalLayout_q_12 = QtWidgets.QHBoxLayout()
                                         self.horizontalLayout_q_13 = QtWidgets.QHBoxLayout()
                                         self.Question_Text = QtWidgets.QLabel()
-                                        self.Question_Text.setMaximumSize(QtCore.QSize(500, 60))
-                                        # self.Question_Text.setStyleSheet()
+                                        self.Question_Text.setMaximumSize(QtCore.QSize(500, 150))
+                                        self.Question_Text.setFont(font)
+                                        # self.Question_Text.setTextFormat(Qt.RichText)
+                                        self.Question_Text.setWordWrap(True)
+                                        # self.Question_Text.setStyleSheet("text-align: justify;")
                                         self.Question_Text.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
                                         self.Question_Text.setObjectName("Question_Text")
                                         self.horizontalLayout_q_13.addWidget(self.Question_Text)
@@ -2080,14 +2086,11 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.horizontalLayout_q_14 = QtWidgets.QHBoxLayout()
                                         self.horizontalLayout_q_15 = QtWidgets.QHBoxLayout()
                                         self.Text_Answer = QtWidgets.QTextEdit()
-                                        self.Text_Answer.setMinimumSize(QtCore.QSize(500, 50))
                                         self.Text_Answer.setMaximumSize(QtCore.QSize(500, 150))
-                                        font = QtGui.QFont()
-                                        font.setPointSize(20)
                                         self.Text_Answer.setFont(font)
                                         self.Text_Answer.setStyleSheet("border-top: 0px solid;\n"
-"border-bottom: 2px solid;\n"
-"background-color: rgb(255, 255, 255);")
+"border-bottom: 0px solid;\n"
+"background-color: rgb(228, 228, 228);")
                                         self.Text_Answer.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
                                         self.horizontalLayout_q_15.addWidget(self.Text_Answer)
                                         self.Text_Answer.setPlaceholderText("Ответ")
@@ -2138,7 +2141,5 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
 
 app = QApplication([])
 AppWindow_main = AppWindow_main()
-AppWindow = AppWindow()
-AppWindow.show()
-
+AppWindow_main.show()
 sys.exit(app.exec())
