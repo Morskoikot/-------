@@ -2099,11 +2099,11 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.Line_Answer.setMaximumSize(QtCore.QSize(500, 60))
                                         font = QtGui.QFont()
                                         font.setPointSize(20)
-                                        self.Line_Answer.setFont(font3)
+                                        self.Line_Answer.setFont(font9)
                                         self.Line_Answer.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
 "border-color: rgb(100, 100, 100);\n"
-"background-color: rgb(228, 228, 228);")
+"background-color: rgb(220, 220, 220);")
                                         self.Line_Answer.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft)
                                         self.horizontalLayout_q_05.addWidget(self.Line_Answer)
                                         self.Line_Answer.setPlaceholderText("Ответ")
@@ -2149,7 +2149,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.Text_Answer.setMaximumSize(QtCore.QSize(500, 150))
                                         font = QtGui.QFont()
                                         font.setPointSize(20)
-                                        self.Text_Answer.setFont(font3)
+                                        self.Text_Answer.setFont(font9)
                                         self.Text_Answer.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
 "border-color: rgb(100, 100, 100);\n"
@@ -2174,8 +2174,12 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         global filename, galavni_collective, mylist
         forma = {}
         for danni in galavni_collective:
-             text = danni[0].text()
-             forma[danni[1]] = text
+                try:
+                        text = danni[0].toPlainText()
+                        forma[danni[1]] = text
+                except:
+                        text = danni[0].text()
+                        forma[danni[1]] = text
 
         doc = DocxTemplate("shablon/"+ str(mylist[0]))
         try:
