@@ -60,16 +60,17 @@ class AppWindow_main(QMainWindow):
     def __init__(self):
         super(AppWindow_main, self).__init__()
         #добовление шрифтов
-        global font,font2,font3,font4,font9,font6,font7,Collective, Collectiv_1, fool_name, Collectable
+        global font,font2,font3,font4,font9,font6,font7, font10,Collective, Collectiv_1, fool_name, Collectable
         fool_name = ''
         font = QFont('ofont.ru_Noah', 80)
-        font2 = QFont('ofont.ru_Noah', 30)
+        font2 = QFont('ofont.ru_Noah', 35)
         font3 = QFont('ofont.ru_Noah', 20)
         font4 = QFont('ofont.ru_Noah', 70)
         font6 = QFont('ofont.ru_Noah', 30)
         font7 = QFont('ofont.ru_Noah', 22)
         font8 = QFont('ofont.ru_Noah', 60)
         font9 = QFont('ofont.ru_Noah', 14)
+        font10 = QFont('ofont.ru_Noah', 12)
         self.ui = Form()
         self.ui.setupUi(self)
         Collectable = []
@@ -103,11 +104,11 @@ class AppWindow_main(QMainWindow):
         self.ui.Button_Save.setFont(font3)
         self.ui.Button_Back.setFont(font3)
 
-        self.ui.Obyazatelny_vopros_2.setFont(font7)
+        self.ui.Obyazatelny_vopros_2.setFont(font3)
         self.ui.Button_Dok.setFont(font3)
         self.ui.Button_Forma_plus.setFont(font3)
         self.ui.Dobavit_dokument_label.setFont(font3)
-        self.ui.Dobavochnoe_pole.setFont(font8)
+        self.ui.Dobavochnoe_pole.setFont(font2)
         self.ui.Button_Dok.setFont(font3)
         self.ui.Button_Forma_plus.setFont(font3)
         self.ui.Dobavit_dokument_label.setFont(font3)
@@ -117,14 +118,14 @@ class AppWindow_main(QMainWindow):
         self.ui.comboBox_5.setFont(font9)
         self.ui.comboBox_2.setFont(font9)
         self.ui.Tag_5.setFont(font3)
-        self.ui.Obyazatelny_vopros_5.setFont(font7)
+        self.ui.Obyazatelny_vopros_5.setFont(font3)
         self.ui.Button_Question.setFont(font3)
         self.ui.Button_Trash.setFont(font3)
 
         self.ui.Button_Question_5.setFont(font3)
         self.ui.label_3.setFont(font7)
         self.ui.Poisk_2.setFont(font3)
-        self.ui.tableWidget.setFont(font9)
+        self.ui.tableWidget.setFont(font10)
         self.ui.Button_Back_Fill.setFont(font3)
         
         self.ui.stackedWidget.setCurrentWidget(self.ui.Main_page)
@@ -2002,7 +2003,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                 self.transfer_back_save()
 
     def newDocument(self):
-        global font9
+        global font10
         while (self.ui.tableWidget.rowCount() > 0):
             self.ui.tableWidget.setRowCount(0)
         onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
@@ -2014,7 +2015,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
             file_name = os.path.basename(b).split('.')[0]
             row_index = self.ui.tableWidget.rowCount() 
             button = QtWidgets.QPushButton("Заполнить")
-            button.setFont(font9)  
+            button.setFont(font10)  
             button.clicked.connect(self.test)
             self.ui.tableWidget.insertRow(row_index)  
             self.ui.tableWidget.setItem(row_index, 0, QtWidgets.QTableWidgetItem(file_name))
@@ -2061,7 +2062,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         # self.Question_Sentence.setStyleSheet()
                                         self.Question_Sentence.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
                                         self.Question_Sentence.setObjectName("Question_Sentence")
-                                        self.Question_Sentence.setFont(font3)
+                                        self.Question_Sentence.setFont(font9)
                                         self.horizontalLayout_q_03.addWidget(self.Question_Sentence)
                                         self.horizontalLayout_q_02.addLayout(self.horizontalLayout_q_03)
                                         self.verticalLayout_q_02.addLayout(self.horizontalLayout_q_02)
@@ -2071,7 +2072,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.Line_Answer.setMaximumSize(QtCore.QSize(500, 60))
                                         font = QtGui.QFont()
                                         font.setPointSize(20)
-                                        self.Line_Answer.setFont(font3)
+                                        self.Line_Answer.setFont(font9)
                                         self.Line_Answer.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
 "background-color: rgb(255, 255, 255);")
@@ -2105,7 +2106,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         # self.Question_Text.setStyleSheet()
                                         self.Question_Text.setAlignment(QtCore.Qt.AlignmentFlag.AlignBottom|QtCore.Qt.AlignmentFlag.AlignHCenter)
                                         self.Question_Text.setObjectName("Question_Text")
-                                        self.Question_Text.setFont(font3)
+                                        self.Question_Text.setFont(font9)
                                         self.horizontalLayout_q_13.addWidget(self.Question_Text)
                                         self.horizontalLayout_q_12.addLayout(self.horizontalLayout_q_13)
                                         self.verticalLayout_q_12.addLayout(self.horizontalLayout_q_12)
@@ -2116,7 +2117,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                                         self.Text_Answer.setMaximumSize(QtCore.QSize(500, 150))
                                         font = QtGui.QFont()
                                         font.setPointSize(20)
-                                        self.Text_Answer.setFont(font3)
+                                        self.Text_Answer.setFont(font9)
                                         self.Text_Answer.setStyleSheet("border-top: 0px solid;\n"
 "border-bottom: 2px solid;\n"
 "background-color: rgb(255, 255, 255);")
