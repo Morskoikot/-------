@@ -14,9 +14,8 @@
    <string>Патент в один клик</string>
   </property>
   <property name="windowIcon">
-   <iconset theme="file:///C:/Users/Alexandr/Desktop/Sirius/Python/Project/Icon.png">
-    <selectedon>:/Icon/Icon.png</selectedon>
-   </iconset>
+   <iconset>
+    <normaloff>icon.ico</normaloff>icon.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="minimumSize">
@@ -29,7 +28,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="Main_page">
        <property name="maximumSize">
@@ -97,11 +96,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Zapolnit:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Zapolnit:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -132,11 +129,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Spisok:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Spisok:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -237,11 +232,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Dok:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Dok:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
               </property>
               <property name="text">
@@ -271,11 +264,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Forma_plus:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Forma_plus:pressed {
-background: rgb(204, 204, 204);
-transition: 3s;
+background: rgb(204, 204, 204);;
 }</string>
               </property>
               <property name="text">
@@ -318,8 +309,8 @@ transition: 3s;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>769</width>
-                 <height>279</height>
+                 <width>941</width>
+                 <height>287</height>
                 </rect>
                </property>
                <property name="layoutDirection">
@@ -332,7 +323,7 @@ transition: 3s;
                 <item>
                  <widget class="QStackedWidget" name="stackedWidget_2">
                   <property name="currentIndex">
-                   <number>3</number>
+                   <number>7</number>
                   </property>
                   <widget class="QWidget" name="page_2">
                    <layout class="QVBoxLayout" name="verticalLayout_14">
@@ -1437,11 +1428,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #pushButton_DOPvariany:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #pushButton_DOPvariany:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -1898,11 +1887,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #pushButton_DOPvariany_2:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #pushButton_DOPvariany_2:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -3539,11 +3526,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #pushButton_DOPvariany_3:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #pushButton_DOPvariany_3:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -3594,11 +3579,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #pushButton_drVarifnt_2:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #pushButton_drVarifnt_2:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -4007,11 +3990,9 @@ background-color: rgb(228, 228, 228);
 }
 #Button_Question_8:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Question_8:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
                                  </property>
                                  <property name="text">
@@ -4048,11 +4029,9 @@ background-color: rgb(228, 228, 228);
 }
 #Button_Copy_8:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Copy_8:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -4082,11 +4061,9 @@ background-color: rgb(228, 228, 228);
 }
 #pushButton_delete_8:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #pushButton_delete_8:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
                              </property>
                              <property name="text">
@@ -4215,11 +4192,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Trash:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Trash:pressed { 
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
               </property>
               <property name="text">
@@ -4249,11 +4224,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Save:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Save:pressed { 
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
               </property>
               <property name="text">
@@ -4283,11 +4256,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Back:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Back:pressed { 
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
               </property>
               <property name="text">
@@ -4372,11 +4343,9 @@ border-radius: 5px
 }
 #Button_Find_Fill:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Find_Fill:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
               </property>
               <property name="text">
@@ -4408,11 +4377,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Back_Fill:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Back_Fill:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -4541,11 +4508,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Trash_2:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Trash_2:pressed { 
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -4575,11 +4540,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Save_2:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Save_2:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
             </property>
             <property name="text">
@@ -4609,11 +4572,9 @@ border-bottom-color: rgb(255, 76, 0);
 }
 #Button_Back_2:hover {
 background: rgb(219, 219, 219);
-transition: 3s;
 }
 #Button_Back_2:pressed {
 background: rgb(204, 204, 204);
-transition: 3s;
 }</string>
             </property>
             <property name="text">

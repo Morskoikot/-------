@@ -13,6 +13,9 @@ class Ui_mainWindow(object):
     def setupUi(self, mainWindow):
         mainWindow.setObjectName("mainWindow")
         mainWindow.resize(1000, 541)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("icon.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        mainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(parent=mainWindow)
         self.centralwidget.setMinimumSize(QtCore.QSize(1000, 500))
         self.centralwidget.setObjectName("centralwidget")
@@ -56,11 +59,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Zapolnit:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Zapolnit:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.Button_Zapolnit.setObjectName("Button_Zapolnit")
         self.horizontalLayout.addWidget(self.Button_Zapolnit)
@@ -77,11 +78,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Spisok:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Spisok:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.Button_Spisok.setObjectName("Button_Spisok")
         self.horizontalLayout.addWidget(self.Button_Spisok)
@@ -132,11 +131,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Dok:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Dok:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.Button_Dok.setObjectName("Button_Dok")
         self.horizontalLayout_2.addWidget(self.Button_Dok)
@@ -153,11 +150,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Forma_plus:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Forma_plus:pressed {\n"
-"background: rgb(204, 204, 204);\n"
-
+"background: rgb(204, 204, 204);;\n"
 "}")
         self.Button_Forma_plus.setObjectName("Button_Forma_plus")
         self.horizontalLayout_2.addWidget(self.Button_Forma_plus)
@@ -174,7 +169,7 @@ class Ui_mainWindow(object):
         self.scrollArea.setAlignment(QtCore.Qt.AlignmentFlag.AlignHCenter|QtCore.Qt.AlignmentFlag.AlignTop)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 769, 279))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 941, 287))
         self.scrollAreaWidgetContents_3.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_3)
@@ -332,9 +327,9 @@ class Ui_mainWindow(object):
 "}\n"
 "")
         self.Button_delete.setText("")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../../../../1621635.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.Button_delete.setIcon(icon)
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("../../../../../1621635.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.Button_delete.setIcon(icon1)
         self.Button_delete.setObjectName("Button_delete")
         self.horizontalLayout_13.addWidget(self.Button_delete)
         self.pushButton_copy = QtWidgets.QPushButton(parent=self.widget)
@@ -379,9 +374,9 @@ class Ui_mainWindow(object):
         self.pushButton_3.setGeometry(QtCore.QRect(0, 0, 45, 45))
         self.pushButton_3.setMaximumSize(QtCore.QSize(45, 45))
         self.pushButton_3.setText("")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButton_3.setIcon(icon1)
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("../../../../../png-clipart-check-mark-computer-icons-symbol-miscellaneous-angle.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.pushButton_3.setIcon(icon2)
         self.pushButton_3.setObjectName("pushButton_3")
         self.horizontalLayout_26.addWidget(self.widget_2)
         self.horizontalLayout_13.addLayout(self.horizontalLayout_26)
@@ -532,7 +527,7 @@ class Ui_mainWindow(object):
 "}\n"
 "")
         self.Button_delete_2.setText("")
-        self.Button_delete_2.setIcon(icon)
+        self.Button_delete_2.setIcon(icon1)
         self.Button_delete_2.setObjectName("Button_delete_2")
         self.horizontalLayout_32.addWidget(self.Button_delete_2)
         self.pushButton_copy_2 = QtWidgets.QPushButton(parent=self.widget_3)
@@ -577,7 +572,7 @@ class Ui_mainWindow(object):
         self.pushButton_5.setGeometry(QtCore.QRect(0, 0, 45, 45))
         self.pushButton_5.setMaximumSize(QtCore.QSize(45, 45))
         self.pushButton_5.setText("")
-        self.pushButton_5.setIcon(icon1)
+        self.pushButton_5.setIcon(icon2)
         self.pushButton_5.setObjectName("pushButton_5")
         self.horizontalLayout_33.addWidget(self.widget_4)
         self.horizontalLayout_32.addLayout(self.horizontalLayout_33)
@@ -720,11 +715,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#pushButton_DOPvariany:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#pushButton_DOPvariany:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.pushButton_DOPvariany.setObjectName("pushButton_DOPvariany")
         self.horizontalLayout_40.addWidget(self.pushButton_DOPvariany)
@@ -749,7 +742,7 @@ class Ui_mainWindow(object):
 "}\n"
 "")
         self.Button_delete_3.setText("")
-        self.Button_delete_3.setIcon(icon)
+        self.Button_delete_3.setIcon(icon1)
         self.Button_delete_3.setObjectName("Button_delete_3")
         self.horizontalLayout_41.addWidget(self.Button_delete_3)
         self.pushButton_copy_3 = QtWidgets.QPushButton(parent=self.widget_5)
@@ -794,7 +787,7 @@ class Ui_mainWindow(object):
         self.pushButton_7.setGeometry(QtCore.QRect(0, 0, 45, 45))
         self.pushButton_7.setMaximumSize(QtCore.QSize(45, 45))
         self.pushButton_7.setText("")
-        self.pushButton_7.setIcon(icon1)
+        self.pushButton_7.setIcon(icon2)
         self.pushButton_7.setObjectName("pushButton_7")
         self.horizontalLayout_42.addWidget(self.widget_6)
         self.horizontalLayout_41.addLayout(self.horizontalLayout_42)
@@ -940,11 +933,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#pushButton_DOPvariany_2:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#pushButton_DOPvariany_2:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.pushButton_DOPvariany_2.setObjectName("pushButton_DOPvariany_2")
         self.horizontalLayout_49.addWidget(self.pushButton_DOPvariany_2)
@@ -969,7 +960,7 @@ class Ui_mainWindow(object):
 "\n"
 "")
         self.Button_delete_4.setText("")
-        self.Button_delete_4.setIcon(icon)
+        self.Button_delete_4.setIcon(icon1)
         self.Button_delete_4.setObjectName("Button_delete_4")
         self.horizontalLayout_50.addWidget(self.Button_delete_4)
         self.pushButton_copy_4 = QtWidgets.QPushButton(parent=self.widget_7)
@@ -1014,7 +1005,7 @@ class Ui_mainWindow(object):
         self.pushButton_9.setGeometry(QtCore.QRect(0, 0, 45, 45))
         self.pushButton_9.setMaximumSize(QtCore.QSize(45, 45))
         self.pushButton_9.setText("")
-        self.pushButton_9.setIcon(icon1)
+        self.pushButton_9.setIcon(icon2)
         self.pushButton_9.setObjectName("pushButton_9")
         self.horizontalLayout_51.addWidget(self.widget_8)
         self.horizontalLayout_50.addLayout(self.horizontalLayout_51)
@@ -1168,7 +1159,7 @@ class Ui_mainWindow(object):
 "\n"
 "")
         self.Button_delete_5.setText("")
-        self.Button_delete_5.setIcon(icon)
+        self.Button_delete_5.setIcon(icon1)
         self.Button_delete_5.setObjectName("Button_delete_5")
         self.horizontalLayout_59.addWidget(self.Button_delete_5)
         self.pushButton_copy_5 = QtWidgets.QPushButton(parent=self.widget_9)
@@ -1214,7 +1205,7 @@ class Ui_mainWindow(object):
         self.pushButton_11.setGeometry(QtCore.QRect(0, 0, 45, 45))
         self.pushButton_11.setMaximumSize(QtCore.QSize(45, 45))
         self.pushButton_11.setText("")
-        self.pushButton_11.setIcon(icon1)
+        self.pushButton_11.setIcon(icon2)
         self.pushButton_11.setObjectName("pushButton_11")
         self.horizontalLayout_60.addWidget(self.widget_10)
         self.horizontalLayout_59.addLayout(self.horizontalLayout_60)
@@ -1462,7 +1453,7 @@ class Ui_mainWindow(object):
 "\n"
 "")
         self.Button_delete_6.setText("")
-        self.Button_delete_6.setIcon(icon)
+        self.Button_delete_6.setIcon(icon1)
         self.Button_delete_6.setObjectName("Button_delete_6")
         self.horizontalLayout_72.addWidget(self.Button_delete_6)
         self.pushButton_copy_6 = QtWidgets.QPushButton(parent=self.widget_11)
@@ -1507,7 +1498,7 @@ class Ui_mainWindow(object):
         self.pushButton_13.setGeometry(QtCore.QRect(0, 0, 45, 45))
         self.pushButton_13.setMaximumSize(QtCore.QSize(45, 45))
         self.pushButton_13.setText("")
-        self.pushButton_13.setIcon(icon1)
+        self.pushButton_13.setIcon(icon2)
         self.pushButton_13.setObjectName("pushButton_13")
         self.horizontalLayout_73.addWidget(self.widget_12)
         self.horizontalLayout_72.addLayout(self.horizontalLayout_73)
@@ -1680,11 +1671,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#pushButton_DOPvariany_3:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#pushButton_DOPvariany_3:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.pushButton_DOPvariany_3.setObjectName("pushButton_DOPvariany_3")
         self.horizontalLayout_81.addWidget(self.pushButton_DOPvariany_3)
@@ -1709,11 +1698,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#pushButton_drVarifnt_2:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#pushButton_drVarifnt_2:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.pushButton_drVarifnt_2.setObjectName("pushButton_drVarifnt_2")
         self.horizontalLayout_81.addWidget(self.pushButton_drVarifnt_2)
@@ -1737,7 +1724,7 @@ class Ui_mainWindow(object):
 "background-color:rgb(204, 204, 204);\n"
 "}")
         self.Button_delete_7.setText("")
-        self.Button_delete_7.setIcon(icon)
+        self.Button_delete_7.setIcon(icon1)
         self.Button_delete_7.setObjectName("Button_delete_7")
         self.horizontalLayout_82.addWidget(self.Button_delete_7)
         self.pushButton_copy_7 = QtWidgets.QPushButton(parent=self.widget_13)
@@ -1781,7 +1768,7 @@ class Ui_mainWindow(object):
         self.pushButton_15.setGeometry(QtCore.QRect(0, 0, 45, 45))
         self.pushButton_15.setMaximumSize(QtCore.QSize(45, 45))
         self.pushButton_15.setText("")
-        self.pushButton_15.setIcon(icon1)
+        self.pushButton_15.setIcon(icon2)
         self.pushButton_15.setObjectName("pushButton_15")
         self.horizontalLayout_83.addWidget(self.widget_14)
         self.horizontalLayout_82.addLayout(self.horizontalLayout_83)
@@ -1909,11 +1896,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Question_8:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Question_8:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.Button_Question_8.setObjectName("Button_Question_8")
         self.verticalLayout_35.addWidget(self.Button_Question_8)
@@ -1934,14 +1919,12 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Copy_8:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Copy_8:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.Button_delete_8.setText("")
-        self.Button_delete_8.setIcon(icon)
+        self.Button_delete_8.setIcon(icon1)
         self.Button_delete_8.setObjectName("Button_delete_8")
         self.horizontalLayout_91.addWidget(self.Button_delete_8)
         self.pushButton_copy_8 = QtWidgets.QPushButton(parent=self.widget_15)
@@ -1955,11 +1938,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#pushButton_delete_8:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#pushButton_delete_8:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.pushButton_copy_8.setText("")
         self.pushButton_copy_8.setObjectName("pushButton_copy_8")
@@ -1986,7 +1967,7 @@ class Ui_mainWindow(object):
         self.pushButton_17.setGeometry(QtCore.QRect(0, 0, 45, 45))
         self.pushButton_17.setMaximumSize(QtCore.QSize(45, 45))
         self.pushButton_17.setText("")
-        self.pushButton_17.setIcon(icon1)
+        self.pushButton_17.setIcon(icon2)
         self.pushButton_17.setObjectName("pushButton_17")
         self.horizontalLayout_92.addWidget(self.widget_16)
         self.horizontalLayout_91.addLayout(self.horizontalLayout_92)
@@ -2013,11 +1994,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Trash:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Trash:pressed { \n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.Button_Trash.setObjectName("Button_Trash")
         self.horizontalLayout_4.addWidget(self.Button_Trash)
@@ -2034,11 +2013,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Save:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Save:pressed { \n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.Button_Save.setObjectName("Button_Save")
         self.horizontalLayout_4.addWidget(self.Button_Save)
@@ -2055,11 +2032,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Back:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Back:pressed { \n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.Button_Back.setObjectName("Button_Back")
         self.horizontalLayout_4.addWidget(self.Button_Back)
@@ -2105,11 +2080,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Find_Fill:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Find_Fill:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.Button_Find_Fill.setText("")
         self.Button_Find_Fill.setObjectName("Button_Find_Fill")
@@ -2128,11 +2101,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Back_Fill:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Back_Fill:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.Button_Back_Fill.setObjectName("Button_Back_Fill")
         self.horizontalLayout_23.addWidget(self.Button_Back_Fill)
@@ -2198,11 +2169,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Trash_2:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Trash_2:pressed { \n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.Button_Trash_2.setObjectName("Button_Trash_2")
         self.horizontalLayout_6.addWidget(self.Button_Trash_2)
@@ -2219,11 +2188,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Save_2:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Save_2:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.Button_Save_2.setObjectName("Button_Save_2")
         self.horizontalLayout_6.addWidget(self.Button_Save_2)
@@ -2240,11 +2207,9 @@ class Ui_mainWindow(object):
 "}\n"
 "#Button_Back_2:hover {\n"
 "background: rgb(219, 219, 219);\n"
-
 "}\n"
 "#Button_Back_2:pressed {\n"
 "background: rgb(204, 204, 204);\n"
-
 "}")
         self.Button_Back_2.setObjectName("Button_Back_2")
         self.horizontalLayout_6.addWidget(self.Button_Back_2)
@@ -2261,8 +2226,8 @@ class Ui_mainWindow(object):
         mainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(mainWindow)
-        self.stackedWidget.setCurrentIndex(2)
-        self.stackedWidget_2.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget_2.setCurrentIndex(7)
         self.comboBox_10.setCurrentIndex(7)
         QtCore.QMetaObject.connectSlotsByName(mainWindow)
 
