@@ -17,7 +17,7 @@ from PyQt6.QtWidgets import (
     QMainWindow, 
     QApplication
 )
-from Main_Form import Ui_MainWindow as Form
+from Main_Form import Ui_mainWindow as Form
 # from delete import Ui_MainWindow as DDD
 import Pictures, copy_delete
 from PyQt6.QtGui     import QFontDatabase, QFont
@@ -1973,7 +1973,7 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
     def Questioning(self):
         global Collectable, Ammount
         Ammount = ((len(Collectable))-1)
-        with open("/Danno/Test.txt") as textFile:
+        with open("/tags/Test.txt") as textFile:
                 lines = [line.split() for line in textFile]
 
 
@@ -2015,10 +2015,10 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
                         vse.append(forma) 
                
 
-                my_file = open('Danno/' + name+".txt", "w+")
+                my_file = open('tags/' + name+".txt", "w+")
                 my_file.write(str(vse))
                 my_file.close()
-                with open('Danno/' + name+'.txt', 'r') as f:
+                with open('tags/' + name+'.txt', 'r') as f:
                         mylist = ast.literal_eval(f.read())
                 self.newDocument()
                 self.ui.stackedWidget.setCurrentWidget(self.ui.page)
@@ -2028,8 +2028,8 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         global font9
         while (self.ui.tableWidget.rowCount() > 0):
             self.ui.tableWidget.setRowCount(0)
-        onlyfiles = [os.path.join('Danno', f) for f in os.listdir('Danno') if 
-        os.path.isfile(os.path.join('Danno', f))]
+        onlyfiles = [os.path.join('tags', f) for f in os.listdir('tags') if 
+        os.path.isfile(os.path.join('tags', f))]
 
 
         global button
@@ -2050,13 +2050,13 @@ f"#{self.Button_Copy_08.objectName()}"":pressed { \n"
         if button:
                 row = self.ui.tableWidget.indexAt(button.pos()).row()
                 name_file = self.ui.tableWidget.item(row,0).text()
-                name_file = 'Danno/' + name_file +".txt"
+                name_file = 'tags/' + name_file +".txt"
                 name_file = open( name_file)
                 print(row, name_file.read())
                 self.ui.Button_Back_2.clicked.connect(self.transfer_back_2)
                 Ammount = ((len(Collectable))-1)
             
-                any =  open("./Danno/test.txt", 'r')
+                any =  open("./tags/test.txt", 'r')
                 mylist = ast.literal_eval(any.read())
                 # print(mylist)
                 galavni_collective = []

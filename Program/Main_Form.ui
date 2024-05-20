@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,12 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Патент в один клик</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="file:///C:/Users/Alexandr/Desktop/Sirius/Python/Project/Icon.png">
+    <selectedon>:/Icon/Icon.png</selectedon>
+   </iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="minimumSize">
@@ -313,8 +318,8 @@ transition: 3s;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>941</width>
-                 <height>287</height>
+                 <width>769</width>
+                 <height>279</height>
                 </rect>
                </property>
                <property name="layoutDirection">
@@ -4495,10 +4500,10 @@ background-color: rgb(194, 194, 194);
           <widget class="QWidget" name="scrollAreaWidgetContents_4">
            <property name="geometry">
             <rect>
-             <x>0</x>
+             <x>9</x>
              <y>0</y>
-             <width>945</width>
-             <height>417</height>
+             <width>81</width>
+             <height>28</height>
             </rect>
            </property>
            <property name="layoutDirection">
@@ -4630,7 +4635,7 @@ transition: 3s;
      <x>0</x>
      <y>0</y>
      <width>1000</width>
-     <height>18</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
@@ -4639,6 +4644,7 @@ transition: 3s;
  <resources>
   <include location="Haha.qrc"/>
   <include location="delete1234.qrc"/>
+  <include location="Icon.qrc"/>
  </resources>
  <connections/>
 </ui>

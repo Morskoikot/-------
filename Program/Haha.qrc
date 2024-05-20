@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="Lupa">
+    <file>Lupa.png</file>
+  </qresource>
+</RCC>
